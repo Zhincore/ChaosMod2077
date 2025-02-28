@@ -49,6 +49,10 @@ public class Timer extends DelayCallback {
       .GetDelaySystem(GetGameInstance())
       .DelayCallback(this, this.updatePeriod, false);
 
+    if this.duration <= 0.0 {
+      return;
+    }
+
     let timestamp = GameInstance.GetSimTime(GetGameInstance()).ToFloat();
 
     if this.startTimestamp == 0.0 {
