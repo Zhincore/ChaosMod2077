@@ -1,0 +1,6 @@
+[submodule "libs/codeware"]
+	path = libs/codeware
+	url = https://github.com/psiberx/cp2077-codeware
+[submodule "libs/imgui"]
+	path = libs/imgui
+	url = https://github.com/Nats-ji/CET_ImGui_lua_type_defines

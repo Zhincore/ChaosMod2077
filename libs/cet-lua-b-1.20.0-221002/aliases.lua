@@ -1,0 +1,7803 @@
+---@meta
+---@diagnostic disable
+
+---@alias AIAbilityCond_Record gamedataAIAbilityCond_Record
+AIAbilityCond_Record = gamedataAIAbilityCond_Record
+
+---@alias AIActionAND_Record gamedataAIActionAND_Record
+AIActionAND_Record = gamedataAIActionAND_Record
+
+---@alias AIActionAnimData_Record gamedataAIActionAnimData_Record
+AIActionAnimData_Record = gamedataAIActionAnimData_Record
+
+---@alias AIActionAnimDirection_Record gamedataAIActionAnimDirection_Record
+AIActionAnimDirection_Record = gamedataAIActionAnimDirection_Record
+
+---@alias AIActionAnimSlot_Record gamedataAIActionAnimSlot_Record
+AIActionAnimSlot_Record = gamedataAIActionAnimSlot_Record
+
+---@alias AIActionChangeNPCState_Record gamedataAIActionChangeNPCState_Record
+AIActionChangeNPCState_Record = gamedataAIActionChangeNPCState_Record
+
+---@alias AIActionCondition_Record gamedataAIActionCondition_Record
+AIActionCondition_Record = gamedataAIActionCondition_Record
+
+---@alias AIActionCooldown_Record gamedataAIActionCooldown_Record
+AIActionCooldown_Record = gamedataAIActionCooldown_Record
+
+---@alias AIActionLookAtData_Record gamedataAIActionLookAtData_Record
+AIActionLookAtData_Record = gamedataAIActionLookAtData_Record
+
+---@alias AIActionOR_Record gamedataAIActionOR_Record
+AIActionOR_Record = gamedataAIActionOR_Record
+
+---@alias AIActionPhase_Record gamedataAIActionPhase_Record
+AIActionPhase_Record = gamedataAIActionPhase_Record
+
+---@alias AIActionSecurityAreaType_Record gamedataAIActionSecurityAreaType_Record
+AIActionSecurityAreaType_Record = gamedataAIActionSecurityAreaType_Record
+
+---@alias AIActionSecurityNotificationType_Record gamedataAIActionSecurityNotificationType_Record
+AIActionSecurityNotificationType_Record = gamedataAIActionSecurityNotificationType_Record
+
+---@alias AIActionSelector_Record gamedataAIActionSelector_Record
+AIActionSelector_Record = gamedataAIActionSelector_Record
+
+---@alias AIActionSequence_Record gamedataAIActionSequence_Record
+AIActionSequence_Record = gamedataAIActionSequence_Record
+
+---@alias AIActionSlideData_Record gamedataAIActionSlideData_Record
+AIActionSlideData_Record = gamedataAIActionSlideData_Record
+
+---@alias AIActionSmartComposite_Record gamedataAIActionSmartComposite_Record
+AIActionSmartComposite_Record = gamedataAIActionSmartComposite_Record
+
+---@alias AIActionSubCondition_Record gamedataAIActionSubCondition_Record
+AIActionSubCondition_Record = gamedataAIActionSubCondition_Record
+
+---@alias AIActionTarget_Record gamedataAIActionTarget_Record
+AIActionTarget_Record = gamedataAIActionTarget_Record
+
+---@alias AIActionTicket_Record gamedataAIActionTicket_Record
+AIActionTicket_Record = gamedataAIActionTicket_Record
+
+---@alias AIActionType_Record gamedataAIActionType_Record
+AIActionType_Record = gamedataAIActionType_Record
+
+---@alias AIAction_Record gamedataAIAction_Record
+AIAction_Record = gamedataAIAction_Record
+
+---@alias AIActiveCommandList AIbehaviorUniqueActiveCommandList
+AIActiveCommandList = AIbehaviorUniqueActiveCommandList
+
+---@alias AIAdditionalTraceType_Record gamedataAIAdditionalTraceType_Record
+AIAdditionalTraceType_Record = gamedataAIAdditionalTraceType_Record
+
+---@alias AIAffiliationCond_Record gamedataAIAffiliationCond_Record
+AIAffiliationCond_Record = gamedataAIAffiliationCond_Record
+
+---@alias AIAmmoCountCond_Record gamedataAIAmmoCountCond_Record
+AIAmmoCountCond_Record = gamedataAIAmmoCountCond_Record
+
+---@alias AIAssignRestrictMovementAreaCommand AIAssignGuardAreaCommand
+AIAssignRestrictMovementAreaCommand = AIAssignGuardAreaCommand
+
+---@alias AIAttackAttemptEvent gameweaponeventsAIAttackAttemptEvent
+AIAttackAttemptEvent = gameweaponeventsAIAttackAttemptEvent
+
+---@alias AIBehaviorScriptBase AIbehaviorScriptBase
+AIBehaviorScriptBase = AIbehaviorScriptBase
+
+---@alias AIBlockCountCond_Record gamedataAIBlockCountCond_Record
+AIBlockCountCond_Record = gamedataAIBlockCountCond_Record
+
+---@alias AICalculateLineOfSightVector_Record gamedataAICalculateLineOfSightVector_Record
+AICalculateLineOfSightVector_Record = gamedataAICalculateLineOfSightVector_Record
+
+---@alias AICalculatePathCond_Record gamedataAICalculatePathCond_Record
+AICalculatePathCond_Record = gamedataAICalculatePathCond_Record
+
+---@alias AICommandCond_Record gamedataAICommandCond_Record
+AICommandCond_Record = gamedataAICommandCond_Record
+
+---@alias AICommandEvent AINPCCommandEvent
+AICommandEvent = AINPCCommandEvent
+
+---@alias AICommandFactory scnAICommandFactory
+AICommandFactory = scnAICommandFactory
+
+---@alias AICommandNodeFunction questAICommandNodeFunction
+AICommandNodeFunction = questAICommandNodeFunction
+
+---@alias AICommandNodeFunctionProvider questAICommandNodeFunctionProvider
+AICommandNodeFunctionProvider = questAICommandNodeFunctionProvider
+
+---@alias AICommandParams questAICommandParams
+AICommandParams = questAICommandParams
+
+---@alias AICommandStateEvent AINPCCommandStateEvent
+AICommandStateEvent = AINPCCommandStateEvent
+
+---@alias AICommand_Record gamedataAICommand_Record
+AICommand_Record = gamedataAICommand_Record
+
+---@alias AIComponent AICAgent
+AIComponent = AICAgent
+
+---@alias AICooldownCond_Record gamedataAICooldownCond_Record
+AICooldownCond_Record = gamedataAICooldownCond_Record
+
+---@alias AICoverCond_Record gamedataAICoverCond_Record
+AICoverCond_Record = gamedataAICoverCond_Record
+
+---@alias AIDelegateAttrRef AIbehaviorDelegateAttrRef
+AIDelegateAttrRef = AIbehaviorDelegateAttrRef
+
+---@alias AIDelegateTaskRef AIbehaviorDelegateTaskRef
+AIDelegateTaskRef = AIbehaviorDelegateTaskRef
+
+---@alias AIDirectorEntryStartType_Record gamedataAIDirectorEntryStartType_Record
+AIDirectorEntryStartType_Record = gamedataAIDirectorEntryStartType_Record
+
+---@alias AIDirectorScheduleEntry_Record gamedataAIDirectorScheduleEntry_Record
+AIDirectorScheduleEntry_Record = gamedataAIDirectorScheduleEntry_Record
+
+---@alias AIDirectorSchedulePlanEnemyEntry_Record gamedataAIDirectorSchedulePlanEnemyEntry_Record
+AIDirectorSchedulePlanEnemyEntry_Record = gamedataAIDirectorSchedulePlanEnemyEntry_Record
+
+---@alias AIDirectorSchedulePlan_Record gamedataAIDirectorSchedulePlan_Record
+AIDirectorSchedulePlan_Record = gamedataAIDirectorSchedulePlan_Record
+
+---@alias AIDirectorScheduleSpawningDesc_Record gamedataAIDirectorScheduleSpawningDesc_Record
+AIDirectorScheduleSpawningDesc_Record = gamedataAIDirectorScheduleSpawningDesc_Record
+
+---@alias AIDirectorSchedule_Record gamedataAIDirectorSchedule_Record
+AIDirectorSchedule_Record = gamedataAIDirectorSchedule_Record
+
+---@alias AIDodgeCountCond_Record gamedataAIDodgeCountCond_Record
+AIDodgeCountCond_Record = gamedataAIDodgeCountCond_Record
+
+---@alias AIDriverCond_Record gamedataAIDriverCond_Record
+AIDriverCond_Record = gamedataAIDriverCond_Record
+
+---@alias AIEvent AIAIEvent
+AIEvent = AIAIEvent
+
+---@alias AIExposureMethodType_Record gamedataAIExposureMethodType_Record
+AIExposureMethodType_Record = gamedataAIExposureMethodType_Record
+
+---@alias AIExtendTargetCirclingCond_Record gamedataAIExtendTargetCirclingCond_Record
+AIExtendTargetCirclingCond_Record = gamedataAIExtendTargetCirclingCond_Record
+
+---@alias AIFriendlyFireCond_Record gamedataAIFriendlyFireCond_Record
+AIFriendlyFireCond_Record = gamedataAIFriendlyFireCond_Record
+
+---@alias AIGoToCoverCond_Record gamedataAIGoToCoverCond_Record
+AIGoToCoverCond_Record = gamedataAIGoToCoverCond_Record
+
+---@alias AIHasWeapon_Record gamedataAIHasWeapon_Record
+AIHasWeapon_Record = gamedataAIHasWeapon_Record
+
+---@alias AIHitCond_Record gamedataAIHitCond_Record
+AIHitCond_Record = gamedataAIHitCond_Record
+
+---@alias AIInTacticPositionCond_Record gamedataAIInTacticPositionCond_Record
+AIInTacticPositionCond_Record = gamedataAIInTacticPositionCond_Record
+
+---@alias AIIsInActiveCameraCond_Record gamedataAIIsInActiveCameraCond_Record
+AIIsInActiveCameraCond_Record = gamedataAIIsInActiveCameraCond_Record
+
+---@alias AIIsOnNavmeshCond_Record gamedataAIIsOnNavmeshCond_Record
+AIIsOnNavmeshCond_Record = gamedataAIIsOnNavmeshCond_Record
+
+---@alias AIItemCond_Record gamedataAIItemCond_Record
+AIItemCond_Record = gamedataAIItemCond_Record
+
+---@alias AILoSPositionCond_Record gamedataAILoSPositionCond_Record
+AILoSPositionCond_Record = gamedataAILoSPositionCond_Record
+
+---@alias AILookAtCond_Record gamedataAILookAtCond_Record
+AILookAtCond_Record = gamedataAILookAtCond_Record
+
+---@alias AIMovementCond_Record gamedataAIMovementCond_Record
+AIMovementCond_Record = gamedataAIMovementCond_Record
+
+---@alias AINPCTypeCond_Record gamedataAINPCTypeCond_Record
+AINPCTypeCond_Record = gamedataAINPCTypeCond_Record
+
+---@alias AINetStateComponent gameAINetStateComponent
+AINetStateComponent = gameAINetStateComponent
+
+---@alias AINodeMapField_Record gamedataAINodeMapField_Record
+AINodeMapField_Record = gamedataAINodeMapField_Record
+
+---@alias AINodeMap_Record gamedataAINodeMap_Record
+AINodeMap_Record = gamedataAINodeMap_Record
+
+---@alias AINode_Record gamedataAINode_Record
+AINode_Record = gamedataAINode_Record
+
+---@alias AIOptimalDistanceCond_Record gamedataAIOptimalDistanceCond_Record
+AIOptimalDistanceCond_Record = gamedataAIOptimalDistanceCond_Record
+
+---@alias AIPatternDelay_Record gamedataAIPatternDelay_Record
+AIPatternDelay_Record = gamedataAIPatternDelay_Record
+
+---@alias AIPattern_Record gamedataAIPattern_Record
+AIPattern_Record = gamedataAIPattern_Record
+
+---@alias AIPatternsPackage_Record gamedataAIPatternsPackage_Record
+AIPatternsPackage_Record = gamedataAIPatternsPackage_Record
+
+---@alias AIPreviousAttackCond_Record gamedataAIPreviousAttackCond_Record
+AIPreviousAttackCond_Record = gamedataAIPreviousAttackCond_Record
+
+---@alias AIReactionCond_Record gamedataAIReactionCond_Record
+AIReactionCond_Record = gamedataAIReactionCond_Record
+
+---@alias AIRecord_Record gamedataAIRecord_Record
+AIRecord_Record = gamedataAIRecord_Record
+
+---@alias AIRestrictedMovementAreaCond_Record gamedataAIRestrictedMovementAreaCond_Record
+AIRestrictedMovementAreaCond_Record = gamedataAIRestrictedMovementAreaCond_Record
+
+---@alias AIRingTicket_Record gamedataAIRingTicket_Record
+AIRingTicket_Record = gamedataAIRingTicket_Record
+
+---@alias AIRingType_Record gamedataAIRingType_Record
+AIRingType_Record = gamedataAIRingType_Record
+
+---@alias AIRole_Record gamedataAIRole_Record
+AIRole_Record = gamedataAIRole_Record
+
+---@alias AIScriptCondition AIbehaviorconditionScript
+AIScriptCondition = AIbehaviorconditionScript
+
+---@alias AIScriptEventResolver AIbehavioreventResolverScript
+AIScriptEventResolver = AIbehavioreventResolverScript
+
+---@alias AIScriptTask AIbehaviortaskScript
+AIScriptTask = AIbehaviortaskScript
+
+---@alias AIScriptUtils AIbehaviorScriptUtils
+AIScriptUtils = AIbehaviorScriptUtils
+
+---@alias AISectorType_Record gamedataAISectorType_Record
+AISectorType_Record = gamedataAISectorType_Record
+
+---@alias AISecurityCond_Record gamedataAISecurityCond_Record
+AISecurityCond_Record = gamedataAISecurityCond_Record
+
+---@alias AISignalCond_Record gamedataAISignalCond_Record
+AISignalCond_Record = gamedataAISignalCond_Record
+
+---@alias AISlotCond_Record gamedataAISlotCond_Record
+AISlotCond_Record = gamedataAISlotCond_Record
+
+---@alias AISmartCompositeType_Record gamedataAISmartCompositeType_Record
+AISmartCompositeType_Record = gamedataAISmartCompositeType_Record
+
+---@alias AISpatialCond_Record gamedataAISpatialCond_Record
+AISpatialCond_Record = gamedataAISpatialCond_Record
+
+---@alias AISquadANDCondition_Record gamedataAISquadANDCondition_Record
+AISquadANDCondition_Record = gamedataAISquadANDCondition_Record
+
+---@alias AISquadAvoidLastFilter_Record gamedataAISquadAvoidLastFilter_Record
+AISquadAvoidLastFilter_Record = gamedataAISquadAvoidLastFilter_Record
+
+---@alias AISquadClosestToSectorCheck_Record gamedataAISquadClosestToSectorCheck_Record
+AISquadClosestToSectorCheck_Record = gamedataAISquadClosestToSectorCheck_Record
+
+---@alias AISquadClosestToTargetCheck_Record gamedataAISquadClosestToTargetCheck_Record
+AISquadClosestToTargetCheck_Record = gamedataAISquadClosestToTargetCheck_Record
+
+---@alias AISquadCond_Record gamedataAISquadCond_Record
+AISquadCond_Record = gamedataAISquadCond_Record
+
+---@alias AISquadContainsSelfCheck_Record gamedataAISquadContainsSelfCheck_Record
+AISquadContainsSelfCheck_Record = gamedataAISquadContainsSelfCheck_Record
+
+---@alias AISquadDistanceRelationToSectorCheck_Record gamedataAISquadDistanceRelationToSectorCheck_Record
+AISquadDistanceRelationToSectorCheck_Record = gamedataAISquadDistanceRelationToSectorCheck_Record
+
+---@alias AISquadDistanceRelationToTargetCheck_Record gamedataAISquadDistanceRelationToTargetCheck_Record
+AISquadDistanceRelationToTargetCheck_Record = gamedataAISquadDistanceRelationToTargetCheck_Record
+
+---@alias AISquadFilterByAICondition_Record gamedataAISquadFilterByAICondition_Record
+AISquadFilterByAICondition_Record = gamedataAISquadFilterByAICondition_Record
+
+---@alias AISquadFilterOwnTargetSpotted_Record gamedataAISquadFilterOwnTargetSpotted_Record
+AISquadFilterOwnTargetSpotted_Record = gamedataAISquadFilterOwnTargetSpotted_Record
+
+---@alias AISquadFurthestToSectorCheck_Record gamedataAISquadFurthestToSectorCheck_Record
+AISquadFurthestToSectorCheck_Record = gamedataAISquadFurthestToSectorCheck_Record
+
+---@alias AISquadFurthestToTargetCheck_Record gamedataAISquadFurthestToTargetCheck_Record
+AISquadFurthestToTargetCheck_Record = gamedataAISquadFurthestToTargetCheck_Record
+
+---@alias AISquadInSectorFilter_Record gamedataAISquadInSectorFilter_Record
+AISquadInSectorFilter_Record = gamedataAISquadInSectorFilter_Record
+
+---@alias AISquadItemCategoryPriorityFilter_Record gamedataAISquadItemCategoryPriorityFilter_Record
+AISquadItemCategoryPriorityFilter_Record = gamedataAISquadItemCategoryPriorityFilter_Record
+
+---@alias AISquadItemPriorityFilter_Record gamedataAISquadItemPriorityFilter_Record
+AISquadItemPriorityFilter_Record = gamedataAISquadItemPriorityFilter_Record
+
+---@alias AISquadItemTypePriorityFilter_Record gamedataAISquadItemTypePriorityFilter_Record
+AISquadItemTypePriorityFilter_Record = gamedataAISquadItemTypePriorityFilter_Record
+
+---@alias AISquadJustSelfFilter_Record gamedataAISquadJustSelfFilter_Record
+AISquadJustSelfFilter_Record = gamedataAISquadJustSelfFilter_Record
+
+---@alias AISquadMembersAmountCheck_Record gamedataAISquadMembersAmountCheck_Record
+AISquadMembersAmountCheck_Record = gamedataAISquadMembersAmountCheck_Record
+
+---@alias AISquadORCondition_Record gamedataAISquadORCondition_Record
+AISquadORCondition_Record = gamedataAISquadORCondition_Record
+
+---@alias AISquadParams_Record gamedataAISquadParams_Record
+AISquadParams_Record = gamedataAISquadParams_Record
+
+---@alias AISquadSpatialForOwnTarget_Record gamedataAISquadSpatialForOwnTarget_Record
+AISquadSpatialForOwnTarget_Record = gamedataAISquadSpatialForOwnTarget_Record
+
+---@alias AISquadType_Record gamedataAISquadType_Record
+AISquadType_Record = gamedataAISquadType_Record
+
+---@alias AIStatPoolCond_Record gamedataAIStatPoolCond_Record
+AIStatPoolCond_Record = gamedataAIStatPoolCond_Record
+
+---@alias AIStateCond_Record gamedataAIStateCond_Record
+AIStateCond_Record = gamedataAIStateCond_Record
+
+---@alias AIStatusEffectCond_Record gamedataAIStatusEffectCond_Record
+AIStatusEffectCond_Record = gamedataAIStatusEffectCond_Record
+
+---@alias AISubActionActivateLightPreset_Record gamedataAISubActionActivateLightPreset_Record
+AISubActionActivateLightPreset_Record = gamedataAISubActionActivateLightPreset_Record
+
+---@alias AISubActionActivateStrongArmsFX_Record gamedataAISubActionActivateStrongArmsFX_Record
+AISubActionActivateStrongArmsFX_Record = gamedataAISubActionActivateStrongArmsFX_Record
+
+---@alias AISubActionAddFact_Record gamedataAISubActionAddFact_Record
+AISubActionAddFact_Record = gamedataAISubActionAddFact_Record
+
+---@alias AISubActionApplyTimeDilation_Record gamedataAISubActionApplyTimeDilation_Record
+AISubActionApplyTimeDilation_Record = gamedataAISubActionApplyTimeDilation_Record
+
+---@alias AISubActionAttackWithWeapon_Record gamedataAISubActionAttackWithWeapon_Record
+AISubActionAttackWithWeapon_Record = gamedataAISubActionAttackWithWeapon_Record
+
+---@alias AISubActionBlockData_Record gamedataAISubActionBlockData_Record
+AISubActionBlockData_Record = gamedataAISubActionBlockData_Record
+
+---@alias AISubActionCallReinforcements_Record gamedataAISubActionCallReinforcements_Record
+AISubActionCallReinforcements_Record = gamedataAISubActionCallReinforcements_Record
+
+---@alias AISubActionCallSquadSearchBackUp_Record gamedataAISubActionCallSquadSearchBackUp_Record
+AISubActionCallSquadSearchBackUp_Record = gamedataAISubActionCallSquadSearchBackUp_Record
+
+---@alias AISubActionChangeAttitude_Record gamedataAISubActionChangeAttitude_Record
+AISubActionChangeAttitude_Record = gamedataAISubActionChangeAttitude_Record
+
+---@alias AISubActionChangeCoverSelectionPreset_Record gamedataAISubActionChangeCoverSelectionPreset_Record
+AISubActionChangeCoverSelectionPreset_Record = gamedataAISubActionChangeCoverSelectionPreset_Record
+
+---@alias AISubActionCharacterRecordEquip_Record gamedataAISubActionCharacterRecordEquip_Record
+AISubActionCharacterRecordEquip_Record = gamedataAISubActionCharacterRecordEquip_Record
+
+---@alias AISubActionCharacterRecordUnequip_Record gamedataAISubActionCharacterRecordUnequip_Record
+AISubActionCharacterRecordUnequip_Record = gamedataAISubActionCharacterRecordUnequip_Record
+
+---@alias AISubActionCompleteCommand_Record gamedataAISubActionCompleteCommand_Record
+AISubActionCompleteCommand_Record = gamedataAISubActionCompleteCommand_Record
+
+---@alias AISubActionConditionalFailure_Record gamedataAISubActionConditionalFailure_Record
+AISubActionConditionalFailure_Record = gamedataAISubActionConditionalFailure_Record
+
+---@alias AISubActionCover_Record gamedataAISubActionCover_Record
+AISubActionCover_Record = gamedataAISubActionCover_Record
+
+---@alias AISubActionCreateGameEffect_Record gamedataAISubActionCreateGameEffect_Record
+AISubActionCreateGameEffect_Record = gamedataAISubActionCreateGameEffect_Record
+
+---@alias AISubActionCustomEffectors_Record gamedataAISubActionCustomEffectors_Record
+AISubActionCustomEffectors_Record = gamedataAISubActionCustomEffectors_Record
+
+---@alias AISubActionDisableAimAssist_Record gamedataAISubActionDisableAimAssist_Record
+AISubActionDisableAimAssist_Record = gamedataAISubActionDisableAimAssist_Record
+
+---@alias AISubActionDisableCollider_Record gamedataAISubActionDisableCollider_Record
+AISubActionDisableCollider_Record = gamedataAISubActionDisableCollider_Record
+
+---@alias AISubActionDroneModifyAltitude_Record gamedataAISubActionDroneModifyAltitude_Record
+AISubActionDroneModifyAltitude_Record = gamedataAISubActionDroneModifyAltitude_Record
+
+---@alias AISubActionEquipOnBody_Record gamedataAISubActionEquipOnBody_Record
+AISubActionEquipOnBody_Record = gamedataAISubActionEquipOnBody_Record
+
+---@alias AISubActionEquipOnSlot_Record gamedataAISubActionEquipOnSlot_Record
+AISubActionEquipOnSlot_Record = gamedataAISubActionEquipOnSlot_Record
+
+---@alias AISubActionFailIfFriendlyFire_Record gamedataAISubActionFailIfFriendlyFire_Record
+AISubActionFailIfFriendlyFire_Record = gamedataAISubActionFailIfFriendlyFire_Record
+
+---@alias AISubActionFail_Record gamedataAISubActionFail_Record
+AISubActionFail_Record = gamedataAISubActionFail_Record
+
+---@alias AISubActionFastExitWorkspot_Record gamedataAISubActionFastExitWorkspot_Record
+AISubActionFastExitWorkspot_Record = gamedataAISubActionFastExitWorkspot_Record
+
+---@alias AISubActionForceDeath_Record gamedataAISubActionForceDeath_Record
+AISubActionForceDeath_Record = gamedataAISubActionForceDeath_Record
+
+---@alias AISubActionForceEquip_Record gamedataAISubActionForceEquip_Record
+AISubActionForceEquip_Record = gamedataAISubActionForceEquip_Record
+
+---@alias AISubActionForceHitReaction_Record gamedataAISubActionForceHitReaction_Record
+AISubActionForceHitReaction_Record = gamedataAISubActionForceHitReaction_Record
+
+---@alias AISubActionForceUnequip_Record gamedataAISubActionForceUnequip_Record
+AISubActionForceUnequip_Record = gamedataAISubActionForceUnequip_Record
+
+---@alias AISubActionGameplayLogicPackage_Record gamedataAISubActionGameplayLogicPackage_Record
+AISubActionGameplayLogicPackage_Record = gamedataAISubActionGameplayLogicPackage_Record
+
+---@alias AISubActionGeneratePointOfInterestTarget_Record gamedataAISubActionGeneratePointOfInterestTarget_Record
+AISubActionGeneratePointOfInterestTarget_Record = gamedataAISubActionGeneratePointOfInterestTarget_Record
+
+---@alias AISubActionHitData_Record gamedataAISubActionHitData_Record
+AISubActionHitData_Record = gamedataAISubActionHitData_Record
+
+---@alias AISubActionInAir_Record gamedataAISubActionInAir_Record
+AISubActionInAir_Record = gamedataAISubActionInAir_Record
+
+---@alias AISubActionInitialReaction_Record gamedataAISubActionInitialReaction_Record
+AISubActionInitialReaction_Record = gamedataAISubActionInitialReaction_Record
+
+---@alias AISubActionLeaveCover_Record gamedataAISubActionLeaveCover_Record
+AISubActionLeaveCover_Record = gamedataAISubActionLeaveCover_Record
+
+---@alias AISubActionMeleeAttackAttemptEvent_Record gamedataAISubActionMeleeAttackAttemptEvent_Record
+AISubActionMeleeAttackAttemptEvent_Record = gamedataAISubActionMeleeAttackAttemptEvent_Record
+
+---@alias AISubActionMeleeAttackManager_Record gamedataAISubActionMeleeAttackManager_Record
+AISubActionMeleeAttackManager_Record = gamedataAISubActionMeleeAttackManager_Record
+
+---@alias AISubActionMissileRainCircular_Record gamedataAISubActionMissileRainCircular_Record
+AISubActionMissileRainCircular_Record = gamedataAISubActionMissileRainCircular_Record
+
+---@alias AISubActionMissileRainGrid_Record gamedataAISubActionMissileRainGrid_Record
+AISubActionMissileRainGrid_Record = gamedataAISubActionMissileRainGrid_Record
+
+---@alias AISubActionModifyStatPool_Record gamedataAISubActionModifyStatPool_Record
+AISubActionModifyStatPool_Record = gamedataAISubActionModifyStatPool_Record
+
+---@alias AISubActionMountVehicle_Record gamedataAISubActionMountVehicle_Record
+AISubActionMountVehicle_Record = gamedataAISubActionMountVehicle_Record
+
+---@alias AISubActionPlaySound_Record gamedataAISubActionPlaySound_Record
+AISubActionPlaySound_Record = gamedataAISubActionPlaySound_Record
+
+---@alias AISubActionPlayVoiceOver_Record gamedataAISubActionPlayVoiceOver_Record
+AISubActionPlayVoiceOver_Record = gamedataAISubActionPlayVoiceOver_Record
+
+---@alias AISubActionQueueAIEvent_Record gamedataAISubActionQueueAIEvent_Record
+AISubActionQueueAIEvent_Record = gamedataAISubActionQueueAIEvent_Record
+
+---@alias AISubActionQueueCommunicationEvent_Record gamedataAISubActionQueueCommunicationEvent_Record
+AISubActionQueueCommunicationEvent_Record = gamedataAISubActionQueueCommunicationEvent_Record
+
+---@alias AISubActionQuickHack_Record gamedataAISubActionQuickHack_Record
+AISubActionQuickHack_Record = gamedataAISubActionQuickHack_Record
+
+---@alias AISubActionRandomize_Record gamedataAISubActionRandomize_Record
+AISubActionRandomize_Record = gamedataAISubActionRandomize_Record
+
+---@alias AISubActionRegisterActionName_Record gamedataAISubActionRegisterActionName_Record
+AISubActionRegisterActionName_Record = gamedataAISubActionRegisterActionName_Record
+
+---@alias AISubActionReloadWeapon_Record gamedataAISubActionReloadWeapon_Record
+AISubActionReloadWeapon_Record = gamedataAISubActionReloadWeapon_Record
+
+---@alias AISubActionScaleDurationWithDistance_Record gamedataAISubActionScaleDurationWithDistance_Record
+AISubActionScaleDurationWithDistance_Record = gamedataAISubActionScaleDurationWithDistance_Record
+
+---@alias AISubActionSecuritySystemNotification_Record gamedataAISubActionSecuritySystemNotification_Record
+AISubActionSecuritySystemNotification_Record = gamedataAISubActionSecuritySystemNotification_Record
+
+---@alias AISubActionSendSignal_Record gamedataAISubActionSendSignal_Record
+AISubActionSendSignal_Record = gamedataAISubActionSendSignal_Record
+
+---@alias AISubActionSetEquipPrimaryWeapons_Record gamedataAISubActionSetEquipPrimaryWeapons_Record
+AISubActionSetEquipPrimaryWeapons_Record = gamedataAISubActionSetEquipPrimaryWeapons_Record
+
+---@alias AISubActionSetEquipSecondaryWeapons_Record gamedataAISubActionSetEquipSecondaryWeapons_Record
+AISubActionSetEquipSecondaryWeapons_Record = gamedataAISubActionSetEquipSecondaryWeapons_Record
+
+---@alias AISubActionSetInfluenceMap_Record gamedataAISubActionSetInfluenceMap_Record
+AISubActionSetInfluenceMap_Record = gamedataAISubActionSetInfluenceMap_Record
+
+---@alias AISubActionSetInt_Record gamedataAISubActionSetInt_Record
+AISubActionSetInt_Record = gamedataAISubActionSetInt_Record
+
+---@alias AISubActionSetItemAsTarget_Record gamedataAISubActionSetItemAsTarget_Record
+AISubActionSetItemAsTarget_Record = gamedataAISubActionSetItemAsTarget_Record
+
+---@alias AISubActionSetStimSource_Record gamedataAISubActionSetStimSource_Record
+AISubActionSetStimSource_Record = gamedataAISubActionSetStimSource_Record
+
+---@alias AISubActionSetTargetByTag_Record gamedataAISubActionSetTargetByTag_Record
+AISubActionSetTargetByTag_Record = gamedataAISubActionSetTargetByTag_Record
+
+---@alias AISubActionSetTopThreatPersistance_Record gamedataAISubActionSetTopThreatPersistance_Record
+AISubActionSetTopThreatPersistance_Record = gamedataAISubActionSetTopThreatPersistance_Record
+
+---@alias AISubActionSetUnequipPrimaryWeapons_Record gamedataAISubActionSetUnequipPrimaryWeapons_Record
+AISubActionSetUnequipPrimaryWeapons_Record = gamedataAISubActionSetUnequipPrimaryWeapons_Record
+
+---@alias AISubActionSetUnequipSecondaryWeapons_Record gamedataAISubActionSetUnequipSecondaryWeapons_Record
+AISubActionSetUnequipSecondaryWeapons_Record = gamedataAISubActionSetUnequipSecondaryWeapons_Record
+
+---@alias AISubActionSetWaypointByTag_Record gamedataAISubActionSetWaypointByTag_Record
+AISubActionSetWaypointByTag_Record = gamedataAISubActionSetWaypointByTag_Record
+
+---@alias AISubActionSetWorldPosition_Record gamedataAISubActionSetWorldPosition_Record
+AISubActionSetWorldPosition_Record = gamedataAISubActionSetWorldPosition_Record
+
+---@alias AISubActionShootToPoint_Record gamedataAISubActionShootToPoint_Record
+AISubActionShootToPoint_Record = gamedataAISubActionShootToPoint_Record
+
+---@alias AISubActionShootWithWeapon_Record gamedataAISubActionShootWithWeapon_Record
+AISubActionShootWithWeapon_Record = gamedataAISubActionShootWithWeapon_Record
+
+---@alias AISubActionSpawnFX_Record gamedataAISubActionSpawnFX_Record
+AISubActionSpawnFX_Record = gamedataAISubActionSpawnFX_Record
+
+---@alias AISubActionSquadSync_Record gamedataAISubActionSquadSync_Record
+AISubActionSquadSync_Record = gamedataAISubActionSquadSync_Record
+
+---@alias AISubActionStartCooldown_Record gamedataAISubActionStartCooldown_Record
+AISubActionStartCooldown_Record = gamedataAISubActionStartCooldown_Record
+
+---@alias AISubActionStatusEffect_Record gamedataAISubActionStatusEffect_Record
+AISubActionStatusEffect_Record = gamedataAISubActionStatusEffect_Record
+
+---@alias AISubActionThrowItem_Record gamedataAISubActionThrowItem_Record
+AISubActionThrowItem_Record = gamedataAISubActionThrowItem_Record
+
+---@alias AISubActionTriggerItemActivation_Record gamedataAISubActionTriggerItemActivation_Record
+AISubActionTriggerItemActivation_Record = gamedataAISubActionTriggerItemActivation_Record
+
+---@alias AISubActionTriggerStim_Record gamedataAISubActionTriggerStim_Record
+AISubActionTriggerStim_Record = gamedataAISubActionTriggerStim_Record
+
+---@alias AISubActionUnequipOnSlot_Record gamedataAISubActionUnequipOnSlot_Record
+AISubActionUnequipOnSlot_Record = gamedataAISubActionUnequipOnSlot_Record
+
+---@alias AISubActionUpdateFriendlyFireParams_Record gamedataAISubActionUpdateFriendlyFireParams_Record
+AISubActionUpdateFriendlyFireParams_Record = gamedataAISubActionUpdateFriendlyFireParams_Record
+
+---@alias AISubActionUseSensePreset_Record gamedataAISubActionUseSensePreset_Record
+AISubActionUseSensePreset_Record = gamedataAISubActionUseSensePreset_Record
+
+---@alias AISubActionWorkspot_Record gamedataAISubActionWorkspot_Record
+AISubActionWorkspot_Record = gamedataAISubActionWorkspot_Record
+
+---@alias AISubAction_Record gamedataAISubAction_Record
+AISubAction_Record = gamedataAISubAction_Record
+
+---@alias AITacticTicket_Record gamedataAITacticTicket_Record
+AITacticTicket_Record = gamedataAITacticTicket_Record
+
+---@alias AITacticType_Record gamedataAITacticType_Record
+AITacticType_Record = gamedataAITacticType_Record
+
+---@alias AITargetCond_Record gamedataAITargetCond_Record
+AITargetCond_Record = gamedataAITargetCond_Record
+
+---@alias AIThreatPersistenceSource_Record gamedataAIThreatPersistenceSource_Record
+AIThreatPersistenceSource_Record = gamedataAIThreatPersistenceSource_Record
+
+---@alias AIThrowCond_Record gamedataAIThrowCond_Record
+AIThrowCond_Record = gamedataAIThrowCond_Record
+
+---@alias AITicketCheck_Record gamedataAITicketCheck_Record
+AITicketCheck_Record = gamedataAITicketCheck_Record
+
+---@alias AITicketCondition_Record gamedataAITicketCondition_Record
+AITicketCondition_Record = gamedataAITicketCondition_Record
+
+---@alias AITicketFilter_Record gamedataAITicketFilter_Record
+AITicketFilter_Record = gamedataAITicketFilter_Record
+
+---@alias AITicketType_Record gamedataAITicketType_Record
+AITicketType_Record = gamedataAITicketType_Record
+
+---@alias AITicket_Record gamedataAITicket_Record
+AITicket_Record = gamedataAITicket_Record
+
+---@alias AITresspassingCond_Record gamedataAITresspassingCond_Record
+AITresspassingCond_Record = gamedataAITresspassingCond_Record
+
+---@alias AITweakActionSystem AIbehaviortweakTweakActionSystem
+AITweakActionSystem = AIbehaviortweakTweakActionSystem
+
+---@alias AIValidCoversCond_Record gamedataAIValidCoversCond_Record
+AIValidCoversCond_Record = gamedataAIValidCoversCond_Record
+
+---@alias AIVehicleCond_Record gamedataAIVehicleCond_Record
+AIVehicleCond_Record = gamedataAIVehicleCond_Record
+
+---@alias AIVelocitiesDotCond_Record gamedataAIVelocitiesDotCond_Record
+AIVelocitiesDotCond_Record = gamedataAIVelocitiesDotCond_Record
+
+---@alias AIVelocityCond_Record gamedataAIVelocityCond_Record
+AIVelocityCond_Record = gamedataAIVelocityCond_Record
+
+---@alias AIVelocityDotCond_Record gamedataAIVelocityDotCond_Record
+AIVelocityDotCond_Record = gamedataAIVelocityDotCond_Record
+
+---@alias AIWeakSpotCond_Record gamedataAIWeakSpotCond_Record
+AIWeakSpotCond_Record = gamedataAIWeakSpotCond_Record
+
+---@alias AIWeaponLockedOnTargetCond_Record gamedataAIWeaponLockedOnTargetCond_Record
+AIWeaponLockedOnTargetCond_Record = gamedataAIWeaponLockedOnTargetCond_Record
+
+---@alias AIWorkspotCond_Record gamedataAIWorkspotCond_Record
+AIWorkspotCond_Record = gamedataAIWorkspotCond_Record
+
+---@alias AVObject vehicleAVBaseObject
+AVObject = vehicleAVBaseObject
+
+---@alias AbortSummoningActionEvent vehicleAbortSummoningActionEvent
+AbortSummoningActionEvent = vehicleAbortSummoningActionEvent
+
+---@alias AbsoluteZLimiterCoverSelectionParameters_Record gamedataAbsoluteZLimiterCoverSelectionParameters_Record
+AbsoluteZLimiterCoverSelectionParameters_Record = gamedataAbsoluteZLimiterCoverSelectionParameters_Record
+
+---@alias AbstractDataSource inkAbstractDataSourceWrapper
+AbstractDataSource = inkAbstractDataSourceWrapper
+
+---@alias AccelerateTowardsParameters_Record gamedataAccelerateTowardsParameters_Record
+AccelerateTowardsParameters_Record = gamedataAccelerateTowardsParameters_Record
+
+---@alias AccelerateTowardsTrajectoryParams gameprojectileAccelerateTowardsTrajectoryParams
+AccelerateTowardsTrajectoryParams = gameprojectileAccelerateTowardsTrajectoryParams
+
+---@alias AccessPointMiniGameStatus gameuiAccessPointMiniGameStatus
+AccessPointMiniGameStatus = gameuiAccessPointMiniGameStatus
+
+---@alias Accuracy_Record gamedataAccuracy_Record
+Accuracy_Record = gamedataAccuracy_Record
+
+---@alias AchievementSystem gameAchievementSystem
+AchievementSystem = gameAchievementSystem
+
+---@alias Achievement_Record gamedataAchievement_Record
+Achievement_Record = gamedataAchievement_Record
+
+---@alias AcousticPortalComponent gameaudioAcousticPortalComponent
+AcousticPortalComponent = gameaudioAcousticPortalComponent
+
+---@alias ActionAnimationSlideParams gameActionAnimationSlideParams
+ActionAnimationSlideParams = gameActionAnimationSlideParams
+
+---@alias ActionDisplayData gameinputActionDisplayData
+ActionDisplayData = gameinputActionDisplayData
+
+---@alias ActionEvent gameActionEvent
+ActionEvent = gameActionEvent
+
+---@alias ActionInternalEvent gameActionInternalEvent
+ActionInternalEvent = gameActionInternalEvent
+
+---@alias ActionMapField_Record gamedataActionMapField_Record
+ActionMapField_Record = gamedataActionMapField_Record
+
+---@alias ActionMap_Record gamedataActionMap_Record
+ActionMap_Record = gamedataActionMap_Record
+
+---@alias ActionParameterBool gamestateMachineActionParameterBool
+ActionParameterBool = gamestateMachineActionParameterBool
+
+---@alias ActionParameterCName gamestateMachineActionParameterCName
+ActionParameterCName = gamestateMachineActionParameterCName
+
+---@alias ActionParameterDouble gamestateMachineActionParameterDouble
+ActionParameterDouble = gamestateMachineActionParameterDouble
+
+---@alias ActionParameterFloat gamestateMachineActionParameterFloat
+ActionParameterFloat = gamestateMachineActionParameterFloat
+
+---@alias ActionParameterIScriptable gamestateMachineActionParameterIScriptable
+ActionParameterIScriptable = gamestateMachineActionParameterIScriptable
+
+---@alias ActionParameterInt gamestateMachineActionParameterInt
+ActionParameterInt = gamestateMachineActionParameterInt
+
+---@alias ActionParameterTweakDBID gamestateMachineActionParameterTweakDBID
+ActionParameterTweakDBID = gamestateMachineActionParameterTweakDBID
+
+---@alias ActionParameterVector gamestateMachineActionParameterVector
+ActionParameterVector = gamestateMachineActionParameterVector
+
+---@alias ActionParameterWeakIScriptable gamestateMachineActionParameterWeakIScriptable
+ActionParameterWeakIScriptable = gamestateMachineActionParameterWeakIScriptable
+
+---@alias ActionPayment_Record gamedataActionPayment_Record
+ActionPayment_Record = gamedataActionPayment_Record
+
+---@alias ActionPrereqs gameActionPrereqs
+ActionPrereqs = gameActionPrereqs
+
+---@alias ActionRestrictionGroup_Record gamedataActionRestrictionGroup_Record
+ActionRestrictionGroup_Record = gamedataActionRestrictionGroup_Record
+
+---@alias ActionScript gameActionScript
+ActionScript = gameActionScript
+
+---@alias ActionTargetInDistancePrereq_Record gamedataActionTargetInDistancePrereq_Record
+ActionTargetInDistancePrereq_Record = gamedataActionTargetInDistancePrereq_Record
+
+---@alias ActionTargetPrereq_Record gamedataActionTargetPrereq_Record
+ActionTargetPrereq_Record = gamedataActionTargetPrereq_Record
+
+---@alias ActionWidgetDefinition_Record gamedataActionWidgetDefinition_Record
+ActionWidgetDefinition_Record = gamedataActionWidgetDefinition_Record
+
+---@alias ActivateTPPRepresentationEvent gameActivateTPPRepresentationEvent
+ActivateTPPRepresentationEvent = gameActivateTPPRepresentationEvent
+
+---@alias ActivateTriggerDestructionComponentEvent gameActivateTriggerDestructionComponentEvent
+ActivateTriggerDestructionComponentEvent = gameActivateTriggerDestructionComponentEvent
+
+---@alias ActivityCardsSystem gameActivityCardsSystem
+ActivityCardsSystem = gameActivityCardsSystem
+
+---@alias ActivityLogSystem gameActivityLogSystem
+ActivityLogSystem = gameActivityLogSystem
+
+---@alias AddInputGroupEvent gameuiAddInputGroupEvent
+AddInputGroupEvent = gameuiAddInputGroupEvent
+
+---@alias AddItemsEffector_Record gamedataAddItemsEffector_Record
+AddItemsEffector_Record = gamedataAddItemsEffector_Record
+
+---@alias AddStatusEffectToAttackEffector_Record gamedataAddStatusEffectToAttackEffector_Record
+AddStatusEffectToAttackEffector_Record = gamedataAddStatusEffectToAttackEffector_Record
+
+---@alias AddedAsHostileThreat AIAddedAsHostileThreat
+AddedAsHostileThreat = AIAddedAsHostileThreat
+
+---@alias AdditionalTraceType senseAdditionalTraceType
+AdditionalTraceType = senseAdditionalTraceType
+
+---@alias AdjustTransform gamestateMachineparameterTypeAdjustTransform
+AdjustTransform = gamestateMachineparameterTypeAdjustTransform
+
+---@alias AdjustTransformWithDurations gamestateMachineparameterTypeAdjustTransformWithDurations
+AdjustTransformWithDurations = gamestateMachineparameterTypeAdjustTransformWithDurations
+
+---@alias AdjustableStreamingRangeTarget AIAdjustableStreamingRangeTarget
+AdjustableStreamingRangeTarget = AIAdjustableStreamingRangeTarget
+
+---@alias AdvertGlitchEvent gameuiAdvertGlitchEvent
+AdvertGlitchEvent = gameuiAdvertGlitchEvent
+
+---@alias AdvertTranslationLogicController gameuiAdvertTranslationController
+AdvertTranslationLogicController = gameuiAdvertTranslationController
+
+---@alias AdvertisementFormatDef_Record gamedataAdvertisementFormatDef_Record
+AdvertisementFormatDef_Record = gamedataAdvertisementFormatDef_Record
+
+---@alias AdvertisementFormatsEnum_Record gamedataAdvertisementFormatsEnum_Record
+AdvertisementFormatsEnum_Record = gamedataAdvertisementFormatsEnum_Record
+
+---@alias AdvertisementGroup_Record gamedataAdvertisementGroup_Record
+AdvertisementGroup_Record = gamedataAdvertisementGroup_Record
+
+---@alias Advertisement_Record gamedataAdvertisement_Record
+Advertisement_Record = gamedataAdvertisement_Record
+
+---@alias Affiliation_Record gamedataAffiliation_Record
+Affiliation_Record = gamedataAffiliation_Record
+
+---@alias AimAssistAimSnap_Record gamedataAimAssistAimSnap_Record
+AimAssistAimSnap_Record = gamedataAimAssistAimSnap_Record
+
+---@alias AimAssistBulletMagnetism_Record gamedataAimAssistBulletMagnetism_Record
+AimAssistBulletMagnetism_Record = gamedataAimAssistBulletMagnetism_Record
+
+---@alias AimAssistCommon_Record gamedataAimAssistCommon_Record
+AimAssistCommon_Record = gamedataAimAssistCommon_Record
+
+---@alias AimAssistConfigPreset_Record gamedataAimAssistConfigPreset_Record
+AimAssistConfigPreset_Record = gamedataAimAssistConfigPreset_Record
+
+---@alias AimAssistFinishing_Record gamedataAimAssistFinishing_Record
+AimAssistFinishing_Record = gamedataAimAssistFinishing_Record
+
+---@alias AimAssistMagnetism_Record gamedataAimAssistMagnetism_Record
+AimAssistMagnetism_Record = gamedataAimAssistMagnetism_Record
+
+---@alias AimAssistMelee_Record gamedataAimAssistMelee_Record
+AimAssistMelee_Record = gamedataAimAssistMelee_Record
+
+---@alias AimAssistSettings_Record gamedataAimAssistSettings_Record
+AimAssistSettings_Record = gamedataAimAssistSettings_Record
+
+---@alias AimAssistTargetData_Record gamedataAimAssistTargetData_Record
+AimAssistTargetData_Record = gamedataAimAssistTargetData_Record
+
+---@alias AimAssistType_Record gamedataAimAssistType_Record
+AimAssistType_Record = gamedataAimAssistType_Record
+
+---@alias AimRequest gameaimAssistAimRequest
+AimRequest = gameaimAssistAimRequest
+
+---@alias AllBlackboardDefinitions gamebbAllScriptDefinitions
+AllBlackboardDefinitions = gamebbAllScriptDefinitions
+
+---@alias AmmoData gameAmmoData
+AmmoData = gameAmmoData
+
+---@alias AndroidTurnOff gameAndroidTurnOff
+AndroidTurnOff = gameAndroidTurnOff
+
+---@alias AndroidTurnOn gameAndroidTurnOn
+AndroidTurnOn = gameAndroidTurnOn
+
+---@alias AngleDistanceCoverSelectionParameters_Record gamedataAngleDistanceCoverSelectionParameters_Record
+AngleDistanceCoverSelectionParameters_Record = gamedataAngleDistanceCoverSelectionParameters_Record
+
+---@alias AngleRange_Record gamedataAngleRange_Record
+AngleRange_Record = gamedataAngleRange_Record
+
+---@alias AnimDataChanged entAnimDataChanged
+AnimDataChanged = entAnimDataChanged
+
+---@alias AnimDurationFeature animAnimDurationFeature
+AnimDurationFeature = animAnimDurationFeature
+
+---@alias AnimExternalEvent entAnimExternalEvent
+AnimExternalEvent = entAnimExternalEvent
+
+---@alias AnimFastForwardEvent entAnimFastForwardEvent
+AnimFastForwardEvent = entAnimFastForwardEvent
+
+---@alias AnimFeature animAnimFeature
+AnimFeature = animAnimFeature
+
+---@alias AnimFeatureMarkUnstable animAnimFeatureMarkUnstable
+AnimFeatureMarkUnstable = animAnimFeatureMarkUnstable
+
+---@alias AnimFeaturePlaySlotAnim animAnimFeaturePlaySlotAnim
+AnimFeaturePlaySlotAnim = animAnimFeaturePlaySlotAnim
+
+---@alias AnimFeatureWorkspotExitAnim animAnimFeatureWorkspotExitAnim
+AnimFeatureWorkspotExitAnim = animAnimFeatureWorkspotExitAnim
+
+---@alias AnimFeatureWorkspotInertializationAnim animAnimFeatureWorkspotInertializationAnim
+AnimFeatureWorkspotInertializationAnim = animAnimFeatureWorkspotInertializationAnim
+
+---@alias AnimFeature_AIAction animAnimFeature_AIAction
+AnimFeature_AIAction = animAnimFeature_AIAction
+
+---@alias AnimFeature_Aim animAnimFeature_Aim
+AnimFeature_Aim = animAnimFeature_Aim
+
+---@alias AnimFeature_AimPlayer gameweaponAnimFeature_AimPlayer
+AnimFeature_AimPlayer = gameweaponAnimFeature_AimPlayer
+
+---@alias AnimFeature_BasicAim animAnimFeature_BasicAim
+AnimFeature_BasicAim = animAnimFeature_BasicAim
+
+---@alias AnimFeature_Bump animAnimFeature_Bump
+AnimFeature_Bump = animAnimFeature_Bump
+
+---@alias AnimFeature_Climb animAnimFeature_Climb
+AnimFeature_Climb = animAnimFeature_Climb
+
+---@alias AnimFeature_ConsumableAnimation animAnimFeature_ConsumableAnimation
+AnimFeature_ConsumableAnimation = animAnimFeature_ConsumableAnimation
+
+---@alias AnimFeature_Cover animAnimFeature_Cover
+AnimFeature_Cover = animAnimFeature_Cover
+
+---@alias AnimFeature_CoverAction animAnimFeature_CoverAction
+AnimFeature_CoverAction = animAnimFeature_CoverAction
+
+---@alias AnimFeature_DeviceCameraControlled animAnimFeature_DeviceCameraControlled
+AnimFeature_DeviceCameraControlled = animAnimFeature_DeviceCameraControlled
+
+---@alias AnimFeature_DodgeData animAnimFeature_DodgeData
+AnimFeature_DodgeData = animAnimFeature_DodgeData
+
+---@alias AnimFeature_DroneLocomotion animAnimFeature_DroneLocomotion
+AnimFeature_DroneLocomotion = animAnimFeature_DroneLocomotion
+
+---@alias AnimFeature_EquipUnequipItem animAnimFeature_EquipUnequipItem
+AnimFeature_EquipUnequipItem = animAnimFeature_EquipUnequipItem
+
+---@alias AnimFeature_ExitCover animAnimFeature_ExitCover
+AnimFeature_ExitCover = animAnimFeature_ExitCover
+
+---@alias AnimFeature_FPPCamera animAnimFeature_FPPCamera
+AnimFeature_FPPCamera = animAnimFeature_FPPCamera
+
+---@alias AnimFeature_HitReactions animAnimFeature_HitReactions
+AnimFeature_HitReactions = animAnimFeature_HitReactions
+
+---@alias AnimFeature_HitReactionsData animAnimFeature_HitReactionsData
+AnimFeature_HitReactionsData = animAnimFeature_HitReactionsData
+
+---@alias AnimFeature_Ladder animAnimFeature_Ladder
+AnimFeature_Ladder = animAnimFeature_Ladder
+
+---@alias AnimFeature_LeftHandItem animAnimFeature_LeftHandItem
+AnimFeature_LeftHandItem = animAnimFeature_LeftHandItem
+
+---@alias AnimFeature_Locomotion animAnimFeature_Locomotion
+AnimFeature_Locomotion = animAnimFeature_Locomotion
+
+---@alias AnimFeature_LoopableAction gameweaponAnimFeature_LoopableAction
+AnimFeature_LoopableAction = gameweaponAnimFeature_LoopableAction
+
+---@alias AnimFeature_Loot animAnimFeature_ContainerBase
+AnimFeature_Loot = animAnimFeature_ContainerBase
+
+---@alias AnimFeature_MeleeData animAnimFeature_MeleeData
+AnimFeature_MeleeData = animAnimFeature_MeleeData
+
+---@alias AnimFeature_MeleeIKData animAnimFeature_MeleeIKData
+AnimFeature_MeleeIKData = animAnimFeature_MeleeIKData
+
+---@alias AnimFeature_MeleeSlotData animAnimFeature_MeleeSlotData
+AnimFeature_MeleeSlotData = animAnimFeature_MeleeSlotData
+
+---@alias AnimFeature_MoveTo animAnimFeature_MoveTo
+AnimFeature_MoveTo = animAnimFeature_MoveTo
+
+---@alias AnimFeature_Movement animAnimFeature_Movement
+AnimFeature_Movement = animAnimFeature_Movement
+
+---@alias AnimFeature_NPCCoverStanceState animAnimFeature_NPCCoverStanceState
+AnimFeature_NPCCoverStanceState = animAnimFeature_NPCCoverStanceState
+
+---@alias AnimFeature_NPCState animAnimFeature_NPCState
+AnimFeature_NPCState = animAnimFeature_NPCState
+
+---@alias AnimFeature_PlayerCover animAnimFeature_PlayerCover
+AnimFeature_PlayerCover = animAnimFeature_PlayerCover
+
+---@alias AnimFeature_PlayerCoverActionState animAnimFeature_PlayerCoverActionState
+AnimFeature_PlayerCoverActionState = animAnimFeature_PlayerCoverActionState
+
+---@alias AnimFeature_PlayerMovement animAnimFeature_PlayerMovement
+AnimFeature_PlayerMovement = animAnimFeature_PlayerMovement
+
+---@alias AnimFeature_PlayerSpatialAwareness animAnimFeature_PlayerSpatialAwareness
+AnimFeature_PlayerSpatialAwareness = animAnimFeature_PlayerSpatialAwareness
+
+---@alias AnimFeature_PlayerStateMachineState animAnimFeature_PlayerStateMachineState
+AnimFeature_PlayerStateMachineState = animAnimFeature_PlayerStateMachineState
+
+---@alias AnimFeature_QuickMelee animAnimFeature_QuickMelee
+AnimFeature_QuickMelee = animAnimFeature_QuickMelee
+
+---@alias AnimFeature_Stance animAnimFeature_Stance
+AnimFeature_Stance = animAnimFeature_Stance
+
+---@alias AnimFeature_Vault animAnimFeature_Vault
+AnimFeature_Vault = animAnimFeature_Vault
+
+---@alias AnimFeature_VehiclePassenger animAnimFeature_VehiclePassenger
+AnimFeature_VehiclePassenger = animAnimFeature_VehiclePassenger
+
+---@alias AnimFeature_WallRun animAnimFeature_WallRun
+AnimFeature_WallRun = animAnimFeature_WallRun
+
+---@alias AnimFeature_WeaponData gameweaponAnimFeature_WeaponData
+AnimFeature_WeaponData = gameweaponAnimFeature_WeaponData
+
+---@alias AnimGraphResourceContainerEntry entAnimGraphResourceContainerEntry
+AnimGraphResourceContainerEntry = entAnimGraphResourceContainerEntry
+
+---@alias AnimInputSetter entAnimInputSetter
+AnimInputSetter = entAnimInputSetter
+
+---@alias AnimInputSetterAnimFeature entAnimInputSetterAnimFeature
+AnimInputSetterAnimFeature = entAnimInputSetterAnimFeature
+
+---@alias AnimInputSetterBool entAnimInputSetterBool
+AnimInputSetterBool = entAnimInputSetterBool
+
+---@alias AnimInputSetterFloat entAnimInputSetterFloat
+AnimInputSetterFloat = entAnimInputSetterFloat
+
+---@alias AnimInputSetterInt entAnimInputSetterInt
+AnimInputSetterInt = entAnimInputSetterInt
+
+---@alias AnimInputSetterQuaternion entAnimInputSetterQuaternion
+AnimInputSetterQuaternion = entAnimInputSetterQuaternion
+
+---@alias AnimInputSetterUsesSleepMode entAnimInputSetterUsesSleepMode
+AnimInputSetterUsesSleepMode = entAnimInputSetterUsesSleepMode
+
+---@alias AnimInputSetterVector entAnimInputSetterVector
+AnimInputSetterVector = entAnimInputSetterVector
+
+---@alias AnimObstacleDetected moveObstacleDetectedEvent
+AnimObstacleDetected = moveObstacleDetectedEvent
+
+---@alias AnimParamsEvent entAnimParamsEvent
+AnimParamsEvent = entAnimParamsEvent
+
+---@alias AnimTargetAddEvent entAnimTargetAddEvent
+AnimTargetAddEvent = entAnimTargetAddEvent
+
+---@alias AnimVisibilityChangedEvent entAnimVisibilityChangedEvent
+AnimVisibilityChangedEvent = entAnimVisibilityChangedEvent
+
+---@alias AnimWrapperWeightSetter entAnimWrapperWeightSetter
+AnimWrapperWeightSetter = entAnimWrapperWeightSetter
+
+---@alias AnimatedComponent entAnimatedComponent
+AnimatedComponent = entAnimatedComponent
+
+---@alias AnimatedRagdollNotifyDisabledEvent entAnimatedRagdollNotifyDisabledEvent
+AnimatedRagdollNotifyDisabledEvent = entAnimatedRagdollNotifyDisabledEvent
+
+---@alias AnimatedRagdollNotifyEnabledEvent entAnimatedRagdollNotifyEnabledEvent
+AnimatedRagdollNotifyEnabledEvent = entAnimatedRagdollNotifyEnabledEvent
+
+---@alias AnimationControllerComponent entAnimationControllerComponent
+AnimationControllerComponent = entAnimationControllerComponent
+
+---@alias AnimationSystem worldAnimationSystemScriptInterface
+AnimationSystem = worldAnimationSystemScriptInterface
+
+---@alias Appearance_Record gamedataAppearance_Record
+Appearance_Record = gamedataAppearance_Record
+
+---@alias AppearancesReadyTPPRepresentationEvent gameAppearancesReadyTPPRepresentationEvent
+AppearancesReadyTPPRepresentationEvent = gameAppearancesReadyTPPRepresentationEvent
+
+---@alias ApperanceToEthnicitiesMap_Record gamedataApperanceToEthnicitiesMap_Record
+ApperanceToEthnicitiesMap_Record = gamedataApperanceToEthnicitiesMap_Record
+
+---@alias ApperanceToEthnicities_Record gamedataApperanceToEthnicities_Record
+ApperanceToEthnicities_Record = gamedataApperanceToEthnicities_Record
+
+---@alias ApplyEffectorEffector_Record gamedataApplyEffectorEffector_Record
+ApplyEffectorEffector_Record = gamedataApplyEffectorEffector_Record
+
+---@alias ApplyLightPresetEffector_Record gamedataApplyLightPresetEffector_Record
+ApplyLightPresetEffector_Record = gamedataApplyLightPresetEffector_Record
+
+---@alias ApplyStatGroupEffector_Record gamedataApplyStatGroupEffector_Record
+ApplyStatGroupEffector_Record = gamedataApplyStatGroupEffector_Record
+
+---@alias ApplyStatusEffectEffector_Record gamedataApplyStatusEffectEffector_Record
+ApplyStatusEffectEffector_Record = gamedataApplyStatusEffectEffector_Record
+
+---@alias ApplyStatusEffectEvent gameeventsApplyStatusEffectEvent
+ApplyStatusEffectEvent = gameeventsApplyStatusEffectEvent
+
+---@alias ArcadeBackgroundLayer_Record gamedataArcadeBackgroundLayer_Record
+ArcadeBackgroundLayer_Record = gamedataArcadeBackgroundLayer_Record
+
+---@alias ArcadeGameplay_Record gamedataArcadeGameplay_Record
+ArcadeGameplay_Record = gamedataArcadeGameplay_Record
+
+---@alias ArcadeMenu_Record gamedataArcadeMenu_Record
+ArcadeMenu_Record = gamedataArcadeMenu_Record
+
+---@alias ArcadeMinigameDataList_Record gamedataArcadeMinigameDataList_Record
+ArcadeMinigameDataList_Record = gamedataArcadeMinigameDataList_Record
+
+---@alias ArcadeMinigameData_Record gamedataArcadeMinigameData_Record
+ArcadeMinigameData_Record = gamedataArcadeMinigameData_Record
+
+---@alias ArcadeObject_Record gamedataArcadeObject_Record
+ArcadeObject_Record = gamedataArcadeObject_Record
+
+---@alias ArcadeScoreboardEntry_Record gamedataArcadeScoreboardEntry_Record
+ArcadeScoreboardEntry_Record = gamedataArcadeScoreboardEntry_Record
+
+---@alias ArcadeScoreboard_Record gamedataArcadeScoreboard_Record
+ArcadeScoreboard_Record = gamedataArcadeScoreboard_Record
+
+---@alias ArchetypeData_Record gamedataArchetypeData_Record
+ArchetypeData_Record = gamedataArchetypeData_Record
+
+---@alias ArchetypeType_Record gamedataArchetypeType_Record
+ArchetypeType_Record = gamedataArchetypeType_Record
+
+---@alias AreaEnteredEvent entAreaEnteredEvent
+AreaEnteredEvent = entAreaEnteredEvent
+
+---@alias AreaExitedEvent entAreaExitedEvent
+AreaExitedEvent = entAreaExitedEvent
+
+---@alias AreaShapeComponent gameStaticAreaShapeComponent
+AreaShapeComponent = gameStaticAreaShapeComponent
+
+---@alias ArrivedAt gameMovingPlatformArrivedAt
+ArrivedAt = gameMovingPlatformArrivedAt
+
+---@alias AttachEntity gameMovingPlatformAttachEntity
+AttachEntity = gameMovingPlatformAttachEntity
+
+---@alias AttachableObject_Record gamedataAttachableObject_Record
+AttachableObject_Record = gamedataAttachableObject_Record
+
+---@alias AttachmentSlotData gameAttachmentSlotData
+AttachmentSlotData = gameAttachmentSlotData
+
+---@alias AttachmentSlotEvent gameAttachmentSlotEventsAttachmentSlotEvent
+AttachmentSlotEvent = gameAttachmentSlotEventsAttachmentSlotEvent
+
+---@alias AttachmentSlot_Record gamedataAttachmentSlot_Record
+AttachmentSlot_Record = gamedataAttachmentSlot_Record
+
+---@alias AttachmentSlotsListener gameIAttachmentSlotsListener
+AttachmentSlotsListener = gameIAttachmentSlotsListener
+
+---@alias AttachmentSlotsScriptCallback gameAttachmentSlotsScriptCallback
+AttachmentSlotsScriptCallback = gameAttachmentSlotsScriptCallback
+
+---@alias AttachmentSlotsScriptListener gameAttachmentSlotsScriptListener
+AttachmentSlotsScriptListener = gameAttachmentSlotsScriptListener
+
+---@alias AttackData gamedamageAttackData
+AttackData = gamedamageAttackData
+
+---@alias AttackDebugData gameAttackDebugData
+AttackDebugData = gameAttackDebugData
+
+---@alias AttackDirection_Record gamedataAttackDirection_Record
+AttackDirection_Record = gamedataAttackDirection_Record
+
+---@alias AttackInitContext gameAttackInitContext
+AttackInitContext = gameAttackInitContext
+
+---@alias AttackSubtype_Record gamedataAttackSubtype_Record
+AttackSubtype_Record = gamedataAttackSubtype_Record
+
+---@alias AttackType_Record gamedataAttackType_Record
+AttackType_Record = gamedataAttackType_Record
+
+---@alias Attack_Continuous gameAttack_Continuous
+Attack_Continuous = gameAttack_Continuous
+
+---@alias Attack_GameEffect gameAttack_GameEffect
+Attack_GameEffect = gameAttack_GameEffect
+
+---@alias Attack_GameEffect_Record gamedataAttack_GameEffect_Record
+Attack_GameEffect_Record = gamedataAttack_GameEffect_Record
+
+---@alias Attack_Landing_Record gamedataAttack_Landing_Record
+Attack_Landing_Record = gamedataAttack_Landing_Record
+
+---@alias Attack_Melee_Record gamedataAttack_Melee_Record
+Attack_Melee_Record = gamedataAttack_Melee_Record
+
+---@alias Attack_Projectile gameAttack_Projectile
+Attack_Projectile = gameAttack_Projectile
+
+---@alias Attack_Projectile_Record gamedataAttack_Projectile_Record
+Attack_Projectile_Record = gamedataAttack_Projectile_Record
+
+---@alias Attack_Record gamedataAttack_Record
+Attack_Record = gamedataAttack_Record
+
+---@alias AttitudeAgent gameAttitudeAgent
+AttitudeAgent = gameAttitudeAgent
+
+---@alias AttitudeChangedEvent gameeventsAttitudeChangedEvent
+AttitudeChangedEvent = gameeventsAttitudeChangedEvent
+
+---@alias AttitudeGroupChangedEvent gameeventsAttitudeGroupChangedEvent
+AttitudeGroupChangedEvent = gameeventsAttitudeGroupChangedEvent
+
+---@alias AttitudeGroup_Record gamedataAttitudeGroup_Record
+AttitudeGroup_Record = gamedataAttitudeGroup_Record
+
+---@alias AttitudePrereq gameAttitudePrereq
+AttitudePrereq = gameAttitudePrereq
+
+---@alias AttitudePrereqState gameAttitudePrereqState
+AttitudePrereqState = gameAttitudePrereqState
+
+---@alias AttitudeSystem gameCAttitudeManager
+AttitudeSystem = gameCAttitudeManager
+
+---@alias Attitude_Record gamedataAttitude_Record
+Attitude_Record = gamedataAttitude_Record
+
+---@alias Attribute_Record gamedataAttribute_Record
+Attribute_Record = gamedataAttribute_Record
+
+---@alias AudioEvent entAudioEvent
+AudioEvent = entAudioEvent
+
+---@alias AudioNotifyItemEquippedEvent gameaudioeventsNotifyItemEquippedEvent
+AudioNotifyItemEquippedEvent = gameaudioeventsNotifyItemEquippedEvent
+
+---@alias AudioNotifyItemUnequippedEvent gameaudioeventsNotifyItemUnequippedEvent
+AudioNotifyItemUnequippedEvent = gameaudioeventsNotifyItemUnequippedEvent
+
+---@alias AudioSystem gameGameAudioSystem
+AudioSystem = gameGameAudioSystem
+
+---@alias AuthorisationNotificationViewData gameuiAuthorisationNotificationViewData
+AuthorisationNotificationViewData = gameuiAuthorisationNotificationViewData
+
+---@alias AverageNormalQuery worldgeometryaverageNormalDetectionHelperQuery
+AverageNormalQuery = worldgeometryaverageNormalDetectionHelperQuery
+
+---@alias AverageNormalResult worldgeometryaverageNormalDetectionHelperResult
+AverageNormalResult = worldgeometryaverageNormalDetectionHelperResult
+
+---@alias AvoidLineOfSightSelectionParameters_Record gamedataAvoidLineOfSightSelectionParameters_Record
+AvoidLineOfSightSelectionParameters_Record = gamedataAvoidLineOfSightSelectionParameters_Record
+
+---@alias BackpackMainGameController gameuiBackpackMainGameController
+BackpackMainGameController = gameuiBackpackMainGameController
+
+---@alias BakedDestructionComponent entBakedDestructionComponent
+BakedDestructionComponent = entBakedDestructionComponent
+
+---@alias BaseCharacterCreationController gameuiBaseCharacterCreationController
+BaseCharacterCreationController = gameuiBaseCharacterCreationController
+
+---@alias BaseDirectionalIndicatorPartLogicController gameuiBaseDirectionalIndicatorPartLogicController
+BaseDirectionalIndicatorPartLogicController = gameuiBaseDirectionalIndicatorPartLogicController
+
+---@alias BaseDrivingParameters_Record gamedataBaseDrivingParameters_Record
+BaseDrivingParameters_Record = gamedataBaseDrivingParameters_Record
+
+---@alias BaseGOGProfileController gameuiBaseGOGProfileController
+BaseGOGProfileController = gameuiBaseGOGProfileController
+
+---@alias BaseGOGRegisterController gameuiBaseGOGRegisterController
+BaseGOGRegisterController = gameuiBaseGOGRegisterController
+
+---@alias BaseGarmentItemPreviewGameController gameuiBaseGarmentItemPreviewGameController
+BaseGarmentItemPreviewGameController = gameuiBaseGarmentItemPreviewGameController
+
+---@alias BaseInteractionMappinController gameuiInteractionMappinController
+BaseInteractionMappinController = gameuiInteractionMappinController
+
+---@alias BaseItemDataSource gameuiBaseItemDataSource
+BaseItemDataSource = gameuiBaseItemDataSource
+
+---@alias BaseMappinBaseController gameuiMappinBaseController
+BaseMappinBaseController = gameuiMappinBaseController
+
+---@alias BaseMinimapMappinController gameuiBaseMinimapMappinController
+BaseMinimapMappinController = gameuiBaseMinimapMappinController
+
+---@alias BaseObject_Record gamedataBaseObject_Record
+BaseObject_Record = gamedataBaseObject_Record
+
+---@alias BaseQuestMappinController gameuiQuestMappinController
+BaseQuestMappinController = gameuiQuestMappinController
+
+---@alias BaseScriptableDataSource inkBaseScriptableDataSource
+BaseScriptableDataSource = inkBaseScriptableDataSource
+
+---@alias BaseSign_Record gamedataBaseSign_Record
+BaseSign_Record = gamedataBaseSign_Record
+
+---@alias BaseStimuliEvent senseBaseStimuliEvent
+BaseStimuliEvent = senseBaseStimuliEvent
+
+---@alias BaseVariantDataSource inkBaseVariantDataSource
+BaseVariantDataSource = inkBaseVariantDataSource
+
+---@alias BaseVehicleHUDGameController gameuiBaseVehicleHUDGameController
+BaseVehicleHUDGameController = gameuiBaseVehicleHUDGameController
+
+---@alias BaseWeakScriptableDataSource inkBaseWeakScriptableDataSource
+BaseWeakScriptableDataSource = inkBaseWeakScriptableDataSource
+
+---@alias BaseWorldMapMappinController gameuiBaseWorldMapMappinController
+BaseWorldMapMappinController = gameuiBaseWorldMapMappinController
+
+---@alias Base_MappinDefinition_Record gamedataBase_MappinDefinition_Record
+Base_MappinDefinition_Record = gamedataBase_MappinDefinition_Record
+
+---@alias BeforeArrivedAt gameMovingPlatformBeforeArrivedAt
+BeforeArrivedAt = gameMovingPlatformBeforeArrivedAt
+
+---@alias BehaviorBlackboard AIbehaviorBehaviorBlackboard
+BehaviorBlackboard = AIbehaviorBehaviorBlackboard
+
+---@alias BehaviorDelegate AIbehaviorBehaviorDelegate
+BehaviorDelegate = AIbehaviorBehaviorDelegate
+
+---@alias BikeObject vehicleBikeBaseObject
+BikeObject = vehicleBikeBaseObject
+
+---@alias BinkComponent gameBinkComponent
+BinkComponent = gameBinkComponent
+
+---@alias BinkResource gameuiBinkResource
+BinkResource = gameuiBinkResource
+
+---@alias BinkVideoSummary gameBinkVideoSummary
+BinkVideoSummary = gameBinkVideoSummary
+
+---@alias BlackboardChangedEvent gameBlackboardChangedEvent
+BlackboardChangedEvent = gameBlackboardChangedEvent
+
+---@alias BlackboardDefinition gamebbScriptDefinition
+BlackboardDefinition = gamebbScriptDefinition
+
+---@alias BlackboardID gamebbScriptID
+BlackboardID = gamebbScriptID
+
+---@alias BlackboardID_Bool gamebbScriptID_Bool
+BlackboardID_Bool = gamebbScriptID_Bool
+
+---@alias BlackboardID_Entity gamebbScriptID_EntityPtr
+BlackboardID_Entity = gamebbScriptID_EntityPtr
+
+---@alias BlackboardID_EntityID gamebbScriptID_EntityID
+BlackboardID_EntityID = gamebbScriptID_EntityID
+
+---@alias BlackboardID_EulerAngles gamebbScriptID_EulerAngles
+BlackboardID_EulerAngles = gamebbScriptID_EulerAngles
+
+---@alias BlackboardID_Float gamebbScriptID_Float
+BlackboardID_Float = gamebbScriptID_Float
+
+---@alias BlackboardID_Int gamebbScriptID_Int32
+BlackboardID_Int = gamebbScriptID_Int32
+
+---@alias BlackboardID_Name gamebbScriptID_CName
+BlackboardID_Name = gamebbScriptID_CName
+
+---@alias BlackboardID_Quat gamebbScriptID_Quaternion
+BlackboardID_Quat = gamebbScriptID_Quaternion
+
+---@alias BlackboardID_String gamebbScriptID_String
+BlackboardID_String = gamebbScriptID_String
+
+---@alias BlackboardID_Uint gamebbScriptID_Uint32
+BlackboardID_Uint = gamebbScriptID_Uint32
+
+---@alias BlackboardID_Variant gamebbScriptID_Variant
+BlackboardID_Variant = gamebbScriptID_Variant
+
+---@alias BlackboardID_Vector2 gamebbScriptID_Vector2
+BlackboardID_Vector2 = gamebbScriptID_Vector2
+
+---@alias BlackboardID_Vector4 gamebbScriptID_Vector4
+BlackboardID_Vector4 = gamebbScriptID_Vector4
+
+---@alias BlackboardPrereq gameBlackboardPrereq
+BlackboardPrereq = gameBlackboardPrereq
+
+---@alias BlackboardPrereqState gameBlackboardPrereqState
+BlackboardPrereqState = gameBlackboardPrereqState
+
+---@alias BlackboardSerializableID gameBlackboardSerializableID
+BlackboardSerializableID = gameBlackboardSerializableID
+
+---@alias BlackboardSystem gameBlackboardSystem
+BlackboardSystem = gameBlackboardSystem
+
+---@alias BlackboardUpdateProxy gameBlackboardUpdateProxy
+BlackboardUpdateProxy = gameBlackboardUpdateProxy
+
+---@alias BluelineDescription gameinteractionsvisBluelineDescription
+BluelineDescription = gameinteractionsvisBluelineDescription
+
+---@alias BluelineObject questBluelineObject
+BluelineObject = questBluelineObject
+
+---@alias BluelinePart gameinteractionsvisBluelinePart
+BluelinePart = gameinteractionsvisBluelinePart
+
+---@alias BluelineSelectedRequest scnBluelineSelectedRequest
+BluelineSelectedRequest = scnBluelineSelectedRequest
+
+---@alias Bounce_Record gamedataBounce_Record
+Bounce_Record = gamedataBounce_Record
+
+---@alias BountyDrawTable_Record gamedataBountyDrawTable_Record
+BountyDrawTable_Record = gamedataBountyDrawTable_Record
+
+---@alias Bounty_Record gamedataBounty_Record
+Bounty_Record = gamedataBounty_Record
+
+---@alias Box_Record gamedataBox_Record
+Box_Record = gamedataBox_Record
+
+---@alias BraindanceClueDescriptor gameuiBraindanceClueDescriptor
+BraindanceClueDescriptor = gameuiBraindanceClueDescriptor
+
+---@alias BraindanceDissolveComponent gameBraindanceDissolveComponent
+BraindanceDissolveComponent = gameBraindanceDissolveComponent
+
+---@alias BroadcastStimEffector_Record gamedataBroadcastStimEffector_Record
+BroadcastStimEffector_Record = gamedataBroadcastStimEffector_Record
+
+---@alias BuffInfo gameuiBuffInfo
+BuffInfo = gameuiBuffInfo
+
+---@alias BuildAttributeSet_Record gamedataBuildAttributeSet_Record
+BuildAttributeSet_Record = gamedataBuildAttributeSet_Record
+
+---@alias BuildAttribute_Record gamedataBuildAttribute_Record
+BuildAttribute_Record = gamedataBuildAttribute_Record
+
+---@alias BuildCyberwareSet_Record gamedataBuildCyberwareSet_Record
+BuildCyberwareSet_Record = gamedataBuildCyberwareSet_Record
+
+---@alias BuildCyberware_Record gamedataBuildCyberware_Record
+BuildCyberware_Record = gamedataBuildCyberware_Record
+
+---@alias BuildEquipmentSet_Record gamedataBuildEquipmentSet_Record
+BuildEquipmentSet_Record = gamedataBuildEquipmentSet_Record
+
+---@alias BuildEquipment_Record gamedataBuildEquipment_Record
+BuildEquipment_Record = gamedataBuildEquipment_Record
+
+---@alias BuildPerkSet_Record gamedataBuildPerkSet_Record
+BuildPerkSet_Record = gamedataBuildPerkSet_Record
+
+---@alias BuildPerk_Record gamedataBuildPerk_Record
+BuildPerk_Record = gamedataBuildPerk_Record
+
+---@alias BuildProficiencySet_Record gamedataBuildProficiencySet_Record
+BuildProficiencySet_Record = gamedataBuildProficiencySet_Record
+
+---@alias BuildProficiency_Record gamedataBuildProficiency_Record
+BuildProficiency_Record = gamedataBuildProficiency_Record
+
+---@alias BumpAgent gameinfluenceBumpAgent
+BumpAgent = gameinfluenceBumpAgent
+
+---@alias BumpComponent gameinfluenceBumpComponent
+BumpComponent = gameinfluenceBumpComponent
+
+---@alias BumpEvent gameinteractionsBumpEvent
+BumpEvent = gameinteractionsBumpEvent
+
+---@alias BumpReactionSetting gameinfluenceBumpReactionSetting
+BumpReactionSetting = gameinfluenceBumpReactionSetting
+
+---@alias CPOItemCategoryBase_Record gamedataCPOItemCategoryBase_Record
+CPOItemCategoryBase_Record = gamedataCPOItemCategoryBase_Record
+
+---@alias CPOLoadoutBase_Record gamedataCPOLoadoutBase_Record
+CPOLoadoutBase_Record = gamedataCPOLoadoutBase_Record
+
+---@alias CacheData gamedamageCacheData
+CacheData = gamedamageCacheData
+
+---@alias CachedBoolValue AIUtilsCachedBoolValue
+CachedBoolValue = AIUtilsCachedBoolValue
+
+---@alias CallbackHandle redCallbackObject
+CallbackHandle = redCallbackObject
+
+---@alias CameraComponent gameCameraComponent
+CameraComponent = gameCameraComponent
+
+---@alias CameraData entCameraData
+CameraData = entCameraData
+
+---@alias CameraSystem gameCameraSystem
+CameraSystem = gameCameraSystem
+
+---@alias CarObject vehicleCarBaseObject
+CarObject = vehicleCarBaseObject
+
+---@alias CarriableObject_Record gamedataCarriableObject_Record
+CarriableObject_Record = gamedataCarriableObject_Record
+
+---@alias CarriedObjectAttached gameCarriedObjectAttached
+CarriedObjectAttached = gameCarriedObjectAttached
+
+---@alias CarriedObjectDestroy gameCarriedObjectDestroy
+CarriedObjectDestroy = gameCarriedObjectDestroy
+
+---@alias ChangeCameraControlHintVisibilityEvent gameuiChangeCameraControlHintVisibilityEvent
+ChangeCameraControlHintVisibilityEvent = gameuiChangeCameraControlHintVisibilityEvent
+
+---@alias ChangeRadioReceiverStation vehicleChangeRadioReceiverStationEvent
+ChangeRadioReceiverStation = vehicleChangeRadioReceiverStationEvent
+
+---@alias ChangeRadioTierEvent vehicleChangeRadioTierEvent
+ChangeRadioTierEvent = vehicleChangeRadioTierEvent
+
+---@alias ChannelData_Record gamedataChannelData_Record
+ChannelData_Record = gamedataChannelData_Record
+
+---@alias CharacterCustomizationAttribute gameuiCharacterCustomizationAttribute
+CharacterCustomizationAttribute = gameuiCharacterCustomizationAttribute
+
+---@alias CharacterCustomizationOption gameuiCharacterCustomizationOption
+CharacterCustomizationOption = gameuiCharacterCustomizationOption
+
+---@alias CharacterEntry_Record gamedataCharacterEntry_Record
+CharacterEntry_Record = gamedataCharacterEntry_Record
+
+---@alias CharacterList_Record gamedataCharacterList_Record
+CharacterList_Record = gamedataCharacterList_Record
+
+---@alias Character_Record gamedataCharacter_Record
+Character_Record = gamedataCharacter_Record
+
+---@alias CharactersChain gameuiCharactersChain
+CharactersChain = gameuiCharactersChain
+
+---@alias ChatBoxText gameuiChatBoxText
+ChatBoxText = gameuiChatBoxText
+
+---@alias ChatterHelper gameChatterHelper
+ChatterHelper = gameChatterHelper
+
+---@alias ChatterHelperRadius_Record gamedataChatterHelperRadius_Record
+ChatterHelperRadius_Record = gamedataChatterHelperRadius_Record
+
+---@alias CheckType_Record gamedataCheckType_Record
+CheckType_Record = gamedataCheckType_Record
+
+---@alias ChoiceCaptionIconPart_Record gamedataChoiceCaptionIconPart_Record
+ChoiceCaptionIconPart_Record = gamedataChoiceCaptionIconPart_Record
+
+---@alias ChoiceCaptionPartType_Record gamedataChoiceCaptionPartType_Record
+ChoiceCaptionPartType_Record = gamedataChoiceCaptionPartType_Record
+
+---@alias ChoiceCaptionPart_Record gamedataChoiceCaptionPart_Record
+ChoiceCaptionPart_Record = gamedataChoiceCaptionPart_Record
+
+---@alias ChoiceCaptionTagPart_Record gamedataChoiceCaptionTagPart_Record
+ChoiceCaptionTagPart_Record = gamedataChoiceCaptionTagPart_Record
+
+---@alias ChoiceTypeWrapper gameinteractionsChoiceTypeWrapper
+ChoiceTypeWrapper = gameinteractionsChoiceTypeWrapper
+
+---@alias ClearLineOfSightCoverSelectionParameters_Record gamedataClearLineOfSightCoverSelectionParameters_Record
+ClearLineOfSightCoverSelectionParameters_Record = gamedataClearLineOfSightCoverSelectionParameters_Record
+
+---@alias Clearance gamedeviceClearance
+Clearance = gamedeviceClearance
+
+---@alias ClimbParameters gamestateMachineparameterTypeClimbParameters
+ClimbParameters = gamestateMachineparameterTypeClimbParameters
+
+---@alias ClimbParametersBase gamestateMachineparameterTypeClimbParametersBase
+ClimbParametersBase = gamestateMachineparameterTypeClimbParametersBase
+
+---@alias ClosestToOwnerCoverSelectionParameters_Record gamedataClosestToOwnerCoverSelectionParameters_Record
+ClosestToOwnerCoverSelectionParameters_Record = gamedataClosestToOwnerCoverSelectionParameters_Record
+
+---@alias ClothingSet gameClothingSet
+ClothingSet = gameClothingSet
+
+---@alias Clothing_Record gamedataClothing_Record
+Clothing_Record = gamedataClothing_Record
+
+---@alias Clothing_inline0_Record gamedataClothing_inline0_Record
+Clothing_inline0_Record = gamedataClothing_inline0_Record
+
+---@alias CloudSavesQueryStatus servicesCloudSavesQueryStatus
+CloudSavesQueryStatus = servicesCloudSavesQueryStatus
+
+---@alias CodexRecordPart_Record gamedataCodexRecordPart_Record
+CodexRecordPart_Record = gamedataCodexRecordPart_Record
+
+---@alias CodexRecord_Record gamedataCodexRecord_Record
+CodexRecord_Record = gamedataCodexRecord_Record
+
+---@alias Codex_Record gamedataCodex_Record
+Codex_Record = gamedataCodex_Record
+
+---@alias ColliderComponent entColliderComponent
+ColliderComponent = entColliderComponent
+
+---@alias CollisionEvaluatorParams gameprojectileCollisionEvaluatorParams
+CollisionEvaluatorParams = gameprojectileCollisionEvaluatorParams
+
+---@alias CombatAlley AICombatAlley
+CombatAlley = AICombatAlley
+
+---@alias CombatRestrictMovementAreaScriptCondition AICombatGuardAreaScriptCondition
+CombatRestrictMovementAreaScriptCondition = AICombatGuardAreaScriptCondition
+
+---@alias CombatSpaceHelper AIUtilsCombatSpaceHelper
+CombatSpaceHelper = AIUtilsCombatSpaceHelper
+
+---@alias CombatSquad AICombatSquad
+CombatSquad = AICombatSquad
+
+---@alias CombatSquadScriptInterface AICombatSquadScriptInterface
+CombatSquadScriptInterface = AICombatSquadScriptInterface
+
+---@alias CombinedStatModifier_Record gamedataCombinedStatModifier_Record
+CombinedStatModifier_Record = gamedataCombinedStatModifier_Record
+
+---@alias CommandsManager AICommandsManager
+CommandsManager = AICommandsManager
+
+---@alias CommunityProxyPSPresentEvent gameCommunityProxyPSPresentEvent
+CommunityProxyPSPresentEvent = gameCommunityProxyPSPresentEvent
+
+---@alias CommunitySystem gameCommunitySystem
+CommunitySystem = gameCommunitySystem
+
+---@alias CompanionDistancePreset_Record gamedataCompanionDistancePreset_Record
+CompanionDistancePreset_Record = gamedataCompanionDistancePreset_Record
+
+---@alias CompanionSystem gameCompanionSystem
+CompanionSystem = gameCompanionSystem
+
+---@alias CompoundSelectionPreset_Record gamedataCompoundSelectionPreset_Record
+CompoundSelectionPreset_Record = gamedataCompoundSelectionPreset_Record
+
+---@alias ComputerScreenType_Record gamedataComputerScreenType_Record
+ComputerScreenType_Record = gamedataComputerScreenType_Record
+
+---@alias ComputerUIData gamedeviceComputerUIData
+ComputerUIData = gamedeviceComputerUIData
+
+---@alias Cone_Record gamedataCone_Record
+Cone_Record = gamedataCone_Record
+
+---@alias ConfigChangeReason InGameConfigChangeReason
+ConfigChangeReason = InGameConfigChangeReason
+
+---@alias ConfigGroup userSettingsGroup
+ConfigGroup = userSettingsGroup
+
+---@alias ConfigNotificationListener userSettingsNotificationListener
+ConfigNotificationListener = userSettingsNotificationListener
+
+---@alias ConfigNotificationType InGameConfigNotificationType
+ConfigNotificationType = InGameConfigNotificationType
+
+---@alias ConfigVar userSettingsVar
+ConfigVar = userSettingsVar
+
+---@alias ConfigVarBool userSettingsVarBool
+ConfigVarBool = userSettingsVarBool
+
+---@alias ConfigVarFloat userSettingsVarFloat
+ConfigVarFloat = userSettingsVarFloat
+
+---@alias ConfigVarInt userSettingsVarInt
+ConfigVarInt = userSettingsVarInt
+
+---@alias ConfigVarListFloat userSettingsVarListFloat
+ConfigVarListFloat = userSettingsVarListFloat
+
+---@alias ConfigVarListInt userSettingsVarListInt
+ConfigVarListInt = userSettingsVarListInt
+
+---@alias ConfigVarListName userSettingsVarListName
+ConfigVarListName = userSettingsVarListName
+
+---@alias ConfigVarListString userSettingsVarListString
+ConfigVarListString = userSettingsVarListString
+
+---@alias ConfigVarListener userSettingsVarListener
+ConfigVarListener = userSettingsVarListener
+
+---@alias ConfigVarName userSettingsVarName
+ConfigVarName = userSettingsVarName
+
+---@alias ConfigVarType InGameConfigVarType
+ConfigVarType = InGameConfigVarType
+
+---@alias ConfigVarUpdatePolicy InGameConfigVarUpdatePolicy
+ConfigVarUpdatePolicy = InGameConfigVarUpdatePolicy
+
+---@alias ConnectedWorkspotNotificationEvent workConnectedWorkspotNotificationEvent
+ConnectedWorkspotNotificationEvent = workConnectedWorkspotNotificationEvent
+
+---@alias ConstantStatModifier_Record gamedataConstantStatModifier_Record
+ConstantStatModifier_Record = gamedataConstantStatModifier_Record
+
+---@alias ConsumableBaseName_Record gamedataConsumableBaseName_Record
+ConsumableBaseName_Record = gamedataConsumableBaseName_Record
+
+---@alias ConsumableItem_Record gamedataConsumableItem_Record
+ConsumableItem_Record = gamedataConsumableItem_Record
+
+---@alias ConsumableParameterBool gamestateMachineConsumableParameterBool
+ConsumableParameterBool = gamestateMachineConsumableParameterBool
+
+---@alias ConsumableParameterCName gamestateMachineConsumableParameterCName
+ConsumableParameterCName = gamestateMachineConsumableParameterCName
+
+---@alias ConsumableParameterDouble gamestateMachineConsumableParameterDouble
+ConsumableParameterDouble = gamestateMachineConsumableParameterDouble
+
+---@alias ConsumableParameterFloat gamestateMachineConsumableParameterFloat
+ConsumableParameterFloat = gamestateMachineConsumableParameterFloat
+
+---@alias ConsumableParameterIScriptable gamestateMachineConsumableParameterIScriptable
+ConsumableParameterIScriptable = gamestateMachineConsumableParameterIScriptable
+
+---@alias ConsumableParameterInt gamestateMachineConsumableParameterInt
+ConsumableParameterInt = gamestateMachineConsumableParameterInt
+
+---@alias ConsumableParameterTweakDBID gamestateMachineConsumableParameterTweakDBID
+ConsumableParameterTweakDBID = gamestateMachineConsumableParameterTweakDBID
+
+---@alias ConsumableParameterVector gamestateMachineConsumableParameterVector
+ConsumableParameterVector = gamestateMachineConsumableParameterVector
+
+---@alias ConsumableParameterWeakIScriptable gamestateMachineConsumableParameterWeakIScriptable
+ConsumableParameterWeakIScriptable = gamestateMachineConsumableParameterWeakIScriptable
+
+---@alias ConsumableType_Record gamedataConsumableType_Record
+ConsumableType_Record = gamedataConsumableType_Record
+
+---@alias ContainerFilledEvent gameContainerFilledEvent
+ContainerFilledEvent = gameContainerFilledEvent
+
+---@alias ContainerObjectSingleItem gameContainerObjectSingleItem
+ContainerObjectSingleItem = gameContainerObjectSingleItem
+
+---@alias ContainerVisibilityChangedEvent gameContainerVisibilityChangedEvent
+ContainerVisibilityChangedEvent = gameContainerVisibilityChangedEvent
+
+---@alias ContentAssignment_Record gamedataContentAssignment_Record
+ContentAssignment_Record = gamedataContentAssignment_Record
+
+---@alias ContextDisplayData gameinputContextDisplayData
+ContextDisplayData = gameinputContextDisplayData
+
+---@alias ContextualLookAtAddEvent entContextualLookAtAddEvent
+ContextualLookAtAddEvent = entContextualLookAtAddEvent
+
+---@alias ContextualLookAtRemoveEvent entContextualLookAtRemoveEvent
+ContextualLookAtRemoveEvent = entContextualLookAtRemoveEvent
+
+---@alias ContinuousAttackEffector_Record gamedataContinuousAttackEffector_Record
+ContinuousAttackEffector_Record = gamedataContinuousAttackEffector_Record
+
+---@alias ContinuousEffector gameContinuousEffector
+ContinuousEffector = gameContinuousEffector
+
+---@alias ContinuousEffector_Record gamedataContinuousEffector_Record
+ContinuousEffector_Record = gamedataContinuousEffector_Record
+
+---@alias ContraGameState gameuiContraGameState
+ContraGameState = gameuiContraGameState
+
+---@alias ContraLogicController gameuiContraLogicController
+ContraLogicController = gameuiContraLogicController
+
+---@alias ContraMiniGameController gameuiContraMiniGameController
+ContraMiniGameController = gameuiContraMiniGameController
+
+---@alias ContraPlatform gameuiContraPlatform
+ContraPlatform = gameuiContraPlatform
+
+---@alias ContraPlatformCollision gameuiContraPlatformCollision
+ContraPlatformCollision = gameuiContraPlatformCollision
+
+---@alias ContraPlayer gameuiContraPlayer
+ContraPlayer = gameuiContraPlayer
+
+---@alias ControllerHit physicsControllerHit
+ControllerHit = physicsControllerHit
+
+---@alias ControllerSettingsGameController gameuiControllerSettingsGameController
+ControllerSettingsGameController = gameuiControllerSettingsGameController
+
+---@alias CooldownType_Record gamedataCooldownType_Record
+CooldownType_Record = gamedataCooldownType_Record
+
+---@alias Cooldown_Record gamedataCooldown_Record
+Cooldown_Record = gamedataCooldown_Record
+
+---@alias Coordinates gameCoordinates
+Coordinates = gameCoordinates
+
+---@alias CorpseComponent entCorpseComponent
+CorpseComponent = entCorpseComponent
+
+---@alias CoverDemandHolder AICoverDemandHolder
+CoverDemandHolder = AICoverDemandHolder
+
+---@alias CoverHealthCoverSelectionParameters_Record gamedataCoverHealthCoverSelectionParameters_Record
+CoverHealthCoverSelectionParameters_Record = gamedataCoverHealthCoverSelectionParameters_Record
+
+---@alias CoverManager AISmartCoverManager
+CoverManager = AISmartCoverManager
+
+---@alias CoverSelectionParameters_Record gamedataCoverSelectionParameters_Record
+CoverSelectionParameters_Record = gamedataCoverSelectionParameters_Record
+
+---@alias CoverSelectionPreset_Record gamedataCoverSelectionPreset_Record
+CoverSelectionPreset_Record = gamedataCoverSelectionPreset_Record
+
+---@alias CoverSelectionSystem AICoverSelectionSystem
+CoverSelectionSystem = AICoverSelectionSystem
+
+---@alias CoverTypeCoverSelectionParameters_Record gamedataCoverTypeCoverSelectionParameters_Record
+CoverTypeCoverSelectionParameters_Record = gamedataCoverTypeCoverSelectionParameters_Record
+
+---@alias CrackAction_Record gamedataCrackAction_Record
+CrackAction_Record = gamedataCrackAction_Record
+
+---@alias Craftable_Record gamedataCraftable_Record
+Craftable_Record = gamedataCraftable_Record
+
+---@alias CraftingPackage_Record gamedataCraftingPackage_Record
+CraftingPackage_Record = gamedataCraftingPackage_Record
+
+---@alias CraftingResult_Record gamedataCraftingResult_Record
+CraftingResult_Record = gamedataCraftingResult_Record
+
+---@alias Crosshair_Record gamedataCrosshair_Record
+Crosshair_Record = gamedataCrosshair_Record
+
+---@alias CrosswalkEvent gameinteractionsCrosswalkEvent
+CrosswalkEvent = gameinteractionsCrosswalkEvent
+
+---@alias CrowdMemberComponent gameCrowdMemberComponent
+CrowdMemberComponent = gameCrowdMemberComponent
+
+---@alias CrowdSettingsPackageBase_Record gamedataCrowdSettingsPackageBase_Record
+CrowdSettingsPackageBase_Record = gamedataCrowdSettingsPackageBase_Record
+
+---@alias CrowdSlotMovementPatternBase_Record gamedataCrowdSlotMovementPatternBase_Record
+CrowdSlotMovementPatternBase_Record = gamedataCrowdSlotMovementPatternBase_Record
+
+---@alias CrowdSlotMovementSettingsBase_Record gamedataCrowdSlotMovementSettingsBase_Record
+CrowdSlotMovementSettingsBase_Record = gamedataCrowdSlotMovementSettingsBase_Record
+
+---@alias CurrencyReward_Record gamedataCurrencyReward_Record
+CurrencyReward_Record = gamedataCurrencyReward_Record
+
+---@alias CurrencyReward_inline0_Record gamedataCurrencyReward_inline0_Record
+CurrencyReward_inline0_Record = gamedataCurrencyReward_inline0_Record
+
+---@alias CurrencyUpdateNotificationViewData gameuiCurrencyUpdateNotificationViewData
+CurrencyUpdateNotificationViewData = gameuiCurrencyUpdateNotificationViewData
+
+---@alias CurrentTargetPrereq gameCurrentTargetPrereq
+CurrentTargetPrereq = gameCurrentTargetPrereq
+
+---@alias CurrentTargetPrereqState gameCurrentTargetPrereqState
+CurrentTargetPrereqState = gameCurrentTargetPrereqState
+
+---@alias CurveStatModifier_Record gamedataCurveStatModifier_Record
+CurveStatModifier_Record = gamedataCurveStatModifier_Record
+
+---@alias Curve_Record gamedataCurve_Record
+Curve_Record = gamedataCurve_Record
+
+---@alias Curves_Record gamedataCurves_Record
+Curves_Record = gamedataCurves_Record
+
+---@alias CustomMoveEvent moveCustomMoveEvent
+CustomMoveEvent = moveCustomMoveEvent
+
+---@alias CustomPositionMappin gamemappinsCustomPositionMappin
+CustomPositionMappin = gamemappinsCustomPositionMappin
+
+---@alias CustomQuestNotificationData questCustomQuestNotificationData
+CustomQuestNotificationData = questCustomQuestNotificationData
+
+---@alias CustomRequestFilter gameCustomRequestFilter
+CustomRequestFilter = gameCustomRequestFilter
+
+---@alias CustomValueStatPoolsListener gameCustomValueStatPoolsListener
+CustomValueStatPoolsListener = gameCustomValueStatPoolsListener
+
+---@alias CyberspaceMappinsContainerController gameuiCyberspaceMappinsContainerController
+CyberspaceMappinsContainerController = gameuiCyberspaceMappinsContainerController
+
+---@alias CyberwareArea_Record gamedataCyberwareArea_Record
+CyberwareArea_Record = gamedataCyberwareArea_Record
+
+---@alias DMGPipelineType gameDamageListenerPipelineType
+DMGPipelineType = gameDamageListenerPipelineType
+
+---@alias DPadUIData_Record gamedataDPadUIData_Record
+DPadUIData_Record = gamedataDPadUIData_Record
+
+---@alias Damage gameDamage
+Damage = gameDamage
+
+---@alias DamageDebugData gamedamageDamageDebugData
+DamageDebugData = gamedamageDamageDebugData
+
+---@alias DamageIndicatorGameController gameuiDamageIndicatorGameController
+DamageIndicatorGameController = gameuiDamageIndicatorGameController
+
+---@alias DamageIndicatorPartLogicController gameuiDamageIndicatorPartLogicController
+DamageIndicatorPartLogicController = gameuiDamageIndicatorPartLogicController
+
+---@alias DamageInfo gameuiDamageInfo
+DamageInfo = gameuiDamageInfo
+
+---@alias DamageInfoUserData gameuiDamageInfoUserData
+DamageInfoUserData = gameuiDamageInfoUserData
+
+---@alias DamagePack gameDamagePack
+DamagePack = gameDamagePack
+
+---@alias DamageSystem gameDamageSystem
+DamageSystem = gameDamageSystem
+
+---@alias DamageType_Record gamedataDamageType_Record
+DamageType_Record = gamedataDamageType_Record
+
+---@alias DataElement gamedeviceDataElement
+DataElement = gamedeviceDataElement
+
+---@alias DeactivateTPPRepresentationEvent gameDeactivateTPPRepresentationEvent
+DeactivateTPPRepresentationEvent = gameDeactivateTPPRepresentationEvent
+
+---@alias DeactivateTriggerDestructionComponentEvent gameDeactivateTriggerDestructionComponentEvent
+DeactivateTriggerDestructionComponentEvent = gameDeactivateTriggerDestructionComponentEvent
+
+---@alias DeathMenuGameController gameuiDeathMenuGameController
+DeathMenuGameController = gameuiDeathMenuGameController
+
+---@alias DebugCheatsSystem gameDebugCheatsSystem
+DebugCheatsSystem = gameDebugCheatsSystem
+
+---@alias DebugDrawer rendDebugDrawerScriptProxy
+DebugDrawer = rendDebugDrawerScriptProxy
+
+---@alias DebugPlayerBreadcrumbs gameDebugPlayerBreadcrumbs
+DebugPlayerBreadcrumbs = gameDebugPlayerBreadcrumbs
+
+---@alias DebugVisualizerSystem gameDebugVisualizerSystem
+DebugVisualizerSystem = gameDebugVisualizerSystem
+
+---@alias DefaultLoadingScreenLogicController inkDefaultLoadingScreenLogicController
+DefaultLoadingScreenLogicController = inkDefaultLoadingScreenLogicController
+
+---@alias DefeatedEvent gameeventsDefeatedEvent
+DefeatedEvent = gameeventsDefeatedEvent
+
+---@alias DefenseMode_Record gamedataDefenseMode_Record
+DefenseMode_Record = gamedataDefenseMode_Record
+
+---@alias DelayCallback gameDelaySystemScriptedDelayCallbackWrapper
+DelayCallback = gameDelaySystemScriptedDelayCallbackWrapper
+
+---@alias DelayID gameDelayID
+DelayID = gameDelayID
+
+---@alias DelaySystem gameDelaySystem
+DelaySystem = gameDelaySystem
+
+---@alias DeleteInputGroupEvent gameuiDeleteInputGroupEvent
+DeleteInputGroupEvent = gameuiDeleteInputGroupEvent
+
+---@alias DeleteInputHintBySourceEvent gameuiDeleteInputHintBySourceEvent
+DeleteInputHintBySourceEvent = gameuiDeleteInputHintBySourceEvent
+
+---@alias DestructibleObject_Record gamedataDestructibleObject_Record
+DestructibleObject_Record = gamedataDestructibleObject_Record
+
+---@alias DestructionPersistencySystem gameIDestructionPersistencySystem
+DestructionPersistencySystem = gameIDestructionPersistencySystem
+
+---@alias DetachEntity gameMovingPlatformDetachEntity
+DetachEntity = gameMovingPlatformDetachEntity
+
+---@alias DetectionCurve_Record gamedataDetectionCurve_Record
+DetectionCurve_Record = gamedataDetectionCurve_Record
+
+---@alias DevelopmentPoint_Record gamedataDevelopmentPoint_Record
+DevelopmentPoint_Record = gamedataDevelopmentPoint_Record
+
+---@alias DeviceAction gamedeviceAction
+DeviceAction = gamedeviceAction
+
+---@alias DeviceActionProperty gamedeviceActionProperty
+DeviceActionProperty = gamedeviceActionProperty
+
+---@alias DeviceAreaAttack_Record gamedataDeviceAreaAttack_Record
+DeviceAreaAttack_Record = gamedataDeviceAreaAttack_Record
+
+---@alias DeviceBase gameDeviceBase
+DeviceBase = gameDeviceBase
+
+---@alias DeviceCameraControlComponent gameDeviceCameraControlComponent
+DeviceCameraControlComponent = gameDeviceCameraControlComponent
+
+---@alias DeviceComponent gameDeviceComponent
+DeviceComponent = gameDeviceComponent
+
+---@alias DeviceComponentPS gameDeviceComponentPS
+DeviceComponentPS = gameDeviceComponentPS
+
+---@alias DeviceContentAssignment_Record gamedataDeviceContentAssignment_Record
+DeviceContentAssignment_Record = gamedataDeviceContentAssignment_Record
+
+---@alias DeviceDynamicConnectionChange gameDeviceDynamicConnectionChange
+DeviceDynamicConnectionChange = gameDeviceDynamicConnectionChange
+
+---@alias DeviceEndPlayerCameraControlEvent gameeventsDeviceEndPlayerCameraControlEvent
+DeviceEndPlayerCameraControlEvent = gameeventsDeviceEndPlayerCameraControlEvent
+
+---@alias DeviceFX_Record gamedataDeviceFX_Record
+DeviceFX_Record = gamedataDeviceFX_Record
+
+---@alias DeviceInteractionManager gameDeviceInteractionManager
+DeviceInteractionManager = gameDeviceInteractionManager
+
+---@alias DeviceRef worldDeviceRef
+DeviceRef = worldDeviceRef
+
+---@alias DeviceReplicatedState gameDeviceReplicatedState
+DeviceReplicatedState = gameDeviceReplicatedState
+
+---@alias DeviceScreenType_Record gamedataDeviceScreenType_Record
+DeviceScreenType_Record = gamedataDeviceScreenType_Record
+
+---@alias DeviceStartPlayerCameraControlEvent gameeventsDeviceStartPlayerCameraControlEvent
+DeviceStartPlayerCameraControlEvent = gameeventsDeviceStartPlayerCameraControlEvent
+
+---@alias DeviceSystem gameDeviceSystem
+DeviceSystem = gameDeviceSystem
+
+---@alias DeviceUIDefinition_Record gamedataDeviceUIDefinition_Record
+DeviceUIDefinition_Record = gamedataDeviceUIDefinition_Record
+
+---@alias DeviceVisibilityChangedEvent gameDeviceVisibilityChangedEvent
+DeviceVisibilityChangedEvent = gameDeviceVisibilityChangedEvent
+
+---@alias DeviceWidgetDefinition_Record gamedataDeviceWidgetDefinition_Record
+DeviceWidgetDefinition_Record = gamedataDeviceWidgetDefinition_Record
+
+---@alias Device_Record gamedataDevice_Record
+Device_Record = gamedataDevice_Record
+
+---@alias DialogChoiceHubs gameinteractionsvisDialogChoiceHubs
+DialogChoiceHubs = gameinteractionsvisDialogChoiceHubs
+
+---@alias DialogLineEvent gameaudioeventsDialogLine
+DialogLineEvent = gameaudioeventsDialogLine
+
+---@alias DisableAimAssist gameDisableAimAssist
+DisableAimAssist = gameDisableAimAssist
+
+---@alias DisassemblingResult_Record gamedataDisassemblingResult_Record
+DisassemblingResult_Record = gamedataDisassemblingResult_Record
+
+---@alias DismemberedBodyPartEvent entDismemberedBodyPartEvent
+DismemberedBodyPartEvent = entDismemberedBodyPartEvent
+
+---@alias DismemberedLimbCount gameDismemberedLimbCount
+DismemberedLimbCount = gameDismemberedLimbCount
+
+---@alias DismembermentAudioEvent entDismembermentAudioEvent
+DismembermentAudioEvent = entDismembermentAudioEvent
+
+---@alias DismembermentComponent gameDismembermentComponent
+DismembermentComponent = gameDismembermentComponent
+
+---@alias DistanceFromOthersCoverSelectionParameters_Record gamedataDistanceFromOthersCoverSelectionParameters_Record
+DistanceFromOthersCoverSelectionParameters_Record = gamedataDistanceFromOthersCoverSelectionParameters_Record
+
+---@alias DistrictEnteredEvent gamemappinsDistrictEnteredEvent
+DistrictEnteredEvent = gamemappinsDistrictEnteredEvent
+
+---@alias DistrictPreventionData_Record gamedataDistrictPreventionData_Record
+DistrictPreventionData_Record = gamedataDistrictPreventionData_Record
+
+---@alias District_Record gamedataDistrict_Record
+District_Record = gamedataDistrict_Record
+
+---@alias DoneActionEvent vehicleDoneActionEvent
+DoneActionEvent = vehicleDoneActionEvent
+
+---@alias DrawClimbDebug gamestateMachineeventDrawClimbDebug
+DrawClimbDebug = gamestateMachineeventDrawClimbDebug
+
+---@alias DrawItemByContextRequest gameDrawItemByContextRequest
+DrawItemByContextRequest = gameDrawItemByContextRequest
+
+---@alias DrawItemRequest gameDrawItemRequest
+DrawItemRequest = gameDrawItemRequest
+
+---@alias DrawVaultDebug gamestateMachineeventDrawVaultDebug
+DrawVaultDebug = gamestateMachineeventDrawVaultDebug
+
+---@alias DriveHelperType_Record gamedataDriveHelperType_Record
+DriveHelperType_Record = gamedataDriveHelperType_Record
+
+---@alias DriveHelper_Record gamedataDriveHelper_Record
+DriveHelper_Record = gamedataDriveHelper_Record
+
+---@alias DriveWheelsAccelerateNoise_Record gamedataDriveWheelsAccelerateNoise_Record
+DriveWheelsAccelerateNoise_Record = gamedataDriveWheelsAccelerateNoise_Record
+
+---@alias DroneAnimationSetup_Record gamedataDroneAnimationSetup_Record
+DroneAnimationSetup_Record = gamedataDroneAnimationSetup_Record
+
+---@alias DropBodyBreathingEvent gameaudioeventsDropBodyBreathingEvent
+DropBodyBreathingEvent = gameaudioeventsDropBodyBreathingEvent
+
+---@alias DropInstruction gameDropInstruction
+DropInstruction = gameDropInstruction
+
+---@alias DynamicDownforceHelper_Record gamedataDynamicDownforceHelper_Record
+DynamicDownforceHelper_Record = gamedataDynamicDownforceHelper_Record
+
+---@alias EEquipmentSetType gameEquipmentSetType
+EEquipmentSetType = gameEquipmentSetType
+
+---@alias EHotkey gameEHotkey
+EHotkey = gameEHotkey
+
+---@alias EInventoryItemShape gameInventoryItemShape
+EInventoryItemShape = gameInventoryItemShape
+
+---@alias EQuestVehicleDoorState vehicleEQuestVehicleDoorState
+EQuestVehicleDoorState = vehicleEQuestVehicleDoorState
+
+---@alias EQuestVehicleWindowState vehicleEQuestVehicleWindowState
+EQuestVehicleWindowState = vehicleEQuestVehicleWindowState
+
+---@alias ESlotState gameESlotState
+ESlotState = gameESlotState
+
+---@alias EStatProviderDataSource gameEStatProviderDataSource
+EStatProviderDataSource = gameEStatProviderDataSource
+
+---@alias EVehicleDoor vehicleEVehicleDoor
+EVehicleDoor = vehicleEVehicleDoor
+
+---@alias EVehicleWindowState vehicleEVehicleWindowState
+EVehicleWindowState = vehicleEVehicleWindowState
+
+---@alias EVisualizerActivityState gameinteractionsvisEVisualizerActivityState
+EVisualizerActivityState = gameinteractionsvisEVisualizerActivityState
+
+---@alias EVisualizerDefinitionFlags gameinteractionsvisEVisualizerDefinitionFlags
+EVisualizerDefinitionFlags = gameinteractionsvisEVisualizerDefinitionFlags
+
+---@alias EVisualizerRuntimeFlags gameinteractionsvisEVisualizerRuntimeFlags
+EVisualizerRuntimeFlags = gameinteractionsvisEVisualizerRuntimeFlags
+
+---@alias EVisualizerType gameinteractionsvisEVisualizerType
+EVisualizerType = gameinteractionsvisEVisualizerType
+
+---@alias EditorMeshComponent entEditorMeshComponent
+EditorMeshComponent = entEditorMeshComponent
+
+---@alias EffectAction gameEffectAction
+EffectAction = gameEffectAction
+
+---@alias EffectData gameEffectData
+EffectData = gameEffectData
+
+---@alias EffectDurationModifier gameEffectDurationModifier
+EffectDurationModifier = gameEffectDurationModifier
+
+---@alias EffectDurationModifierScriptContext gameEffectDurationModifierScriptContext
+EffectDurationModifierScriptContext = gameEffectDurationModifierScriptContext
+
+---@alias EffectDurationModifier_Scripted gameEffectDurationModifier_Scripted
+EffectDurationModifier_Scripted = gameEffectDurationModifier_Scripted
+
+---@alias EffectExecutionScriptContext gameEffectExecutionScriptContext
+EffectExecutionScriptContext = gameEffectExecutionScriptContext
+
+---@alias EffectExecutor gameEffectExecutor
+EffectExecutor = gameEffectExecutor
+
+---@alias EffectExecutor_BulletImpact gameEffectExecutor_BulletImpact
+EffectExecutor_BulletImpact = gameEffectExecutor_BulletImpact
+
+---@alias EffectExecutor_Scripted gameEffectExecutor_Scripted
+EffectExecutor_Scripted = gameEffectExecutor_Scripted
+
+---@alias EffectGroupFilterScriptContext gameEffectGroupFilterScriptContext
+EffectGroupFilterScriptContext = gameEffectGroupFilterScriptContext
+
+---@alias EffectInfo gameEffectInfo
+EffectInfo = gameEffectInfo
+
+---@alias EffectInfoEvent gameEffectInfoEvent
+EffectInfoEvent = gameEffectInfoEvent
+
+---@alias EffectInputParameter_Bool gameEffectInputParameter_Bool
+EffectInputParameter_Bool = gameEffectInputParameter_Bool
+
+---@alias EffectInputParameter_CName gameEffectInputParameter_CName
+EffectInputParameter_CName = gameEffectInputParameter_CName
+
+---@alias EffectInputParameter_Float gameEffectInputParameter_Float
+EffectInputParameter_Float = gameEffectInputParameter_Float
+
+---@alias EffectInputParameter_Int gameEffectInputParameter_Int
+EffectInputParameter_Int = gameEffectInputParameter_Int
+
+---@alias EffectInputParameter_Quat gameEffectInputParameter_Quat
+EffectInputParameter_Quat = gameEffectInputParameter_Quat
+
+---@alias EffectInputParameter_String gameEffectInputParameter_String
+EffectInputParameter_String = gameEffectInputParameter_String
+
+---@alias EffectInputParameter_Variant gameEffectInputParameter_Variant
+EffectInputParameter_Variant = gameEffectInputParameter_Variant
+
+---@alias EffectInputParameter_Vector gameEffectInputParameter_Vector
+EffectInputParameter_Vector = gameEffectInputParameter_Vector
+
+---@alias EffectInstance gameEffectInstance
+EffectInstance = gameEffectInstance
+
+---@alias EffectNode gameEffectNode
+EffectNode = gameEffectNode
+
+---@alias EffectObjectFilter gameEffectObjectFilter
+EffectObjectFilter = gameEffectObjectFilter
+
+---@alias EffectObjectGroupFilter gameEffectObjectGroupFilter
+EffectObjectGroupFilter = gameEffectObjectGroupFilter
+
+---@alias EffectObjectGroupFilter_Scripted gameEffectObjectGroupFilter_Scripted
+EffectObjectGroupFilter_Scripted = gameEffectObjectGroupFilter_Scripted
+
+---@alias EffectObjectProvider gameEffectObjectProvider
+EffectObjectProvider = gameEffectObjectProvider
+
+---@alias EffectObjectProvider_Scripted gameEffectObjectProvider_Scripted
+EffectObjectProvider_Scripted = gameEffectObjectProvider_Scripted
+
+---@alias EffectObjectSingleFilter gameEffectObjectSingleFilter
+EffectObjectSingleFilter = gameEffectObjectSingleFilter
+
+---@alias EffectObjectSingleFilter_Scripted gameEffectObjectSingleFilter_Scripted
+EffectObjectSingleFilter_Scripted = gameEffectObjectSingleFilter_Scripted
+
+---@alias EffectOutputParameter_Bool gameEffectOutputParameter_Bool
+EffectOutputParameter_Bool = gameEffectOutputParameter_Bool
+
+---@alias EffectOutputParameter_CName gameEffectOutputParameter_CName
+EffectOutputParameter_CName = gameEffectOutputParameter_CName
+
+---@alias EffectOutputParameter_Float gameEffectOutputParameter_Float
+EffectOutputParameter_Float = gameEffectOutputParameter_Float
+
+---@alias EffectOutputParameter_Int gameEffectOutputParameter_Int
+EffectOutputParameter_Int = gameEffectOutputParameter_Int
+
+---@alias EffectOutputParameter_Quat gameEffectOutputParameter_Quat
+EffectOutputParameter_Quat = gameEffectOutputParameter_Quat
+
+---@alias EffectOutputParameter_String gameEffectOutputParameter_String
+EffectOutputParameter_String = gameEffectOutputParameter_String
+
+---@alias EffectOutputParameter_Variant gameEffectOutputParameter_Variant
+EffectOutputParameter_Variant = gameEffectOutputParameter_Variant
+
+---@alias EffectOutputParameter_Vector gameEffectOutputParameter_Vector
+EffectOutputParameter_Vector = gameEffectOutputParameter_Vector
+
+---@alias EffectPostAction gameEffectPostAction
+EffectPostAction = gameEffectPostAction
+
+---@alias EffectPostAction_Scripted gameEffectPostAction_Scripted
+EffectPostAction_Scripted = gameEffectPostAction_Scripted
+
+---@alias EffectPreAction gameEffectPreAction
+EffectPreAction = gameEffectPreAction
+
+---@alias EffectPreAction_Scripted gameEffectPreAction_Scripted
+EffectPreAction_Scripted = gameEffectPreAction_Scripted
+
+---@alias EffectPreloadScriptContext gameEffectPreloadScriptContext
+EffectPreloadScriptContext = gameEffectPreloadScriptContext
+
+---@alias EffectProviderScriptContext gameEffectProviderScriptContext
+EffectProviderScriptContext = gameEffectProviderScriptContext
+
+---@alias EffectRef gameEffectRef
+EffectRef = gameEffectRef
+
+---@alias EffectScriptContext gameEffectScriptContext
+EffectScriptContext = gameEffectScriptContext
+
+---@alias EffectSingleFilterScriptContext gameEffectSingleFilterScriptContext
+EffectSingleFilterScriptContext = gameEffectSingleFilterScriptContext
+
+---@alias EffectSystem gameEffectSystem
+EffectSystem = gameEffectSystem
+
+---@alias Effector gameEffector
+Effector = gameEffector
+
+---@alias EffectorObject gameEffectorObject
+EffectorObject = gameEffectorObject
+
+---@alias EffectorSystem gameEffectorSystem
+EffectorSystem = gameEffectorSystem
+
+---@alias EffectorTimeDilationDriver_Record gamedataEffectorTimeDilationDriver_Record
+EffectorTimeDilationDriver_Record = gamedataEffectorTimeDilationDriver_Record
+
+---@alias Effector_Record gamedataEffector_Record
+Effector_Record = gamedataEffector_Record
+
+---@alias EnableAimAssist gameEnableAimAssist
+EnableAimAssist = gameEnableAimAssist
+
+---@alias EnableClientSideInteractionEvent gameinteractionsEnableClientSideInteractionEvent
+EnableClientSideInteractionEvent = gameinteractionsEnableClientSideInteractionEvent
+
+---@alias EnableStickerEditorEvent gameuiEnableStickerEditorEvent
+EnableStickerEditorEvent = gameuiEnableStickerEditorEvent
+
+---@alias EndTakedownEvent gameeventsEndTakedownEvent
+EndTakedownEvent = gameeventsEndTakedownEvent
+
+---@alias EnemyPushedToSquad AIEnemyPushedToSquad
+EnemyPushedToSquad = AIEnemyPushedToSquad
+
+---@alias EnemyThreatDetected AIEnemyThreatDetected
+EnemyThreatDetected = AIEnemyThreatDetected
+
+---@alias EnterShapeEvent senseOnEnterShapeEvent
+EnterShapeEvent = senseOnEnterShapeEvent
+
+---@alias EnteredSplineEvent moveEnteredSplineEvent
+EnteredSplineEvent = moveEnteredSplineEvent
+
+---@alias Entity entEntity
+Entity = entEntity
+
+---@alias EntityGameInterface entEntityGameInterface
+EntityGameInterface = entEntityGameInterface
+
+---@alias EntityID entEntityID
+EntityID = entEntityID
+
+---@alias EntityIDArrayPrereq gameEntityIDArrayPrereq
+EntityIDArrayPrereq = gameEntityIDArrayPrereq
+
+---@alias EntityIDArrayPrereqState gameEntityIDArrayPrereqState
+EntityIDArrayPrereqState = gameEntityIDArrayPrereqState
+
+---@alias EntityLost AIEntityLost
+EntityLost = AIEntityLost
+
+---@alias EntityReference gameEntityReference
+EntityReference = gameEntityReference
+
+---@alias EntityRequestComponentsInterface entEntityRequestComponentsInterface
+EntityRequestComponentsInterface = entEntityRequestComponentsInterface
+
+---@alias EntityResizeEvent enteventsEntityResize
+EntityResizeEvent = enteventsEntityResize
+
+---@alias EntityResolveComponentsInterface entEntityResolveComponentsInterface
+EntityResolveComponentsInterface = entEntityResolveComponentsInterface
+
+---@alias EntitySpawnerComponent gameEntitySpawnerComponent
+EntitySpawnerComponent = gameEntitySpawnerComponent
+
+---@alias EntitySpawnerEventsBroadcaster gameEntitySpawnerEventsBroadcasterImpl
+EntitySpawnerEventsBroadcaster = gameEntitySpawnerEventsBroadcasterImpl
+
+---@alias EntitySpawnerSlotData gameEntitySpawnerSlotData
+EntitySpawnerSlotData = gameEntitySpawnerSlotData
+
+---@alias EntitySpotted AIEntitySpotted
+EntitySpotted = AIEntitySpotted
+
+---@alias EntityStubHandlerProviderSystem AIEntityStubHandlerProviderSystem
+EntityStubHandlerProviderSystem = AIEntityStubHandlerProviderSystem
+
+---@alias EntityTargetedEvent gametargetingSystemEntityTargetedEvent
+EntityTargetedEvent = gametargetingSystemEntityTargetedEvent
+
+---@alias EntityUntargetedEvent gametargetingSystemEntityUntargetedEvent
+EntityUntargetedEvent = gametargetingSystemEntityUntargetedEvent
+
+---@alias EnumNameToIndexCache gameEnumNameToIndexCache
+EnumNameToIndexCache = gameEnumNameToIndexCache
+
+---@alias EnvLight_Record gamedataEnvLight_Record
+EnvLight_Record = gamedataEnvLight_Record
+
+---@alias EnvProbeComponent entEnvProbeComponent
+EnvProbeComponent = entEnvProbeComponent
+
+---@alias EnvironmentDamageReceiverComponent gameEnvironmentDamageReceiverComponent
+EnvironmentDamageReceiverComponent = gameEnvironmentDamageReceiverComponent
+
+---@alias EquipEnd gameAttachmentSlotEventsEquipEnd
+EquipEnd = gameAttachmentSlotEventsEquipEnd
+
+---@alias EquipRequest gameEquipRequest
+EquipRequest = gameEquipRequest
+
+---@alias EquipStart gameAttachmentSlotEventsEquipStart
+EquipStart = gameAttachmentSlotEventsEquipStart
+
+---@alias EquipmentArea_Record gamedataEquipmentArea_Record
+EquipmentArea_Record = gamedataEquipmentArea_Record
+
+---@alias EquipmentMovementSound_Record gamedataEquipmentMovementSound_Record
+EquipmentMovementSound_Record = gamedataEquipmentMovementSound_Record
+
+---@alias EquippedPrereq gameEquippedPrereq
+EquippedPrereq = gameEquippedPrereq
+
+---@alias EquippedPrereqState gameEquippedPrereqState
+EquippedPrereqState = gameEquippedPrereqState
+
+---@alias EthnicNames_Record gamedataEthnicNames_Record
+EthnicNames_Record = gamedataEthnicNames_Record
+
+---@alias EthnicityComponent gameEthnicityComponent
+EthnicityComponent = gameEthnicityComponent
+
+---@alias Ethnicity_Record gamedataEthnicity_Record
+Ethnicity_Record = gamedataEthnicity_Record
+
+---@alias Event redEvent
+Event = redEvent
+
+---@alias ExitShapeEvent senseOnExitShapeEvent
+ExitShapeEvent = senseOnExitShapeEvent
+
+---@alias ExitedSplineEvent moveExitedSplineEvent
+ExitedSplineEvent = moveExitedSplineEvent
+
+---@alias ExplorationEnteredEvent moveExplorationEnteredEvent
+ExplorationEnteredEvent = moveExplorationEnteredEvent
+
+---@alias ExplorationLeftEvent moveExplorationLeftEvent
+ExplorationLeftEvent = moveExplorationLeftEvent
+
+---@alias ExtendedWorkspotInfo gameExtendedWorkspotInfo
+ExtendedWorkspotInfo = gameExtendedWorkspotInfo
+
+---@alias ExternalMovementCameraDataEvent gameExternalMovementCameraDataEvent
+ExternalMovementCameraDataEvent = gameExternalMovementCameraDataEvent
+
+---@alias FPPCameraComponent gameFPPCameraComponent
+FPPCameraComponent = gameFPPCameraComponent
+
+---@alias FTResult FunctionalTestsResult
+FTResult = FunctionalTestsResult
+
+---@alias FacialPreset_Record gamedataFacialPreset_Record
+FacialPreset_Record = gamedataFacialPreset_Record
+
+---@alias FactChangedEvent gameFactChangedEvent
+FactChangedEvent = gameFactChangedEvent
+
+---@alias FastTravelBinkData_Record gamedataFastTravelBinkData_Record
+FastTravelBinkData_Record = gamedataFastTravelBinkData_Record
+
+---@alias FastTravelBinksGroup_Record gamedataFastTravelBinksGroup_Record
+FastTravelBinksGroup_Record = gamedataFastTravelBinksGroup_Record
+
+---@alias FastTravelMappin gamemappinsFastTravelMappin
+FastTravelMappin = gamemappinsFastTravelMappin
+
+---@alias FastTravelPointData gameFastTravelPointData
+FastTravelPointData = gameFastTravelPointData
+
+---@alias FastTravelPoint_Record gamedataFastTravelPoint_Record
+FastTravelPoint_Record = gamedataFastTravelPoint_Record
+
+---@alias FastTravelScreenDataGroup_Record gamedataFastTravelScreenDataGroup_Record
+FastTravelScreenDataGroup_Record = gamedataFastTravelScreenDataGroup_Record
+
+---@alias FastTravelScreenData_Record gamedataFastTravelScreenData_Record
+FastTravelScreenData_Record = gamedataFastTravelScreenData_Record
+
+---@alias FastTravelSystem_Record gamedataFastTravelSystem_Record
+FastTravelSystem_Record = gamedataFastTravelSystem_Record
+
+---@alias FearInPlaceEvent AIFearInPlaceEvent
+FearInPlaceEvent = AIFearInPlaceEvent
+
+---@alias FinalizeActivationTPPRepresentationEvent gameFinalizeActivationTPPRepresentationEvent
+FinalizeActivationTPPRepresentationEvent = gameFinalizeActivationTPPRepresentationEvent
+
+---@alias FinalizeDeactivationTPPRepresentationEvent gameFinalizeDeactivationTPPRepresentationEvent
+FinalizeDeactivationTPPRepresentationEvent = gameFinalizeDeactivationTPPRepresentationEvent
+
+---@alias FocusClueStateChangeEvent gameFocusClueStateChangeEvent
+FocusClueStateChangeEvent = gameFocusClueStateChangeEvent
+
+---@alias FocusClue_Record gamedataFocusClue_Record
+FocusClue_Record = gamedataFocusClue_Record
+
+---@alias FollowCurveTrajectoryParams gameprojectileFollowCurveTrajectoryParams
+FollowCurveTrajectoryParams = gameprojectileFollowCurveTrajectoryParams
+
+---@alias FollowTrajectoryParams gameprojectileFollowTrajectoryParams
+FollowTrajectoryParams = gameprojectileFollowTrajectoryParams
+
+---@alias FollowerSquad AIFollowerSquad
+FollowerSquad = AIFollowerSquad
+
+---@alias FollowerSquadMember AIFollowerSquadMember
+FollowerSquadMember = AIFollowerSquadMember
+
+---@alias FootstepComponent gameFootstepComponent
+FootstepComponent = gameFootstepComponent
+
+---@alias FootstepSystem gameFootstepSystem
+FootstepSystem = gameFootstepSystem
+
+---@alias Footstep_Record gamedataFootstep_Record
+Footstep_Record = gamedataFootstep_Record
+
+---@alias ForceAttributeValueEvent gameuiForceAttributeValueEvent
+ForceAttributeValueEvent = gameuiForceAttributeValueEvent
+
+---@alias ForceDismembermentEffector_Record gamedataForceDismembermentEffector_Record
+ForceDismembermentEffector_Record = gamedataForceDismembermentEffector_Record
+
+---@alias ForceResetAmmoEvent gameForceResetAmmoEvent
+ForceResetAmmoEvent = gameForceResetAmmoEvent
+
+---@alias ForceStickerTransformEvent gameuiForceStickerTransformEvent
+ForceStickerTransformEvent = gameuiForceStickerTransformEvent
+
+---@alias ForwardEventToProjectileEvent gameprojectileForwardEventToProjectileEvent
+ForwardEventToProjectileEvent = gameprojectileForwardEventToProjectileEvent
+
+---@alias FragmentBuilder rendFragmentBuilderScriptProxy
+FragmentBuilder = rendFragmentBuilderScriptProxy
+
+---@alias FreeCameraComponent gameFreeCameraComponent
+FreeCameraComponent = gameFreeCameraComponent
+
+---@alias FriendlyFireParams gameFriendlyFireParams
+FriendlyFireParams = gameFriendlyFireParams
+
+---@alias FriendlyFireSystem gameFriendlyFireSystem
+FriendlyFireSystem = gameFriendlyFireSystem
+
+---@alias FriendlyTargetAngleDistanceCoverSelectionParameters_Record gamedataFriendlyTargetAngleDistanceCoverSelectionParameters_Record
+FriendlyTargetAngleDistanceCoverSelectionParameters_Record = gamedataFriendlyTargetAngleDistanceCoverSelectionParameters_Record
+
+---@alias FriendlyTargetDistanceCoverSelectionParameters_Record gamedataFriendlyTargetDistanceCoverSelectionParameters_Record
+FriendlyTargetDistanceCoverSelectionParameters_Record = gamedataFriendlyTargetDistanceCoverSelectionParameters_Record
+
+---@alias Frustum CFrustum
+Frustum = CFrustum
+
+---@alias FunctionalTestQueryOverlapResult prvFunctionalTestQueryOverlapResult
+FunctionalTestQueryOverlapResult = prvFunctionalTestQueryOverlapResult
+
+---@alias FunctionalTestsGameSystemInterface FunctionalTestsIGameSystem
+FunctionalTestsGameSystemInterface = FunctionalTestsIGameSystem
+
+---@alias FxActionType_Record gamedataFxActionType_Record
+FxActionType_Record = gamedataFxActionType_Record
+
+---@alias FxAction_Record gamedataFxAction_Record
+FxAction_Record = gamedataFxAction_Record
+
+---@alias FxInstance gameFxInstance
+FxInstance = gameFxInstance
+
+---@alias FxPackage gameweaponFxPackage
+FxPackage = gameweaponFxPackage
+
+---@alias FxResource gameFxResource
+FxResource = gameFxResource
+
+---@alias FxSystem gameFxSystem
+FxSystem = gameFxSystem
+
+---@alias GOGRewardPack gameRewardPack
+GOGRewardPack = gameRewardPack
+
+---@alias GOGReward_Record gamedataGOGReward_Record
+GOGReward_Record = gamedataGOGReward_Record
+
+---@alias GOGRewardsSystemErrors gameOnlineSystemErrors
+GOGRewardsSystemErrors = gameOnlineSystemErrors
+
+---@alias GOGRewardsSystemStatus gameOnlineSystemStatus
+GOGRewardsSystemStatus = gameOnlineSystemStatus
+
+---@alias GPSSettings gamegpsSettings
+GPSSettings = gamegpsSettings
+
+---@alias GPSSystem gamegpsGPSSystem
+GPSSystem = gamegpsGPSSystem
+
+---@alias Gadget_Record gamedataGadget_Record
+Gadget_Record = gamedataGadget_Record
+
+---@alias GameComponent gameComponent
+GameComponent = gameComponent
+
+---@alias GameComponentPS gameComponentPS
+GameComponentPS = gameComponentPS
+
+---@alias GameEntity entGameEntity
+GameEntity = entGameEntity
+
+---@alias GameFeatureManager gameGameFeatureManager
+GameFeatureManager = gameGameFeatureManager
+
+---@alias GameFinishEvent gameuiOnGameFinishEvent
+GameFinishEvent = gameuiOnGameFinishEvent
+
+---@alias GameFinishEventAdvanced gameuiOnGameFinishEventAdvanced
+GameFinishEventAdvanced = gameuiOnGameFinishEventAdvanced
+
+---@alias GameInstance ScriptGameInstance
+GameInstance = ScriptGameInstance
+
+---@alias GameObject gameObject
+GameObject = gameObject
+
+---@alias GameObjectEffectHelper gamehelperGameObjectEffectHelper
+GameObjectEffectHelper = gamehelperGameObjectEffectHelper
+
+---@alias GameObjectPS gameObjectPS
+GameObjectPS = gameObjectPS
+
+---@alias GamePersistencySystem gamePersistencySystem
+GamePersistencySystem = gamePersistencySystem
+
+---@alias GamePuppetPS gamePuppetPS
+GamePuppetPS = gamePuppetPS
+
+---@alias GameTagSystem gameGameTagSystem
+GameTagSystem = gameGameTagSystem
+
+---@alias GameplayAbilityGroup_Record gamedataGameplayAbilityGroup_Record
+GameplayAbilityGroup_Record = gamedataGameplayAbilityGroup_Record
+
+---@alias GameplayAbility_Record gamedataGameplayAbility_Record
+GameplayAbility_Record = gamedataGameplayAbility_Record
+
+---@alias GameplayLogicPackageSystem gameGameplayLogicPackageSystem
+GameplayLogicPackageSystem = gameGameplayLogicPackageSystem
+
+---@alias GameplayLogicPackageUIData_Record gamedataGameplayLogicPackageUIData_Record
+GameplayLogicPackageUIData_Record = gamedataGameplayLogicPackageUIData_Record
+
+---@alias GameplayLogicPackage_Record gamedataGameplayLogicPackage_Record
+GameplayLogicPackage_Record = gamedataGameplayLogicPackage_Record
+
+---@alias GameplayRestrictionStatusEffect_Record gamedataGameplayRestrictionStatusEffect_Record
+GameplayRestrictionStatusEffect_Record = gamedataGameplayRestrictionStatusEffect_Record
+
+---@alias GameplayTagsPrereq_Record gamedataGameplayTagsPrereq_Record
+GameplayTagsPrereq_Record = gamedataGameplayTagsPrereq_Record
+
+---@alias GarageComponent vehicleGarageComponent
+GarageComponent = vehicleGarageComponent
+
+---@alias GarageComponentPS vehicleGarageComponentPS
+GarageComponentPS = vehicleGarageComponentPS
+
+---@alias GarageVehicleID vehicleGarageVehicleID
+GarageVehicleID = vehicleGarageVehicleID
+
+---@alias GenderEntity_Record gamedataGenderEntity_Record
+GenderEntity_Record = gamedataGenderEntity_Record
+
+---@alias Gender_Record gamedataGender_Record
+Gender_Record = gamedataGender_Record
+
+---@alias GenericDataContent gamedeviceGenericDataContent
+GenericDataContent = gamedeviceGenericDataContent
+
+---@alias GenericHighwaySign_Record gamedataGenericHighwaySign_Record
+GenericHighwaySign_Record = gamedataGenericHighwaySign_Record
+
+---@alias GenericMetroSign_Record gamedataGenericMetroSign_Record
+GenericMetroSign_Record = gamedataGenericMetroSign_Record
+
+---@alias GenericNotificationViewData gameuiGenericNotificationViewData
+GenericNotificationViewData = gameuiGenericNotificationViewData
+
+---@alias GenericStreetNameSign_Record gamedataGenericStreetNameSign_Record
+GenericStreetNameSign_Record = gamedataGenericStreetNameSign_Record
+
+---@alias GeometryDescriptionQuery worldgeometryDescriptionQuery
+GeometryDescriptionQuery = worldgeometryDescriptionQuery
+
+---@alias GeometryDescriptionResult worldgeometryDescriptionResult
+GeometryDescriptionResult = worldgeometryDescriptionResult
+
+---@alias GeometryDescriptionSystem gameGeometryDescriptionSystem
+GeometryDescriptionSystem = gameGeometryDescriptionSystem
+
+---@alias GetActionsContext gameGetActionsContext
+GetActionsContext = gameGetActionsContext
+
+---@alias GlobalNodeID worldGlobalNodeID
+GlobalNodeID = worldGlobalNodeID
+
+---@alias GlobalNodeRef worldGlobalNodeRef
+GlobalNodeRef = worldGlobalNodeRef
+
+---@alias GlobalTvSystem gameuiGlobalTvSystem
+GlobalTvSystem = gameuiGlobalTvSystem
+
+---@alias GodModeData gameGodModeData
+GodModeData = gameGodModeData
+
+---@alias GodModeEntityData gameGodModeEntityData
+GodModeEntityData = gameGodModeEntityData
+
+---@alias GodModeSystem gameGodModeSystem
+GodModeSystem = gameGodModeSystem
+
+---@alias GrenadeDeliveryMethodType_Record gamedataGrenadeDeliveryMethodType_Record
+GrenadeDeliveryMethodType_Record = gamedataGrenadeDeliveryMethodType_Record
+
+---@alias GrenadeDeliveryMethod_Record gamedataGrenadeDeliveryMethod_Record
+GrenadeDeliveryMethod_Record = gamedataGrenadeDeliveryMethod_Record
+
+---@alias GrenadeMappin gamemappinsGrenadeMappin
+GrenadeMappin = gamemappinsGrenadeMappin
+
+---@alias Grenade_Record gamedataGrenade_Record
+Grenade_Record = gamedataGrenade_Record
+
+---@alias GridCell gameuiGridCell
+GridCell = gameuiGridCell
+
+---@alias GridNoiseGenRule gameuiGridNoiseGenRule
+GridNoiseGenRule = gameuiGridNoiseGenRule
+
+---@alias HACK_UseSensePresetEvent gameHACK_UseSensePresetEvent
+HACK_UseSensePresetEvent = gameHACK_UseSensePresetEvent
+
+---@alias HDRSettingsGameController gameuiHDRSettingsGameController
+HDRSettingsGameController = gameuiHDRSettingsGameController
+
+---@alias HUDActor gameHudActor
+HUDActor = gameHudActor
+
+---@alias HUD_Preset_Entry_Record gamedataHUD_Preset_Entry_Record
+HUD_Preset_Entry_Record = gamedataHUD_Preset_Entry_Record
+
+---@alias HackCategory_Record gamedataHackCategory_Record
+HackCategory_Record = gamedataHackCategory_Record
+
+---@alias HackingMiniGame_Record gamedataHackingMiniGame_Record
+HackingMiniGame_Record = gamedataHackingMiniGame_Record
+
+---@alias HackingMinigameGameController gameuiHackingMinigameGameController
+HackingMinigameGameController = gameuiHackingMinigameGameController
+
+---@alias HackingMinigameState gameuiHackingMinigameState
+HackingMinigameState = gameuiHackingMinigameState
+
+---@alias HandIKDescriptionResult worldgeometryHandIKDescriptionResult
+HandIKDescriptionResult = worldgeometryHandIKDescriptionResult
+
+---@alias HandbrakeFrictionModifier_Record gamedataHandbrakeFrictionModifier_Record
+HandbrakeFrictionModifier_Record = gamedataHandbrakeFrictionModifier_Record
+
+---@alias HandleWithValue scriptOptimizationsHandleWithValue
+HandleWithValue = scriptOptimizationsHandleWithValue
+
+---@alias HasDialogVisualizerVisiblePrereq gameHasDialogVisualizerVisiblePrereq
+HasDialogVisualizerVisiblePrereq = gameHasDialogVisualizerVisiblePrereq
+
+---@alias HasDialogVisualizerVisiblePrereqState gameHasDialogVisualizerVisiblePrereqState
+HasDialogVisualizerVisiblePrereqState = gameHasDialogVisualizerVisiblePrereqState
+
+---@alias HasVehicleBeenFlippedOverForSomeTimeEvent vehicleHasVehicleBeenFlippedOverForSomeTimeEvent
+HasVehicleBeenFlippedOverForSomeTimeEvent = vehicleHasVehicleBeenFlippedOverForSomeTimeEvent
+
+---@alias HeatAgent gameinfluenceHeatAgent
+HeatAgent = gameinfluenceHeatAgent
+
+---@alias HeatAgentComponent gameinfluenceHeatAgentComponent
+HeatAgentComponent = gameinfluenceHeatAgentComponent
+
+---@alias HideCustomTooltipEvent gameuiHideCustomTooltipEvent
+HideCustomTooltipEvent = gameuiHideCustomTooltipEvent
+
+---@alias HighlightOpacityEvent entRenderHighlightOpacityEvent
+HighlightOpacityEvent = entRenderHighlightOpacityEvent
+
+---@alias HitCharacterControllerEvent enteventsHitCharacterControllerEvent
+HitCharacterControllerEvent = enteventsHitCharacterControllerEvent
+
+---@alias HitDebugData gamedamageHitDebugData
+HitDebugData = gamedamageHitDebugData
+
+---@alias HitPlayerEvent gameuiOnHitPlayerEvent
+HitPlayerEvent = gameuiOnHitPlayerEvent
+
+---@alias HitPrereqConditionType_Record gamedataHitPrereqConditionType_Record
+HitPrereqConditionType_Record = gamedataHitPrereqConditionType_Record
+
+---@alias HitPrereqCondition_Record gamedataHitPrereqCondition_Record
+HitPrereqCondition_Record = gamedataHitPrereqCondition_Record
+
+---@alias HitPrereq_Record gamedataHitPrereq_Record
+HitPrereq_Record = gamedataHitPrereq_Record
+
+---@alias HitRepresentationComponent gameHitRepresentationComponent
+HitRepresentationComponent = gameHitRepresentationComponent
+
+---@alias HitRepresentationOverride gameHitRepresentationOverride
+HitRepresentationOverride = gameHitRepresentationOverride
+
+---@alias HitRepresentationQueryResult gameQueryResult
+HitRepresentationQueryResult = gameQueryResult
+
+---@alias HitRepresentationResource gameHitRepresentationResource
+HitRepresentationResource = gameHitRepresentationResource
+
+---@alias HitRepresentationVisualTaggedOverride gameHitRepresentationVisualTaggedOverride
+HitRepresentationVisualTaggedOverride = gameHitRepresentationVisualTaggedOverride
+
+---@alias HitRepresentation_ResetAllScaleMultipliers gamehitRepresentationEventsResetAllScaleMultipliers
+HitRepresentation_ResetAllScaleMultipliers = gamehitRepresentationEventsResetAllScaleMultipliers
+
+---@alias HitRepresentation_ResetMultipleScaleMultipliers gamehitRepresentationEventsResetMultipleScaleMultipliers
+HitRepresentation_ResetMultipleScaleMultipliers = gamehitRepresentationEventsResetMultipleScaleMultipliers
+
+---@alias HitRepresentation_ResetSingleScaleMultiplier gamehitRepresentationEventsResetSingleScaleMultiplier
+HitRepresentation_ResetSingleScaleMultiplier = gamehitRepresentationEventsResetSingleScaleMultiplier
+
+---@alias HitRepresentation_SetMultipleScaleMultipliers_MultipleShapes gamehitRepresentationEventsSetMultipleScaleMultipliers_MultipleShapes
+HitRepresentation_SetMultipleScaleMultipliers_MultipleShapes = gamehitRepresentationEventsSetMultipleScaleMultipliers_MultipleShapes
+
+---@alias HitRepresentation_SetSingleScaleMultiplier_AllShapes gamehitRepresentationEventsSetSingleScaleMultiplier_AllShapes
+HitRepresentation_SetSingleScaleMultiplier_AllShapes = gamehitRepresentationEventsSetSingleScaleMultiplier_AllShapes
+
+---@alias HitRepresentation_SetSingleScaleMultiplier_MultipleShapes gamehitRepresentationEventsSetSingleScaleMultiplier_MultipleShapes
+HitRepresentation_SetSingleScaleMultiplier_MultipleShapes = gamehitRepresentationEventsSetSingleScaleMultiplier_MultipleShapes
+
+---@alias HitRepresentation_SetSingleScaleMultiplier_SingleShape gamehitRepresentationEventsSetSingleScaleMultiplier_SingleShape
+HitRepresentation_SetSingleScaleMultiplier_SingleShape = gamehitRepresentationEventsSetSingleScaleMultiplier_SingleShape
+
+---@alias HitShapeBase gameHitShapeBase
+HitShapeBase = gameHitShapeBase
+
+---@alias HitShapeContainer gameHitShapeContainer
+HitShapeContainer = gameHitShapeContainer
+
+---@alias HitShapeData gameShapeData
+HitShapeData = gameShapeData
+
+---@alias HitShapeResult gameHitResult
+HitShapeResult = gameHitResult
+
+---@alias HitShapeUserData gameHitShapeUserData
+HitShapeUserData = gameHitShapeUserData
+
+---@alias HitShape_Capsule gameHitShape_Capsule
+HitShape_Capsule = gameHitShape_Capsule
+
+---@alias HitShape_ColliderComponent gameHitShape_ColliderComponent
+HitShape_ColliderComponent = gameHitShape_ColliderComponent
+
+---@alias HitShape_OBB gameHitShape_OBB
+HitShape_OBB = gameHitShape_OBB
+
+---@alias HitShape_Sphere gameHitShape_Sphere
+HitShape_Sphere = gameHitShape_Sphere
+
+---@alias HoldIndicatorGameController gameuiHoldIndicatorGameController
+HoldIndicatorGameController = gameuiHoldIndicatorGameController
+
+---@alias HolocallStartEvent gameuiHolocallStartEvent
+HolocallStartEvent = gameuiHolocallStartEvent
+
+---@alias HomingGDM_Record gamedataHomingGDM_Record
+HomingGDM_Record = gamedataHomingGDM_Record
+
+---@alias HomingParameters_Record gamedataHomingParameters_Record
+HomingParameters_Record = gamedataHomingParameters_Record
+
+---@alias HostJoinedSquad AIHostJoinedSquad
+HostJoinedSquad = AIHostJoinedSquad
+
+---@alias HostLeftSquad AIHostLeftSquad
+HostLeftSquad = AIHostLeftSquad
+
+---@alias HostileThreatDetected AIHostileThreatDetected
+HostileThreatDetected = AIHostileThreatDetected
+
+---@alias HotSpotLayerDefinition gameinteractionsCHotSpotLayerDefinition
+HotSpotLayerDefinition = gameinteractionsCHotSpotLayerDefinition
+
+---@alias HudEnhancer_Record gamedataHudEnhancer_Record
+HudEnhancer_Record = gamedataHudEnhancer_Record
+
+---@alias IAchievementSystem gameIAchievementSystem
+IAchievementSystem = gameIAchievementSystem
+
+---@alias IActivityCardsSystem gameIActivityCardsSystem
+IActivityCardsSystem = gameIActivityCardsSystem
+
+---@alias IActivityLogSystem gameIActivityLogSystem
+IActivityLogSystem = gameIActivityLogSystem
+
+---@alias IAgent gameinfluenceIAgent
+IAgent = gameinfluenceIAgent
+
+---@alias IArea gamemappinsIArea
+IArea = gamemappinsIArea
+
+---@alias IAttack gameIAttack
+IAttack = gameIAttack
+
+---@alias IBlackboard gameIBlackboard
+IBlackboard = gameIBlackboard
+
+---@alias IBlackboardSystem gameIBlackboardSystem
+IBlackboardSystem = gameIBlackboardSystem
+
+---@alias IBlackboardUpdateProxy gameIBlackboardUpdateProxy
+IBlackboardUpdateProxy = gameIBlackboardUpdateProxy
+
+---@alias ICameraSystem gameICameraSystem
+ICameraSystem = gameICameraSystem
+
+---@alias IClientEntitySpawnSystem gameIClientEntitySpawnSystem
+IClientEntitySpawnSystem = gameIClientEntitySpawnSystem
+
+---@alias ICombatRestrictMovementAreaCondition AIICombatGuardAreaCondition
+ICombatRestrictMovementAreaCondition = AIICombatGuardAreaCondition
+
+---@alias ICommandsManager AIICommandsManager
+ICommandsManager = AIICommandsManager
+
+---@alias ICommunitySystem gameICommunitySystem
+ICommunitySystem = gameICommunitySystem
+
+---@alias ICompanionSystem gameICompanionSystem
+ICompanionSystem = gameICompanionSystem
+
+---@alias IComparisonPrereq gameIComparisonPrereq
+IComparisonPrereq = gameIComparisonPrereq
+
+---@alias IComponent entIComponent
+IComponent = entIComponent
+
+---@alias ICooldownSystem gameICooldownSystem
+ICooldownSystem = gameICooldownSystem
+
+---@alias ICoverManager AIISmartCoverManager
+ICoverManager = AIISmartCoverManager
+
+---@alias IDamageSystem gameIDamageSystem
+IDamageSystem = gameIDamageSystem
+
+---@alias IDamageSystemListener gameIDamageSystemListener
+IDamageSystemListener = gameIDamageSystemListener
+
+---@alias IDebugCheatsSystem gameIDebugCheatsSystem
+IDebugCheatsSystem = gameIDebugCheatsSystem
+
+---@alias IDebugDrawHistorySystem gameIDebugDrawHistorySystem
+IDebugDrawHistorySystem = gameIDebugDrawHistorySystem
+
+---@alias IDebugPlayerBreadcrumbs gameIDebugPlayerBreadcrumbs
+IDebugPlayerBreadcrumbs = gameIDebugPlayerBreadcrumbs
+
+---@alias IDelaySystem gameIDelaySystem
+IDelaySystem = gameIDelaySystem
+
+---@alias IDestructionPersistencySystem gameDestructionPersistencySystem
+IDestructionPersistencySystem = gameDestructionPersistencySystem
+
+---@alias IDeviceInteractionManager gameIDeviceInteractionManager
+IDeviceInteractionManager = gameIDeviceInteractionManager
+
+---@alias IDeviceSystem gameIDeviceSystem
+IDeviceSystem = gameIDeviceSystem
+
+---@alias IEffect gameIEffect
+IEffect = gameIEffect
+
+---@alias IEffectSystem gameIEffectSystem
+IEffectSystem = gameIEffectSystem
+
+---@alias IEffectorSystem gameIEffectorSystem
+IEffectorSystem = gameIEffectorSystem
+
+---@alias IEntitySpawnerEventsBroadcaster gameIEntitySpawnerEventsBroadcaster
+IEntitySpawnerEventsBroadcaster = gameIEntitySpawnerEventsBroadcaster
+
+---@alias IFriendlyFireSystem gameIFriendlyFireSystem
+IFriendlyFireSystem = gameIFriendlyFireSystem
+
+---@alias IFxPackage gameweaponIFxPackage
+IFxPackage = gameweaponIFxPackage
+
+---@alias IFxSystem gameIFxSystem
+IFxSystem = gameIFxSystem
+
+---@alias IGPSSystem gamegpsIGPSSystem
+IGPSSystem = gamegpsIGPSSystem
+
+---@alias IGamePersistencySystem gameIPersistencySystem
+IGamePersistencySystem = gameIPersistencySystem
+
+---@alias IGameSystem gameIGameSystem
+IGameSystem = gameIGameSystem
+
+---@alias IGameplayLogicPackageSystem gameIGameplayLogicPackageSystem
+IGameplayLogicPackageSystem = gameIGameplayLogicPackageSystem
+
+---@alias IGlobalTvSystem gameIGlobalTvSystem
+IGlobalTvSystem = gameIGlobalTvSystem
+
+---@alias IGodModeSystem gameIGodModeSystem
+IGodModeSystem = gameIGodModeSystem
+
+---@alias IHitRepresentationSystem gameIHitRepresentationSystem
+IHitRepresentationSystem = gameIHitRepresentationSystem
+
+---@alias IHitShape gameIHitShape
+IHitShape = gameIHitShape
+
+---@alias IInfluenceMapSystem gameinfluenceISystem
+IInfluenceMapSystem = gameinfluenceISystem
+
+---@alias IInspectListener questIInspectListener
+IInspectListener = questIInspectListener
+
+---@alias IInteractionManager gameinteractionsIManager
+IInteractionManager = gameinteractionsIManager
+
+---@alias IInventoryManager gameIInventoryManager
+IInventoryManager = gameIInventoryManager
+
+---@alias IJournalManager gameIJournalManager
+IJournalManager = gameIJournalManager
+
+---@alias IKChainSettings animIKChainSettings
+IKChainSettings = animIKChainSettings
+
+---@alias IKTargetAddEvent entIKTargetAddEvent
+IKTargetAddEvent = entIKTargetAddEvent
+
+---@alias IKTargetRef animIKTargetRef
+IKTargetRef = animIKTargetRef
+
+---@alias IKTargetRemoveEvent entIKTargetRemoveEvent
+IKTargetRemoveEvent = entIKTargetRemoveEvent
+
+---@alias IKTargetRequest animIKTargetRequest
+IKTargetRequest = animIKTargetRequest
+
+---@alias ILevelAssignmentSystem gameILevelAssignmentSystem
+ILevelAssignmentSystem = gameILevelAssignmentSystem
+
+---@alias ILoSFinderSystem gameLoSIFinderSystem
+ILoSFinderSystem = gameLoSIFinderSystem
+
+---@alias ILoadingLogicController inkILoadingLogicController
+ILoadingLogicController = inkILoadingLogicController
+
+---@alias ILocationManager gameILocationManager
+ILocationManager = gameILocationManager
+
+---@alias ILootManager gameILootManager
+ILootManager = gameILootManager
+
+---@alias IMappin gamemappinsIMappin
+IMappin = gamemappinsIMappin
+
+---@alias IMappinData gamemappinsIMappinData
+IMappinData = gamemappinsIMappinData
+
+---@alias IMappinSystem gamemappinsIMappinSystem
+IMappinSystem = gamemappinsIMappinSystem
+
+---@alias IMarketSystem gameIMarketSystem
+IMarketSystem = gameIMarketSystem
+
+---@alias IMinimapSystem gameIMinimapSystem
+IMinimapSystem = gameIMinimapSystem
+
+---@alias IMountingFacility gamemountingIMountingFacility
+IMountingFacility = gamemountingIMountingFacility
+
+---@alias IMovePoliciesSystem moveIPoliciesSystem
+IMovePoliciesSystem = moveIPoliciesSystem
+
+---@alias IMoveSystem vehicleIMoveSystem
+IMoveSystem = vehicleIMoveSystem
+
+---@alias IMovingPlatformMovement gameIMovingPlatformMovement
+IMovingPlatformMovement = gameIMovingPlatformMovement
+
+---@alias IMovingPlatformMovementPointToPoint gameIMovingPlatformMovementPointToPoint
+IMovingPlatformMovementPointToPoint = gameIMovingPlatformMovementPointToPoint
+
+---@alias IMovingPlatformSystem gameIMovingPlatformSystem
+IMovingPlatformSystem = gameIMovingPlatformSystem
+
+---@alias IObjectCarrySystem gameIObjectCarrySystem
+IObjectCarrySystem = gameIObjectCarrySystem
+
+---@alias IObjectPoolSystem gameIObjectPoolSystem
+IObjectPoolSystem = gameIObjectPoolSystem
+
+---@alias IObjectScriptBase gameIObjectScriptBase
+IObjectScriptBase = gameIObjectScriptBase
+
+---@alias IOnlineSystem gameIOnlineSystem
+IOnlineSystem = gameIOnlineSystem
+
+---@alias IOrientationProvider entIOrientationProvider
+IOrientationProvider = entIOrientationProvider
+
+---@alias IPhotoModeSystem gameIPhotoModeSystem
+IPhotoModeSystem = gameIPhotoModeSystem
+
+---@alias IPlacedComponent entIPlacedComponent
+IPlacedComponent = entIPlacedComponent
+
+---@alias IPositionProvider entIPositionProvider
+IPositionProvider = entIPositionProvider
+
+---@alias IPrereq gameIPrereq
+IPrereq = gameIPrereq
+
+---@alias IPrereqManager gameIPrereqManager
+IPrereqManager = gameIPrereqManager
+
+---@alias IPrereq_Record gamedataIPrereq_Record
+IPrereq_Record = gamedataIPrereq_Record
+
+---@alias IPreventionSpawnSystem gameIPreventionSpawnSystem
+IPreventionSpawnSystem = gameIPreventionSpawnSystem
+
+---@alias IRPGPrereq gameIRPGPrereq
+IRPGPrereq = gameIRPGPrereq
+
+---@alias IRacingSystem vehicleIRacingSystem
+IRacingSystem = vehicleIRacingSystem
+
+---@alias IRandomizationSupervisor genIRandomizationSupervisor
+IRandomizationSupervisor = genIRandomizationSupervisor
+
+---@alias IRazerChromaEffectsSystem gameIRazerChromaEffectsSystem
+IRazerChromaEffectsSystem = gameIRazerChromaEffectsSystem
+
+---@alias IReactionSystem AIIReactionSystem
+IReactionSystem = AIIReactionSystem
+
+---@alias IReplicatedGameSystem gameIReplicatedGameSystem
+IReplicatedGameSystem = gameIReplicatedGameSystem
+
+---@alias IRestrictMovementAreaManager AIIGuardAreaManager
+IRestrictMovementAreaManager = AIIGuardAreaManager
+
+---@alias IRichPresenceSystem gameIRichPresenceSystem
+IRichPresenceSystem = gameIRichPresenceSystem
+
+---@alias ISafeAreaManager AIISafeAreaManager
+ISafeAreaManager = AIISafeAreaManager
+
+---@alias ISceneSystem gameISceneSystem
+ISceneSystem = gameISceneSystem
+
+---@alias IScriptablePrereq gameIScriptablePrereq
+IScriptablePrereq = gameIScriptablePrereq
+
+---@alias IScriptableSystem gameIScriptableSystem
+IScriptableSystem = gameIScriptableSystem
+
+---@alias IScriptableSystemsContainer gameIScriptableSystemsContainer
+IScriptableSystemsContainer = gameIScriptableSystemsContainer
+
+---@alias ISenseManager senseISenseManager
+ISenseManager = senseISenseManager
+
+---@alias ISenseShape senseIShape
+ISenseShape = senseIShape
+
+---@alias ISkinableComponent entISkinableComponent
+ISkinableComponent = entISkinableComponent
+
+---@alias ISmartObjectManager AIISmartObjectManager
+ISmartObjectManager = AIISmartObjectManager
+
+---@alias IStatPoolsListener gameIStatPoolsListener
+IStatPoolsListener = gameIStatPoolsListener
+
+---@alias IStatPoolsSystem gameIStatPoolsSystem
+IStatPoolsSystem = gameIStatPoolsSystem
+
+---@alias IStatsDataSystem gameIStatsDataSystem
+IStatsDataSystem = gameIStatsDataSystem
+
+---@alias IStatsListener gameIStatsListener
+IStatsListener = gameIStatsListener
+
+---@alias IStatsSystem gameIStatsSystem
+IStatsSystem = gameIStatsSystem
+
+---@alias IStatusEffectListener gameIStatusEffectListener
+IStatusEffectListener = gameIStatusEffectListener
+
+---@alias IStatusEffectSystem gameIStatusEffectSystem
+IStatusEffectSystem = gameIStatusEffectSystem
+
+---@alias IStimuliSystem gameIStimuliSystem
+IStimuliSystem = gameIStimuliSystem
+
+---@alias ISubtitleHandlerSystem gameISubtitleHandlerSystem
+ISubtitleHandlerSystem = gameISubtitleHandlerSystem
+
+---@alias ITargetingSystem gameITargetingSystem
+ITargetingSystem = gameITargetingSystem
+
+---@alias ITelemetrySystem gameITelemetrySystem
+ITelemetrySystem = gameITelemetrySystem
+
+---@alias ITierSystem gameITierSystem
+ITierSystem = gameITierSystem
+
+---@alias ITransactionSystem gameITransactionSystem
+ITransactionSystem = gameITransactionSystem
+
+---@alias IUIIconsGeneratorSystem gameuiIUIIconsGeneratorSystem
+IUIIconsGeneratorSystem = gameuiIUIIconsGeneratorSystem
+
+---@alias IUISystem gameuiIGameSystemUI
+IUISystem = gameuiIGameSystemUI
+
+---@alias IVehicleSystem gameIVehicleSystem
+IVehicleSystem = gameIVehicleSystem
+
+---@alias IVelocityProvider entIVelocityProvider
+IVelocityProvider = entIVelocityProvider
+
+---@alias IVisionModeSystem gameIVisionModeSystem
+IVisionModeSystem = gameIVisionModeSystem
+
+---@alias IVisualComponent entIVisualComponent
+IVisualComponent = entIVisualComponent
+
+---@alias IVisualObject gamemappinsIVisualObject
+IVisualObject = gamemappinsIVisualObject
+
+---@alias IVisualizerTimeProvider gameinteractionsvisIVisualizerTimeProvider
+IVisualizerTimeProvider = gameinteractionsvisIVisualizerTimeProvider
+
+---@alias IWardrobeSystem gameIWardrobeSystem
+IWardrobeSystem = gameIWardrobeSystem
+
+---@alias IWatchdogSystem gameIWatchdogSystem
+IWatchdogSystem = gameIWatchdogSystem
+
+---@alias IWorkspotGameSystem gameIWorkspotGameSystem
+IWorkspotGameSystem = gameIWorkspotGameSystem
+
+---@alias IWorkspotManager AIIWorkspotManager
+IWorkspotManager = AIIWorkspotManager
+
+---@alias IconsGeneratorContext_Record gamedataIconsGeneratorContext_Record
+IconsGeneratorContext_Record = gamedataIconsGeneratorContext_Record
+
+---@alias IconsNameResolver gameuiIconsNameResolver
+IconsNameResolver = gameuiIconsNameResolver
+
+---@alias ImprovementRelation_Record gamedataImprovementRelation_Record
+ImprovementRelation_Record = gamedataImprovementRelation_Record
+
+---@alias InAirGravityModifier_Record gamedataInAirGravityModifier_Record
+InAirGravityModifier_Record = gamedataInAirGravityModifier_Record
+
+---@alias InCrowd gameInCrowd
+InCrowd = gameInCrowd
+
+---@alias InfluenceComponent gameinfluenceComponent
+InfluenceComponent = gameinfluenceComponent
+
+---@alias InfluenceMapSystem gameinfluenceSystem
+InfluenceMapSystem = gameinfluenceSystem
+
+---@alias InfluenceObstacleAgent gameinfluenceObstacleAgent
+InfluenceObstacleAgent = gameinfluenceObstacleAgent
+
+---@alias InfluenceObstacleComponent gameinfluenceObstacleComponent
+InfluenceObstacleComponent = gameinfluenceObstacleComponent
+
+---@alias InfluenceReservationAgent gameinfluenceReservationAgent
+InfluenceReservationAgent = gameinfluenceReservationAgent
+
+---@alias InfluenceSeparationAgent gameinfluenceSeparationAgent
+InfluenceSeparationAgent = gameinfluenceSeparationAgent
+
+---@alias InfoBox rendInfoBox
+InfoBox = rendInfoBox
+
+---@alias InitLoadingScreen_Record gamedataInitLoadingScreen_Record
+InitLoadingScreen_Record = gamedataInitLoadingScreen_Record
+
+---@alias InitialLoadingScreenLogicController inkInitialLoadingScreenLogicController
+InitialLoadingScreenLogicController = inkInitialLoadingScreenLogicController
+
+---@alias InnerItemData gameInnerItemData
+InnerItemData = gameInnerItemData
+
+---@alias InputHintController gameuiInputHintController
+InputHintController = gameuiInputHintController
+
+---@alias InputHintData gameuiInputHintData
+InputHintData = gameuiInputHintData
+
+---@alias InputHintGroupController gameuiInputHintGroupController
+InputHintGroupController = gameuiInputHintGroupController
+
+---@alias InputHintGroupData gameuiInputHintGroupData
+InputHintGroupData = gameuiInputHintGroupData
+
+---@alias InputHintInitializedEvent gameuiInputHintInitializedEvent
+InputHintInitializedEvent = gameuiInputHintInitializedEvent
+
+---@alias InputHintManagerGameController gameuiInputHintManagerGameController
+InputHintManagerGameController = gameuiInputHintManagerGameController
+
+---@alias InputTriggerState gameInputTriggerState
+InputTriggerState = gameInputTriggerState
+
+---@alias InspectListenerEvent questInspectListenerEvent
+InspectListenerEvent = questInspectListenerEvent
+
+---@alias InteractionActivationEvent gameinteractionsInteractionActivationEvent
+InteractionActivationEvent = gameinteractionsInteractionActivationEvent
+
+---@alias InteractionAttemptedChoice gameinteractionsAttemptedChoice
+InteractionAttemptedChoice = gameinteractionsAttemptedChoice
+
+---@alias InteractionBaseEvent gameinteractionsInteractionBaseEvent
+InteractionBaseEvent = gameinteractionsInteractionBaseEvent
+
+---@alias InteractionBase_Record gamedataInteractionBase_Record
+InteractionBase_Record = gamedataInteractionBase_Record
+
+---@alias InteractionChoice gameinteractionsChoice
+InteractionChoice = gameinteractionsChoice
+
+---@alias InteractionChoiceCaption gameinteractionsChoiceCaption
+InteractionChoiceCaption = gameinteractionsChoiceCaption
+
+---@alias InteractionChoiceCaptionBluelinePart gameinteractionsChoiceCaptionBluelinePart
+InteractionChoiceCaptionBluelinePart = gameinteractionsChoiceCaptionBluelinePart
+
+---@alias InteractionChoiceCaptionIconPart gameinteractionsChoiceCaptionIconPart
+InteractionChoiceCaptionIconPart = gameinteractionsChoiceCaptionIconPart
+
+---@alias InteractionChoiceCaptionPart gameinteractionsChoiceCaptionPart
+InteractionChoiceCaptionPart = gameinteractionsChoiceCaptionPart
+
+---@alias InteractionChoiceCaptionScriptPart gameinteractionsChoiceCaptionScriptPart
+InteractionChoiceCaptionScriptPart = gameinteractionsChoiceCaptionScriptPart
+
+---@alias InteractionChoiceCaptionStringPart gameinteractionsChoiceCaptionStringPart
+InteractionChoiceCaptionStringPart = gameinteractionsChoiceCaptionStringPart
+
+---@alias InteractionChoiceData gameinteractionsvisInteractionChoiceData
+InteractionChoiceData = gameinteractionsvisInteractionChoiceData
+
+---@alias InteractionChoiceEvent gameinteractionsChoiceEvent
+InteractionChoiceEvent = gameinteractionsChoiceEvent
+
+---@alias InteractionChoiceHubData gameinteractionsvisInteractionChoiceHubData
+InteractionChoiceHubData = gameinteractionsvisInteractionChoiceHubData
+
+---@alias InteractionChoiceMetaData gameinteractionsChoiceMetaData
+InteractionChoiceMetaData = gameinteractionsChoiceMetaData
+
+---@alias InteractionComponent gameinteractionsComponent
+InteractionComponent = gameinteractionsComponent
+
+---@alias InteractionLayerData gameinteractionsLayerData
+InteractionLayerData = gameinteractionsLayerData
+
+---@alias InteractionManager gameinteractionsCManager
+InteractionManager = gameinteractionsCManager
+
+---@alias InteractionMappin gamemappinsInteractionMappin
+InteractionMappin = gamemappinsInteractionMappin
+
+---@alias InteractionMountBase_Record gamedataInteractionMountBase_Record
+InteractionMountBase_Record = gamedataInteractionMountBase_Record
+
+---@alias InteractionMultipleSetEnableEvent gameinteractionsMultipleSetEnableEvent
+InteractionMultipleSetEnableEvent = gameinteractionsMultipleSetEnableEvent
+
+---@alias InteractionResetChoicesEvent gameinteractionsResetChoicesEvent
+InteractionResetChoicesEvent = gameinteractionsResetChoicesEvent
+
+---@alias InteractionScriptedCondition gameinteractionsInteractionScriptedCondition
+InteractionScriptedCondition = gameinteractionsInteractionScriptedCondition
+
+---@alias InteractionSetChoicesEvent gameinteractionsSetChoicesEvent
+InteractionSetChoicesEvent = gameinteractionsSetChoicesEvent
+
+---@alias InteractionSetEnableEvent gameinteractionsSetEnableEvent
+InteractionSetEnableEvent = gameinteractionsSetEnableEvent
+
+---@alias InteractionsHubGameController gameuiInteractionsHubGameController
+InteractionsHubGameController = gameuiInteractionsHubGameController
+
+---@alias Inventory gameInventory
+Inventory = gameInventory
+
+---@alias InventoryChangedEvent gameInventoryChangedEvent
+InventoryChangedEvent = gameInventoryChangedEvent
+
+---@alias InventoryItemAbility gameInventoryItemAbility
+InventoryItemAbility = gameInventoryItemAbility
+
+---@alias InventoryItemAttachmentType gameInventoryItemAttachmentType
+InventoryItemAttachmentType = gameInventoryItemAttachmentType
+
+---@alias InventoryItemAttachments gameInventoryItemAttachments
+InventoryItemAttachments = gameInventoryItemAttachments
+
+---@alias InventoryItemData gameInventoryItemData
+InventoryItemData = gameInventoryItemData
+
+---@alias InventoryItemGroup_Record gamedataInventoryItemGroup_Record
+InventoryItemGroup_Record = gamedataInventoryItemGroup_Record
+
+---@alias InventoryItemSet_Record gamedataInventoryItemSet_Record
+InventoryItemSet_Record = gamedataInventoryItemSet_Record
+
+---@alias InventoryItemSortData gameInventoryItemSortData
+InventoryItemSortData = gameInventoryItemSortData
+
+---@alias InventoryItem_Record gamedataInventoryItem_Record
+InventoryItem_Record = gamedataInventoryItem_Record
+
+---@alias InventoryListener gameIInventoryListener
+InventoryListener = gameIInventoryListener
+
+---@alias InventoryManager gameInventoryManager
+InventoryManager = gameInventoryManager
+
+---@alias InventoryPS gameInventoryPS
+InventoryPS = gameInventoryPS
+
+---@alias InventoryPrereq gameInventoryPrereq
+InventoryPrereq = gameInventoryPrereq
+
+---@alias InventoryPrereqState gameInventoryPrereqState
+InventoryPrereqState = gameInventoryPrereqState
+
+---@alias InventoryScriptCallback gameInventoryScriptCallback
+InventoryScriptCallback = gameInventoryScriptCallback
+
+---@alias InventoryScriptListener gameInventoryScriptListener
+InventoryScriptListener = gameInventoryScriptListener
+
+---@alias IsQuickhackPanelOpenedPrereq gameIsQuickhackPanelOpenedPrereq
+IsQuickhackPanelOpenedPrereq = gameIsQuickhackPanelOpenedPrereq
+
+---@alias IsQuickhackPanelOpenedPrereqState gameIsQuickhackPanelOpenedPrereqState
+IsQuickhackPanelOpenedPrereqState = gameIsQuickhackPanelOpenedPrereqState
+
+---@alias IsVisualizerActivePrereq gameIsVisualizerActivePrereq
+IsVisualizerActivePrereq = gameIsVisualizerActivePrereq
+
+---@alias IsVisualizerActivePrereqState gameIsVisualizerActivePrereqState
+IsVisualizerActivePrereqState = gameIsVisualizerActivePrereqState
+
+---@alias ItemAction_Record gamedataItemAction_Record
+ItemAction_Record = gamedataItemAction_Record
+
+---@alias ItemAddedEvent gameItemAddedEvent
+ItemAddedEvent = gameItemAddedEvent
+
+---@alias ItemAddedNotificationViewData gameuiItemAddedNotificationViewData
+ItemAddedNotificationViewData = gameuiItemAddedNotificationViewData
+
+---@alias ItemAddedToSlot gameAttachmentSlotEventsItemAddedToSlot
+ItemAddedToSlot = gameAttachmentSlotEventsItemAddedToSlot
+
+---@alias ItemAddedToSlotBase gameAttachmentSlotEventsItemAddedToSlotBase
+ItemAddedToSlotBase = gameAttachmentSlotEventsItemAddedToSlotBase
+
+---@alias ItemArrayQuery_Record gamedataItemArrayQuery_Record
+ItemArrayQuery_Record = gamedataItemArrayQuery_Record
+
+---@alias ItemBeingRemovedEvent gameItemBeingRemovedEvent
+ItemBeingRemovedEvent = gameItemBeingRemovedEvent
+
+---@alias ItemBlueprintElement_Record gamedataItemBlueprintElement_Record
+ItemBlueprintElement_Record = gamedataItemBlueprintElement_Record
+
+---@alias ItemBlueprint_Record gamedataItemBlueprint_Record
+ItemBlueprint_Record = gamedataItemBlueprint_Record
+
+---@alias ItemCategory_Record gamedataItemCategory_Record
+ItemCategory_Record = gamedataItemCategory_Record
+
+---@alias ItemChangedEvent gameItemChangedEvent
+ItemChangedEvent = gameItemChangedEvent
+
+---@alias ItemComparisonState gameItemComparisonState
+ItemComparisonState = gameItemComparisonState
+
+---@alias ItemCost_Record gamedataItemCost_Record
+ItemCost_Record = gamedataItemCost_Record
+
+---@alias ItemCreationPrereqDataWrapper gameItemCreationPrereqDataWrapper
+ItemCreationPrereqDataWrapper = gameItemCreationPrereqDataWrapper
+
+---@alias ItemCreationPrereq_Record gamedataItemCreationPrereq_Record
+ItemCreationPrereq_Record = gamedataItemCreationPrereq_Record
+
+---@alias ItemDataSource gameuiItemDataSourceWrapper
+ItemDataSource = gameuiItemDataSourceWrapper
+
+---@alias ItemDataView gameuiItemDataViewWrapper
+ItemDataView = gameuiItemDataViewWrapper
+
+---@alias ItemDecorationEvent gameItemDecorationEvent
+ItemDecorationEvent = gameItemDecorationEvent
+
+---@alias ItemDisplayContext gameItemDisplayContext
+ItemDisplayContext = gameItemDisplayContext
+
+---@alias ItemDropSettings_Record gamedataItemDropSettings_Record
+ItemDropSettings_Record = gamedataItemDropSettings_Record
+
+---@alias ItemEquipRequest gamestateMachineparameterTypeItemEquipRequest
+ItemEquipRequest = gamestateMachineparameterTypeItemEquipRequest
+
+---@alias ItemID gameItemID
+ItemID = gameItemID
+
+---@alias ItemIconGender gameItemIconGender
+ItemIconGender = gameItemIconGender
+
+---@alias ItemList_Record gamedataItemList_Record
+ItemList_Record = gamedataItemList_Record
+
+---@alias ItemModParams gameItemModParams
+ItemModParams = gameItemModParams
+
+---@alias ItemObject gameItemObject
+ItemObject = gameItemObject
+
+---@alias ItemObjectToCheck_Record gamedataItemObjectToCheck_Record
+ItemObjectToCheck_Record = gamedataItemObjectToCheck_Record
+
+---@alias ItemPartConnection_Record gamedataItemPartConnection_Record
+ItemPartConnection_Record = gamedataItemPartConnection_Record
+
+---@alias ItemPartListElement_Record gamedataItemPartListElement_Record
+ItemPartListElement_Record = gamedataItemPartListElement_Record
+
+---@alias ItemQueryElement_Record gamedataItemQueryElement_Record
+ItemQueryElement_Record = gamedataItemQueryElement_Record
+
+---@alias ItemQuery_Record gamedataItemQuery_Record
+ItemQuery_Record = gamedataItemQuery_Record
+
+---@alias ItemRecipe_Record gamedataItemRecipe_Record
+ItemRecipe_Record = gamedataItemRecipe_Record
+
+---@alias ItemRemovedFromSlot gameAttachmentSlotEventsItemRemovedFromSlot
+ItemRemovedFromSlot = gameAttachmentSlotEventsItemRemovedFromSlot
+
+---@alias ItemRequiredSlot_Record gamedataItemRequiredSlot_Record
+ItemRequiredSlot_Record = gamedataItemRequiredSlot_Record
+
+---@alias ItemStructure_Record gamedataItemStructure_Record
+ItemStructure_Record = gamedataItemStructure_Record
+
+---@alias ItemType_Record gamedataItemType_Record
+ItemType_Record = gamedataItemType_Record
+
+---@alias ItemUnequipRequest gamestateMachineparameterTypeItemUnequipRequest
+ItemUnequipRequest = gamestateMachineparameterTypeItemUnequipRequest
+
+---@alias ItemViewData gameItemViewData
+ItemViewData = gameItemViewData
+
+---@alias ItemVisualsAddedToSlot gameAttachmentSlotEventsItemVisualsAddedToSlot
+ItemVisualsAddedToSlot = gameAttachmentSlotEventsItemVisualsAddedToSlot
+
+---@alias Item_Record gamedataItem_Record
+Item_Record = gamedataItem_Record
+
+---@alias ItemsFactoryAppearanceSuffixBase_Record gamedataItemsFactoryAppearanceSuffixBase_Record
+ItemsFactoryAppearanceSuffixBase_Record = gamedataItemsFactoryAppearanceSuffixBase_Record
+
+---@alias ItemsFactoryAppearanceSuffixOrder_Record gamedataItemsFactoryAppearanceSuffixOrder_Record
+ItemsFactoryAppearanceSuffixOrder_Record = gamedataItemsFactoryAppearanceSuffixOrder_Record
+
+---@alias JoinTrafficEvent AIJoinTrafficEvent
+JoinTrafficEvent = AIJoinTrafficEvent
+
+---@alias JoinTrafficNPCContext gameJoinTrafficNPCContext
+JoinTrafficNPCContext = gameJoinTrafficNPCContext
+
+---@alias JoinTrafficVehicleEvent vehicleJoinTrafficVehicleEvent
+JoinTrafficVehicleEvent = vehicleJoinTrafficVehicleEvent
+
+---@alias JournalBriefing gameJournalBriefing
+JournalBriefing = gameJournalBriefing
+
+---@alias JournalBriefingBaseSection gameJournalBriefingBaseSection
+JournalBriefingBaseSection = gameJournalBriefingBaseSection
+
+---@alias JournalBriefingMapSection gameJournalBriefingMapSection
+JournalBriefingMapSection = gameJournalBriefingMapSection
+
+---@alias JournalBriefingPaperDollSection gameJournalBriefingPaperDollSection
+JournalBriefingPaperDollSection = gameJournalBriefingPaperDollSection
+
+---@alias JournalBriefingVideoSection gameJournalBriefingVideoSection
+JournalBriefingVideoSection = gameJournalBriefingVideoSection
+
+---@alias JournalCallbackOption gameJournalCallbackOption
+JournalCallbackOption = gameJournalCallbackOption
+
+---@alias JournalChangeType gameJournalChangeType
+JournalChangeType = gameJournalChangeType
+
+---@alias JournalCodexCategory gameJournalCodexCategory
+JournalCodexCategory = gameJournalCodexCategory
+
+---@alias JournalCodexDescription gameJournalCodexDescription
+JournalCodexDescription = gameJournalCodexDescription
+
+---@alias JournalCodexEntry gameJournalCodexEntry
+JournalCodexEntry = gameJournalCodexEntry
+
+---@alias JournalCodexGroup gameJournalCodexGroup
+JournalCodexGroup = gameJournalCodexGroup
+
+---@alias JournalContact gameJournalContact
+JournalContact = gameJournalContact
+
+---@alias JournalContactModifierEntry gameJournalContactModifierEntry
+JournalContactModifierEntry = gameJournalContactModifierEntry
+
+---@alias JournalContainerEntry gameJournalContainerEntry
+JournalContainerEntry = gameJournalContainerEntry
+
+---@alias JournalEmail gameJournalEmail
+JournalEmail = gameJournalEmail
+
+---@alias JournalEmailGroup gameJournalEmailGroup
+JournalEmailGroup = gameJournalEmailGroup
+
+---@alias JournalEntry gameJournalEntry
+JournalEntry = gameJournalEntry
+
+---@alias JournalFactNameValue gameJournalFactNameValue
+JournalFactNameValue = gameJournalFactNameValue
+
+---@alias JournalFile gameJournalFile
+JournalFile = gameJournalFile
+
+---@alias JournalFileEntry gameJournalFileEntry
+JournalFileEntry = gameJournalFileEntry
+
+---@alias JournalFileGroup gameJournalFileGroup
+JournalFileGroup = gameJournalFileGroup
+
+---@alias JournalIcon_Record gamedataJournalIcon_Record
+JournalIcon_Record = gamedataJournalIcon_Record
+
+---@alias JournalImageEntry gameJournalImageEntry
+JournalImageEntry = gameJournalImageEntry
+
+---@alias JournalInternetBase gameJournalInternetBase
+JournalInternetBase = gameJournalInternetBase
+
+---@alias JournalInternetImage gameJournalInternetImage
+JournalInternetImage = gameJournalInternetImage
+
+---@alias JournalInternetPage gameJournalInternetPage
+JournalInternetPage = gameJournalInternetPage
+
+---@alias JournalInternetRectangle gameJournalInternetRectangle
+JournalInternetRectangle = gameJournalInternetRectangle
+
+---@alias JournalInternetSite gameJournalInternetSite
+JournalInternetSite = gameJournalInternetSite
+
+---@alias JournalInternetText gameJournalInternetText
+JournalInternetText = gameJournalInternetText
+
+---@alias JournalInternetVideo gameJournalInternetVideo
+JournalInternetVideo = gameJournalInternetVideo
+
+---@alias JournalManager gameJournalManager
+JournalManager = gameJournalManager
+
+---@alias JournalMetaQuest gameJournalMetaQuest
+JournalMetaQuest = gameJournalMetaQuest
+
+---@alias JournalMetaQuestObjective gameJournalMetaQuestObjective
+JournalMetaQuestObjective = gameJournalMetaQuestObjective
+
+---@alias JournalMetaQuestScriptedData gameJournalMetaQuestScriptedData
+JournalMetaQuestScriptedData = gameJournalMetaQuestScriptedData
+
+---@alias JournalNotifyOption gameJournalNotifyOption
+JournalNotifyOption = gameJournalNotifyOption
+
+---@alias JournalOnscreen gameJournalOnscreen
+JournalOnscreen = gameJournalOnscreen
+
+---@alias JournalOnscreenGroup gameJournalOnscreenGroup
+JournalOnscreenGroup = gameJournalOnscreenGroup
+
+---@alias JournalOnscreensStructuredGroup gameJournalOnscreensStructuredGroup
+JournalOnscreensStructuredGroup = gameJournalOnscreensStructuredGroup
+
+---@alias JournalPhoneChoiceEntry gameJournalPhoneChoiceEntry
+JournalPhoneChoiceEntry = gameJournalPhoneChoiceEntry
+
+---@alias JournalPhoneChoiceGroup gameJournalPhoneChoiceGroup
+JournalPhoneChoiceGroup = gameJournalPhoneChoiceGroup
+
+---@alias JournalPhoneConversation gameJournalPhoneConversation
+JournalPhoneConversation = gameJournalPhoneConversation
+
+---@alias JournalPhoneMessage gameJournalPhoneMessage
+JournalPhoneMessage = gameJournalPhoneMessage
+
+---@alias JournalPointOfInterestGroup gameJournalPointOfInterestGroup
+JournalPointOfInterestGroup = gameJournalPointOfInterestGroup
+
+---@alias JournalPointOfInterestMappin gameJournalPointOfInterestMappin
+JournalPointOfInterestMappin = gameJournalPointOfInterestMappin
+
+---@alias JournalQuest gameJournalQuest
+JournalQuest = gameJournalQuest
+
+---@alias JournalQuestCodexLink gameJournalQuestCodexLink
+JournalQuestCodexLink = gameJournalQuestCodexLink
+
+---@alias JournalQuestDescription gameJournalQuestDescription
+JournalQuestDescription = gameJournalQuestDescription
+
+---@alias JournalQuestGuidanceMarker gameJournalQuestGuidanceMarker
+JournalQuestGuidanceMarker = gameJournalQuestGuidanceMarker
+
+---@alias JournalQuestMapPin gameJournalQuestMapPin
+JournalQuestMapPin = gameJournalQuestMapPin
+
+---@alias JournalQuestMapPinBase gameJournalQuestMapPinBase
+JournalQuestMapPinBase = gameJournalQuestMapPinBase
+
+---@alias JournalQuestMapPinLink gameJournalQuestMapPinLink
+JournalQuestMapPinLink = gameJournalQuestMapPinLink
+
+---@alias JournalQuestMultiMapPin gameJournalQuestMultiMapPin
+JournalQuestMultiMapPin = gameJournalQuestMultiMapPin
+
+---@alias JournalQuestObjective gameJournalQuestObjective
+JournalQuestObjective = gameJournalQuestObjective
+
+---@alias JournalQuestObjectiveBase gameJournalQuestObjectiveBase
+JournalQuestObjectiveBase = gameJournalQuestObjectiveBase
+
+---@alias JournalQuestPhase gameJournalQuestPhase
+JournalQuestPhase = gameJournalQuestPhase
+
+---@alias JournalQuestPointOfInterestMapPin gameJournalQuestPointOfInterestMapPin
+JournalQuestPointOfInterestMapPin = gameJournalQuestPointOfInterestMapPin
+
+---@alias JournalQuestSubObjective gameJournalQuestSubObjective
+JournalQuestSubObjective = gameJournalQuestSubObjective
+
+---@alias JournalQuestTitleModifier gameJournalQuestTitleModifier
+JournalQuestTitleModifier = gameJournalQuestTitleModifier
+
+---@alias JournalRequestClassFilter gameJournalRequestClassFilter
+JournalRequestClassFilter = gameJournalRequestClassFilter
+
+---@alias JournalRequestContext gameJournalRequestContext
+JournalRequestContext = gameJournalRequestContext
+
+---@alias JournalRequestStateFilter gameJournalRequestStateFilter
+JournalRequestStateFilter = gameJournalRequestStateFilter
+
+---@alias JournalTarot gameJournalTarot
+JournalTarot = gameJournalTarot
+
+---@alias JournalTarotGroup gameJournalTarotGroup
+JournalTarotGroup = gameJournalTarotGroup
+
+---@alias KeepCurrentCoverCoverSelectionParameters_Record gamedataKeepCurrentCoverCoverSelectionParameters_Record
+KeepCurrentCoverCoverSelectionParameters_Record = gamedataKeepCurrentCoverCoverSelectionParameters_Record
+
+---@alias KeyBindingEvent inkKeyBindingEvent
+KeyBindingEvent = inkKeyBindingEvent
+
+---@alias KillInfo gameuiKillInfo
+KillInfo = gameuiKillInfo
+
+---@alias KillRewardEvent gameeventsKillRewardEvent
+KillRewardEvent = gameeventsKillRewardEvent
+
+---@alias LCDScreen_Record gamedataLCDScreen_Record
+LCDScreen_Record = gamedataLCDScreen_Record
+
+---@alias LadderDescription gamestateMachineparameterTypeLadderDescription
+LadderDescription = gamestateMachineparameterTypeLadderDescription
+
+---@alias LandingFxMaterial_Record gamedataLandingFxMaterial_Record
+LandingFxMaterial_Record = gamedataLandingFxMaterial_Record
+
+---@alias LandingFxPackage_Record gamedataLandingFxPackage_Record
+LandingFxPackage_Record = gamedataLandingFxPackage_Record
+
+---@alias LanguageSpecificImageController inkLanguageSpecificImageController
+LanguageSpecificImageController = inkLanguageSpecificImageController
+
+---@alias LanguageSpecificVideoController inkLanguageSpecificVideoController
+LanguageSpecificVideoController = inkLanguageSpecificVideoController
+
+---@alias LatestSaveMetadataInfo inkLatestSaveMetadataInfo
+LatestSaveMetadataInfo = inkLatestSaveMetadataInfo
+
+---@alias Layout_Record gamedataLayout_Record
+Layout_Record = gamedataLayout_Record
+
+---@alias LazyDevice gameLazyDevice
+LazyDevice = gameLazyDevice
+
+---@alias LevelAssignmentSystem gameLevelAssignmentSystem
+LevelAssignmentSystem = gameLevelAssignmentSystem
+
+---@alias LevelUpData questLevelUpData
+LevelUpData = questLevelUpData
+
+---@alias LevelUpNotificationViewData gameuiLevelUpNotificationViewData
+LevelUpNotificationViewData = gameuiLevelUpNotificationViewData
+
+---@alias LifePath_Record gamedataLifePath_Record
+LifePath_Record = gamedataLifePath_Record
+
+---@alias LightChannelComponent entLightChannelComponent
+LightChannelComponent = entLightChannelComponent
+
+---@alias LightComponent entLightComponent
+LightComponent = entLightComponent
+
+---@alias LightPreset gamedataLightPreset
+LightPreset = gamedataLightPreset
+
+---@alias LightPreset_Record gamedataLightPreset_Record
+LightPreset_Record = gamedataLightPreset_Record
+
+---@alias LinearAccuracy_Record gamedataLinearAccuracy_Record
+LinearAccuracy_Record = gamedataLinearAccuracy_Record
+
+---@alias LinearTrajectoryParams gameprojectileLinearTrajectoryParams
+LinearTrajectoryParams = gameprojectileLinearTrajectoryParams
+
+---@alias ListChoiceData gameinteractionsvisListChoiceData
+ListChoiceData = gameinteractionsvisListChoiceData
+
+---@alias ListChoiceHubData gameinteractionsvisListChoiceHubData
+ListChoiceHubData = gameinteractionsvisListChoiceHubData
+
+---@alias ListController inkListController
+ListController = inkListController
+
+---@alias ListItemController inkListItemController
+ListItemController = inkListItemController
+
+---@alias ListenerAction gameinputScriptListenerAction
+ListenerAction = gameinputScriptListenerAction
+
+---@alias ListenerActionConsumer gameinputScriptListenerActionConsumer
+ListenerActionConsumer = gameinputScriptListenerActionConsumer
+
+---@alias LoSFinderParams gameLoSFinderParams
+LoSFinderParams = gameLoSFinderParams
+
+---@alias LoSFinderSystem gameLoSFinderSystem
+LoSFinderSystem = gameLoSFinderSystem
+
+---@alias LoadingScreenLogicController inkFastTravelLoadingScreenLogicController
+LoadingScreenLogicController = inkFastTravelLoadingScreenLogicController
+
+---@alias LoadingTipsGroup_Record gamedataLoadingTipsGroup_Record
+LoadingTipsGroup_Record = gamedataLoadingTipsGroup_Record
+
+---@alias LoadoutData gameLoadoutData
+LoadoutData = gameLoadoutData
+
+---@alias LocalizationStringComponent entLocalizationStringComponent
+LocalizationStringComponent = entLocalizationStringComponent
+
+---@alias LocationInformation AILocationInformation
+LocationInformation = AILocationInformation
+
+---@alias LocationManager gameLocationManager
+LocationManager = gameLocationManager
+
+---@alias LocomotionBraindanceParameters gamestateMachineparameterTypeActionLocomotionBraindanceParameters
+LocomotionBraindanceParameters = gamestateMachineparameterTypeActionLocomotionBraindanceParameters
+
+---@alias LocomotionMode_Record gamedataLocomotionMode_Record
+LocomotionMode_Record = gamedataLocomotionMode_Record
+
+---@alias LocomotionParameters gamestateMachineparameterTypeActionLocomotionParameters
+LocomotionParameters = gamestateMachineparameterTypeActionLocomotionParameters
+
+---@alias LocomotionSwimmingParameters gamestateMachineparameterTypeActionLocomotionSwimmingParameters
+LocomotionSwimmingParameters = gamestateMachineparameterTypeActionLocomotionSwimmingParameters
+
+---@alias LogTutorialHintActionEvent gameuiLogTutorialHintActionEvent
+LogTutorialHintActionEvent = gameuiLogTutorialHintActionEvent
+
+---@alias LookAtAddEvent entLookAtAddEvent
+LookAtAddEvent = entLookAtAddEvent
+
+---@alias LookAtFacingPositionProvider gameLookAtFacingPositionProvider
+LookAtFacingPositionProvider = gameLookAtFacingPositionProvider
+
+---@alias LookAtLimits animLookAtLimits
+LookAtLimits = animLookAtLimits
+
+---@alias LookAtObjectChangedEvent gametargetingSystemLookAtObjectChangedEvent
+LookAtObjectChangedEvent = gametargetingSystemLookAtObjectChangedEvent
+
+---@alias LookAtPartInfo animLookAtPartInfo
+LookAtPartInfo = animLookAtPartInfo
+
+---@alias LookAtPartRequest animLookAtPartRequest
+LookAtPartRequest = animLookAtPartRequest
+
+---@alias LookAtPart_Record gamedataLookAtPart_Record
+LookAtPart_Record = gamedataLookAtPart_Record
+
+---@alias LookAtPartsDependency animLookAtPartsDependency
+LookAtPartsDependency = animLookAtPartsDependency
+
+---@alias LookAtPreset_Record gamedataLookAtPreset_Record
+LookAtPreset_Record = gamedataLookAtPreset_Record
+
+---@alias LookAtRef animLookAtRef
+LookAtRef = animLookAtRef
+
+---@alias LookAtRemoveEvent entLookAtRemoveEvent
+LookAtRemoveEvent = entLookAtRemoveEvent
+
+---@alias LookAtRequest animLookAtRequest
+LookAtRequest = animLookAtRequest
+
+---@alias LookAtStateMachineSettings animLookAtStateMachineSettings
+LookAtStateMachineSettings = animLookAtStateMachineSettings
+
+---@alias LootChoiceActionWrapper gameinteractionsLootChoiceActionWrapper
+LootChoiceActionWrapper = gameinteractionsLootChoiceActionWrapper
+
+---@alias LootData gameinteractionsvisLootData
+LootData = gameinteractionsvisLootData
+
+---@alias LootItemType gameLootItemType
+LootItemType = gameLootItemType
+
+---@alias LootItem_Record gamedataLootItem_Record
+LootItem_Record = gamedataLootItem_Record
+
+---@alias LootManager gameLootManager
+LootManager = gameLootManager
+
+---@alias LootTableElement_Record gamedataLootTableElement_Record
+LootTableElement_Record = gamedataLootTableElement_Record
+
+---@alias LootTable_Record gamedataLootTable_Record
+LootTable_Record = gamedataLootTable_Record
+
+---@alias LootVisualiserControlWrapper gameinteractionsLootVisualiserControlWrapper
+LootVisualiserControlWrapper = gameinteractionsLootVisualiserControlWrapper
+
+---@alias MainMenuGameController gameuiMainMenuGameController
+MainMenuGameController = gameuiMainMenuGameController
+
+---@alias MainProgramGenRule gameuiMainProgramGenRule
+MainProgramGenRule = gameuiMainProgramGenRule
+
+---@alias MakeInventoryShareableEvent gameMakeInventoryShareableEvent
+MakeInventoryShareableEvent = gameMakeInventoryShareableEvent
+
+---@alias MappinClampingSettings_Record gamedataMappinClampingSettings_Record
+MappinClampingSettings_Record = gamedataMappinClampingSettings_Record
+
+---@alias MappinComponent gamemappinsMappinComponent
+MappinComponent = gamemappinsMappinComponent
+
+---@alias MappinControllerCustomData gameuiMappinControllerCustomData
+MappinControllerCustomData = gameuiMappinControllerCustomData
+
+---@alias MappinData gamemappinsMappinData
+MappinData = gamemappinsMappinData
+
+---@alias MappinDefinition_Record gamedataMappinDefinition_Record
+MappinDefinition_Record = gamedataMappinDefinition_Record
+
+---@alias MappinEntry gamemappinsMappinEntry
+MappinEntry = gamemappinsMappinEntry
+
+---@alias MappinPhaseDefinition_Record gamedataMappinPhaseDefinition_Record
+MappinPhaseDefinition_Record = gamedataMappinPhaseDefinition_Record
+
+---@alias MappinPhase_Record gamedataMappinPhase_Record
+MappinPhase_Record = gamedataMappinPhase_Record
+
+---@alias MappinScriptData gamemappinsMappinScriptData
+MappinScriptData = gamemappinsMappinScriptData
+
+---@alias MappinSystem gamemappinsMappinSystem
+MappinSystem = gamemappinsMappinSystem
+
+---@alias MappinUICustomOpacityParams_Record gamedataMappinUICustomOpacityParams_Record
+MappinUICustomOpacityParams_Record = gamedataMappinUICustomOpacityParams_Record
+
+---@alias MappinUIFilterGroup_Record gamedataMappinUIFilterGroup_Record
+MappinUIFilterGroup_Record = gamedataMappinUIFilterGroup_Record
+
+---@alias MappinUIGlobalProfile_Record gamedataMappinUIGlobalProfile_Record
+MappinUIGlobalProfile_Record = gamedataMappinUIGlobalProfile_Record
+
+---@alias MappinUIParamGroup_Record gamedataMappinUIParamGroup_Record
+MappinUIParamGroup_Record = gamedataMappinUIParamGroup_Record
+
+---@alias MappinUIProfile gameuiMappinUIProfile
+MappinUIProfile = gameuiMappinUIProfile
+
+---@alias MappinUIRuntimeProfile_Record gamedataMappinUIRuntimeProfile_Record
+MappinUIRuntimeProfile_Record = gamedataMappinUIRuntimeProfile_Record
+
+---@alias MappinUISettings_Record gamedataMappinUISettings_Record
+MappinUISettings_Record = gamedataMappinUISettings_Record
+
+---@alias MappinUISpawnProfile_Record gamedataMappinUISpawnProfile_Record
+MappinUISpawnProfile_Record = gamedataMappinUISpawnProfile_Record
+
+---@alias MappinUIUtils gameuiMappinUIUtils
+MappinUIUtils = gameuiMappinUIUtils
+
+---@alias MappinUtils gameMappinUtils
+MappinUtils = gameMappinUtils
+
+---@alias MappinVariantChangedEvent questMappinVariantChangedEvent
+MappinVariantChangedEvent = questMappinVariantChangedEvent
+
+---@alias MappinVariant_Record gamedataMappinVariant_Record
+MappinVariant_Record = gamedataMappinVariant_Record
+
+---@alias MappinsContainerController gameuiMappinsContainerController
+MappinsContainerController = gameuiMappinsContainerController
+
+---@alias MappinsGroup_Record gamedataMappinsGroup_Record
+MappinsGroup_Record = gamedataMappinsGroup_Record
+
+---@alias MaraudersMapDevicesSink worldMaraudersMapDevicesSink
+MaraudersMapDevicesSink = worldMaraudersMapDevicesSink
+
+---@alias MasterDeviceComponent gameMasterDeviceComponent
+MasterDeviceComponent = gameMasterDeviceComponent
+
+---@alias MaterialFx_Record gamedataMaterialFx_Record
+MaterialFx_Record = gamedataMaterialFx_Record
+
+---@alias Material_Record gamedataMaterial_Record
+Material_Record = gamedataMaterial_Record
+
+---@alias MeleeAttackData gameMeleeAttackData
+MeleeAttackData = gameMeleeAttackData
+
+---@alias MeleeAttackDirection_Record gamedataMeleeAttackDirection_Record
+MeleeAttackDirection_Record = gamedataMeleeAttackDirection_Record
+
+---@alias MenuAccountLogicController inkMenuAccountLogicController
+MenuAccountLogicController = inkMenuAccountLogicController
+
+---@alias MeshComponent entMeshComponent
+MeshComponent = entMeshComponent
+
+---@alias MetaQuest_Record gamedataMetaQuest_Record
+MetaQuest_Record = gamedataMetaQuest_Record
+
+---@alias MiniGameStateUpdateEvent gameuiOnMiniGameStateUpdateEvent
+MiniGameStateUpdateEvent = gameuiOnMiniGameStateUpdateEvent
+
+---@alias MiniGameStateUpdateEventAdvanced gameuiOnMiniGameStateUpdateEventAdvanced
+MiniGameStateUpdateEventAdvanced = gameuiOnMiniGameStateUpdateEventAdvanced
+
+---@alias MiniGame_AllSymbols_Record gamedataMiniGame_AllSymbols_Record
+MiniGame_AllSymbols_Record = gamedataMiniGame_AllSymbols_Record
+
+---@alias MiniGame_AllSymbols_inline0_Record gamedataMiniGame_AllSymbols_inline0_Record
+MiniGame_AllSymbols_inline0_Record = gamedataMiniGame_AllSymbols_inline0_Record
+
+---@alias MiniGame_AllSymbols_inline1_Record gamedataMiniGame_AllSymbols_inline1_Record
+MiniGame_AllSymbols_inline1_Record = gamedataMiniGame_AllSymbols_inline1_Record
+
+---@alias MiniGame_AllSymbols_inline2_Record gamedataMiniGame_AllSymbols_inline2_Record
+MiniGame_AllSymbols_inline2_Record = gamedataMiniGame_AllSymbols_inline2_Record
+
+---@alias MiniGame_AllSymbols_inline3_Record gamedataMiniGame_AllSymbols_inline3_Record
+MiniGame_AllSymbols_inline3_Record = gamedataMiniGame_AllSymbols_inline3_Record
+
+---@alias MiniGame_AllSymbols_inline4_Record gamedataMiniGame_AllSymbols_inline4_Record
+MiniGame_AllSymbols_inline4_Record = gamedataMiniGame_AllSymbols_inline4_Record
+
+---@alias MiniGame_SymbolsWithRarity_Record gamedataMiniGame_SymbolsWithRarity_Record
+MiniGame_SymbolsWithRarity_Record = gamedataMiniGame_SymbolsWithRarity_Record
+
+---@alias MiniGame_Trap_Record gamedataMiniGame_Trap_Record
+MiniGame_Trap_Record = gamedataMiniGame_Trap_Record
+
+---@alias MinigameActionType_Record gamedataMinigameActionType_Record
+MinigameActionType_Record = gamedataMinigameActionType_Record
+
+---@alias MinigameAction_Record gamedataMinigameAction_Record
+MinigameAction_Record = gamedataMinigameAction_Record
+
+---@alias MinigameCategory_Record gamedataMinigameCategory_Record
+MinigameCategory_Record = gamedataMinigameCategory_Record
+
+---@alias MinigameCollisionLogic gameuiSideScrollerMiniGameCollisionLogic
+MinigameCollisionLogic = gameuiSideScrollerMiniGameCollisionLogic
+
+---@alias MinigameCollisionLogicAdvanced gameuiSideScrollerMiniGameCollisionLogicAdvanced
+MinigameCollisionLogicAdvanced = gameuiSideScrollerMiniGameCollisionLogicAdvanced
+
+---@alias MinigameController gameuiSideScrollerMiniGameController
+MinigameController = gameuiSideScrollerMiniGameController
+
+---@alias MinigameControllerAdvanced gameuiSideScrollerMiniGameControllerAdvanced
+MinigameControllerAdvanced = gameuiSideScrollerMiniGameControllerAdvanced
+
+---@alias MinigameData gameuiMinigameData
+MinigameData = gameuiMinigameData
+
+---@alias MinigameDynObject gameuiSideScrollerMiniGameDynObjectLogic
+MinigameDynObject = gameuiSideScrollerMiniGameDynObjectLogic
+
+---@alias MinigameDynObjectAdvanced gameuiSideScrollerMiniGameDynObjectLogicAdvanced
+MinigameDynObjectAdvanced = gameuiSideScrollerMiniGameDynObjectLogicAdvanced
+
+---@alias MinigameGenerationRule gameuiMinigameGenerationRule
+MinigameGenerationRule = gameuiMinigameGenerationRule
+
+---@alias MinigameLogicController gameuiSideScrollerMiniGameLogicController
+MinigameLogicController = gameuiSideScrollerMiniGameLogicController
+
+---@alias MinigameLogicControllerAdvanced gameuiSideScrollerMiniGameLogicControllerAdvanced
+MinigameLogicControllerAdvanced = gameuiSideScrollerMiniGameLogicControllerAdvanced
+
+---@alias MinigamePlayerController gameuiSideScrollerMiniGamePlayerController
+MinigamePlayerController = gameuiSideScrollerMiniGamePlayerController
+
+---@alias MinigamePlayerControllerAdvanced gameuiSideScrollerMiniGamePlayerControllerAdvanced
+MinigamePlayerControllerAdvanced = gameuiSideScrollerMiniGamePlayerControllerAdvanced
+
+---@alias MinigameProgramData gameuiMinigameProgramData
+MinigameProgramData = gameuiMinigameProgramData
+
+---@alias MinigameState gameuiMinigameState
+MinigameState = gameuiMinigameState
+
+---@alias MinigameStateAdvanced gameuiSideScrollerMiniGameStateAdvanced
+MinigameStateAdvanced = gameuiSideScrollerMiniGameStateAdvanced
+
+---@alias MinigameTrapType_Record gamedataMinigameTrapType_Record
+MinigameTrapType_Record = gamedataMinigameTrapType_Record
+
+---@alias Minigame_Def_Record gamedataMinigame_Def_Record
+Minigame_Def_Record = gamedataMinigame_Def_Record
+
+---@alias MinimapContainerController gameuiMinimapContainerController
+MinimapContainerController = gameuiMinimapContainerController
+
+---@alias MinimapDeviceMappinController gameuiMinimapDeviceMappinController
+MinimapDeviceMappinController = gameuiMinimapDeviceMappinController
+
+---@alias MinimapDynamicEventMappinController gameuiMinimapDynamicEventMappinController
+MinimapDynamicEventMappinController = gameuiMinimapDynamicEventMappinController
+
+---@alias MinimapHazardWarningMappinController gameuiMinimapHazardWarningMappinController
+MinimapHazardWarningMappinController = gameuiMinimapHazardWarningMappinController
+
+---@alias MinimapPingSystemMappinController gameuiMinimapPingSystemMappinController
+MinimapPingSystemMappinController = gameuiMinimapPingSystemMappinController
+
+---@alias MinimapQuestAreaInitData gameuiMinimapQuestAreaInitData
+MinimapQuestAreaInitData = gameuiMinimapQuestAreaInitData
+
+---@alias MinimapQuestAreaMappinController gameuiMinimapQuestAreaMappinController
+MinimapQuestAreaMappinController = gameuiMinimapQuestAreaMappinController
+
+---@alias MinimapQuestMappinController gameuiMinimapQuestMappinController
+MinimapQuestMappinController = gameuiMinimapQuestMappinController
+
+---@alias MinimapRemotePlayerMappinController gameuiMinimapRemotePlayerMappinController
+MinimapRemotePlayerMappinController = gameuiMinimapRemotePlayerMappinController
+
+---@alias MinimapSecurityAreaInitData gameuiMinimapSecurityAreaInitData
+MinimapSecurityAreaInitData = gameuiMinimapSecurityAreaInitData
+
+---@alias MinimapSecurityAreaMappinController gameuiMinimapSecurityAreaMappinController
+MinimapSecurityAreaMappinController = gameuiMinimapSecurityAreaMappinController
+
+---@alias MinimapStealthMappinController gameuiMinimapStealthMappinController
+MinimapStealthMappinController = gameuiMinimapStealthMappinController
+
+---@alias MinimapSystem gameMinimapSystem
+MinimapSystem = gameMinimapSystem
+
+---@alias MiscAICommandNodeParams questMiscAICommandNodeParams
+MiscAICommandNodeParams = questMiscAICommandNodeParams
+
+---@alias ModifyStatPoolModifierEffector_Record gamedataModifyStatPoolModifierEffector_Record
+ModifyStatPoolModifierEffector_Record = gamedataModifyStatPoolModifierEffector_Record
+
+---@alias MotionConstrainedTierDataParams gameMotionConstrainedTierDataParams
+MotionConstrainedTierDataParams = gameMotionConstrainedTierDataParams
+
+---@alias MountAIEvent gameMountAIEvent
+MountAIEvent = gameMountAIEvent
+
+---@alias MountDescriptor_MountingType gameMountDescriptorMountType
+MountDescriptor_MountingType = gameMountDescriptorMountType
+
+---@alias MountEventData gameMountEventData
+MountEventData = gameMountEventData
+
+---@alias MountEventOptions gameMountEventOptions
+MountEventOptions = gameMountEventOptions
+
+---@alias MountableComponent gamemountingMountableComponent
+MountableComponent = gamemountingMountableComponent
+
+---@alias MountingEvent gamemountingMountingEvent
+MountingEvent = gamemountingMountingEvent
+
+---@alias MountingInfo gamemountingMountingInfo
+MountingInfo = gamemountingMountingInfo
+
+---@alias MountingRelationship gamemountingMountingRelationship
+MountingRelationship = gamemountingMountingRelationship
+
+---@alias MountingRequest gamemountingMountingRequest
+MountingRequest = gamemountingMountingRequest
+
+---@alias MountingSlotId gamemountingMountingSlotId
+MountingSlotId = gamemountingMountingSlotId
+
+---@alias MoveComponentVelocityProvider moveMoveComponentVelocityProvider
+MoveComponentVelocityProvider = moveMoveComponentVelocityProvider
+
+---@alias MoveEquip gameAttachmentSlotEventsMoveEquip
+MoveEquip = gameAttachmentSlotEventsMoveEquip
+
+---@alias MovePolicies movePolicies
+MovePolicies = movePolicies
+
+---@alias MovePoliciesComponent movePoliciesComponent
+MovePoliciesComponent = movePoliciesComponent
+
+---@alias MovePoliciesSystem movePoliciesSystem
+MovePoliciesSystem = movePoliciesSystem
+
+---@alias MoveSystem vehicleMoveSystem
+MoveSystem = vehicleMoveSystem
+
+---@alias MoveSystemStopEvent vehicleMoveSystemStopEvent
+MoveSystemStopEvent = vehicleMoveSystemStopEvent
+
+---@alias MoveTo gameMovingPlatformMoveTo
+MoveTo = gameMovingPlatformMoveTo
+
+---@alias MovementParam_Record gamedataMovementParam_Record
+MovementParam_Record = gamedataMovementParam_Record
+
+---@alias MovementParameters moveMovementParameters
+MovementParameters = moveMovementParameters
+
+---@alias MovementParams_Record gamedataMovementParams_Record
+MovementParams_Record = gamedataMovementParams_Record
+
+---@alias MovementPolicyTagList_Record gamedataMovementPolicyTagList_Record
+MovementPolicyTagList_Record = gamedataMovementPolicyTagList_Record
+
+---@alias MovementPolicy_Record gamedataMovementPolicy_Record
+MovementPolicy_Record = gamedataMovementPolicy_Record
+
+---@alias MovingPlatform gameMovingPlatform
+MovingPlatform = gameMovingPlatform
+
+---@alias MovingPlatformMovementDynamic gameMovingPlatformMovementDynamic
+MovingPlatformMovementDynamic = gameMovingPlatformMovementDynamic
+
+---@alias MovingPlatformMovementLinear gameMovingPlatformMovementLinear
+MovingPlatformMovementLinear = gameMovingPlatformMovementLinear
+
+---@alias MovingPlatformSystem gameMovingPlatformSystem
+MovingPlatformSystem = gameMovingPlatformSystem
+
+---@alias MultiEcsManagerComponent gameMultiEcsManagerComponent
+MultiEcsManagerComponent = gameMultiEcsManagerComponent
+
+---@alias MultiPrereq gameMultiPrereq
+MultiPrereq = gameMultiPrereq
+
+---@alias MultiPrereqState gameMultiPrereqState
+MultiPrereqState = gameMultiPrereqState
+
+---@alias MultiPrereq_Record gamedataMultiPrereq_Record
+MultiPrereq_Record = gamedataMultiPrereq_Record
+
+---@alias MultiSelectCovers AIbehaviorSelectedCoversData
+MultiSelectCovers = AIbehaviorSelectedCoversData
+
+---@alias MultiplayerGiveChoiceTokenEvent questMultiplayerGiveChoiceTokenEvent
+MultiplayerGiveChoiceTokenEvent = questMultiplayerGiveChoiceTokenEvent
+
+---@alias Muppet gameMuppet
+Muppet = gameMuppet
+
+---@alias MuppetBlackboardsComponent gameMuppetBlackboardsComponent
+MuppetBlackboardsComponent = gameMuppetBlackboardsComponent
+
+---@alias MuppetComponent gameMuppetComponent
+MuppetComponent = gameMuppetComponent
+
+---@alias MuppetInputHandlerComponent gameMuppetInputHandlerComponent
+MuppetInputHandlerComponent = gameMuppetInputHandlerComponent
+
+---@alias MuppetInputStates gameMuppetInputStates
+MuppetInputStates = gameMuppetInputStates
+
+---@alias MuppetInventory gameMuppetInventory
+MuppetInventory = gameMuppetInventory
+
+---@alias MuppetLocomotionComponent gameMuppetLocomotionComponent
+MuppetLocomotionComponent = gameMuppetLocomotionComponent
+
+---@alias MuppetPhysicsComponent gameMuppetPhysicsComponent
+MuppetPhysicsComponent = gameMuppetPhysicsComponent
+
+---@alias MuppetRawInput gameMuppetRawInput
+MuppetRawInput = gameMuppetRawInput
+
+---@alias MuppetStats gameMuppetStats
+MuppetStats = gameMuppetStats
+
+---@alias MuppetUpperBodyRequestsComponent gameMuppetUpperBodyRequestsComponent
+MuppetUpperBodyRequestsComponent = gameMuppetUpperBodyRequestsComponent
+
+---@alias MusicEvent gameaudioeventsMusicEvent
+MusicEvent = gameaudioeventsMusicEvent
+
+---@alias MusicSync entMusicSyncEvent
+MusicSync = entMusicSyncEvent
+
+---@alias MutablePoolValueModifier_Record gamedataMutablePoolValueModifier_Record
+MutablePoolValueModifier_Record = gamedataMutablePoolValueModifier_Record
+
+---@alias NPCBehaviorState_Record gamedataNPCBehaviorState_Record
+NPCBehaviorState_Record = gamedataNPCBehaviorState_Record
+
+---@alias NPCCommand AICommand
+NPCCommand = AICommand
+
+---@alias NPCEquipmentGroupEntry_Record gamedataNPCEquipmentGroupEntry_Record
+NPCEquipmentGroupEntry_Record = gamedataNPCEquipmentGroupEntry_Record
+
+---@alias NPCEquipmentGroup_Record gamedataNPCEquipmentGroup_Record
+NPCEquipmentGroup_Record = gamedataNPCEquipmentGroup_Record
+
+---@alias NPCEquipmentItemPool_Record gamedataNPCEquipmentItemPool_Record
+NPCEquipmentItemPool_Record = gamedataNPCEquipmentItemPool_Record
+
+---@alias NPCEquipmentItem_Record gamedataNPCEquipmentItem_Record
+NPCEquipmentItem_Record = gamedataNPCEquipmentItem_Record
+
+---@alias NPCEquipmentItemsPoolEntry_Record gamedataNPCEquipmentItemsPoolEntry_Record
+NPCEquipmentItemsPoolEntry_Record = gamedataNPCEquipmentItemsPoolEntry_Record
+
+---@alias NPCHighLevelState_Record gamedataNPCHighLevelState_Record
+NPCHighLevelState_Record = gamedataNPCHighLevelState_Record
+
+---@alias NPCNextToTheCrosshair gameuiNPCNextToTheCrosshair
+NPCNextToTheCrosshair = gameuiNPCNextToTheCrosshair
+
+---@alias NPCQuestAffiliation_Record gamedataNPCQuestAffiliation_Record
+NPCQuestAffiliation_Record = gamedataNPCQuestAffiliation_Record
+
+---@alias NPCRarity_Record gamedataNPCRarity_Record
+NPCRarity_Record = gamedataNPCRarity_Record
+
+---@alias NPCStanceState_Record gamedataNPCStanceState_Record
+NPCStanceState_Record = gamedataNPCStanceState_Record
+
+---@alias NPCTypePrereq_Record gamedataNPCTypePrereq_Record
+NPCTypePrereq_Record = gamedataNPCTypePrereq_Record
+
+---@alias NPCType_Record gamedataNPCType_Record
+NPCType_Record = gamedataNPCType_Record
+
+---@alias NPCUpperBodyState_Record gamedataNPCUpperBodyState_Record
+NPCUpperBodyState_Record = gamedataNPCUpperBodyState_Record
+
+---@alias NPCstubData gameNPCstubData
+NPCstubData = gameNPCstubData
+
+---@alias NarrationEvent gameuiNarrationEvent
+NarrationEvent = gameuiNarrationEvent
+
+---@alias NarrationPlateComponent gameNarrationPlateComponent
+NarrationPlateComponent = gameNarrationPlateComponent
+
+---@alias NarrativePlateData gameuiNarrativePlateData
+NarrativePlateData = gameuiNarrativePlateData
+
+---@alias NativeHudManager gameNativeHudManager
+NativeHudManager = gameNativeHudManager
+
+---@alias NavigationCostModCircle worldNavigationScriptCostModCircle
+NavigationCostModCircle = worldNavigationScriptCostModCircle
+
+---@alias NavigationFindPointResult worldNavigationScriptFindPointResult
+NavigationFindPointResult = worldNavigationScriptFindPointResult
+
+---@alias NavigationFindWallResult worldNavigationScriptFindWallResult
+NavigationFindWallResult = worldNavigationScriptFindWallResult
+
+---@alias NavigationObstacle worldNavigationScriptObstacle
+NavigationObstacle = worldNavigationScriptObstacle
+
+---@alias NavigationPath worldNavigationScriptPath
+NavigationPath = worldNavigationScriptPath
+
+---@alias NavigationSystem worldNavigationScriptInterface
+NavigationSystem = worldNavigationScriptInterface
+
+---@alias NetrunnerPrototypeComponent gameNetrunnerPrototypeComponent
+NetrunnerPrototypeComponent = gameNetrunnerPrototypeComponent
+
+---@alias NetrunnerPrototypeDespawnEvent gameNetrunnerPrototypeDespawnEvent
+NetrunnerPrototypeDespawnEvent = gameNetrunnerPrototypeDespawnEvent
+
+---@alias NetrunnerPrototypeNetworkNode gameNetrunnerPrototypeNetworkNode
+NetrunnerPrototypeNetworkNode = gameNetrunnerPrototypeNetworkNode
+
+---@alias NetrunnerPrototypeNodeSetupEvent gameNetrunnerPrototypeNodeSetupEvent
+NetrunnerPrototypeNodeSetupEvent = gameNetrunnerPrototypeNodeSetupEvent
+
+---@alias NetrunnerPrototypeSpawnCompletedEvent gameNetrunnerPrototypeSpawnCompletedEvent
+NetrunnerPrototypeSpawnCompletedEvent = gameNetrunnerPrototypeSpawnCompletedEvent
+
+---@alias NetrunnerPrototypeSpawnRequestEvent gameNetrunnerPrototypeSpawnRequestEvent
+NetrunnerPrototypeSpawnRequestEvent = gameNetrunnerPrototypeSpawnRequestEvent
+
+---@alias NetworkPingingParameteres_Record gamedataNetworkPingingParameteres_Record
+NetworkPingingParameteres_Record = gamedataNetworkPingingParameteres_Record
+
+---@alias NetworkPresetBinderParameters_Record gamedataNetworkPresetBinderParameters_Record
+NetworkPresetBinderParameters_Record = gamedataNetworkPresetBinderParameters_Record
+
+---@alias NewMappinID gameNewMappinID
+NewMappinID = gameNewMappinID
+
+---@alias NewThreat AINewThreat
+NewThreat = AINewThreat
+
+---@alias NewsFeedTitle_Record gamedataNewsFeedTitle_Record
+NewsFeedTitle_Record = gamedataNewsFeedTitle_Record
+
+---@alias NonLinearAccuracy_Record gamedataNonLinearAccuracy_Record
+NonLinearAccuracy_Record = gamedataNonLinearAccuracy_Record
+
+---@alias NotImplementedAICommandParams questNotImplementedAICommandParams
+NotImplementedAICommandParams = questNotImplementedAICommandParams
+
+---@alias NotPrereq gameNotPrereq
+NotPrereq = gameNotPrereq
+
+---@alias NotPrereqState gameNotPrereqState
+NotPrereqState = gameNotPrereqState
+
+---@alias NotifyFootstepMaterialContextChangedEvent gameaudioeventsNotifyFootstepMaterialContextChanged
+NotifyFootstepMaterialContextChangedEvent = gameaudioeventsNotifyFootstepMaterialContextChanged
+
+---@alias NotifySurfaceDirectionChangedEvent gameaudioeventsNotifySurfaceDirectionChanged
+NotifySurfaceDirectionChangedEvent = gameaudioeventsNotifySurfaceDirectionChanged
+
+---@alias NpcNameplateGameController gameuiNpcNameplateGameController
+NpcNameplateGameController = gameuiNpcNameplateGameController
+
+---@alias NumberPlate_Record gamedataNumberPlate_Record
+NumberPlate_Record = gamedataNumberPlate_Record
+
+---@alias ObjectActionCost_Record gamedataObjectActionCost_Record
+ObjectActionCost_Record = gamedataObjectActionCost_Record
+
+---@alias ObjectActionEffect_Record gamedataObjectActionEffect_Record
+ObjectActionEffect_Record = gamedataObjectActionEffect_Record
+
+---@alias ObjectActionGameplayCategory_Record gamedataObjectActionGameplayCategory_Record
+ObjectActionGameplayCategory_Record = gamedataObjectActionGameplayCategory_Record
+
+---@alias ObjectActionPrereq_Record gamedataObjectActionPrereq_Record
+ObjectActionPrereq_Record = gamedataObjectActionPrereq_Record
+
+---@alias ObjectActionReference_Record gamedataObjectActionReference_Record
+ObjectActionReference_Record = gamedataObjectActionReference_Record
+
+---@alias ObjectActionType_Record gamedataObjectActionType_Record
+ObjectActionType_Record = gamedataObjectActionType_Record
+
+---@alias ObjectAction_Record gamedataObjectAction_Record
+ObjectAction_Record = gamedataObjectAction_Record
+
+---@alias ObjectCarrierComponent gameObjectCarrierComponent
+ObjectCarrierComponent = gameObjectCarrierComponent
+
+---@alias ObjectCarrierComponentAttached gameObjectCarrierComponentAttached
+ObjectCarrierComponentAttached = gameObjectCarrierComponentAttached
+
+---@alias ObjectCarrierComponentDetached gameObjectCarrierComponentDetached
+ObjectCarrierComponentDetached = gameObjectCarrierComponentDetached
+
+---@alias ObjectCarrySystem gameObjectCarrySystem
+ObjectCarrySystem = gameObjectCarrySystem
+
+---@alias ObjectInspectListener questObjectInspectListener
+ObjectInspectListener = questObjectInspectListener
+
+---@alias ObjectLookedAtEvent gametargetingSystemObjectLookedAtEvent
+ObjectLookedAtEvent = gametargetingSystemObjectLookedAtEvent
+
+---@alias ObjectPoolSystem gameObjectPoolSystem
+ObjectPoolSystem = gameObjectPoolSystem
+
+---@alias ObjectSelectionComponent AIObjectSelectionComponent
+ObjectSelectionComponent = AIObjectSelectionComponent
+
+---@alias ObjectSelectionManager AIObjectSelectionManager
+ObjectSelectionManager = AIObjectSelectionManager
+
+---@alias ObjectToCheck_Record gamedataObjectToCheck_Record
+ObjectToCheck_Record = gamedataObjectToCheck_Record
+
+---@alias OffMeshConnectionComponent AIOffMeshConnectionComponent
+OffMeshConnectionComponent = AIOffMeshConnectionComponent
+
+---@alias OffMeshLinkTag_Record gamedataOffMeshLinkTag_Record
+OffMeshLinkTag_Record = gamedataOffMeshLinkTag_Record
+
+---@alias OffPavement gameOffPavement
+OffPavement = gameOffPavement
+
+---@alias OnBeingDetectedEvent senseOnBeingDetectedEvent
+OnBeingDetectedEvent = senseOnBeingDetectedEvent
+
+---@alias OnCarHitPlayer gameOnCarHitPlayer
+OnCarHitPlayer = gameOnCarHitPlayer
+
+---@alias OnDetectedEvent senseOnDetectedEvent
+OnDetectedEvent = senseOnDetectedEvent
+
+---@alias OnInventoryEmptyEvent gameOnInventoryEmptyEvent
+OnInventoryEmptyEvent = gameOnInventoryEmptyEvent
+
+---@alias OnLootAllEvent gameOnLootAllEvent
+OnLootAllEvent = gameOnLootAllEvent
+
+---@alias OnLootEvent gameOnLootEvent
+OnLootEvent = gameOnLootEvent
+
+---@alias OnPavement gameOnPavement
+OnPavement = gameOnPavement
+
+---@alias OnRemoveDetection senseOnRemoveDetection
+OnRemoveDetection = senseOnRemoveDetection
+
+---@alias OnScannableBraindanceClueDisabledEvent gameOnScannableBraindanceClueDisabledEvent
+OnScannableBraindanceClueDisabledEvent = gameOnScannableBraindanceClueDisabledEvent
+
+---@alias OnScannableBraindanceClueEnabledEvent gameOnScannableBraindanceClueEnabledEvent
+OnScannableBraindanceClueEnabledEvent = gameOnScannableBraindanceClueEnabledEvent
+
+---@alias OutOfCrowd gameOutOfCrowd
+OutOfCrowd = gameOutOfCrowd
+
+---@alias OutlineArea gamemappinsOutlineArea
+OutlineArea = gamemappinsOutlineArea
+
+---@alias Output_Record gamedataOutput_Record
+Output_Record = gamedataOutput_Record
+
+---@alias OwnerAngleCoverSelectionParameters_Record gamedataOwnerAngleCoverSelectionParameters_Record
+OwnerAngleCoverSelectionParameters_Record = gamedataOwnerAngleCoverSelectionParameters_Record
+
+---@alias OwnerDistanceCoverSelectionParameters_Record gamedataOwnerDistanceCoverSelectionParameters_Record
+OwnerDistanceCoverSelectionParameters_Record = gamedataOwnerDistanceCoverSelectionParameters_Record
+
+---@alias OwnerThreatCoverSelectionParameters_Record gamedataOwnerThreatCoverSelectionParameters_Record
+OwnerThreatCoverSelectionParameters_Record = gamedataOwnerThreatCoverSelectionParameters_Record
+
+---@alias PSChangedEvent gamePSChangedEvent
+PSChangedEvent = gamePSChangedEvent
+
+---@alias PSDeviceChangedEvent gamePSDeviceChangedEvent
+PSDeviceChangedEvent = gamePSDeviceChangedEvent
+
+---@alias PSMAddOnDemandStateMachine gamestateMachineeventAddOnDemandStateMachine
+PSMAddOnDemandStateMachine = gamestateMachineeventAddOnDemandStateMachine
+
+---@alias PSMBaseEvent gamestateMachineeventBaseEvent
+PSMBaseEvent = gamestateMachineeventBaseEvent
+
+---@alias PSMImpulse gamestateMachineeventImpulse
+PSMImpulse = gamestateMachineeventImpulse
+
+---@alias PSMPostponedParameterBase gamestateMachineeventPostponedParameterBase
+PSMPostponedParameterBase = gamestateMachineeventPostponedParameterBase
+
+---@alias PSMPostponedParameterBool gamestateMachineeventPostponedParameterBool
+PSMPostponedParameterBool = gamestateMachineeventPostponedParameterBool
+
+---@alias PSMPostponedParameterCName gamestateMachineeventPostponedParameterCName
+PSMPostponedParameterCName = gamestateMachineeventPostponedParameterCName
+
+---@alias PSMPostponedParameterFloat gamestateMachineeventPostponedParameterFloat
+PSMPostponedParameterFloat = gamestateMachineeventPostponedParameterFloat
+
+---@alias PSMPostponedParameterInt gamestateMachineeventPostponedParameterInt
+PSMPostponedParameterInt = gamestateMachineeventPostponedParameterInt
+
+---@alias PSMPostponedParameterScriptable gamestateMachineeventPostponedParameterScriptable
+PSMPostponedParameterScriptable = gamestateMachineeventPostponedParameterScriptable
+
+---@alias PSMPostponedParameterVector gamestateMachineeventPostponedParameterVector
+PSMPostponedParameterVector = gamestateMachineeventPostponedParameterVector
+
+---@alias PSMRemoveOnDemandStateMachine gamestateMachineeventRemoveOnDemandStateMachine
+PSMRemoveOnDemandStateMachine = gamestateMachineeventRemoveOnDemandStateMachine
+
+---@alias PSMResetPhysicalRepresentation gamestateMachineeventResetPhysicalRepresentation
+PSMResetPhysicalRepresentation = gamestateMachineeventResetPhysicalRepresentation
+
+---@alias PSMResetStateMachine gamestateMachineeventResetStateMachine
+PSMResetStateMachine = gamestateMachineeventResetStateMachine
+
+---@alias PSMStartStateMachine gamestateMachineeventStartStateMachine
+PSMStartStateMachine = gamestateMachineeventStartStateMachine
+
+---@alias PSMStopStateMachine gamestateMachineeventStopStateMachine
+PSMStopStateMachine = gamestateMachineeventStopStateMachine
+
+---@alias PSMTeleportEvent gamestateMachineeventTeleport
+PSMTeleportEvent = gamestateMachineeventTeleport
+
+---@alias PanzerBonus gameuiPanzerBonus
+PanzerBonus = gameuiPanzerBonus
+
+---@alias PanzerBullet gameuiPanzerBullet
+PanzerBullet = gameuiPanzerBullet
+
+---@alias PanzerCloud gameuiPanzerCloud
+PanzerCloud = gameuiPanzerCloud
+
+---@alias PanzerEnemy gameuiPanzerEnemy
+PanzerEnemy = gameuiPanzerEnemy
+
+---@alias PanzerEnemyAV gameuiPanzerEnemyAV
+PanzerEnemyAV = gameuiPanzerEnemyAV
+
+---@alias PanzerEnemyBullet gameuiPanzerEnemyBullet
+PanzerEnemyBullet = gameuiPanzerEnemyBullet
+
+---@alias PanzerEnemyDrone gameuiPanzerEnemyDrone
+PanzerEnemyDrone = gameuiPanzerEnemyDrone
+
+---@alias PanzerExplosion gameuiPanzerExplosion
+PanzerExplosion = gameuiPanzerExplosion
+
+---@alias PanzerFriendlyBullet gameuiPanzerFriendlyBullet
+PanzerFriendlyBullet = gameuiPanzerFriendlyBullet
+
+---@alias PanzerGameLogicController gameuiPanzerGameLogicController
+PanzerGameLogicController = gameuiPanzerGameLogicController
+
+---@alias PanzerGameState gameuiPanzerGameState
+PanzerGameState = gameuiPanzerGameState
+
+---@alias PanzerHUDGameController gameuiPanzerHUDGameController
+PanzerHUDGameController = gameuiPanzerHUDGameController
+
+---@alias PanzerLifeBonus gameuiPanzerLifeBonus
+PanzerLifeBonus = gameuiPanzerLifeBonus
+
+---@alias PanzerMiniGameController gameuiPanzerMiniGameController
+PanzerMiniGameController = gameuiPanzerMiniGameController
+
+---@alias PanzerPlayerController gameuiPanzerPlayerController
+PanzerPlayerController = gameuiPanzerPlayerController
+
+---@alias PanzerScoreBoard gameuiPanzerScoreBoard
+PanzerScoreBoard = gameuiPanzerScoreBoard
+
+---@alias PanzerScoreBonus gameuiPanzerScoreBonus
+PanzerScoreBonus = gameuiPanzerScoreBonus
+
+---@alias PanzerScoreRecord gameuiPanzerScoreRecord
+PanzerScoreRecord = gameuiPanzerScoreRecord
+
+---@alias PanzerScoreRecordData gameuiPanzerScoreRecordData
+PanzerScoreRecordData = gameuiPanzerScoreRecordData
+
+---@alias ParabolicTrajectoryParams gameprojectileParabolicTrajectoryParams
+ParabolicTrajectoryParams = gameprojectileParabolicTrajectoryParams
+
+---@alias ParentAttachmentType_Record gamedataParentAttachmentType_Record
+ParentAttachmentType_Record = gamedataParentAttachmentType_Record
+
+---@alias PartAddedToSlotEvent gameAttachmentSlotEventsPartAddedToSlotEvent
+PartAddedToSlotEvent = gameAttachmentSlotEventsPartAddedToSlotEvent
+
+---@alias PartRemovedEvent gamePartRemovedEvent
+PartRemovedEvent = gamePartRemovedEvent
+
+---@alias PartRemovedFromSlotEvent gameAttachmentSlotEventsPartRemovedFromSlotEvent
+PartRemovedFromSlotEvent = gameAttachmentSlotEventsPartRemovedFromSlotEvent
+
+---@alias ParticleDamage_Record gamedataParticleDamage_Record
+ParticleDamage_Record = gamedataParticleDamage_Record
+
+---@alias PassiveProficiencyBonusUIData_Record gamedataPassiveProficiencyBonusUIData_Record
+PassiveProficiencyBonusUIData_Record = gamedataPassiveProficiencyBonusUIData_Record
+
+---@alias PassiveProficiencyBonus_Record gamedataPassiveProficiencyBonus_Record
+PassiveProficiencyBonus_Record = gamedataPassiveProficiencyBonus_Record
+
+---@alias PathLengthCoverSelectionParameters_Record gamedataPathLengthCoverSelectionParameters_Record
+PathLengthCoverSelectionParameters_Record = gamedataPathLengthCoverSelectionParameters_Record
+
+---@alias PathSecurityCoverSelectionParameters_Record gamedataPathSecurityCoverSelectionParameters_Record
+PathSecurityCoverSelectionParameters_Record = gamedataPathSecurityCoverSelectionParameters_Record
+
+---@alias PerkArea_Record gamedataPerkArea_Record
+PerkArea_Record = gamedataPerkArea_Record
+
+---@alias PerkLevelData_Record gamedataPerkLevelData_Record
+PerkLevelData_Record = gamedataPerkLevelData_Record
+
+---@alias PerkLevelUIData_Record gamedataPerkLevelUIData_Record
+PerkLevelUIData_Record = gamedataPerkLevelUIData_Record
+
+---@alias PerkPrereq_Record gamedataPerkPrereq_Record
+PerkPrereq_Record = gamedataPerkPrereq_Record
+
+---@alias PerkUtility_Record gamedataPerkUtility_Record
+PerkUtility_Record = gamedataPerkUtility_Record
+
+---@alias Perk_Record gamedataPerk_Record
+Perk_Record = gamedataPerk_Record
+
+---@alias PersistentID gamePersistentID
+PersistentID = gamePersistentID
+
+---@alias PersistentState gamePersistentState
+PersistentState = gamePersistentState
+
+---@alias PhoneCallInformation questPhoneCallInformation
+PhoneCallInformation = questPhoneCallInformation
+
+---@alias PhoneMessageNotificationViewData gameuiPhoneMessageNotificationViewData
+PhoneMessageNotificationViewData = gameuiPhoneMessageNotificationViewData
+
+---@alias PhoneWaveformGameController gameuiPhoneWaveformGameController
+PhoneWaveformGameController = gameuiPhoneWaveformGameController
+
+---@alias PhotoModeBackgroundViewComponent gamePhotoModeBackgroundViewComponent
+PhotoModeBackgroundViewComponent = gamePhotoModeBackgroundViewComponent
+
+---@alias PhotoModeBackground_Record gamedataPhotoModeBackground_Record
+PhotoModeBackground_Record = gamedataPhotoModeBackground_Record
+
+---@alias PhotoModeCursorStateChangedEvent inkPhotoModeCursorStateChangedEvent
+PhotoModeCursorStateChangedEvent = inkPhotoModeCursorStateChangedEvent
+
+---@alias PhotoModeEffect_Record gamedataPhotoModeEffect_Record
+PhotoModeEffect_Record = gamedataPhotoModeEffect_Record
+
+---@alias PhotoModeEnableEvent gamePhotoModeEnableEvent
+PhotoModeEnableEvent = gamePhotoModeEnableEvent
+
+---@alias PhotoModeFace_Record gamedataPhotoModeFace_Record
+PhotoModeFace_Record = gamedataPhotoModeFace_Record
+
+---@alias PhotoModeFailedToOpenEvent gameuiPhotoModeFailedToOpenEvent
+PhotoModeFailedToOpenEvent = gameuiPhotoModeFailedToOpenEvent
+
+---@alias PhotoModeFrame_Record gamedataPhotoModeFrame_Record
+PhotoModeFrame_Record = gamedataPhotoModeFrame_Record
+
+---@alias PhotoModeItem_Record gamedataPhotoModeItem_Record
+PhotoModeItem_Record = gamedataPhotoModeItem_Record
+
+---@alias PhotoModeLastInputDeviceEvent gameuiPhotoModeLastInputDeviceEvent
+PhotoModeLastInputDeviceEvent = gameuiPhotoModeLastInputDeviceEvent
+
+---@alias PhotoModeOptionGridButtonData gameuiPhotoModeOptionGridButtonData
+PhotoModeOptionGridButtonData = gameuiPhotoModeOptionGridButtonData
+
+---@alias PhotoModeOptionSelectorData gameuiPhotoModeOptionSelectorData
+PhotoModeOptionSelectorData = gameuiPhotoModeOptionSelectorData
+
+---@alias PhotoModePoseCategory_Record gamedataPhotoModePoseCategory_Record
+PhotoModePoseCategory_Record = gamedataPhotoModePoseCategory_Record
+
+---@alias PhotoModePose_Record gamedataPhotoModePose_Record
+PhotoModePose_Record = gamedataPhotoModePose_Record
+
+---@alias PhotoModeRegisaterCallbacksEvent gameuiPhotoModeRegisaterCallbacksEvent
+PhotoModeRegisaterCallbacksEvent = gameuiPhotoModeRegisaterCallbacksEvent
+
+---@alias PhotoModeSticker_Record gamedataPhotoModeSticker_Record
+PhotoModeSticker_Record = gamedataPhotoModeSticker_Record
+
+---@alias PhotoModeSystem gamePhotoModeSystem
+PhotoModeSystem = gamePhotoModeSystem
+
+---@alias PhotoModeUIHideForScreenshotEvent gameuiPhotoModeUIHideForScreenshotEvent
+PhotoModeUIHideForScreenshotEvent = gameuiPhotoModeUIHideForScreenshotEvent
+
+---@alias PhotoModeUIInteractiveEvent gameuiPhotoModeUIInteractiveEvent
+PhotoModeUIInteractiveEvent = gameuiPhotoModeUIInteractiveEvent
+
+---@alias PhotoModeUIVisibilityEvent gameuiPhotoModeUIVisibilityEvent
+PhotoModeUIVisibilityEvent = gameuiPhotoModeUIVisibilityEvent
+
+---@alias PhysicalBodyInterface entPhysicalBodyInterface
+PhysicalBodyInterface = entPhysicalBodyInterface
+
+---@alias PhysicalCollisionEvent enteventsPhysicalCollisionEvent
+PhysicalCollisionEvent = enteventsPhysicalCollisionEvent
+
+---@alias PhysicalDeformShapesEvent enteventsPhysicalDeformShapesEvent
+PhysicalDeformShapesEvent = enteventsPhysicalDeformShapesEvent
+
+---@alias PhysicalDestructionComponent entPhysicalDestructionComponent
+PhysicalDestructionComponent = entPhysicalDestructionComponent
+
+---@alias PhysicalDestructionEvent entPhysicalDestructionEvent
+PhysicalDestructionEvent = entPhysicalDestructionEvent
+
+---@alias PhysicalDestructionNode worldPhysicalDestructionNode
+PhysicalDestructionNode = worldPhysicalDestructionNode
+
+---@alias PhysicalImpulseEvent enteventsPhysicalImpulseEvent
+PhysicalImpulseEvent = enteventsPhysicalImpulseEvent
+
+---@alias PhysicalMeshComponent entPhysicalMeshComponent
+PhysicalMeshComponent = entPhysicalMeshComponent
+
+---@alias PhysicalSkinnedMeshComponent entPhysicalSkinnedMeshComponent
+PhysicalSkinnedMeshComponent = entPhysicalSkinnedMeshComponent
+
+---@alias PhysicalTriggerComponent entPhysicalTriggerComponent
+PhysicalTriggerComponent = entPhysicalTriggerComponent
+
+---@alias PickUpBodyBreathingEvent gameaudioeventsPickUpBodyBreathingEvent
+PickUpBodyBreathingEvent = gameaudioeventsPickUpBodyBreathingEvent
+
+---@alias Pierce_Record gamedataPierce_Record
+Pierce_Record = gamedataPierce_Record
+
+---@alias PinInfo gameuiPinInfo
+PinInfo = gameuiPinInfo
+
+---@alias PingComponent gamePingComponent
+PingComponent = gamePingComponent
+
+---@alias PingSystem gamePingSystem
+PingSystem = gamePingSystem
+
+---@alias PingSystemMappin gamemappinsPingSystemMappin
+PingSystemMappin = gamemappinsPingSystemMappin
+
+---@alias Ping_Record gamedataPing_Record
+Ping_Record = gamedataPing_Record
+
+---@alias PlatformSpecificImageController inkPlatformSpecificImageController
+PlatformSpecificImageController = inkPlatformSpecificImageController
+
+---@alias PlatformSpecificTextController inkPlatformSpecificTextController
+PlatformSpecificTextController = inkPlatformSpecificTextController
+
+---@alias PlatformSpecificVideoController inkPlatformSpecificVideoController
+PlatformSpecificVideoController = inkPlatformSpecificVideoController
+
+---@alias PlayInDeviceCallbackEvent gamePlayInDeviceCallbackEvent
+PlayInDeviceCallbackEvent = gamePlayInDeviceCallbackEvent
+
+---@alias PlayerAttachRequest gamePlayerAttachRequest
+PlayerAttachRequest = gamePlayerAttachRequest
+
+---@alias PlayerBioMonitor gameuiPlayerBioMonitor
+PlayerBioMonitor = gameuiPlayerBioMonitor
+
+---@alias PlayerBuild_Record gamedataPlayerBuild_Record
+PlayerBuild_Record = gamedataPlayerBuild_Record
+
+---@alias PlayerClimbInfo gamePlayerClimbInfo
+PlayerClimbInfo = gamePlayerClimbInfo
+
+---@alias PlayerCoverStatusChangedEvent gamePlayerCoverStatusChangedEvent
+PlayerCoverStatusChangedEvent = gamePlayerCoverStatusChangedEvent
+
+---@alias PlayerDetachRequest gamePlayerDetachRequest
+PlayerDetachRequest = gamePlayerDetachRequest
+
+---@alias PlayerDetectionChangedEvent sensePlayerDetectionChangedEvent
+PlayerDetectionChangedEvent = sensePlayerDetectionChangedEvent
+
+---@alias PlayerLevelBasedQuestRequestFilter gamePlayerLevelBasedQuestRequestFilter
+PlayerLevelBasedQuestRequestFilter = gamePlayerLevelBasedQuestRequestFilter
+
+---@alias PlayerMappinComponent gamePlayerMappinComponent
+PlayerMappinComponent = gamePlayerMappinComponent
+
+---@alias PlayerObjectToCheck_Record gamedataPlayerObjectToCheck_Record
+PlayerObjectToCheck_Record = gamedataPlayerObjectToCheck_Record
+
+---@alias PlayerObstacleSystem gamePlayerObstacleSystem
+PlayerObstacleSystem = gamePlayerObstacleSystem
+
+---@alias PlayerPossesion_Record gamedataPlayerPossesion_Record
+PlayerPossesion_Record = gamedataPlayerPossesion_Record
+
+---@alias PlayerProximityPrereq gamePlayerProximityPrereq
+PlayerProximityPrereq = gamePlayerProximityPrereq
+
+---@alias PlayerProximityPrereqState gamePlayerProximityPrereqState
+PlayerProximityPrereqState = gamePlayerProximityPrereqState
+
+---@alias PlayerProximityStartEvent worldPlayerProximityStartEvent
+PlayerProximityStartEvent = worldPlayerProximityStartEvent
+
+---@alias PlayerProximityStopEvent worldPlayerProximityStopEvent
+PlayerProximityStopEvent = worldPlayerProximityStopEvent
+
+---@alias PlayerScriptableSystemRequest gamePlayerScriptableSystemRequest
+PlayerScriptableSystemRequest = gamePlayerScriptableSystemRequest
+
+---@alias PlayerSystem cpPlayerSystem
+PlayerSystem = cpPlayerSystem
+
+---@alias PlayerVehicle vehiclePlayerVehicle
+PlayerVehicle = vehiclePlayerVehicle
+
+---@alias PointOfInterestMappin gamemappinsPointOfInterestMappin
+PointOfInterestMappin = gamemappinsPointOfInterestMappin
+
+---@alias PointOfInterestMappinData gamemappinsPointOfInterestMappinData
+PointOfInterestMappinData = gamemappinsPointOfInterestMappinData
+
+---@alias PoolValueModifier_Record gamedataPoolValueModifier_Record
+PoolValueModifier_Record = gamedataPoolValueModifier_Record
+
+---@alias PopUIGameContextEvent gameuiRequestPopContextEvent
+PopUIGameContextEvent = gameuiRequestPopContextEvent
+
+---@alias PopupData gamePopupData
+PopupData = gamePopupData
+
+---@alias PopupPosition gamePopupPosition
+PopupPosition = gamePopupPosition
+
+---@alias PopupSettings gamePopupSettings
+PopupSettings = gamePopupSettings
+
+---@alias PopupsManager gameuiPopupsManager
+PopupsManager = gameuiPopupsManager
+
+---@alias PrereqCheckData gamePrereqCheckData
+PrereqCheckData = gamePrereqCheckData
+
+---@alias PrereqCheck_Record gamedataPrereqCheck_Record
+PrereqCheck_Record = gamedataPrereqCheck_Record
+
+---@alias PrereqData gamePrereqData
+PrereqData = gamePrereqData
+
+---@alias PrereqManager gamePrereqManager
+PrereqManager = gamePrereqManager
+
+---@alias PrereqParams gamePrereqParams
+PrereqParams = gamePrereqParams
+
+---@alias PrereqState gamePrereqState
+PrereqState = gamePrereqState
+
+---@alias PrereqStateChangedEvent gamePrereqStateChangedEvent
+PrereqStateChangedEvent = gamePrereqStateChangedEvent
+
+---@alias Prereq_Record gamedataPrereq_Record
+Prereq_Record = gamedataPrereq_Record
+
+---@alias PresetMapper_Record gamedataPresetMapper_Record
+PresetMapper_Record = gamedataPresetMapper_Record
+
+---@alias PreventionFallbackUnitData_Record gamedataPreventionFallbackUnitData_Record
+PreventionFallbackUnitData_Record = gamedataPreventionFallbackUnitData_Record
+
+---@alias PreventionHeatData_Record gamedataPreventionHeatData_Record
+PreventionHeatData_Record = gamedataPreventionHeatData_Record
+
+---@alias PreventionSpawnSystem gamePreventionSpawnSystem
+PreventionSpawnSystem = gamePreventionSpawnSystem
+
+---@alias PreventionUnitPoolData_Record gamedataPreventionUnitPoolData_Record
+PreventionUnitPoolData_Record = gamedataPreventionUnitPoolData_Record
+
+---@alias Proficiency_Record gamedataProficiency_Record
+Proficiency_Record = gamedataProficiency_Record
+
+---@alias ProgramFromDataGenRule gameuiProgramFromDataGenRule
+ProgramFromDataGenRule = gameuiProgramFromDataGenRule
+
+---@alias Program_Record gamedataProgram_Record
+Program_Record = gamedataProgram_Record
+
+---@alias ProgramsGridGenRule gameuiProgramsGridGenRule
+ProgramsGridGenRule = gameuiProgramsGridGenRule
+
+---@alias ProgressionBuild_Record gamedataProgressionBuild_Record
+ProgressionBuild_Record = gamedataProgressionBuild_Record
+
+---@alias ProgressionViewData gameuiProgressionViewData
+ProgressionViewData = gameuiProgressionViewData
+
+---@alias ProjectileCollision_Record gamedataProjectileCollision_Record
+ProjectileCollision_Record = gamedataProjectileCollision_Record
+
+---@alias ProjectileComponent gameprojectileComponent
+ProjectileComponent = gameprojectileComponent
+
+---@alias ProjectileLaunchMode_Record gamedataProjectileLaunchMode_Record
+ProjectileLaunchMode_Record = gamedataProjectileLaunchMode_Record
+
+---@alias ProjectileLaunch_Record gamedataProjectileLaunch_Record
+ProjectileLaunch_Record = gamedataProjectileLaunch_Record
+
+---@alias ProjectileOnCollisionAction_Record gamedataProjectileOnCollisionAction_Record
+ProjectileOnCollisionAction_Record = gamedataProjectileOnCollisionAction_Record
+
+---@alias ProjectileSpawnComponent gameprojectileSpawnComponent
+ProjectileSpawnComponent = gameprojectileSpawnComponent
+
+---@alias Prop_Record gamedataProp_Record
+Prop_Record = gamedataProp_Record
+
+---@alias ProximityProgressBarAction questProximityProgressBarAction
+ProximityProgressBarAction = questProximityProgressBarAction
+
+---@alias ProximityProgressBarOrientation questProximityProgressBarOrientation
+ProximityProgressBarOrientation = questProximityProgressBarOrientation
+
+---@alias ProximityProgressBarState questProximityProgressBarState
+ProximityProgressBarState = questProximityProgressBarState
+
+---@alias PuppetBlackboardUpdater gamePuppetBlackboardUpdater
+PuppetBlackboardUpdater = gamePuppetBlackboardUpdater
+
+---@alias PuppetVehicleState gamePuppetVehicleState
+PuppetVehicleState = gamePuppetVehicleState
+
+---@alias PushUIGameContextEvent gameuiRequestPushContextEvent
+PushUIGameContextEvent = gameuiRequestPushContextEvent
+
+---@alias QuadRacerGameState gameuiQuadRacerGameState
+QuadRacerGameState = gameuiQuadRacerGameState
+
+---@alias QuadRacerLogicController gameuiQuadRacerLogicController
+QuadRacerLogicController = gameuiQuadRacerLogicController
+
+---@alias QuadRacerPlayer gameuiQuadRacerPlayer
+QuadRacerPlayer = gameuiQuadRacerPlayer
+
+---@alias QuadRacerRoad gameuiQuadRacerRoad
+QuadRacerRoad = gameuiQuadRacerRoad
+
+---@alias QuadRacerSprite gameuiQuadRacerSprite
+QuadRacerSprite = gameuiQuadRacerSprite
+
+---@alias Quality_Record gamedataQuality_Record
+Quality_Record = gamedataQuality_Record
+
+---@alias QueryFilter physicsQueryFilter
+QueryFilter = physicsQueryFilter
+
+---@alias QueryPreset physicsQueryPreset
+QueryPreset = physicsQueryPreset
+
+---@alias Query_Record gamedataQuery_Record
+Query_Record = gamedataQuery_Record
+
+---@alias QuestDistanceRequestFilter gameQuestDistanceRequestFilter
+QuestDistanceRequestFilter = gameQuestDistanceRequestFilter
+
+---@alias QuestInfo gamedeviceQuestInfo
+QuestInfo = gamedeviceQuestInfo
+
+---@alias QuestMappin gamemappinsQuestMappin
+QuestMappin = gamemappinsQuestMappin
+
+---@alias QuestRestrictionMode_Record gamedataQuestRestrictionMode_Record
+QuestRestrictionMode_Record = gamedataQuestRestrictionMode_Record
+
+---@alias QuestSystemSetup_Record gamedataQuestSystemSetup_Record
+QuestSystemSetup_Record = gamedataQuestSystemSetup_Record
+
+---@alias QuestTypeRequestFilter gameQuestTypeRequestFilter
+QuestTypeRequestFilter = gameQuestTypeRequestFilter
+
+---@alias QuestUpdateNotificationViewData gameuiQuestUpdateNotificationViewData
+QuestUpdateNotificationViewData = gameuiQuestUpdateNotificationViewData
+
+---@alias QuestsSystem questQuestsSystem
+QuestsSystem = questQuestsSystem
+
+---@alias RPGAction_Record gamedataRPGAction_Record
+RPGAction_Record = gamedataRPGAction_Record
+
+---@alias RPGDataPackage_Record gamedataRPGDataPackage_Record
+RPGDataPackage_Record = gamedataRPGDataPackage_Record
+
+---@alias RPGManager gameRPGManager
+RPGManager = gameRPGManager
+
+---@alias RPGPrereqState gameRPGPrereqState
+RPGPrereqState = gameRPGPrereqState
+
+---@alias RWLock ScriptReentrantRWLock
+RWLock = ScriptReentrantRWLock
+
+---@alias RaceCheckpoint_Record gamedataRaceCheckpoint_Record
+RaceCheckpoint_Record = gamedataRaceCheckpoint_Record
+
+---@alias RacingSystem vehicleRacingSystem
+RacingSystem = vehicleRacingSystem
+
+---@alias RadioStation_Record gamedataRadioStation_Record
+RadioStation_Record = gamedataRadioStation_Record
+
+---@alias RagdollActivationRequestData entragdollActivationRequestData
+RagdollActivationRequestData = entragdollActivationRequestData
+
+---@alias RagdollActivationRequestEvent entRagdollActivationRequestEvent
+RagdollActivationRequestEvent = entRagdollActivationRequestEvent
+
+---@alias RagdollApplyImpulseEvent entRagdollApplyImpulseEvent
+RagdollApplyImpulseEvent = entRagdollApplyImpulseEvent
+
+---@alias RagdollBodyPartWaterImpactEvent entRagdollBodyPartWaterImpactEvent
+RagdollBodyPartWaterImpactEvent = entRagdollBodyPartWaterImpactEvent
+
+---@alias RagdollComponent entRagdollComponent
+RagdollComponent = entRagdollComponent
+
+---@alias RagdollDisableEvent entRagdollDisableEvent
+RagdollDisableEvent = entRagdollDisableEvent
+
+---@alias RagdollImpactEvent entRagdollImpactEvent
+RagdollImpactEvent = entRagdollImpactEvent
+
+---@alias RagdollImpactPointData entRagdollImpactPointData
+RagdollImpactPointData = entRagdollImpactPointData
+
+---@alias RagdollNotifyDisabledEvent entRagdollNotifyDisabledEvent
+RagdollNotifyDisabledEvent = entRagdollNotifyDisabledEvent
+
+---@alias RagdollNotifyEnabledEvent entRagdollNotifyEnabledEvent
+RagdollNotifyEnabledEvent = entRagdollNotifyEnabledEvent
+
+---@alias RagdollNotifyVelocityTresholdEvent entRagdollNotifyVelocityTresholdEvent
+RagdollNotifyVelocityTresholdEvent = entRagdollNotifyVelocityTresholdEvent
+
+---@alias RagdollPutToSleepEvent entRagdollPutToSleepEvent
+RagdollPutToSleepEvent = entRagdollPutToSleepEvent
+
+---@alias RagdollRequestCollectAnimPoseEvent entRagdollRequestCollectAnimPose
+RagdollRequestCollectAnimPoseEvent = entRagdollRequestCollectAnimPose
+
+---@alias RainEvent worldRainEvent
+RainEvent = worldRainEvent
+
+---@alias RandomNewsFeedBatch_Record gamedataRandomNewsFeedBatch_Record
+RandomNewsFeedBatch_Record = gamedataRandomNewsFeedBatch_Record
+
+---@alias RandomPassengerEntry_Record gamedataRandomPassengerEntry_Record
+RandomPassengerEntry_Record = gamedataRandomPassengerEntry_Record
+
+---@alias RandomRatioCoverSelectionParameters_Record gamedataRandomRatioCoverSelectionParameters_Record
+RandomRatioCoverSelectionParameters_Record = gamedataRandomRatioCoverSelectionParameters_Record
+
+---@alias RandomStatModifier_Record gamedataRandomStatModifier_Record
+RandomStatModifier_Record = gamedataRandomStatModifier_Record
+
+---@alias RandomVariant_Record gamedataRandomVariant_Record
+RandomVariant_Record = gamedataRandomVariant_Record
+
+---@alias RandomizationDataEntry genRandomizationDataEntry
+RandomizationDataEntry = genRandomizationDataEntry
+
+---@alias RangedAttackPackage_Record gamedataRangedAttackPackage_Record
+RangedAttackPackage_Record = gamedataRangedAttackPackage_Record
+
+---@alias RangedAttack_Record gamedataRangedAttack_Record
+RangedAttack_Record = gamedataRangedAttack_Record
+
+---@alias RazerChromaEffectsSystem gameRazerChromaEffectsSystem
+RazerChromaEffectsSystem = gameRazerChromaEffectsSystem
+
+---@alias ReactionChangeRequestEvent gameeventsReactionChangeRequestEvent
+ReactionChangeRequestEvent = gameeventsReactionChangeRequestEvent
+
+---@alias ReactionComponent gameinteractionsReactionComponent
+ReactionComponent = gameinteractionsReactionComponent
+
+---@alias ReactionData gameinteractionsReactionData
+ReactionData = gameinteractionsReactionData
+
+---@alias ReactionEvent gameinteractionsReactionEvent
+ReactionEvent = gameinteractionsReactionEvent
+
+---@alias ReactionFinishedEvent workReactionFinishedEvent
+ReactionFinishedEvent = workReactionFinishedEvent
+
+---@alias ReactionLimit_Record gamedataReactionLimit_Record
+ReactionLimit_Record = gamedataReactionLimit_Record
+
+---@alias ReactionPresetCivilian_Record gamedataReactionPresetCivilian_Record
+ReactionPresetCivilian_Record = gamedataReactionPresetCivilian_Record
+
+---@alias ReactionPresetCorpo_Record gamedataReactionPresetCorpo_Record
+ReactionPresetCorpo_Record = gamedataReactionPresetCorpo_Record
+
+---@alias ReactionPresetGanger_Record gamedataReactionPresetGanger_Record
+ReactionPresetGanger_Record = gamedataReactionPresetGanger_Record
+
+---@alias ReactionPresetMechanical_Record gamedataReactionPresetMechanical_Record
+ReactionPresetMechanical_Record = gamedataReactionPresetMechanical_Record
+
+---@alias ReactionPresetNoReaction_Record gamedataReactionPresetNoReaction_Record
+ReactionPresetNoReaction_Record = gamedataReactionPresetNoReaction_Record
+
+---@alias ReactionPresetPolice_Record gamedataReactionPresetPolice_Record
+ReactionPresetPolice_Record = gamedataReactionPresetPolice_Record
+
+---@alias ReactionPreset_Record gamedataReactionPreset_Record
+ReactionPreset_Record = gamedataReactionPreset_Record
+
+---@alias ReactionSystem AIReactionSystem
+ReactionSystem = AIReactionSystem
+
+---@alias RearWheelsFrictionModifier_Record gamedataRearWheelsFrictionModifier_Record
+RearWheelsFrictionModifier_Record = gamedataRearWheelsFrictionModifier_Record
+
+---@alias RecipeElement_Record gamedataRecipeElement_Record
+RecipeElement_Record = gamedataRecipeElement_Record
+
+---@alias RecipeItem_Record gamedataRecipeItem_Record
+RecipeItem_Record = gamedataRecipeItem_Record
+
+---@alias RecycleEventAdvanced gameuiOnRecycleEventAdvanced
+RecycleEventAdvanced = gameuiOnRecycleEventAdvanced
+
+---@alias RefreshGOGState gameuiRefreshGOGState
+RefreshGOGState = gameuiRefreshGOGState
+
+---@alias RegenerateLootEvent gameRegenerateLootEvent
+RegenerateLootEvent = gameRegenerateLootEvent
+
+---@alias RegisterCooldownFromRecordRequest gameRegisterCooldownFromRecordRequest
+RegisterCooldownFromRecordRequest = gameRegisterCooldownFromRecordRequest
+
+---@alias RegisterNewAbilityCooldownRequest gameRegisterNewAbilityCooldownRequest
+RegisterNewAbilityCooldownRequest = gameRegisterNewAbilityCooldownRequest
+
+---@alias RegisterNewCooldownRequest gameRegisterNewCooldownRequest
+RegisterNewCooldownRequest = gameRegisterNewCooldownRequest
+
+---@alias RegularGDM_Record gamedataRegularGDM_Record
+RegularGDM_Record = gamedataRegularGDM_Record
+
+---@alias Regular_Record gamedataRegular_Record
+Regular_Record = gamedataRegular_Record
+
+---@alias RemotePlayerMappin gamemappinsRemotePlayerMappin
+RemotePlayerMappin = gamemappinsRemotePlayerMappin
+
+---@alias RemoveActiveWeaponEvent gameweaponeventsRemoveActiveWeaponEvent
+RemoveActiveWeaponEvent = gameweaponeventsRemoveActiveWeaponEvent
+
+---@alias RemoveCooldownRequest gameRemoveCooldownRequest
+RemoveCooldownRequest = gameRemoveCooldownRequest
+
+---@alias RemoveStatusEffect gameeventsRemoveStatusEffect
+RemoveStatusEffect = gameeventsRemoveStatusEffect
+
+---@alias RemovedAsHostileThreat AIRemovedAsHostileThreat
+RemovedAsHostileThreat = AIRemovedAsHostileThreat
+
+---@alias RenderingSystem worldRenderingScriptInterface
+RenderingSystem = worldRenderingScriptInterface
+
+---@alias RequestItemParam gameEquipParam
+RequestItemParam = gameEquipParam
+
+---@alias RequestNewHudEvent inkRequestNewHudEvent
+RequestNewHudEvent = inkRequestNewHudEvent
+
+---@alias RequestStats gameRequestStats
+RequestStats = gameRequestStats
+
+---@alias ResRef redResourceReferenceScriptToken
+ResRef = redResourceReferenceScriptToken
+
+---@alias ResetFppCameraEvent gameResetFppCameraEvent
+ResetFppCameraEvent = gameResetFppCameraEvent
+
+---@alias ResetStickersEvent gameuiResetStickersEvent
+ResetStickersEvent = gameuiResetStickersEvent
+
+---@alias ResetUIGameContextEvent gameuiRequestResetContextEvent
+ResetUIGameContextEvent = gameuiRequestResetContextEvent
+
+---@alias ResourceMetricsReportGenerator resResourceMetricsReportGenerator
+ResourceMetricsReportGenerator = resResourceMetricsReportGenerator
+
+---@alias RestrictMovementArea AIScriptGuardArea
+RestrictMovementArea = AIScriptGuardArea
+
+---@alias RestrictMovementAreaManager AIGuardAreaManager
+RestrictMovementAreaManager = AIGuardAreaManager
+
+---@alias ResurrectEvent gameeventsResurrectEvent
+ResurrectEvent = gameeventsResurrectEvent
+
+---@alias RevealObjectEvent gameeventsRevealObjectEvent
+RevealObjectEvent = gameeventsRevealObjectEvent
+
+---@alias RewardBase_Record gamedataRewardBase_Record
+RewardBase_Record = gamedataRewardBase_Record
+
+---@alias RewardBase_inline0_Record gamedataRewardBase_inline0_Record
+RewardBase_inline0_Record = gamedataRewardBase_inline0_Record
+
+---@alias RewardEvent questRewardEvent
+RewardEvent = questRewardEvent
+
+---@alias RewardSet_Record gamedataRewardSet_Record
+RewardSet_Record = gamedataRewardSet_Record
+
+---@alias RichPresenceSystem gameRichPresenceSystem
+RichPresenceSystem = gameRichPresenceSystem
+
+---@alias RicochetData gameRicochetData
+RicochetData = gameRicochetData
+
+---@alias Rigs_Record gamedataRigs_Record
+Rigs_Record = gamedataRigs_Record
+
+---@alias RoachRaceBackgroundObject_Record gamedataRoachRaceBackgroundObject_Record
+RoachRaceBackgroundObject_Record = gamedataRoachRaceBackgroundObject_Record
+
+---@alias RoachRaceBackground_Record gamedataRoachRaceBackground_Record
+RoachRaceBackground_Record = gamedataRoachRaceBackground_Record
+
+---@alias RoachRaceChunk gameuiRoachRaceChunk
+RoachRaceChunk = gameuiRoachRaceChunk
+
+---@alias RoachRaceChunkLayer gameuiRoachRaceChunkLayer
+RoachRaceChunkLayer = gameuiRoachRaceChunkLayer
+
+---@alias RoachRaceGameState gameuiRoachRaceGameState
+RoachRaceGameState = gameuiRoachRaceGameState
+
+---@alias RoachRaceLevelList_Record gamedataRoachRaceLevelList_Record
+RoachRaceLevelList_Record = gamedataRoachRaceLevelList_Record
+
+---@alias RoachRaceLevel_Record gamedataRoachRaceLevel_Record
+RoachRaceLevel_Record = gamedataRoachRaceLevel_Record
+
+---@alias RoachRaceLogicController gameuiRoachRaceGameLogicController
+RoachRaceLogicController = gameuiRoachRaceGameLogicController
+
+---@alias RoachRaceMinigameDynObject gameuiRoachRaceDynObjectLogic
+RoachRaceMinigameDynObject = gameuiRoachRaceDynObjectLogic
+
+---@alias RoachRaceMovement_Record gamedataRoachRaceMovement_Record
+RoachRaceMovement_Record = gamedataRoachRaceMovement_Record
+
+---@alias RoachRaceObject_Record gamedataRoachRaceObject_Record
+RoachRaceObject_Record = gamedataRoachRaceObject_Record
+
+---@alias RoachRaceObstacle gameuiRoachRaceObstacle
+RoachRaceObstacle = gameuiRoachRaceObstacle
+
+---@alias RoachRaceObstacleTexturePartPair_Record gamedataRoachRaceObstacleTexturePartPair_Record
+RoachRaceObstacleTexturePartPair_Record = gamedataRoachRaceObstacleTexturePartPair_Record
+
+---@alias RoachRaceObstacle_Record gamedataRoachRaceObstacle_Record
+RoachRaceObstacle_Record = gamedataRoachRaceObstacle_Record
+
+---@alias RoachRacePlayerController gameuiRoachRacePlayerController
+RoachRacePlayerController = gameuiRoachRacePlayerController
+
+---@alias RoachRacePowerUpList_Record gamedataRoachRacePowerUpList_Record
+RoachRacePowerUpList_Record = gamedataRoachRacePowerUpList_Record
+
+---@alias RotationLimiter_Record gamedataRotationLimiter_Record
+RotationLimiter_Record = gamedataRotationLimiter_Record
+
+---@alias RowSymbols_Record gamedataRowSymbols_Record
+RowSymbols_Record = gamedataRowSymbols_Record
+
+---@alias RowTraps_Record gamedataRowTraps_Record
+RowTraps_Record = gamedataRowTraps_Record
+
+---@alias Rule_Record gamedataRule_Record
+Rule_Record = gamedataRule_Record
+
+---@alias RunAwayEvent AIRunAwayEvent
+RunAwayEvent = AIRunAwayEvent
+
+---@alias RuntimeInfo worldRuntimeInfo
+RuntimeInfo = worldRuntimeInfo
+
+---@alias RuntimeMappin gamemappinsRuntimeMappin
+RuntimeMappin = gamemappinsRuntimeMappin
+
+---@alias SDOClickedRequest gameSDOClickedRequest
+SDOClickedRequest = gameSDOClickedRequest
+
+---@alias SDOSink gameScriptsDebugOverlaySink
+SDOSink = gameScriptsDebugOverlaySink
+
+---@alias SEquipArea gameSEquipArea
+SEquipArea = gameSEquipArea
+
+---@alias SEquipSlot gameSEquipSlot
+SEquipSlot = gameSEquipSlot
+
+---@alias SEquipmentSet gameSEquipmentSet
+SEquipmentSet = gameSEquipmentSet
+
+---@alias SItemInfo gameSItemInfo
+SItemInfo = gameSItemInfo
+
+---@alias SItemStack gameSItemStack
+SItemStack = gameSItemStack
+
+---@alias SItemStackRequirementData gameSItemStackRequirementData
+SItemStackRequirementData = gameSItemStackRequirementData
+
+---@alias SLastUsedWeapon gameSLastUsedWeapon
+SLastUsedWeapon = gameSLastUsedWeapon
+
+---@alias SLoadout gameSLoadout
+SLoadout = gameSLoadout
+
+---@alias SPartSlots gameSPartSlots
+SPartSlots = gameSPartSlots
+
+---@alias SSlotActiveItems gameSSlotActiveItems
+SSlotActiveItems = gameSSlotActiveItems
+
+---@alias SSlotInfo gameSSlotInfo
+SSlotInfo = gameSSlotInfo
+
+---@alias SSlotVisualInfo gameSSlotVisualInfo
+SSlotVisualInfo = gameSSlotVisualInfo
+
+---@alias SVisualTagProcessing gameSVisualTagProcessing
+SVisualTagProcessing = gameSVisualTagProcessing
+
+---@alias SafeAreaManager AISafeAreaManager
+SafeAreaManager = AISafeAreaManager
+
+---@alias SaveMetadataInfo inkSaveMetadataInfo
+SaveMetadataInfo = inkSaveMetadataInfo
+
+---@alias SaveSanitizationForbiddenAreaSystem gameSaveSanitizationForbiddenAreaSystem
+SaveSanitizationForbiddenAreaSystem = gameSaveSanitizationForbiddenAreaSystem
+
+---@alias ScannableData_Record gamedataScannableData_Record
+ScannableData_Record = gamedataScannableData_Record
+
+---@alias ScannerModuleVisibilityPreset_Record gamedataScannerModuleVisibilityPreset_Record
+ScannerModuleVisibilityPreset_Record = gamedataScannerModuleVisibilityPreset_Record
+
+---@alias ScanningActionFinishedEvent gameScanningActionFinishedEvent
+ScanningActionFinishedEvent = gameScanningActionFinishedEvent
+
+---@alias ScanningActivatorComponent gameScanningActivatorComponent
+ScanningActivatorComponent = gameScanningActivatorComponent
+
+---@alias ScanningComponent gameScanningComponent
+ScanningComponent = gameScanningComponent
+
+---@alias ScanningController gameScanningController
+ScanningController = gameScanningController
+
+---@alias ScanningEvent gameScanningEvent
+ScanningEvent = gameScanningEvent
+
+---@alias ScanningEventForInstigator gameScanningEventForInstigator
+ScanningEventForInstigator = gameScanningEventForInstigator
+
+---@alias ScanningLookAtEvent gameScanningLookAtEvent
+ScanningLookAtEvent = gameScanningLookAtEvent
+
+---@alias ScanningModeEvent gameScanningModeEvent
+ScanningModeEvent = gameScanningModeEvent
+
+---@alias ScanningPulseEvent gameScanningPulseEvent
+ScanningPulseEvent = gameScanningPulseEvent
+
+---@alias ScanningPulseStartEvent gameScanningPulseStartEvent
+ScanningPulseStartEvent = gameScanningPulseStartEvent
+
+---@alias ScanningTooltipElementData gameScanningTooltipElementData
+ScanningTooltipElementData = gameScanningTooltipElementData
+
+---@alias ScanningTooltipElementDef gameScanningTooltipElementDef
+ScanningTooltipElementDef = gameScanningTooltipElementDef
+
+---@alias SceneAnimationMotionActionParams gameSceneAnimationMotionActionParams
+SceneAnimationMotionActionParams = gameSceneAnimationMotionActionParams
+
+---@alias SceneCameraDoF_Record gamedataSceneCameraDoF_Record
+SceneCameraDoF_Record = gamedataSceneCameraDoF_Record
+
+---@alias SceneInterruptionScenarios_Record gamedataSceneInterruptionScenarios_Record
+SceneInterruptionScenarios_Record = gamedataSceneInterruptionScenarios_Record
+
+---@alias SceneResources_Record gamedataSceneResources_Record
+SceneResources_Record = gamedataSceneResources_Record
+
+---@alias SceneSystem scnISceneSystem
+SceneSystem = scnISceneSystem
+
+---@alias SceneSystemInterface scnScriptInterface
+SceneSystemInterface = scnScriptInterface
+
+---@alias SceneTier gameSceneTier
+SceneTier = gameSceneTier
+
+---@alias SceneTier1Data gameSceneTier1Data
+SceneTier1Data = gameSceneTier1Data
+
+---@alias SceneTier2Data gameSceneTier2Data
+SceneTier2Data = gameSceneTier2Data
+
+---@alias SceneTier3Data gameSceneTier3Data
+SceneTier3Data = gameSceneTier3Data
+
+---@alias SceneTier4Data gameSceneTier4Data
+SceneTier4Data = gameSceneTier4Data
+
+---@alias SceneTier5Data gameSceneTier5Data
+SceneTier5Data = gameSceneTier5Data
+
+---@alias SceneTierData gameSceneTierData
+SceneTierData = gameSceneTierData
+
+---@alias SceneTierDataMotionConstrained gameSceneTierDataMotionConstrained
+SceneTierDataMotionConstrained = gameSceneTierDataMotionConstrained
+
+---@alias ScreenMessageData_Record gamedataScreenMessageData_Record
+ScreenMessageData_Record = gamedataScreenMessageData_Record
+
+---@alias ScreenMessagesList_Record gamedataScreenMessagesList_Record
+ScreenMessagesList_Record = gamedataScreenMessagesList_Record
+
+---@alias ScriptBehaviorDelegate AIbehaviorScriptBehaviorDelegate
+ScriptBehaviorDelegate = AIbehaviorScriptBehaviorDelegate
+
+---@alias ScriptExecutionContext AIbehaviorScriptExecutionContext
+ScriptExecutionContext = AIbehaviorScriptExecutionContext
+
+---@alias ScriptStatPoolsListener gameScriptStatPoolsListener
+ScriptStatPoolsListener = gameScriptStatPoolsListener
+
+---@alias ScriptStatsListener gameScriptStatsListener
+ScriptStatsListener = gameScriptStatsListener
+
+---@alias ScriptStatusEffectListener gameScriptStatusEffectListener
+ScriptStatusEffectListener = gameScriptStatusEffectListener
+
+---@alias ScriptTaskData gameScriptTaskData
+ScriptTaskData = gameScriptTaskData
+
+---@alias ScriptableComponent gameScriptableComponent
+ScriptableComponent = gameScriptableComponent
+
+---@alias ScriptableDataSource inkScriptableDataSourceWrapper
+ScriptableDataSource = inkScriptableDataSourceWrapper
+
+---@alias ScriptableDataView inkScriptableDataViewWrapper
+ScriptableDataView = inkScriptableDataViewWrapper
+
+---@alias ScriptableSystem gameScriptableSystem
+ScriptableSystem = gameScriptableSystem
+
+---@alias ScriptableSystemRequest gameScriptableSystemRequest
+ScriptableSystemRequest = gameScriptableSystemRequest
+
+---@alias ScriptableSystemsContainer gameScriptableSystemsContainer
+ScriptableSystemsContainer = gameScriptableSystemsContainer
+
+---@alias ScriptedAICommandParams questScriptedAICommandParams
+ScriptedAICommandParams = questScriptedAICommandParams
+
+---@alias ScriptedDamageSystemListener gameScriptedDamageSystemListener
+ScriptedDamageSystemListener = gameScriptedDamageSystemListener
+
+---@alias ScriptedRandomizationSupervisor genScriptedRandomizationSupervisor
+ScriptedRandomizationSupervisor = genScriptedRandomizationSupervisor
+
+---@alias ScriptsDebugOverlaySystem gameScriptsDebugOverlaySystem
+ScriptsDebugOverlaySystem = gameScriptsDebugOverlaySystem
+
+---@alias SeatState_Record gamedataSeatState_Record
+SeatState_Record = gamedataSeatState_Record
+
+---@alias SectorSelector_Record gamedataSectorSelector_Record
+SectorSelector_Record = gamedataSectorSelector_Record
+
+---@alias SecureFootingParameters moveSecureFootingParameters
+SecureFootingParameters = moveSecureFootingParameters
+
+---@alias SecureFootingResult moveSecureFootingResult
+SecureFootingResult = moveSecureFootingResult
+
+---@alias SelectorController inkSelectorController
+SelectorController = inkSelectorController
+
+---@alias SenseAngleRange senseAngleRange
+SenseAngleRange = senseAngleRange
+
+---@alias SenseBox senseSimpleBox
+SenseBox = senseSimpleBox
+
+---@alias SenseComponent senseComponent
+SenseComponent = senseComponent
+
+---@alias SenseCone senseSimpleCone
+SenseCone = senseSimpleCone
+
+---@alias SenseEnabledEvent senseEnabledEvent
+SenseEnabledEvent = senseEnabledEvent
+
+---@alias SenseInitializeEvent senseInitializeEvent
+SenseInitializeEvent = senseInitializeEvent
+
+---@alias SenseManager senseCSenseManager
+SenseManager = senseCSenseManager
+
+---@alias SenseObjectType_Record gamedataSenseObjectType_Record
+SenseObjectType_Record = gamedataSenseObjectType_Record
+
+---@alias SensePreset_Record gamedataSensePreset_Record
+SensePreset_Record = gamedataSensePreset_Record
+
+---@alias SenseShape_Record gamedataSenseShape_Record
+SenseShape_Record = gamedataSenseShape_Record
+
+---@alias SenseSphere senseSimpleSphere
+SenseSphere = senseSimpleSphere
+
+---@alias SenseVisibilityEvent senseVisibilityEvent
+SenseVisibilityEvent = senseVisibilityEvent
+
+---@alias SensorObject senseSensorObject
+SensorObject = senseSensorObject
+
+---@alias SensorObjectComponent senseSensorObjectComponent
+SensorObjectComponent = senseSensorObjectComponent
+
+---@alias ServerBlackboardUpdateProxy gameServerBlackboardUpdateProxy
+ServerBlackboardUpdateProxy = gameServerBlackboardUpdateProxy
+
+---@alias ServerHitData gamedamageServerHitData
+ServerHitData = gamedamageServerHitData
+
+---@alias ServerInfo inkServerInfo
+ServerInfo = inkServerInfo
+
+---@alias ServerKillData gamedamageServerKillData
+ServerKillData = gamedamageServerKillData
+
+---@alias SetActiveWeaponEvent gameweaponeventsSetActiveWeaponEvent
+SetActiveWeaponEvent = gameweaponeventsSetActiveWeaponEvent
+
+---@alias SetAggressiveMask gameSetAggressiveMask
+SetAggressiveMask = gameSetAggressiveMask
+
+---@alias SetAsQuestImportantEvent gameSetAsQuestImportantEvent
+SetAsQuestImportantEvent = gameSetAsQuestImportantEvent
+
+---@alias SetAttributeEnabledEvent gameuiSetAttributeEnabledEvent
+SetAttributeEnabledEvent = gameuiSetAttributeEnabledEvent
+
+---@alias SetAudioOverrideEvent gameaudioeventsSetListenerOverride
+SetAudioOverrideEvent = gameaudioeventsSetListenerOverride
+
+---@alias SetBackgroundEvent gameuiSetBackgroundEvent
+SetBackgroundEvent = gameuiSetBackgroundEvent
+
+---@alias SetCameraParamsEvent gameSetCameraParamsEvent
+SetCameraParamsEvent = gameSetCameraParamsEvent
+
+---@alias SetCameraParamsWithOverridesEvent gameSetCameraParamsWithOverridesEvent
+SetCameraParamsWithOverridesEvent = gameSetCameraParamsWithOverridesEvent
+
+---@alias SetCategoryEnabledEvent gameuiSetCategoryEnabledEvent
+SetCategoryEnabledEvent = gameuiSetCategoryEnabledEvent
+
+---@alias SetExclusiveFocusClueEntityEvent gameSetExclusiveFocusClueEntityEvent
+SetExclusiveFocusClueEntityEvent = gameSetExclusiveFocusClueEntityEvent
+
+---@alias SetFrameImageEvent gameuiSetFrameImageEvent
+SetFrameImageEvent = gameuiSetFrameImageEvent
+
+---@alias SetLootInteractionAccessibilityEvent gameSetLootInteractionAccessibilityEvent
+SetLootInteractionAccessibilityEvent = gameSetLootInteractionAccessibilityEvent
+
+---@alias SetQuickHackableMask gameSetQuickHackableMask
+SetQuickHackableMask = gameSetQuickHackableMask
+
+---@alias SetScannableThroughWallsEvent gameSetScannableThroughWallsEvent
+SetScannableThroughWallsEvent = gameSetScannableThroughWallsEvent
+
+---@alias SetScanningBlockedEvent gameSetScanningBlockedEvent
+SetScanningBlockedEvent = gameSetScanningBlockedEvent
+
+---@alias SetScanningTimeEvent gameSetScanningTimeEvent
+SetScanningTimeEvent = gameSetScanningTimeEvent
+
+---@alias SetSelectedStickerEvent gameuiSetSelectedStickerEvent
+SetSelectedStickerEvent = gameuiSetSelectedStickerEvent
+
+---@alias SetStickerImageEvent gameuiSetStickerImageEvent
+SetStickerImageEvent = gameuiSetStickerImageEvent
+
+---@alias SettingsControlsGameController gameuiSettingsControlsGameController
+SettingsControlsGameController = gameuiSettingsControlsGameController
+
+---@alias SettingsSelectorController inkSettingsSelectorController
+SettingsSelectorController = inkSettingsSelectorController
+
+---@alias SettingsSelectorControllerKeyBinding inkSettingsSelectorControllerKeyBinding
+SettingsSelectorControllerKeyBinding = inkSettingsSelectorControllerKeyBinding
+
+---@alias SetupGridSelectorForAttributeEvent gameuiSetupGridSelectorForAttributeEvent
+SetupGridSelectorForAttributeEvent = gameuiSetupGridSelectorForAttributeEvent
+
+---@alias SetupOptionButtonForAttributeEvent gameuiSetupOptionButtonForAttributeEvent
+SetupOptionButtonForAttributeEvent = gameuiSetupOptionButtonForAttributeEvent
+
+---@alias SetupOptionSelectorForAttributeEvent gameuiSetupOptionSelectorForAttributeEvent
+SetupOptionSelectorForAttributeEvent = gameuiSetupOptionSelectorForAttributeEvent
+
+---@alias SetupScrollBarForAttributeEvent gameuiSetupScrollBarForAttributeEvent
+SetupScrollBarForAttributeEvent = gameuiSetupScrollBarForAttributeEvent
+
+---@alias SetupWorkspotActionEvent gameSetupWorkspotActionEvent
+SetupWorkspotActionEvent = gameSetupWorkspotActionEvent
+
+---@alias SharedVarBool aiscriptSharedVarBool
+SharedVarBool = aiscriptSharedVarBool
+
+---@alias SharedVarFloat aiscriptSharedVarFloat
+SharedVarFloat = aiscriptSharedVarFloat
+
+---@alias SharedVarInt aiscriptSharedVarInt
+SharedVarInt = aiscriptSharedVarInt
+
+---@alias SharedVarName aiscriptSharedVarName
+SharedVarName = aiscriptSharedVarName
+
+---@alias SharedVarPosition aiscriptSharedVarPosition
+SharedVarPosition = aiscriptSharedVarPosition
+
+---@alias SharedVarTarget aiscriptSharedVarTarget
+SharedVarTarget = aiscriptSharedVarTarget
+
+---@alias ShowCustomTooltipEvent gameuiShowCustomTooltipEvent
+ShowCustomTooltipEvent = gameuiShowCustomTooltipEvent
+
+---@alias ShowEngagementScreen inkShowEngagementScreen
+ShowEngagementScreen = inkShowEngagementScreen
+
+---@alias ShowInitializeUserScreen inkShowInitializeUserScreen
+ShowInitializeUserScreen = inkShowInitializeUserScreen
+
+---@alias ShowPointOfNoReturnPromptEvent questShowPointOfNoReturnPromptEvent
+ShowPointOfNoReturnPromptEvent = questShowPointOfNoReturnPromptEvent
+
+---@alias SideScrollerCheatCodeAdvanced gameuiSideScrollerCheatCode
+SideScrollerCheatCodeAdvanced = gameuiSideScrollerCheatCode
+
+---@alias SideScrollerSpawnerAdvanced gameuiSideScrollerSpawnerAdvanced
+SideScrollerSpawnerAdvanced = gameuiSideScrollerSpawnerAdvanced
+
+---@alias SignalEvent AISignalEvent
+SignalEvent = AISignalEvent
+
+---@alias SignalUserData gameSignalUserData
+SignalUserData = gameSignalUserData
+
+---@alias SignalUserDataDefinition gameSignalUserDataDefinition
+SignalUserDataDefinition = gameSignalUserDataDefinition
+
+---@alias SimpleColliderComponent entSimpleColliderComponent
+SimpleColliderComponent = entSimpleColliderComponent
+
+---@alias SimpleScreenMessage gameSimpleScreenMessage
+SimpleScreenMessage = gameSimpleScreenMessage
+
+---@alias SimulationFilter physicsSimulationFilter
+SimulationFilter = physicsSimulationFilter
+
+---@alias SlideTrajectoryParams gameprojectileSlideTrajectoryParams
+SlideTrajectoryParams = gameprojectileSlideTrajectoryParams
+
+---@alias SlotComponent entSlotComponent
+SlotComponent = entSlotComponent
+
+---@alias SlotDataHolder gameSlotDataHolder
+SlotDataHolder = gameSlotDataHolder
+
+---@alias SlotItemPartElement_Record gamedataSlotItemPartElement_Record
+SlotItemPartElement_Record = gamedataSlotItemPartElement_Record
+
+---@alias SlotItemPartListElement_Record gamedataSlotItemPartListElement_Record
+SlotItemPartListElement_Record = gamedataSlotItemPartListElement_Record
+
+---@alias SlotItemPartPreset_Record gamedataSlotItemPartPreset_Record
+SlotItemPartPreset_Record = gamedataSlotItemPartPreset_Record
+
+---@alias SlotWeaponData gameSlotWeaponData
+SlotWeaponData = gameSlotWeaponData
+
+---@alias SmartGunLockEvent gamesmartGunSmartGunLockEvent
+SmartGunLockEvent = gamesmartGunSmartGunLockEvent
+
+---@alias SmartGunMissParams_Record gamedataSmartGunMissParams_Record
+SmartGunMissParams_Record = gamedataSmartGunMissParams_Record
+
+---@alias SmartGunTargetSortConfigurations_Record gamedataSmartGunTargetSortConfigurations_Record
+SmartGunTargetSortConfigurations_Record = gamedataSmartGunTargetSortConfigurations_Record
+
+---@alias SmartGunTargetSortData_Record gamedataSmartGunTargetSortData_Record
+SmartGunTargetSortData_Record = gamedataSmartGunTargetSortData_Record
+
+---@alias SmartObjectManager AISmartObjectManager
+SmartObjectManager = AISmartObjectManager
+
+---@alias SnapshotResult gamestateMachineSnapshotResult
+SnapshotResult = gamestateMachineSnapshotResult
+
+---@alias SoundComponentBase gameaudioSoundComponentBase
+SoundComponentBase = gameaudioSoundComponentBase
+
+---@alias SoundParameterEvent gameaudioeventsSoundParameter
+SoundParameterEvent = gameaudioeventsSoundParameter
+
+---@alias SoundPlayEvent gameaudioeventsPlaySound
+SoundPlayEvent = gameaudioeventsPlaySound
+
+---@alias SoundPlayVo entGameplayVOEvent
+SoundPlayVo = entGameplayVOEvent
+
+---@alias SoundStopEvent gameaudioeventsStopSound
+SoundStopEvent = gameaudioeventsStopSound
+
+---@alias SoundSwitchEvent gameaudioeventsSoundSwitch
+SoundSwitchEvent = gameaudioeventsSoundSwitch
+
+---@alias SourceShootComponent gameSourceShootComponent
+SourceShootComponent = gameSourceShootComponent
+
+---@alias SpatialQueriesSystem gameSpatialQueriesSystem
+SpatialQueriesSystem = gameSpatialQueriesSystem
+
+---@alias SpawnableObjectPriority_Record gamedataSpawnableObjectPriority_Record
+SpawnableObjectPriority_Record = gamedataSpawnableObjectPriority_Record
+
+---@alias SpawnableObject_Record gamedataSpawnableObject_Record
+SpawnableObject_Record = gamedataSpawnableObject_Record
+
+---@alias SpiralControllerParams gameprojectileSpiralParams
+SpiralControllerParams = gameprojectileSpiralParams
+
+---@alias SplashScreenLoadingScreenLogicController inkSplashScreenLoadingScreenLogicController
+SplashScreenLoadingScreenLogicController = inkSplashScreenLoadingScreenLogicController
+
+---@alias SpreadEffector_Record gamedataSpreadEffector_Record
+SpreadEffector_Record = gamedataSpreadEffector_Record
+
+---@alias SpreadInitEffector_Record gamedataSpreadInitEffector_Record
+SpreadInitEffector_Record = gamedataSpreadInitEffector_Record
+
+---@alias SquadBackyardBase_Record gamedataSquadBackyardBase_Record
+SquadBackyardBase_Record = gamedataSquadBackyardBase_Record
+
+---@alias SquadBase AISquadBase
+SquadBase = AISquadBase
+
+---@alias SquadBase_Record gamedataSquadBase_Record
+SquadBase_Record = gamedataSquadBase_Record
+
+---@alias SquadFenceBase_Record gamedataSquadFenceBase_Record
+SquadFenceBase_Record = gamedataSquadFenceBase_Record
+
+---@alias SquadInstance_Record gamedataSquadInstance_Record
+SquadInstance_Record = gamedataSquadInstance_Record
+
+---@alias SquadIsTracked AISquadIsTracked
+SquadIsTracked = AISquadIsTracked
+
+---@alias SquadManager AISquadManager
+SquadManager = AISquadManager
+
+---@alias SquadMemberComponent gameSquadMemberComponent
+SquadMemberComponent = gameSquadMemberComponent
+
+---@alias SquadOrder AIsquadsOrder
+SquadOrder = AIsquadsOrder
+
+---@alias SquadScriptInterface AISquadScriptInterface
+SquadScriptInterface = AISquadScriptInterface
+
+---@alias StadiaControllersGameController gameuiStadiaControllersGameController
+StadiaControllersGameController = gameuiStadiaControllersGameController
+
+---@alias StanceStateChangeEvent gameeventsStanceStateChangeEvent
+StanceStateChangeEvent = gameeventsStanceStateChangeEvent
+
+---@alias StartTakedownEvent gameeventsStartTakedownEvent
+StartTakedownEvent = gameeventsStartTakedownEvent
+
+---@alias StartedBeingTrackedAsHostile AIStartedBeingTrackedAsHostile
+StartedBeingTrackedAsHostile = AIStartedBeingTrackedAsHostile
+
+---@alias StatDistributionData_Record gamedataStatDistributionData_Record
+StatDistributionData_Record = gamedataStatDistributionData_Record
+
+---@alias StatModifierGroup_Record gamedataStatModifierGroup_Record
+StatModifierGroup_Record = gamedataStatModifierGroup_Record
+
+---@alias StatModifier_Record gamedataStatModifier_Record
+StatModifier_Record = gamedataStatModifier_Record
+
+---@alias StatPoolCost_Record gamedataStatPoolCost_Record
+StatPoolCost_Record = gamedataStatPoolCost_Record
+
+---@alias StatPoolDistributionData_Record gamedataStatPoolDistributionData_Record
+StatPoolDistributionData_Record = gamedataStatPoolDistributionData_Record
+
+---@alias StatPoolModifier gameStatPoolModifier
+StatPoolModifier = gameStatPoolModifier
+
+---@alias StatPoolPrereq gameStatPoolPrereq
+StatPoolPrereq = gameStatPoolPrereq
+
+---@alias StatPoolPrereqState gameStatPoolPrereqState
+StatPoolPrereqState = gameStatPoolPrereqState
+
+---@alias StatPoolPrereq_Record gamedataStatPoolPrereq_Record
+StatPoolPrereq_Record = gamedataStatPoolPrereq_Record
+
+---@alias StatPoolUpdate_Record gamedataStatPoolUpdate_Record
+StatPoolUpdate_Record = gamedataStatPoolUpdate_Record
+
+---@alias StatPool_Record gamedataStatPool_Record
+StatPool_Record = gamedataStatPool_Record
+
+---@alias StatPoolsSystem gameStatPoolsSystem
+StatPoolsSystem = gameStatPoolsSystem
+
+---@alias StatPrereq gameStatPrereq
+StatPrereq = gameStatPrereq
+
+---@alias StatPrereq_Record gamedataStatPrereq_Record
+StatPrereq_Record = gamedataStatPrereq_Record
+
+---@alias StatViewData gameStatViewData
+StatViewData = gameStatViewData
+
+---@alias Stat_Record gamedataStat_Record
+Stat_Record = gamedataStat_Record
+
+---@alias StateContext gamestateMachineStateContextScript
+StateContext = gamestateMachineStateContextScript
+
+---@alias StateFunctor gamestateMachineFunctor
+StateFunctor = gamestateMachineFunctor
+
+---@alias StateGameScriptInterface gamestateMachineGameScriptInterface
+StateGameScriptInterface = gamestateMachineGameScriptInterface
+
+---@alias StateMachineIdentifier gamestateMachineStateMachineIdentifier
+StateMachineIdentifier = gamestateMachineStateMachineIdentifier
+
+---@alias StateMachineInstanceData gamestateMachineStateMachineInstanceData
+StateMachineInstanceData = gamestateMachineStateMachineInstanceData
+
+---@alias StateResultBool gamestateMachineResultBool
+StateResultBool = gamestateMachineResultBool
+
+---@alias StateResultCName gamestateMachineResultCName
+StateResultCName = gamestateMachineResultCName
+
+---@alias StateResultFloat gamestateMachineResultFloat
+StateResultFloat = gamestateMachineResultFloat
+
+---@alias StateResultInt gamestateMachineResultInt
+StateResultInt = gamestateMachineResultInt
+
+---@alias StateResultString gamestateMachineResultString
+StateResultString = gamestateMachineResultString
+
+---@alias StateResultVector gamestateMachineResultVector
+StateResultVector = gamestateMachineResultVector
+
+---@alias StateScriptInterface gamestateMachineScriptInterface
+StateScriptInterface = gamestateMachineScriptInterface
+
+---@alias StateSnapshot gamestateMachineStateSnapshot
+StateSnapshot = gamestateMachineStateSnapshot
+
+---@alias StateSnapshotsContainer gamestateMachineStateSnapshotsContainer
+StateSnapshotsContainer = gamestateMachineStateSnapshotsContainer
+
+---@alias StatsArray_Record gamedataStatsArray_Record
+StatsArray_Record = gamedataStatsArray_Record
+
+---@alias StatsBundle gameStatsBundle
+StatsBundle = gameStatsBundle
+
+---@alias StatsBundleHandler gameStatsBundleHandler
+StatsBundleHandler = gameStatsBundleHandler
+
+---@alias StatsDataSystem gameStatsDataSystem
+StatsDataSystem = gameStatsDataSystem
+
+---@alias StatsFolder_Record gamedataStatsFolder_Record
+StatsFolder_Record = gamedataStatsFolder_Record
+
+---@alias StatsList_Record gamedataStatsList_Record
+StatsList_Record = gamedataStatsList_Record
+
+---@alias StatsObjectID gameStatsObjectID
+StatsObjectID = gameStatsObjectID
+
+---@alias StatsSystem gameStatsSystem
+StatsSystem = gameStatsSystem
+
+---@alias StatusEffect gameStatusEffect
+StatusEffect = gameStatusEffect
+
+---@alias StatusEffectAIBehaviorFlag_Record gamedataStatusEffectAIBehaviorFlag_Record
+StatusEffectAIBehaviorFlag_Record = gamedataStatusEffectAIBehaviorFlag_Record
+
+---@alias StatusEffectAIBehaviorType_Record gamedataStatusEffectAIBehaviorType_Record
+StatusEffectAIBehaviorType_Record = gamedataStatusEffectAIBehaviorType_Record
+
+---@alias StatusEffectAIData_Record gamedataStatusEffectAIData_Record
+StatusEffectAIData_Record = gamedataStatusEffectAIData_Record
+
+---@alias StatusEffectAttackData_Record gamedataStatusEffectAttackData_Record
+StatusEffectAttackData_Record = gamedataStatusEffectAttackData_Record
+
+---@alias StatusEffectBase gameStatusEffectBase
+StatusEffectBase = gameStatusEffectBase
+
+---@alias StatusEffectComponent gameStatusEffectComponent
+StatusEffectComponent = gameStatusEffectComponent
+
+---@alias StatusEffectEvent gameeventsStatusEffectEvent
+StatusEffectEvent = gameeventsStatusEffectEvent
+
+---@alias StatusEffectFX_Record gamedataStatusEffectFX_Record
+StatusEffectFX_Record = gamedataStatusEffectFX_Record
+
+---@alias StatusEffectPlayerData_Record gamedataStatusEffectPlayerData_Record
+StatusEffectPlayerData_Record = gamedataStatusEffectPlayerData_Record
+
+---@alias StatusEffectPrereq_Record gamedataStatusEffectPrereq_Record
+StatusEffectPrereq_Record = gamedataStatusEffectPrereq_Record
+
+---@alias StatusEffectSystem gameStatusEffectSystem
+StatusEffectSystem = gameStatusEffectSystem
+
+---@alias StatusEffectTDBPicker gameStatusEffectTDBPicker
+StatusEffectTDBPicker = gameStatusEffectTDBPicker
+
+---@alias StatusEffectType_Record gamedataStatusEffectType_Record
+StatusEffectType_Record = gamedataStatusEffectType_Record
+
+---@alias StatusEffectUIData_Record gamedataStatusEffectUIData_Record
+StatusEffectUIData_Record = gamedataStatusEffectUIData_Record
+
+---@alias StatusEffectVariation_Record gamedataStatusEffectVariation_Record
+StatusEffectVariation_Record = gamedataStatusEffectVariation_Record
+
+---@alias StatusEffect_Record gamedataStatusEffect_Record
+StatusEffect_Record = gamedataStatusEffect_Record
+
+---@alias StatusEffect_inline0_Record gamedataStatusEffect_inline0_Record
+StatusEffect_inline0_Record = gamedataStatusEffect_inline0_Record
+
+---@alias StatusEffect_inline1_Record gamedataStatusEffect_inline1_Record
+StatusEffect_inline1_Record = gamedataStatusEffect_inline1_Record
+
+---@alias StealVehicleEvent vehicleStealEvent
+StealVehicleEvent = vehicleStealEvent
+
+---@alias StealthIndicatorGameController gameuiStealthIndicatorGameController
+StealthIndicatorGameController = gameuiStealthIndicatorGameController
+
+---@alias StealthIndicatorPartLogicController gameuiStealthIndicatorPartLogicController
+StealthIndicatorPartLogicController = gameuiStealthIndicatorPartLogicController
+
+---@alias StealthMappin gamemappinsStealthMappin
+StealthMappin = gamemappinsStealthMappin
+
+---@alias StealthMappinController gameuiStealthMappinController
+StealthMappinController = gameuiStealthMappinController
+
+---@alias StickerEditorEnableCursorInputEvent gameuiStickerEditorEnableCursorInputEvent
+StickerEditorEnableCursorInputEvent = gameuiStickerEditorEnableCursorInputEvent
+
+---@alias StickersRegisterCallbacksEvent gameuiStickersRegisterCallbacksEvent
+StickersRegisterCallbacksEvent = gameuiStickersRegisterCallbacksEvent
+
+---@alias StickyGDM_Record gamedataStickyGDM_Record
+StickyGDM_Record = gamedataStickyGDM_Record
+
+---@alias StimBroadcasterComponentHelper gamehelperStimBroadcasterComponentHelper
+StimBroadcasterComponentHelper = gamehelperStimBroadcasterComponentHelper
+
+---@alias StimPriority_Record gamedataStimPriority_Record
+StimPriority_Record = gamedataStimPriority_Record
+
+---@alias StimPropagation_Record gamedataStimPropagation_Record
+StimPropagation_Record = gamedataStimPropagation_Record
+
+---@alias StimTargets_Record gamedataStimTargets_Record
+StimTargets_Record = gamedataStimTargets_Record
+
+---@alias StimType_Record gamedataStimType_Record
+StimType_Record = gamedataStimType_Record
+
+---@alias Stim_Record gamedataStim_Record
+Stim_Record = gamedataStim_Record
+
+---@alias StimuliData senseStimuliData
+StimuliData = senseStimuliData
+
+---@alias StimuliEvent senseStimuliEvent
+StimuliEvent = senseStimuliEvent
+
+---@alias StimuliMergeInfo gameStimuliMergeInfo
+StimuliMergeInfo = gameStimuliMergeInfo
+
+---@alias StimuliSystem gameStimuliSystem
+StimuliSystem = gameStimuliSystem
+
+---@alias StopAndStickPerpendicular_Record gamedataStopAndStickPerpendicular_Record
+StopAndStickPerpendicular_Record = gamedataStopAndStickPerpendicular_Record
+
+---@alias StopAndStick_Record gamedataStopAndStick_Record
+StopAndStick_Record = gamedataStopAndStick_Record
+
+---@alias StopWeaponFireSoundEvent gameaudioeventsStopWeaponFire
+StopWeaponFireSoundEvent = gameaudioeventsStopWeaponFire
+
+---@alias Stop_Record gamedataStop_Record
+Stop_Record = gamedataStop_Record
+
+---@alias StoppedBeingTrackedAsHostile AIStoppedBeingTrackedAsHostile
+StoppedBeingTrackedAsHostile = AIStoppedBeingTrackedAsHostile
+
+---@alias StoryTierChangedEvent gameStoryTierChangedEvent
+StoryTierChangedEvent = gameStoryTierChangedEvent
+
+---@alias StrafingTarget moveStrafingTarget
+StrafingTarget = moveStrafingTarget
+
+---@alias StreetCredTier_Record gamedataStreetCredTier_Record
+StreetCredTier_Record = gamedataStreetCredTier_Record
+
+---@alias StreetSign_Record gamedataStreetSign_Record
+StreetSign_Record = gamedataStreetSign_Record
+
+---@alias SubCharacter_Record gamedataSubCharacter_Record
+SubCharacter_Record = gamedataSubCharacter_Record
+
+---@alias SubStatModifier_Record gamedataSubStatModifier_Record
+SubStatModifier_Record = gamedataSubStatModifier_Record
+
+---@alias Substat_Record gamedataSubstat_Record
+Substat_Record = gamedataSubstat_Record
+
+---@alias SubtitleHandlerSystem gameuiSubtitleHandlerSystem
+SubtitleHandlerSystem = gameuiSubtitleHandlerSystem
+
+---@alias SummonFinishedEvent vehicleSummonFinishedEvent
+SummonFinishedEvent = vehicleSummonFinishedEvent
+
+---@alias SummonLogic vehicleSummonLogic
+SummonLogic = vehicleSummonLogic
+
+---@alias SummonStartedEvent vehicleSummonStartedEvent
+SummonStartedEvent = vehicleSummonStartedEvent
+
+---@alias SuspiciousObjectEvent AIbehaviorSuspiciousObjectEvent
+SuspiciousObjectEvent = AIbehaviorSuspiciousObjectEvent
+
+---@alias SwapUIGameContextEvent gameuiRequestSwapContextEvent
+SwapUIGameContextEvent = gameuiRequestSwapContextEvent
+
+---@alias SynchronizeAttachmentSlotRequest gameSynchronizeAttachmentSlotRequest
+SynchronizeAttachmentSlotRequest = gameSynchronizeAttachmentSlotRequest
+
+---@alias TDBID gamedataTDBIDHelper
+TDBID = gamedataTDBIDHelper
+
+---@alias TPPCameraComponent gameTPPCameraComponent
+TPPCameraComponent = gameTPPCameraComponent
+
+---@alias TPPCameraSetup_Record gamedataTPPCameraSetup_Record
+TPPCameraSetup_Record = gamedataTPPCameraSetup_Record
+
+---@alias TPPLookAtPresets_Record gamedataTPPLookAtPresets_Record
+TPPLookAtPresets_Record = gamedataTPPLookAtPresets_Record
+
+---@alias TSFMV gametargetingSystemSearchFilterMaskValue
+TSFMV = gametargetingSystemSearchFilterMaskValue
+
+---@alias TS_TargetPartInfo gametargetingTargetPartInfo
+TS_TargetPartInfo = gametargetingTargetPartInfo
+
+---@alias TVBase_Record gamedataTVBase_Record
+TVBase_Record = gamedataTVBase_Record
+
+---@alias TacticLimiterCoverSelectionParameters_Record gamedataTacticLimiterCoverSelectionParameters_Record
+TacticLimiterCoverSelectionParameters_Record = gamedataTacticLimiterCoverSelectionParameters_Record
+
+---@alias TacticRatio AICombatSquadTacticRatio
+TacticRatio = AICombatSquadTacticRatio
+
+---@alias TagObjectRequest gameTagObjectRequest
+TagObjectRequest = gameTagObjectRequest
+
+---@alias TaggedAIEvent AITaggedAIEvent
+TaggedAIEvent = AITaggedAIEvent
+
+---@alias TaggedEvent gameTaggedEvent
+TaggedEvent = gameTaggedEvent
+
+---@alias TaggedSignalUserData gameTaggedSignalUserData
+TaggedSignalUserData = gameTaggedSignalUserData
+
+---@alias TaggedSignalUserDataDefinition gameTaggedSignalUserDataDefinition
+TaggedSignalUserDataDefinition = gameTaggedSignalUserDataDefinition
+
+---@alias TankObject vehicleTankBaseObject
+TankObject = vehicleTankBaseObject
+
+---@alias TargetComponentFilterType gametargetingSystemScriptFilter
+TargetComponentFilterType = gametargetingSystemScriptFilter
+
+---@alias TargetFilter gametargetingSystemTargetFilter
+TargetFilter = gametargetingSystemTargetFilter
+
+---@alias TargetFilterResult gametargetingSystemTargetFilterResult
+TargetFilterResult = gametargetingSystemTargetFilterResult
+
+---@alias TargetFilterResult_Logical gameinteractionsTargetFilterResult_Logical
+TargetFilterResult_Logical = gameinteractionsTargetFilterResult_Logical
+
+---@alias TargetFilterTicket gametargetingSystemTargetFilterTicket
+TargetFilterTicket = gametargetingSystemTargetFilterTicket
+
+---@alias TargetFilter_Closest gametargetingSystemTargetFilter_Closest
+TargetFilter_Closest = gametargetingSystemTargetFilter_Closest
+
+---@alias TargetFilter_ClosestOpaque gametargetingSystemTargetFilter_ClosestOpaque
+TargetFilter_ClosestOpaque = gametargetingSystemTargetFilter_ClosestOpaque
+
+---@alias TargetFilter_Logical gameinteractionsTargetFilter_Logical
+TargetFilter_Logical = gameinteractionsTargetFilter_Logical
+
+---@alias TargetFilter_Script gametargetingSystemTargetFilter_Script
+TargetFilter_Script = gametargetingSystemTargetFilter_Script
+
+---@alias TargetHitInfo gametargetingSystemHitInfo
+TargetHitInfo = gametargetingSystemHitInfo
+
+---@alias TargetPointComponent entTargetPointComponent
+TargetPointComponent = entTargetPointComponent
+
+---@alias TargetSearchFilter gameTargetSearchFilter
+TargetSearchFilter = gameTargetSearchFilter
+
+---@alias TargetSearchQuery gameTargetSearchQuery
+TargetSearchQuery = gameTargetSearchQuery
+
+---@alias TargetShootComponent gameTargetShootComponent
+TargetShootComponent = gameTargetShootComponent
+
+---@alias TargetTrackerComponent AITargetTrackerComponent
+TargetTrackerComponent = AITargetTrackerComponent
+
+---@alias TargetTrackerManager AITargetTrackerManager
+TargetTrackerManager = AITargetTrackerManager
+
+---@alias TargetingComponent gameTargetingComponent
+TargetingComponent = gameTargetingComponent
+
+---@alias TargetingSet gameTargetingSet
+TargetingSet = gameTargetingSet
+
+---@alias TargetingSystem gametargetingTargetingSystem
+TargetingSystem = gametargetingTargetingSystem
+
+---@alias TarotCardAddedNotificationViewData gameuiTarotCardAddedNotificationViewData
+TarotCardAddedNotificationViewData = gameuiTarotCardAddedNotificationViewData
+
+---@alias TelemetryDamage gameTelemetryDamage
+TelemetryDamage = gameTelemetryDamage
+
+---@alias TelemetryDamageDealt gameTelemetryDamageDealt
+TelemetryDamageDealt = gameTelemetryDamageDealt
+
+---@alias TelemetryEnemy gameTelemetryEnemy
+TelemetryEnemy = gameTelemetryEnemy
+
+---@alias TelemetryEnemyDown gameTelemetryEnemyDown
+TelemetryEnemyDown = gameTelemetryEnemyDown
+
+---@alias TelemetryInventoryItem gameTelemetryInventoryItem
+TelemetryInventoryItem = gameTelemetryInventoryItem
+
+---@alias TelemetryLevelGained gameTelemetryLevelGained
+TelemetryLevelGained = gameTelemetryLevelGained
+
+---@alias TelemetryQuickHack gameTelemetryQuickHack
+TelemetryQuickHack = gameTelemetryQuickHack
+
+---@alias TelemetrySourceEntity gameTelemetrySourceEntity
+TelemetrySourceEntity = gameTelemetrySourceEntity
+
+---@alias TelemetrySystem gameTelemetryTelemetrySystem
+TelemetrySystem = gameTelemetryTelemetrySystem
+
+---@alias TeleportTo gameMovingPlatformTeleportTo
+TeleportTo = gameMovingPlatformTeleportTo
+
+---@alias TeleportationFacility gameTeleportationFacility
+TeleportationFacility = gameTeleportationFacility
+
+---@alias TemporalPrereq_Record gamedataTemporalPrereq_Record
+TemporalPrereq_Record = gamedataTemporalPrereq_Record
+
+---@alias TerminalScreenType_Record gamedataTerminalScreenType_Record
+TerminalScreenType_Record = gamedataTerminalScreenType_Record
+
+---@alias ThreatDeath AIThreatDeath
+ThreatDeath = AIThreatDeath
+
+---@alias ThreatDefeated AIThreatDefeated
+ThreatDefeated = AIThreatDefeated
+
+---@alias ThreatDistanceCoverSelectionParameters_Record gamedataThreatDistanceCoverSelectionParameters_Record
+ThreatDistanceCoverSelectionParameters_Record = gamedataThreatDistanceCoverSelectionParameters_Record
+
+---@alias ThreatExpectationInvalid AIThreatExpectationInvalid
+ThreatExpectationInvalid = AIThreatExpectationInvalid
+
+---@alias ThreatInvalid AIThreatInvalid
+ThreatInvalid = AIThreatInvalid
+
+---@alias ThreatPositionProvider AIThreatPositionProvider
+ThreatPositionProvider = AIThreatPositionProvider
+
+---@alias ThreatRemoved AIThreatRemoved
+ThreatRemoved = AIThreatRemoved
+
+---@alias ThreatTrackingPresetBase_Record gamedataThreatTrackingPresetBase_Record
+ThreatTrackingPresetBase_Record = gamedataThreatTrackingPresetBase_Record
+
+---@alias ThreatUnconscious AIThreatUnconscious
+ThreatUnconscious = AIThreatUnconscious
+
+---@alias ThreatValid AIThreatValid
+ThreatValid = AIThreatValid
+
+---@alias ThumbnailWidgetDefinition_Record gamedataThumbnailWidgetDefinition_Record
+ThumbnailWidgetDefinition_Record = gamedataThumbnailWidgetDefinition_Record
+
+---@alias TickableEvent gameTickableEvent
+TickableEvent = gameTickableEvent
+
+---@alias Tier3CameraSettings gameTier3CameraSettings
+Tier3CameraSettings = gameTier3CameraSettings
+
+---@alias TimeDilatable gameTimeDilatable
+TimeDilatable = gameTimeDilatable
+
+---@alias TimeDilationListener tickScriptTimeDilationListener
+TimeDilationListener = tickScriptTimeDilationListener
+
+---@alias TimeSkipFinishedEvent gameTimeSkipFinishedEvent
+TimeSkipFinishedEvent = gameTimeSkipFinishedEvent
+
+---@alias TimeSystem gameTimeSystem
+TimeSystem = gameTimeSystem
+
+---@alias Time_Record gamedataTime_Record
+Time_Record = gamedataTime_Record
+
+---@alias TimeskipGameController gameuiTimeskipGameController
+TimeskipGameController = gameuiTimeskipGameController
+
+---@alias ToggleAimDownSightsEvent gameaudioeventsToggleAimDownSightsEvent
+ToggleAimDownSightsEvent = gameaudioeventsToggleAimDownSightsEvent
+
+---@alias ToggleForbiddenVehicleAreaEvent vehicleToggleForbiddenVehicleAreaEvent
+ToggleForbiddenVehicleAreaEvent = vehicleToggleForbiddenVehicleAreaEvent
+
+---@alias ToggleHitShapeEvent gamehitRepresentationEventsToggleHitShapeEvent
+ToggleHitShapeEvent = gamehitRepresentationEventsToggleHitShapeEvent
+
+---@alias ToggleQuestCustomFPPLockOffEvent vehicleToggleQuestCustomFPPLockOffEvent
+ToggleQuestCustomFPPLockOffEvent = vehicleToggleQuestCustomFPPLockOffEvent
+
+---@alias ToggleRadioReceiver vehicleToggleRadioReceiverEvent
+ToggleRadioReceiver = vehicleToggleRadioReceiverEvent
+
+---@alias TraceResult physicsTraceResult
+TraceResult = physicsTraceResult
+
+---@alias TrackedLocation AITrackedLocation
+TrackedLocation = AITrackedLocation
+
+---@alias TrackedMappinControllerCustomData gameuiTrackedMappinControllerCustomData
+TrackedMappinControllerCustomData = gameuiTrackedMappinControllerCustomData
+
+---@alias TrackingMode_Record gamedataTrackingMode_Record
+TrackingMode_Record = gamedataTrackingMode_Record
+
+---@alias Tracking_Record gamedataTracking_Record
+Tracking_Record = gamedataTracking_Record
+
+---@alias TrafficLightChangeEvent worldTrafficLightChangeEvent
+TrafficLightChangeEvent = worldTrafficLightChangeEvent
+
+---@alias TrafficLightListenerComponent worldTrafficLightListenerComponent
+TrafficLightListenerComponent = worldTrafficLightListenerComponent
+
+---@alias TrafficSystem worldTrafficScriptInterface
+TrafficSystem = worldTrafficScriptInterface
+
+---@alias TraitData_Record gamedataTraitData_Record
+TraitData_Record = gamedataTraitData_Record
+
+---@alias Trait_Record gamedataTrait_Record
+Trait_Record = gamedataTrait_Record
+
+---@alias TransactionSystem gameTransactionSystem
+TransactionSystem = gameTransactionSystem
+
+---@alias TransformHistoryComponent entTransformHistoryComponent
+TransformHistoryComponent = entTransformHistoryComponent
+
+---@alias Transgression_Record gamedataTransgression_Record
+Transgression_Record = gamedataTransgression_Record
+
+---@alias TrapTooltipDisplayer gameuiTrapTooltipDisplayer
+TrapTooltipDisplayer = gameuiTrapTooltipDisplayer
+
+---@alias TrapType_Record gamedataTrapType_Record
+TrapType_Record = gamedataTrapType_Record
+
+---@alias Trap_Record gamedataTrap_Record
+Trap_Record = gamedataTrap_Record
+
+---@alias TrapsGenRule gameuiTrapsGenRule
+TrapsGenRule = gameuiTrapsGenRule
+
+---@alias TrialHelper servicesTrialHelper
+TrialHelper = servicesTrialHelper
+
+---@alias TriggerAttackEffector_Record gamedataTriggerAttackEffector_Record
+TriggerAttackEffector_Record = gamedataTriggerAttackEffector_Record
+
+---@alias TriggerComponent gameStaticTriggerAreaComponent
+TriggerComponent = gameStaticTriggerAreaComponent
+
+---@alias TriggerEvent entTriggerEvent
+TriggerEvent = entTriggerEvent
+
+---@alias TriggerHackingMinigameEffector_Record gamedataTriggerHackingMinigameEffector_Record
+TriggerHackingMinigameEffector_Record = gamedataTriggerHackingMinigameEffector_Record
+
+---@alias TriggerMode_Record gamedataTriggerMode_Record
+TriggerMode_Record = gamedataTriggerMode_Record
+
+---@alias TriggerNotifier_Script entTriggerNotifier_Script
+TriggerNotifier_Script = entTriggerNotifier_Script
+
+---@alias TriggerNotifier_ScriptInstance entTriggerNotifier_ScriptInstance
+TriggerNotifier_ScriptInstance = entTriggerNotifier_ScriptInstance
+
+---@alias TutorialArea gameuiTutorialArea
+TutorialArea = gameuiTutorialArea
+
+---@alias TutorialBracketData gameTutorialBracketData
+TutorialBracketData = gameTutorialBracketData
+
+---@alias TutorialBracketLogicController gameuiTutorialBracketLogicController
+TutorialBracketLogicController = gameuiTutorialBracketLogicController
+
+---@alias TutorialBracketType gameTutorialBracketType
+TutorialBracketType = gameTutorialBracketType
+
+---@alias TutorialOverlayData gameTutorialOverlayData
+TutorialOverlayData = gameTutorialOverlayData
+
+---@alias TutorialOverlayLogicController gameuiTutorialOverlayLogicController
+TutorialOverlayLogicController = gameuiTutorialOverlayLogicController
+
+---@alias TutorialOverlayUserData gameTutorialOverlayUserData
+TutorialOverlayUserData = gameTutorialOverlayUserData
+
+---@alias TutorialPopupGameController gameuiTutorialPopupGameController
+TutorialPopupGameController = gameuiTutorialPopupGameController
+
+---@alias TweakDBIDSelector inkTweakDBIDSelector
+TweakDBIDSelector = inkTweakDBIDSelector
+
+---@alias TweakDBInterface gamedataTweakDBInterface
+TweakDBInterface = gamedataTweakDBInterface
+
+---@alias TweakDBRecord gamedataTweakDBRecord
+TweakDBRecord = gamedataTweakDBRecord
+
+---@alias TweakExecutionContext AIbehaviortweakExecutionContext
+TweakExecutionContext = AIbehaviortweakExecutionContext
+
+---@alias UIAnimation_Record gamedataUIAnimation_Record
+UIAnimation_Record = gamedataUIAnimation_Record
+
+---@alias UIAudioHandler audiouiAudioHandler
+UIAudioHandler = audiouiAudioHandler
+
+---@alias UICharacterCreationAttribute_Record gamedataUICharacterCreationAttribute_Record
+UICharacterCreationAttribute_Record = gamedataUICharacterCreationAttribute_Record
+
+---@alias UICharacterCreationAttributesPreset_Record gamedataUICharacterCreationAttributesPreset_Record
+UICharacterCreationAttributesPreset_Record = gamedataUICharacterCreationAttributesPreset_Record
+
+---@alias UICondition_Record gamedataUICondition_Record
+UICondition_Record = gamedataUICondition_Record
+
+---@alias UIElement_Record gamedataUIElement_Record
+UIElement_Record = gamedataUIElement_Record
+
+---@alias UIGameContextChangedEvent gameuiContextChangedEvent
+UIGameContextChangedEvent = gameuiContextChangedEvent
+
+---@alias UIIconCensorFlag_Record gamedataUIIconCensorFlag_Record
+UIIconCensorFlag_Record = gamedataUIIconCensorFlag_Record
+
+---@alias UIIconCensorship_Record gamedataUIIconCensorship_Record
+UIIconCensorship_Record = gamedataUIIconCensorship_Record
+
+---@alias UIIconPool_Record gamedataUIIconPool_Record
+UIIconPool_Record = gamedataUIIconPool_Record
+
+---@alias UIIconReference gameuiTweakDBIconReference
+UIIconReference = gameuiTweakDBIconReference
+
+---@alias UIIcon_Record gamedataUIIcon_Record
+UIIcon_Record = gamedataUIIcon_Record
+
+---@alias UIIconsGeneratorSystem gameuiUIIconsGeneratorSystem
+UIIconsGeneratorSystem = gameuiUIIconsGeneratorSystem
+
+---@alias UIItemsHelper gameUIItemsHelper
+UIItemsHelper = gameUIItemsHelper
+
+---@alias UILocalizationDataPackage gameUILocalizationDataPackage
+UILocalizationDataPackage = gameUILocalizationDataPackage
+
+---@alias UILootedItemEvent gameeventsLootedItemEvent
+UILootedItemEvent = gameeventsLootedItemEvent
+
+---@alias UINameplateDisplayType_Record gamedataUINameplateDisplayType_Record
+UINameplateDisplayType_Record = gamedataUINameplateDisplayType_Record
+
+---@alias UINameplate_Record gamedataUINameplate_Record
+UINameplate_Record = gamedataUINameplate_Record
+
+---@alias UIScreenDefinition gamedeviceUIScreenDefinition
+UIScreenDefinition = gamedeviceUIScreenDefinition
+
+---@alias UIStatsMap_Record gamedataUIStatsMap_Record
+UIStatsMap_Record = gamedataUIStatsMap_Record
+
+---@alias UISystem gameuiGameSystemUI
+UISystem = gameuiGameSystemUI
+
+---@alias UnTagObjectRequest gameUnTagObjectRequest
+UnTagObjectRequest = gameUnTagObjectRequest
+
+---@alias UncontrolledMovementEffector_Record gamedataUncontrolledMovementEffector_Record
+UncontrolledMovementEffector_Record = gamedataUncontrolledMovementEffector_Record
+
+---@alias UncontrolledMovementEndEvent entUncontrolledMovementEndEvent
+UncontrolledMovementEndEvent = entUncontrolledMovementEndEvent
+
+---@alias UncontrolledMovementStartEvent entUncontrolledMovementStartEvent
+UncontrolledMovementStartEvent = entUncontrolledMovementStartEvent
+
+---@alias UnequipByContextRequest gameUnequipByContextRequest
+UnequipByContextRequest = gameUnequipByContextRequest
+
+---@alias UnequipByTDBIDRequest gameUnequipByTDBIDRequest
+UnequipByTDBIDRequest = gameUnequipByTDBIDRequest
+
+---@alias UnequipEnd gameAttachmentSlotEventsUnequipEnd
+UnequipEnd = gameAttachmentSlotEventsUnequipEnd
+
+---@alias UnequipStart gameAttachmentSlotEventsUnequipStart
+UnequipStart = gameAttachmentSlotEventsUnequipStart
+
+---@alias UnlockableProgram gameuiUnlockableProgram
+UnlockableProgram = gameuiUnlockableProgram
+
+---@alias UnmountingEvent gamemountingUnmountingEvent
+UnmountingEvent = gamemountingUnmountingEvent
+
+---@alias UnmountingRequest gamemountingUnmountingRequest
+UnmountingRequest = gamemountingUnmountingRequest
+
+---@alias UpdateInputHintEvent gameuiUpdateInputHintEvent
+UpdateInputHintEvent = gameuiUpdateInputHintEvent
+
+---@alias UpdateInputHintMultipleEvent gameuiUpdateInputHintMultipleEvent
+UpdateInputHintMultipleEvent = gameuiUpdateInputHintMultipleEvent
+
+---@alias UpgradingData_Record gamedataUpgradingData_Record
+UpgradingData_Record = gamedataUpgradingData_Record
+
+---@alias UphillDriveHelper_Record gamedataUphillDriveHelper_Record
+UphillDriveHelper_Record = gamedataUphillDriveHelper_Record
+
+---@alias UsedSpotTokensList AIbehaviorUsedSpotTokensList
+UsedSpotTokensList = AIbehaviorUsedSpotTokensList
+
+---@alias UserSettings userSettingsUserSettings
+UserSettings = userSettingsUserSettings
+
+---@alias UserSettingsLoadStatus InGameConfigUserSettingsLoadStatus
+UserSettingsLoadStatus = InGameConfigUserSettingsLoadStatus
+
+---@alias UserSettingsSaveStatus InGameConfigUserSettingsSaveStatus
+UserSettingsSaveStatus = InGameConfigUserSettingsSaveStatus
+
+---@alias UtilityLossCoverSelectionParameters_Record gamedataUtilityLossCoverSelectionParameters_Record
+UtilityLossCoverSelectionParameters_Record = gamedataUtilityLossCoverSelectionParameters_Record
+
+---@alias VariantDataSource inkVariantDataSourceWrapper
+VariantDataSource = inkVariantDataSourceWrapper
+
+---@alias VariantDataView inkVariantDataViewWrapper
+VariantDataView = inkVariantDataViewWrapper
+
+---@alias VaultParameters gamestateMachineparameterTypeVaultParameters
+VaultParameters = gamestateMachineparameterTypeVaultParameters
+
+---@alias VehicleAIBoostSettings_Record gamedataVehicleAIBoostSettings_Record
+VehicleAIBoostSettings_Record = gamedataVehicleAIBoostSettings_Record
+
+---@alias VehicleAIMountedE3Hack vehicleAIMountedE3Hack
+VehicleAIMountedE3Hack = vehicleAIMountedE3Hack
+
+---@alias VehicleAIPanicDrivingSettings_Record gamedataVehicleAIPanicDrivingSettings_Record
+VehicleAIPanicDrivingSettings_Record = gamedataVehicleAIPanicDrivingSettings_Record
+
+---@alias VehicleAITractionEstimation_Record gamedataVehicleAITractionEstimation_Record
+VehicleAITractionEstimation_Record = gamedataVehicleAITractionEstimation_Record
+
+---@alias VehicleAIVisionSettings_Record gamedataVehicleAIVisionSettings_Record
+VehicleAIVisionSettings_Record = gamedataVehicleAIVisionSettings_Record
+
+---@alias VehicleAirControlAxis_Record gamedataVehicleAirControlAxis_Record
+VehicleAirControlAxis_Record = gamedataVehicleAirControlAxis_Record
+
+---@alias VehicleAirControl_Record gamedataVehicleAirControl_Record
+VehicleAirControl_Record = gamedataVehicleAirControl_Record
+
+---@alias VehicleAssignConvoyEvent vehicleAssignConvoyEvent
+VehicleAssignConvoyEvent = vehicleAssignConvoyEvent
+
+---@alias VehicleAudioEvent vehicleAudioEvent
+VehicleAudioEvent = vehicleAudioEvent
+
+---@alias VehicleBehaviorData_Record gamedataVehicleBehaviorData_Record
+VehicleBehaviorData_Record = gamedataVehicleBehaviorData_Record
+
+---@alias VehicleBurnOut_Record gamedataVehicleBurnOut_Record
+VehicleBurnOut_Record = gamedataVehicleBurnOut_Record
+
+---@alias VehicleCameraManager vehicleCameraManager
+VehicleCameraManager = vehicleCameraManager
+
+---@alias VehicleCameraManagerComponent vehicleCameraManagerComponent
+VehicleCameraManagerComponent = vehicleCameraManagerComponent
+
+---@alias VehicleCameraManagerFT vehicleCameraManagerFT
+VehicleCameraManagerFT = vehicleCameraManagerFT
+
+---@alias VehicleCameraManager_Record gamedataVehicleCameraManager_Record
+VehicleCameraManager_Record = gamedataVehicleCameraManager_Record
+
+---@alias VehicleChaseTargetEvent vehicleChaseTargetEvent
+VehicleChaseTargetEvent = vehicleChaseTargetEvent
+
+---@alias VehicleDataPackage_Record gamedataVehicleDataPackage_Record
+VehicleDataPackage_Record = gamedataVehicleDataPackage_Record
+
+---@alias VehicleDefaultState_Record gamedataVehicleDefaultState_Record
+VehicleDefaultState_Record = gamedataVehicleDefaultState_Record
+
+---@alias VehicleDeformablePart_Record gamedataVehicleDeformablePart_Record
+VehicleDeformablePart_Record = gamedataVehicleDeformablePart_Record
+
+---@alias VehicleDeformableZone_Record gamedataVehicleDeformableZone_Record
+VehicleDeformableZone_Record = gamedataVehicleDeformableZone_Record
+
+---@alias VehicleDestructibleGlass_Record gamedataVehicleDestructibleGlass_Record
+VehicleDestructibleGlass_Record = gamedataVehicleDestructibleGlass_Record
+
+---@alias VehicleDestructibleLight_Record gamedataVehicleDestructibleLight_Record
+VehicleDestructibleLight_Record = gamedataVehicleDestructibleLight_Record
+
+---@alias VehicleDestructibleWheel_Record gamedataVehicleDestructibleWheel_Record
+VehicleDestructibleWheel_Record = gamedataVehicleDestructibleWheel_Record
+
+---@alias VehicleDestructionPointDamper_Record gamedataVehicleDestructionPointDamper_Record
+VehicleDestructionPointDamper_Record = gamedataVehicleDestructionPointDamper_Record
+
+---@alias VehicleDestruction_Record gamedataVehicleDestruction_Record
+VehicleDestruction_Record = gamedataVehicleDestruction_Record
+
+---@alias VehicleDetachAllPartsEvent vehicleDetachAllPartsEvent
+VehicleDetachAllPartsEvent = vehicleDetachAllPartsEvent
+
+---@alias VehicleDetachPartEvent vehicleDetachPartEvent
+VehicleDetachPartEvent = vehicleDetachPartEvent
+
+---@alias VehicleDetachablePart_Record gamedataVehicleDetachablePart_Record
+VehicleDetachablePart_Record = gamedataVehicleDetachablePart_Record
+
+---@alias VehicleDoorInteractionState vehicleVehicleDoorInteractionState
+VehicleDoorInteractionState = vehicleVehicleDoorInteractionState
+
+---@alias VehicleDoorState vehicleVehicleDoorState
+VehicleDoorState = vehicleVehicleDoorState
+
+---@alias VehicleDriveModelData_Record gamedataVehicleDriveModelData_Record
+VehicleDriveModelData_Record = gamedataVehicleDriveModelData_Record
+
+---@alias VehicleEngineData_Record gamedataVehicleEngineData_Record
+VehicleEngineData_Record = gamedataVehicleEngineData_Record
+
+---@alias VehicleFPPCameraParams_Record gamedataVehicleFPPCameraParams_Record
+VehicleFPPCameraParams_Record = gamedataVehicleFPPCameraParams_Record
+
+---@alias VehicleFinishedMountingEvent vehicleFinishedMountingEvent
+VehicleFinishedMountingEvent = vehicleFinishedMountingEvent
+
+---@alias VehicleFlippedOverEvent vehicleFlippedOverEvent
+VehicleFlippedOverEvent = vehicleFlippedOverEvent
+
+---@alias VehicleFxCollisionMaterial_Record gamedataVehicleFxCollisionMaterial_Record
+VehicleFxCollisionMaterial_Record = gamedataVehicleFxCollisionMaterial_Record
+
+---@alias VehicleFxCollision_Record gamedataVehicleFxCollision_Record
+VehicleFxCollision_Record = gamedataVehicleFxCollision_Record
+
+---@alias VehicleFxWheelsDecalsMaterialSmear_Record gamedataVehicleFxWheelsDecalsMaterialSmear_Record
+VehicleFxWheelsDecalsMaterialSmear_Record = gamedataVehicleFxWheelsDecalsMaterialSmear_Record
+
+---@alias VehicleFxWheelsDecalsMaterial_Record gamedataVehicleFxWheelsDecalsMaterial_Record
+VehicleFxWheelsDecalsMaterial_Record = gamedataVehicleFxWheelsDecalsMaterial_Record
+
+---@alias VehicleFxWheelsDecals_Record gamedataVehicleFxWheelsDecals_Record
+VehicleFxWheelsDecals_Record = gamedataVehicleFxWheelsDecals_Record
+
+---@alias VehicleFxWheelsParticlesMaterial_Record gamedataVehicleFxWheelsParticlesMaterial_Record
+VehicleFxWheelsParticlesMaterial_Record = gamedataVehicleFxWheelsParticlesMaterial_Record
+
+---@alias VehicleFxWheelsParticles_Record gamedataVehicleFxWheelsParticles_Record
+VehicleFxWheelsParticles_Record = gamedataVehicleFxWheelsParticles_Record
+
+---@alias VehicleGear_Record gamedataVehicleGear_Record
+VehicleGear_Record = gamedataVehicleGear_Record
+
+---@alias VehicleGlassDestructionEvent vehicleGlassDestructionEvent
+VehicleGlassDestructionEvent = vehicleGlassDestructionEvent
+
+---@alias VehicleGridDestructionEvent vehicleGridDestructionEvent
+VehicleGridDestructionEvent = vehicleGridDestructionEvent
+
+---@alias VehicleHasExplodedEvent vehicleHasExplodedEvent
+VehicleHasExplodedEvent = vehicleHasExplodedEvent
+
+---@alias VehicleImpactTraffic_Record gamedataVehicleImpactTraffic_Record
+VehicleImpactTraffic_Record = gamedataVehicleImpactTraffic_Record
+
+---@alias VehicleManufacturer_Record gamedataVehicleManufacturer_Record
+VehicleManufacturer_Record = gamedataVehicleManufacturer_Record
+
+---@alias VehicleMappin gamemappinsVehicleMappin
+VehicleMappin = gamemappinsVehicleMappin
+
+---@alias VehicleModel_Record gamedataVehicleModel_Record
+VehicleModel_Record = gamedataVehicleModel_Record
+
+---@alias VehicleObject vehicleBaseObject
+VehicleObject = vehicleBaseObject
+
+---@alias VehicleOnPartDetachedEvent vehicleOnPartDetachedEvent
+VehicleOnPartDetachedEvent = vehicleOnPartDetachedEvent
+
+---@alias VehiclePIDSettings_Record gamedataVehiclePIDSettings_Record
+VehiclePIDSettings_Record = gamedataVehiclePIDSettings_Record
+
+---@alias VehicleParkedEvent vehicleParkedEvent
+VehicleParkedEvent = vehicleParkedEvent
+
+---@alias VehicleProceduralFPPCameraParams_Record gamedataVehicleProceduralFPPCameraParams_Record
+VehicleProceduralFPPCameraParams_Record = gamedataVehicleProceduralFPPCameraParams_Record
+
+---@alias VehicleRadioSongChanged vehicleRadioSongChanged
+VehicleRadioSongChanged = vehicleRadioSongChanged
+
+---@alias VehicleRadioStationChanged vehicleRadioStationChanged
+VehicleRadioStationChanged = vehicleRadioStationChanged
+
+---@alias VehicleRadioStationInitialized vehicleRadioStationInitialized
+VehicleRadioStationInitialized = vehicleRadioStationInitialized
+
+---@alias VehicleReadyToParkEvent vehicleReadyToParkEvent
+VehicleReadyToParkEvent = vehicleReadyToParkEvent
+
+---@alias VehicleRepairEvent vehicleRepairEvent
+VehicleRepairEvent = vehicleRepairEvent
+
+---@alias VehicleSeatSet_Record gamedataVehicleSeatSet_Record
+VehicleSeatSet_Record = gamedataVehicleSeatSet_Record
+
+---@alias VehicleSeat_Record gamedataVehicleSeat_Record
+VehicleSeat_Record = gamedataVehicleSeat_Record
+
+---@alias VehicleSlotsState vehicleVehicleSlotsState
+VehicleSlotsState = vehicleVehicleSlotsState
+
+---@alias VehicleStartConvoyEvent vehicleStartConvoyEvent
+VehicleStartConvoyEvent = vehicleStartConvoyEvent
+
+---@alias VehicleStartedMountingEvent vehicleStartedMountingEvent
+VehicleStartedMountingEvent = vehicleStartedMountingEvent
+
+---@alias VehicleSteeringSettings_Record gamedataVehicleSteeringSettings_Record
+VehicleSteeringSettings_Record = gamedataVehicleSteeringSettings_Record
+
+---@alias VehicleStoppingSettings_Record gamedataVehicleStoppingSettings_Record
+VehicleStoppingSettings_Record = gamedataVehicleStoppingSettings_Record
+
+---@alias VehicleStuckEvent vehicleVehicleStuckEvent
+VehicleStuckEvent = vehicleVehicleStuckEvent
+
+---@alias VehicleSurfaceBinding_Record gamedataVehicleSurfaceBinding_Record
+VehicleSurfaceBinding_Record = gamedataVehicleSurfaceBinding_Record
+
+---@alias VehicleSurfaceType_Record gamedataVehicleSurfaceType_Record
+VehicleSurfaceType_Record = gamedataVehicleSurfaceType_Record
+
+---@alias VehicleSystem gameVehicleSystem
+VehicleSystem = gameVehicleSystem
+
+---@alias VehicleTPPCameraParams_Record gamedataVehicleTPPCameraParams_Record
+VehicleTPPCameraParams_Record = gamedataVehicleTPPCameraParams_Record
+
+---@alias VehicleTPPCameraPresetParams_Record gamedataVehicleTPPCameraPresetParams_Record
+VehicleTPPCameraPresetParams_Record = gamedataVehicleTPPCameraPresetParams_Record
+
+---@alias VehicleTeleportEvent vehicleTeleportEvent
+VehicleTeleportEvent = vehicleTeleportEvent
+
+---@alias VehicleToggleBrokenTireEvent vehicleToggleBrokenTireEvent
+VehicleToggleBrokenTireEvent = vehicleToggleBrokenTireEvent
+
+---@alias VehicleToggleDoorOpenEvent vehicleToggleDoorOpenEvent
+VehicleToggleDoorOpenEvent = vehicleToggleDoorOpenEvent
+
+---@alias VehicleToggleQuestForceBrakingEvent vehicleToggleQuestForceBrakingEvent
+VehicleToggleQuestForceBrakingEvent = vehicleToggleQuestForceBrakingEvent
+
+---@alias VehicleToggleQuestWeaponEnabledEvent vehicleToggleQuestWeaponEnabledEvent
+VehicleToggleQuestWeaponEnabledEvent = vehicleToggleQuestWeaponEnabledEvent
+
+---@alias VehicleTrafficBumpEvent vehicleVehicleTrafficBumpEvent
+VehicleTrafficBumpEvent = vehicleVehicleTrafficBumpEvent
+
+---@alias VehicleTrafficSuspension_Record gamedataVehicleTrafficSuspension_Record
+VehicleTrafficSuspension_Record = gamedataVehicleTrafficSuspension_Record
+
+---@alias VehicleType_Record gamedataVehicleType_Record
+VehicleType_Record = gamedataVehicleType_Record
+
+---@alias VehicleUIData_Record gamedataVehicleUIData_Record
+VehicleUIData_Record = gamedataVehicleUIData_Record
+
+---@alias VehicleUnableToStartPanicDriving vehicleUnableToStartPanicDriving
+VehicleUnableToStartPanicDriving = vehicleUnableToStartPanicDriving
+
+---@alias VehicleVisualDestruction_Record gamedataVehicleVisualDestruction_Record
+VehicleVisualDestruction_Record = gamedataVehicleVisualDestruction_Record
+
+---@alias VehicleWaterEvent vehicleWaterEvent
+VehicleWaterEvent = vehicleWaterEvent
+
+---@alias VehicleWater_Record gamedataVehicleWater_Record
+VehicleWater_Record = gamedataVehicleWater_Record
+
+---@alias VehicleWeapon_Record gamedataVehicleWeapon_Record
+VehicleWeapon_Record = gamedataVehicleWeapon_Record
+
+---@alias VehicleWheelDimensionsPreset_Record gamedataVehicleWheelDimensionsPreset_Record
+VehicleWheelDimensionsPreset_Record = gamedataVehicleWheelDimensionsPreset_Record
+
+---@alias VehicleWheelDimensionsSetup_Record gamedataVehicleWheelDimensionsSetup_Record
+VehicleWheelDimensionsSetup_Record = gamedataVehicleWheelDimensionsSetup_Record
+
+---@alias VehicleWheelDrivingPreset_Record gamedataVehicleWheelDrivingPreset_Record
+VehicleWheelDrivingPreset_Record = gamedataVehicleWheelDrivingPreset_Record
+
+---@alias VehicleWheelDrivingSetup_2_Record gamedataVehicleWheelDrivingSetup_2_Record
+VehicleWheelDrivingSetup_2_Record = gamedataVehicleWheelDrivingSetup_2_Record
+
+---@alias VehicleWheelDrivingSetup_4_Record gamedataVehicleWheelDrivingSetup_4_Record
+VehicleWheelDrivingSetup_4_Record = gamedataVehicleWheelDrivingSetup_4_Record
+
+---@alias VehicleWheelDrivingSetup_Record gamedataVehicleWheelDrivingSetup_Record
+VehicleWheelDrivingSetup_Record = gamedataVehicleWheelDrivingSetup_Record
+
+---@alias VehicleWheelRole_Record gamedataVehicleWheelRole_Record
+VehicleWheelRole_Record = gamedataVehicleWheelRole_Record
+
+---@alias VehicleWheelsFrictionMap_Record gamedataVehicleWheelsFrictionMap_Record
+VehicleWheelsFrictionMap_Record = gamedataVehicleWheelsFrictionMap_Record
+
+---@alias VehicleWheelsFrictionPreset_Record gamedataVehicleWheelsFrictionPreset_Record
+VehicleWheelsFrictionPreset_Record = gamedataVehicleWheelsFrictionPreset_Record
+
+---@alias Vehicle_Record gamedataVehicle_Record
+Vehicle_Record = gamedataVehicle_Record
+
+---@alias VendorCraftable_Record gamedataVendorCraftable_Record
+VendorCraftable_Record = gamedataVendorCraftable_Record
+
+---@alias VendorData gameVendorData
+VendorData = gameVendorData
+
+---@alias VendorExperience_Record gamedataVendorExperience_Record
+VendorExperience_Record = gamedataVendorExperience_Record
+
+---@alias VendorItem_Record gamedataVendorItem_Record
+VendorItem_Record = gamedataVendorItem_Record
+
+---@alias VendorPanelData questVendorPanelData
+VendorPanelData = questVendorPanelData
+
+---@alias VendorProgressionBasedStock_Record gamedataVendorProgressionBasedStock_Record
+VendorProgressionBasedStock_Record = gamedataVendorProgressionBasedStock_Record
+
+---@alias VendorType_Record gamedataVendorType_Record
+VendorType_Record = gamedataVendorType_Record
+
+---@alias VendorWare_Record gamedataVendorWare_Record
+VendorWare_Record = gamedataVendorWare_Record
+
+---@alias Vendor_Record gamedataVendor_Record
+Vendor_Record = gamedataVendor_Record
+
+---@alias VideoType gameVideoType
+VideoType = gameVideoType
+
+---@alias VideoWidgetSummary inkVideoWidgetSummary
+VideoWidgetSummary = inkVideoWidgetSummary
+
+---@alias ViewportWidget worlduiViewportWidget
+ViewportWidget = worlduiViewportWidget
+
+---@alias VirtualCameraComponent entVirtualCameraComponent
+VirtualCameraComponent = entVirtualCameraComponent
+
+---@alias VirtualCameraViewComponent entVirtualCameraViewComponent
+VirtualCameraViewComponent = entVirtualCameraViewComponent
+
+---@alias VirtualNetworkPath_Record gamedataVirtualNetworkPath_Record
+VirtualNetworkPath_Record = gamedataVirtualNetworkPath_Record
+
+---@alias VirtualNetwork_Record gamedataVirtualNetwork_Record
+VirtualNetwork_Record = gamedataVirtualNetwork_Record
+
+---@alias VisibleObject senseVisibleObject
+VisibleObject = senseVisibleObject
+
+---@alias VisibleObjectComponent senseVisibleObjectComponent
+VisibleObjectComponent = senseVisibleObjectComponent
+
+---@alias VisibleObjectDetectionMultEvent senseVisibleObjectDetectionMultEvent
+VisibleObjectDetectionMultEvent = senseVisibleObjectDetectionMultEvent
+
+---@alias VisibleObjectDistanceEvent senseVisibleObjectDistanceEvent
+VisibleObjectDistanceEvent = senseVisibleObjectDistanceEvent
+
+---@alias VisibleObjectSecondaryPositionEvent senseVisibleObjectSecondaryPositionEvent
+VisibleObjectSecondaryPositionEvent = senseVisibleObjectSecondaryPositionEvent
+
+---@alias VisibleObjectTypeEvent senseVisibleObjectTypeEvent
+VisibleObjectTypeEvent = senseVisibleObjectTypeEvent
+
+---@alias VisibleObjectetSecondaryDistanceEvent senseVisibleObjectetSecondaryDistanceEvent
+VisibleObjectetSecondaryDistanceEvent = senseVisibleObjectetSecondaryDistanceEvent
+
+---@alias VisionAppearance gameVisionAppearance
+VisionAppearance = gameVisionAppearance
+
+---@alias VisionGroup_Record gamedataVisionGroup_Record
+VisionGroup_Record = gamedataVisionGroup_Record
+
+---@alias VisionModeComponent gameVisionModeComponent
+VisionModeComponent = gameVisionModeComponent
+
+---@alias VisionModePatternType gameVisionModePatternType
+VisionModePatternType = gameVisionModePatternType
+
+---@alias VisionModeSystem gameVisionModeSystem
+VisionModeSystem = gameVisionModeSystem
+
+---@alias VisionModuleBase_Record gamedataVisionModuleBase_Record
+VisionModuleBase_Record = gamedataVisionModuleBase_Record
+
+---@alias VisualStateBlackBarsVisibilityChangedEvent inkVisualStateBlackBarsVisibilityChangedEvent
+VisualStateBlackBarsVisibilityChangedEvent = inkVisualStateBlackBarsVisibilityChangedEvent
+
+---@alias VisualStateChangeEvent inkVisualStateChangeEvent
+VisualStateChangeEvent = inkVisualStateChangeEvent
+
+---@alias VisualStateRestorePreviousEvent inkVisualStateRestorePreviousEvent
+VisualStateRestorePreviousEvent = inkVisualStateRestorePreviousEvent
+
+---@alias VisualTagsPrereq_Record gamedataVisualTagsPrereq_Record
+VisualTagsPrereq_Record = gamedataVisualTagsPrereq_Record
+
+---@alias VisualizersInfo gameinteractionsvisVisualizersInfo
+VisualizersInfo = gameinteractionsvisVisualizersInfo
+
+---@alias VoicePlayEvent gameaudioeventsVoiceEvent
+VoicePlayEvent = gameaudioeventsVoiceEvent
+
+---@alias VoicePlayedEvent gameaudioeventsVoicePlayedEvent
+VoicePlayedEvent = gameaudioeventsVoicePlayedEvent
+
+---@alias VoicesetComponent scnVoicesetComponent
+VoicesetComponent = scnVoicesetComponent
+
+---@alias WardrobeSetPreviewGameController gameuiWardrobeSetPreviewGameController
+WardrobeSetPreviewGameController = gameuiWardrobeSetPreviewGameController
+
+---@alias WardrobeSystem gameWardrobeSystem
+WardrobeSystem = gameWardrobeSystem
+
+---@alias WasScannedPrereq gameWasScannedPrereq
+WasScannedPrereq = gameWasScannedPrereq
+
+---@alias WasScannedPrereqState gameWasScannedPrereqState
+WasScannedPrereqState = gameWasScannedPrereqState
+
+---@alias WeakScriptableDataSource inkWeakScriptableDataSourceWrapper
+WeakScriptableDataSource = inkWeakScriptableDataSourceWrapper
+
+---@alias WeakScriptableDataView inkWeakScriptableDataViewWrapper
+WeakScriptableDataView = inkWeakScriptableDataViewWrapper
+
+---@alias WeakspotComponent gameWeakspotComponent
+WeakspotComponent = gameWeakspotComponent
+
+---@alias WeakspotDestroyedEvent gameWeakspotDestroyedEvent
+WeakspotDestroyedEvent = gameWeakspotDestroyedEvent
+
+---@alias WeakspotObject gameWeakspotObject
+WeakspotObject = gameWeakspotObject
+
+---@alias Weakspot_Record gamedataWeakspot_Record
+Weakspot_Record = gamedataWeakspot_Record
+
+---@alias WeaponChangeTriggerModeEvent gameweaponeventsChangeTriggerModeEvent
+WeaponChangeTriggerModeEvent = gameweaponeventsChangeTriggerModeEvent
+
+---@alias WeaponConsumeMagazineAmmoEvent gameweaponeventsConsumeMagazineAmmo
+WeaponConsumeMagazineAmmoEvent = gameweaponeventsConsumeMagazineAmmo
+
+---@alias WeaponCycleTriggerModeEvent gameweaponeventsCycleTriggerModeEvent
+WeaponCycleTriggerModeEvent = gameweaponeventsCycleTriggerModeEvent
+
+---@alias WeaponEvolution_Record gamedataWeaponEvolution_Record
+WeaponEvolution_Record = gamedataWeaponEvolution_Record
+
+---@alias WeaponFxPackage_Record gamedataWeaponFxPackage_Record
+WeaponFxPackage_Record = gamedataWeaponFxPackage_Record
+
+---@alias WeaponGrenade gameweaponGrenade
+WeaponGrenade = gameweaponGrenade
+
+---@alias WeaponItem_Record gamedataWeaponItem_Record
+WeaponItem_Record = gamedataWeaponItem_Record
+
+---@alias WeaponManufacturer_Record gamedataWeaponManufacturer_Record
+WeaponManufacturer_Record = gamedataWeaponManufacturer_Record
+
+---@alias WeaponObject gameweaponObject
+WeaponObject = gameweaponObject
+
+---@alias WeaponPreFireEvent gameaudioeventsPreFireEvent
+WeaponPreFireEvent = gameaudioeventsPreFireEvent
+
+---@alias WeaponReloadFinishEvent gameweaponeventsReloadFinishEvent
+WeaponReloadFinishEvent = gameweaponeventsReloadFinishEvent
+
+---@alias WeaponReloadInterruptedEvent gameweaponeventsReloadInterruptedEvent
+WeaponReloadInterruptedEvent = gameweaponeventsReloadInterruptedEvent
+
+---@alias WeaponReloadStartEvent gameweaponeventsReloadStartEvent
+WeaponReloadStartEvent = gameweaponeventsReloadStartEvent
+
+---@alias WeaponRosterInfo gameuiWeaponRosterInfo
+WeaponRosterInfo = gameuiWeaponRosterInfo
+
+---@alias WeaponSetMaxChargeEvent gameweaponeventsSetMaxChargeEvent
+WeaponSetMaxChargeEvent = gameweaponeventsSetMaxChargeEvent
+
+---@alias WeaponVFXAction_Record gamedataWeaponVFXAction_Record
+WeaponVFXAction_Record = gamedataWeaponVFXAction_Record
+
+---@alias WeaponVFXSet_Record gamedataWeaponVFXSet_Record
+WeaponVFXSet_Record = gamedataWeaponVFXSet_Record
+
+---@alias WeatherPreset_Record gamedataWeatherPreset_Record
+WeatherPreset_Record = gamedataWeatherPreset_Record
+
+---@alias WeatherScriptListener worldWeatherScriptListener
+WeatherScriptListener = worldWeatherScriptListener
+
+---@alias WeatherSystem worldWeatherScriptInterface
+WeatherSystem = worldWeatherScriptInterface
+
+---@alias Weather_Record gamedataWeather_Record
+Weather_Record = gamedataWeather_Record
+
+---@alias Website_Record gamedataWebsite_Record
+Website_Record = gamedataWebsite_Record
+
+---@alias WeightedCharacter_Record gamedataWeightedCharacter_Record
+WeightedCharacter_Record = gamedataWeightedCharacter_Record
+
+---@alias WetnessComponent entWetnessComponent
+WetnessComponent = entWetnessComponent
+
+---@alias WheeledObject vehicleWheeledBaseObject
+WheeledObject = vehicleWheeledBaseObject
+
+---@alias WidgetDefinition_Record gamedataWidgetDefinition_Record
+WidgetDefinition_Record = gamedataWidgetDefinition_Record
+
+---@alias WidgetRatio_Record gamedataWidgetRatio_Record
+WidgetRatio_Record = gamedataWidgetRatio_Record
+
+---@alias WidgetStyle_Record gamedataWidgetStyle_Record
+WidgetStyle_Record = gamedataWidgetStyle_Record
+
+---@alias WidgetUtils inkWidgetUtils
+WidgetUtils = inkWidgetUtils
+
+---@alias WorkEntryId workWorkEntryId
+WorkEntryId = workWorkEntryId
+
+---@alias WorkspotActionType_Record gamedataWorkspotActionType_Record
+WorkspotActionType_Record = gamedataWorkspotActionType_Record
+
+---@alias WorkspotCategory_Record gamedataWorkspotCategory_Record
+WorkspotCategory_Record = gamedataWorkspotCategory_Record
+
+---@alias WorkspotCondition workIScriptedCondition
+WorkspotCondition = workIScriptedCondition
+
+---@alias WorkspotFinishedEvent workWorkspotFinishedEvent
+WorkspotFinishedEvent = workWorkspotFinishedEvent
+
+---@alias WorkspotGameSystem gameWorkspotGameSystem
+WorkspotGameSystem = gameWorkspotGameSystem
+
+---@alias WorkspotList AIbehaviorWorkspotList
+WorkspotList = AIbehaviorWorkspotList
+
+---@alias WorkspotManager AIWorkspotManager
+WorkspotManager = AIWorkspotManager
+
+---@alias WorkspotReactionType_Record gamedataWorkspotReactionType_Record
+WorkspotReactionType_Record = gamedataWorkspotReactionType_Record
+
+---@alias WorkspotResourceComponent workWorkspotResourceComponent
+WorkspotResourceComponent = workWorkspotResourceComponent
+
+---@alias WorkspotSlidingBehaviour gameWorkspotSlidingBehaviour
+WorkspotSlidingBehaviour = gameWorkspotSlidingBehaviour
+
+---@alias WorkspotStartedEvent workWorkspotStartedEvent
+WorkspotStartedEvent = workWorkspotStartedEvent
+
+---@alias WorkspotStatusEffect_Record gamedataWorkspotStatusEffect_Record
+WorkspotStatusEffect_Record = gamedataWorkspotStatusEffect_Record
+
+---@alias WorldMapDebugOutlineLogicController gameuiWorldMapDebugOutlineLogicController
+WorldMapDebugOutlineLogicController = gameuiWorldMapDebugOutlineLogicController
+
+---@alias WorldMapDistrictLogicController gameuiWorldMapDistrictLogicController
+WorldMapDistrictLogicController = gameuiWorldMapDistrictLogicController
+
+---@alias WorldMapFilter_Record gamedataWorldMapFilter_Record
+WorldMapFilter_Record = gamedataWorldMapFilter_Record
+
+---@alias WorldMapFiltersList_Record gamedataWorldMapFiltersList_Record
+WorldMapFiltersList_Record = gamedataWorldMapFiltersList_Record
+
+---@alias WorldMapFloorPlanController gameuiWorldMapFloorPlanController
+WorldMapFloorPlanController = gameuiWorldMapFloorPlanController
+
+---@alias WorldMapFreeCameraSettings_Record gamedataWorldMapFreeCameraSettings_Record
+WorldMapFreeCameraSettings_Record = gamedataWorldMapFreeCameraSettings_Record
+
+---@alias WorldMapMenuGameController gameuiWorldMapMenuGameController
+WorldMapMenuGameController = gameuiWorldMapMenuGameController
+
+---@alias WorldMapPlayerInitData gameuiWorldMapPlayerInitData
+WorldMapPlayerInitData = gameuiWorldMapPlayerInitData
+
+---@alias WorldMapPlayerMappinController gameuiWorldMapPlayerMappinController
+WorldMapPlayerMappinController = gameuiWorldMapPlayerMappinController
+
+---@alias WorldMapSettings_Record gamedataWorldMapSettings_Record
+WorldMapSettings_Record = gamedataWorldMapSettings_Record
+
+---@alias WorldMapZoomLevel_Record gamedataWorldMapZoomLevel_Record
+WorldMapZoomLevel_Record = gamedataWorldMapZoomLevel_Record
+
+---@alias WorldMappinsContainerController gameuiWorldMappinsContainerController
+WorldMappinsContainerController = gameuiWorldMappinsContainerController
+
+---@alias WrappedEntIDArray gameWrappedEntIDArray
+WrappedEntIDArray = gameWrappedEntIDArray
+
+---@alias XPPoints_Record gamedataXPPoints_Record
+XPPoints_Record = gamedataXPPoints_Record
+
+---@alias XPPoints_inline0_Record gamedataXPPoints_inline0_Record
+XPPoints_inline0_Record = gamedataXPPoints_inline0_Record
+
+---@alias audioEmitter gameAudioEmitterComponent
+audioEmitter = gameAudioEmitterComponent
+
+---@alias bbUIInteractionData gameuiUIInteractionData
+bbUIInteractionData = gameuiUIInteractionData
+
+---@alias device_gameplay_role_Record gamedatadevice_gameplay_role_Record
+device_gameplay_role_Record = gamedatadevice_gameplay_role_Record
+
+---@alias device_role_action_desctiption_Record gamedatadevice_role_action_desctiption_Record
+device_role_action_desctiption_Record = gamedatadevice_role_action_desctiption_Record
+
+---@alias device_scanning_data_Record gamedatadevice_scanning_data_Record
+device_scanning_data_Record = gamedatadevice_scanning_data_Record
+
+---@alias entCameraComponent entBaseCameraComponent
+entCameraComponent = entBaseCameraComponent
+
+---@alias gameCloseByEvent gameeventsCloseByEvent
+gameCloseByEvent = gameeventsCloseByEvent
+
+---@alias gameCombinedStatModifierData gameCombinedStatModifierData_Deprecated
+gameCombinedStatModifierData = gameCombinedStatModifierData_Deprecated
+
+---@alias gameConstantStatModifierData gameConstantStatModifierData_Deprecated
+gameConstantStatModifierData = gameConstantStatModifierData_Deprecated
+
+---@alias gameCoverHitEvent gameeventsCoverHitEvent
+gameCoverHitEvent = gameeventsCoverHitEvent
+
+---@alias gameCurveStatModifierData gameCurveStatModifierData_Deprecated
+gameCurveStatModifierData = gameCurveStatModifierData_Deprecated
+
+---@alias gameDamageReceivedEvent gameeventsDamageReceivedEvent
+gameDamageReceivedEvent = gameeventsDamageReceivedEvent
+
+---@alias gameDeathDirectionEvent gameeventsDeathDirectionEvent
+gameDeathDirectionEvent = gameeventsDeathDirectionEvent
+
+---@alias gameDeathEvent gameeventsDeathEvent
+gameDeathEvent = gameeventsDeathEvent
+
+---@alias gameDeathParamsEvent gameeventsDeathParamsEvent
+gameDeathParamsEvent = gameeventsDeathParamsEvent
+
+---@alias gameDropItemEvent gameeventsDropItemEvent
+gameDropItemEvent = gameeventsDropItemEvent
+
+---@alias gameHighLevelStateDataEvent gameeventsHighLevelStateDataEvent
+gameHighLevelStateDataEvent = gameeventsHighLevelStateDataEvent
+
+---@alias gameHitEvent gameeventsHitEvent
+gameHitEvent = gameeventsHitEvent
+
+---@alias gamePotentialDeathEvent gameeventsPotentialDeathEvent
+gamePotentialDeathEvent = gameeventsPotentialDeathEvent
+
+---@alias gameProjectedHitEvent gameeventsProjectedHitEvent
+gameProjectedHitEvent = gameeventsProjectedHitEvent
+
+---@alias gameProperlySeenByPlayerEvent gameeventsProperlySeenByPlayerEvent
+gameProperlySeenByPlayerEvent = gameeventsProperlySeenByPlayerEvent
+
+---@alias gameQuickItemsEvent gameeventsQuickItemsEvent
+gameQuickItemsEvent = gameeventsQuickItemsEvent
+
+---@alias gameRandomStatModifierData gameRandomStatModifierData_Deprecated
+gameRandomStatModifierData = gameRandomStatModifierData_Deprecated
+
+---@alias gameStatModifierData gameStatModifierData_Deprecated
+gameStatModifierData = gameStatModifierData_Deprecated
+
+---@alias gameSubStatModifierData gameSubStatModifierData_Deprecated
+gameSubStatModifierData = gameSubStatModifierData_Deprecated
+
+---@alias gameTargetDamageEvent gameeventsTargetDamageEvent
+gameTargetDamageEvent = gameeventsTargetDamageEvent
+
+---@alias gameTargetHitEvent gameeventsTargetHitEvent
+gameTargetHitEvent = gameeventsTargetHitEvent
+
+---@alias gameUnconsciousEvent gameeventsUnconsciousEvent
+gameUnconsciousEvent = gameeventsUnconsciousEvent
+
+---@alias gameVehicleDestructionEvent gameeventsVehicleDestructionEvent
+gameVehicleDestructionEvent = gameeventsVehicleDestructionEvent
+
+---@alias gameVehicleHitEvent gameeventsVehicleHitEvent
+gameVehicleHitEvent = gameeventsVehicleHitEvent
+
+---@alias iconAtlasCallbackData inkCallbackData
+iconAtlasCallbackData = inkCallbackData
+
+---@alias inkAnimAnchor inkanimAnchorInterpolator
+inkAnimAnchor = inkanimAnchorInterpolator
+
+---@alias inkAnimBuilder inkanimBuilder
+inkAnimBuilder = inkanimBuilder
+
+---@alias inkAnimColor inkanimColorInterpolator
+inkAnimColor = inkanimColorInterpolator
+
+---@alias inkAnimController inkanimController
+inkAnimController = inkanimController
+
+---@alias inkAnimDef inkanimDefinition
+inkAnimDef = inkanimDefinition
+
+---@alias inkAnimEffect inkanimEffectInterpolator
+inkAnimEffect = inkanimEffectInterpolator
+
+---@alias inkAnimEvent inkanimEvent
+inkAnimEvent = inkanimEvent
+
+---@alias inkAnimInterpolator inkanimInterpolator
+inkAnimInterpolator = inkanimInterpolator
+
+---@alias inkAnimMargin inkanimMarginInterpolator
+inkAnimMargin = inkanimMarginInterpolator
+
+---@alias inkAnimOptions inkanimPlaybackOptions
+inkAnimOptions = inkanimPlaybackOptions
+
+---@alias inkAnimPadding inkanimPaddingInterpolator
+inkAnimPadding = inkanimPaddingInterpolator
+
+---@alias inkAnimPivot inkanimPivotInterpolator
+inkAnimPivot = inkanimPivotInterpolator
+
+---@alias inkAnimProxy inkanimProxy
+inkAnimProxy = inkanimProxy
+
+---@alias inkAnimRotation inkanimRotationInterpolator
+inkAnimRotation = inkanimRotationInterpolator
+
+---@alias inkAnimScale inkanimScaleInterpolator
+inkAnimScale = inkanimScaleInterpolator
+
+---@alias inkAnimSequence inkanimSequence
+inkAnimSequence = inkanimSequence
+
+---@alias inkAnimSetVisibilityEvent inkanimSetVisibilityEvent
+inkAnimSetVisibilityEvent = inkanimSetVisibilityEvent
+
+---@alias inkAnimShapeBorderTransparency inkanimShapeBorderTransparencyInterpolator
+inkAnimShapeBorderTransparency = inkanimShapeBorderTransparencyInterpolator
+
+---@alias inkAnimShapeFillTransparency inkanimShapeFillTransparencyInterpolator
+inkAnimShapeFillTransparency = inkanimShapeFillTransparencyInterpolator
+
+---@alias inkAnimShear inkanimShearInterpolator
+inkAnimShear = inkanimShearInterpolator
+
+---@alias inkAnimSize inkanimSizeInterpolator
+inkAnimSize = inkanimSizeInterpolator
+
+---@alias inkAnimTextInterpolator inkanimTextInterpolator
+inkAnimTextInterpolator = inkanimTextInterpolator
+
+---@alias inkAnimTextKiroshi inkanimTextKiroshiInterpolator
+inkAnimTextKiroshi = inkanimTextKiroshiInterpolator
+
+---@alias inkAnimTextOffset inkanimTextOffsetInterpolator
+inkAnimTextOffset = inkanimTextOffsetInterpolator
+
+---@alias inkAnimTextReplace inkanimTextReplaceInterpolator
+inkAnimTextReplace = inkanimTextReplaceInterpolator
+
+---@alias inkAnimTextValueProgress inkanimTextValueProgressInterpolator
+inkAnimTextValueProgress = inkanimTextValueProgressInterpolator
+
+---@alias inkAnimToggleVisibilityEvent inkanimToggleVisibilityEvent
+inkAnimToggleVisibilityEvent = inkanimToggleVisibilityEvent
+
+---@alias inkAnimTranslation inkanimTranslationInterpolator
+inkAnimTranslation = inkanimTranslationInterpolator
+
+---@alias inkAnimTransparency inkanimTransparencyInterpolator
+inkAnimTransparency = inkanimTransparencyInterpolator
+
+---@alias inkAnimVideo inkanimVideoInterpolator
+inkAnimVideo = inkanimVideoInterpolator
+
+---@alias inkArray inkScriptDynArray
+inkArray = inkScriptDynArray
+
+---@alias inkBasePanel inkBasePanelWidget
+inkBasePanel = inkBasePanelWidget
+
+---@alias inkBasePanelRef inkBasePanelWidgetReference
+inkBasePanelRef = inkBasePanelWidgetReference
+
+---@alias inkBaseShape inkBaseShapeWidget
+inkBaseShape = inkBaseShapeWidget
+
+---@alias inkBorder inkBorderWidget
+inkBorder = inkBorderWidget
+
+---@alias inkBorderRef inkBorderWidgetReference
+inkBorderRef = inkBorderWidgetReference
+
+---@alias inkCacheRef inkCacheWidgetReference
+inkCacheRef = inkCacheWidgetReference
+
+---@alias inkCanvas inkCanvasWidget
+inkCanvas = inkCanvasWidget
+
+---@alias inkCanvasRef inkCanvasWidgetReference
+inkCanvasRef = inkCanvasWidgetReference
+
+---@alias inkCharacterCreationPuppetPreviewGameController gameuiCharacterCreationPuppetPreviewGameController
+inkCharacterCreationPuppetPreviewGameController = gameuiCharacterCreationPuppetPreviewGameController
+
+---@alias inkCircle inkCircleWidget
+inkCircle = inkCircleWidget
+
+---@alias inkCircleRef inkCircleWidgetReference
+inkCircleRef = inkCircleWidgetReference
+
+---@alias inkCompoundRef inkCompoundWidgetReference
+inkCompoundRef = inkCompoundWidgetReference
+
+---@alias inkCooldownGameController gameuiCooldownGameController
+inkCooldownGameController = gameuiCooldownGameController
+
+---@alias inkEntityPreviewCameraSettings gameuiEntityPreviewCameraSettings
+inkEntityPreviewCameraSettings = gameuiEntityPreviewCameraSettings
+
+---@alias inkEntityPreviewGameController gameuiEntityPreviewGameController
+inkEntityPreviewGameController = gameuiEntityPreviewGameController
+
+---@alias inkFIFOQueue inkScriptFIFOQueue
+inkFIFOQueue = inkScriptFIFOQueue
+
+---@alias inkFlex inkFlexWidget
+inkFlex = inkFlexWidget
+
+---@alias inkFlexRef inkFlexWidgetReference
+inkFlexRef = inkFlexWidgetReference
+
+---@alias inkGameController gameuiWidgetGameController
+inkGameController = gameuiWidgetGameController
+
+---@alias inkGenderSelectionPuppetPreviewGameController gameuiGenderSelectionPuppetPreviewGameController
+inkGenderSelectionPuppetPreviewGameController = gameuiGenderSelectionPuppetPreviewGameController
+
+---@alias inkGradient inkGradientWidget
+inkGradient = inkGradientWidget
+
+---@alias inkGrid inkGridWidget
+inkGrid = inkGridWidget
+
+---@alias inkGridRef inkGridWidgetReference
+inkGridRef = inkGridWidgetReference
+
+---@alias inkHUDGameController gameuiHUDGameController
+inkHUDGameController = gameuiHUDGameController
+
+---@alias inkHashMap inkScriptHashMap
+inkHashMap = inkScriptHashMap
+
+---@alias inkHorizontalPanel inkHorizontalPanelWidget
+inkHorizontalPanel = inkHorizontalPanelWidget
+
+---@alias inkHorizontalPanelRef inkHorizontalPanelWidgetReference
+inkHorizontalPanelRef = inkHorizontalPanelWidgetReference
+
+---@alias inkIGameController inkIWidgetController
+inkIGameController = inkIWidgetController
+
+---@alias inkILogicController inkIWidgetLogicController
+inkILogicController = inkIWidgetLogicController
+
+---@alias inkImage inkImageWidget
+inkImage = inkImageWidget
+
+---@alias inkImageRef inkImageWidgetReference
+inkImageRef = inkImageWidgetReference
+
+---@alias inkIntHashMap inkScriptIntHashMap
+inkIntHashMap = inkScriptIntHashMap
+
+---@alias inkInventoryPuppetPreviewGameController gameuiInventoryPuppetPreviewGameController
+inkInventoryPuppetPreviewGameController = gameuiInventoryPuppetPreviewGameController
+
+---@alias inkItemPositionProvider inkItemPositionProviderWrapper
+inkItemPositionProvider = inkItemPositionProviderWrapper
+
+---@alias inkItemPreviewGameController gameuiItemPreviewGameController
+inkItemPreviewGameController = gameuiItemPreviewGameController
+
+---@alias inkLeafRef inkLeafWidgetReference
+inkLeafRef = inkLeafWidgetReference
+
+---@alias inkLinePattern inkLinePatternWidget
+inkLinePattern = inkLinePatternWidget
+
+---@alias inkLinePatternRef inkLinePatternWidgetReference
+inkLinePatternRef = inkLinePatternWidgetReference
+
+---@alias inkLogicController inkWidgetLogicController
+inkLogicController = inkWidgetLogicController
+
+---@alias inkMask inkMaskWidget
+inkMask = inkMaskWidget
+
+---@alias inkMaskRef inkMaskWidgetReference
+inkMaskRef = inkMaskWidgetReference
+
+---@alias inkPreviewGameController gameuiPreviewGameController
+inkPreviewGameController = gameuiPreviewGameController
+
+---@alias inkProjectedHUDGameController gameuiProjectedHUDGameController
+inkProjectedHUDGameController = gameuiProjectedHUDGameController
+
+---@alias inkPuppetPreviewGameController gameuiPuppetPreviewGameController
+inkPuppetPreviewGameController = gameuiPuppetPreviewGameController
+
+---@alias inkQuadRef inkQuadWidgetReference
+inkQuadRef = inkQuadWidgetReference
+
+---@alias inkQuadShape inkQuadShapeWidget
+inkQuadShape = inkQuadShapeWidget
+
+---@alias inkRectangle inkRectangleWidget
+inkRectangle = inkRectangleWidget
+
+---@alias inkRectangleRef inkRectangleWidgetReference
+inkRectangleRef = inkRectangleWidgetReference
+
+---@alias inkRichTextBox inkRichTextBoxWidget
+inkRichTextBox = inkRichTextBoxWidget
+
+---@alias inkRichTextBoxRef inkRichTextBoxWidgetReference
+inkRichTextBoxRef = inkRichTextBoxWidgetReference
+
+---@alias inkScrollArea inkScrollAreaWidget
+inkScrollArea = inkScrollAreaWidget
+
+---@alias inkScrollAreaRef inkScrollAreaWidgetReference
+inkScrollAreaRef = inkScrollAreaWidgetReference
+
+---@alias inkShape inkShapeWidget
+inkShape = inkShapeWidget
+
+---@alias inkShapeRef inkShapeWidgetReference
+inkShapeRef = inkShapeWidgetReference
+
+---@alias inkStringMap inkScriptStringMap
+inkStringMap = inkScriptStringMap
+
+---@alias inkText inkTextWidget
+inkText = inkTextWidget
+
+---@alias inkTextInput inkTextInputWidget
+inkTextInput = inkTextInputWidget
+
+---@alias inkTextInputRef inkTextInputWidgetReference
+inkTextInputRef = inkTextInputWidgetReference
+
+---@alias inkTextKiroshiAnimController inkTextKiroshiAnimationController
+inkTextKiroshiAnimController = inkTextKiroshiAnimationController
+
+---@alias inkTextOffsetController inkTextOffsetAnimationController
+inkTextOffsetController = inkTextOffsetAnimationController
+
+---@alias inkTextParams textTextParameterSet
+inkTextParams = textTextParameterSet
+
+---@alias inkTextRef inkTextWidgetReference
+inkTextRef = inkTextWidgetReference
+
+---@alias inkTextReplaceController inkTextReplaceAnimationController
+inkTextReplaceController = inkTextReplaceAnimationController
+
+---@alias inkTextValueProgressController inkTextValueProgressAnimationController
+inkTextValueProgressController = inkTextValueProgressAnimationController
+
+---@alias inkUniformGrid inkUniformGridWidget
+inkUniformGrid = inkUniformGridWidget
+
+---@alias inkUniformGridRef inkUniformGridWidgetReference
+inkUniformGridRef = inkUniformGridWidgetReference
+
+---@alias inkVerticalPanel inkVerticalPanelWidget
+inkVerticalPanel = inkVerticalPanelWidget
+
+---@alias inkVerticalPanelRef inkVerticalPanelWidgetReference
+inkVerticalPanelRef = inkVerticalPanelWidgetReference
+
+---@alias inkVideo inkVideoWidget
+inkVideo = inkVideoWidget
+
+---@alias inkVideoRef inkVideoWidgetReference
+inkVideoRef = inkVideoWidgetReference
+
+---@alias inkVirtualCompoundRef inkVirtualCompoundWidgetReference
+inkVirtualCompoundRef = inkVirtualCompoundWidgetReference
+
+---@alias inkVirtualItemTemplateClassifier inkVirtualItemTemplateClassifierWrapper
+inkVirtualItemTemplateClassifier = inkVirtualItemTemplateClassifierWrapper
+
+---@alias inkWeakHashMap inkScriptWeakHashMap
+inkWeakHashMap = inkScriptWeakHashMap
+
+---@alias inkWidgetLibraryResource inkWidgetLibraryResourceWrapper
+inkWidgetLibraryResource = inkWidgetLibraryResourceWrapper
+
+---@alias inkWidgetRef inkWidgetReference
+inkWidgetRef = inkWidgetReference
+
+---@alias inkWorldMapPreviewGameController gameuiWorldMapPreviewGameController
+inkWorldMapPreviewGameController = gameuiWorldMapPreviewGameController
+
+---@alias npc_scanning_data_Record gamedatanpc_scanning_data_Record
+npc_scanning_data_Record = gamedatanpc_scanning_data_Record
+
+---@alias parameterRequestItem gamestateMachineparameterTypeRequestItem
+parameterRequestItem = gamestateMachineparameterTypeRequestItem
+
+---@alias parameterRequestReload gamestateMachineparameterTypeRequestReload
+parameterRequestReload = gamestateMachineparameterTypeRequestReload
+
+---@alias scannerGameController gameuiScannerGameController
+scannerGameController = gameuiScannerGameController
+
+---@alias smartGunUIParameters gamesmartGunUIParameters
+smartGunUIParameters = gamesmartGunUIParameters
+
+---@alias smartGunUISightParameters gamesmartGunUISightParameters
+smartGunUISightParameters = gamesmartGunUISightParameters
+
+---@alias smartGunUITargetParameters gamesmartGunUITargetParameters
+smartGunUITargetParameters = gamesmartGunUITargetParameters
+
+---@alias soundComponent gameaudioSoundComponent
+soundComponent = gameaudioSoundComponent
+
+---@alias stimInvestigateData senseStimInvestigateData
+stimInvestigateData = senseStimInvestigateData
+
+---@alias telemetryHitDefenseType gameTelemetryHitDefenseType
+telemetryHitDefenseType = gameTelemetryHitDefenseType
+
+---@alias telemetryInitalChoiceStage gameInitalChoiceStage
+telemetryInitalChoiceStage = gameInitalChoiceStage
+
+---@alias telemetryMovementType gameTelemetryMovementType
+telemetryMovementType = gameTelemetryMovementType
+
+---@alias vehicleAudioComponent gameaudioVehicleAudioComponent
+vehicleAudioComponent = gameaudioVehicleAudioComponent
+
+---@alias worlduiIGameController worlduiIWidgetGameController
+worlduiIGameController = worlduiIWidgetGameController
+

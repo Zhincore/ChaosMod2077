@@ -1,0 +1,14 @@
+{
+  "name": "ChaosMod2077",
+  "version": "0.1.0",
+  "license": true,
+  "stage": "dist",
+  "scripts": {
+    "redscript": {
+      "src": "src/redscript"
+    },
+    "cet": {
+      "src": "src/cet"
+    }
+  }
+}
