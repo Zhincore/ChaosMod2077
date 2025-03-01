@@ -25,7 +25,7 @@ public class TimerBarComponent extends inkComponent {
     foreground.SetWidth(0.0);
     foreground.SetOpacity(0.9);
     foreground
-      .SetTintColor(Cast<Uint8>(0), Cast<Uint8>(255), Cast<Uint8>(255), Cast<Uint8>(255));
+      .SetTintColor(Cast<Uint8>(0), Cast<Uint8>(127), Cast<Uint8>(255), Cast<Uint8>(255));
     foreground.Reparent(root, 1);
     this.bar = foreground;
 
@@ -37,3 +37,4 @@ public class TimerBarComponent extends inkComponent {
     this.bar.FlagForVisualInvalidation();
   }
 }
+

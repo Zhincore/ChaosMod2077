@@ -2,6 +2,12 @@ module ChaosMod
 
 import ChaosMod.Util.*
 import ChaosMod.UI.*
+import ChaosMod.Effects.*
+
+public static func Launch() {
+  let effect = new LaunchEveryoneEffect();
+  effect.OnStart();
+}
 
 public static func IsPresent() {
 }
@@ -17,6 +23,8 @@ public class ChaosModSystem extends ScriptableSystem {
 
     this.config = GameInstance.GetScriptableServiceContainer().GetService(n"ChaosMod.ConfigService") as ConfigService;
     this.config.BindChaosMod(this);
+
+    this.ui = new ChaosUIComponent();
   }
 
   private func OnDetach() {
@@ -47,32 +55,21 @@ public class ChaosModSystem extends ScriptableSystem {
 
   // MARK: Private stuff
   private func enable() {
-    if !IsDefined(this.ui) {
-      this.createUI();
-    }
-
-    this.ui.Toggle(true);
-    this.timer.Start();
-  }
-
-  private func disable() {
-    if !IsDefined(this.ui) {
-      return;
-    }
-
-    this.ui.Toggle(false);
-    this.timer.Stop();
-  }
-
-  private func createUI() {
     let window = GameInstance
       .GetInkSystem()
       .GetLayer(n"inkHUDLayer")
       .GetVirtualWindow();
     let root = window.GetWidgetByPathName(n"Root") as inkCanvas;
 
-    this.ui = new ChaosUIComponent();
     this.ui.Reparent(root);
+    this.ui.Toggle(true);
+    this.timer.Start();
+    true;
+  }
+
+  private func disable() {
+    this.ui.Toggle(false);
+    this.timer.Stop();
   }
 }
 

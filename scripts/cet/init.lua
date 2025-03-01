@@ -1,26 +1,12 @@
----@diagnostic disable: redefined-local
-Config = require('config')
-
 local redscript = false
 local system = nil
 local isOverlayVisible = false
-
-local configPath = "config.json"
-local config = nil
-
--- onInit
-registerForEvent("onInit", function()
-  config = Config.loadFile(configPath, config)
-end)
 
 -- onOverlayOpen
 registerForEvent('onOverlayOpen', function()
   redscript = ChaosMod_IsPresent ~= nil
   if redscript then
     system = GameInstance.GetScriptableSystemsContainer():Get('ChaosMod.ChaosModSystem')
-    if system ~= nil then
-      system:SetConfig(config)
-    end
   end
   isOverlayVisible = true
 end)

@@ -5,10 +5,10 @@
   "stage": "dist",
   "scripts": {
     "redscript": {
-      "src": "src/redscript"
+      "src": "scripts/redscript"
     },
     "cet": {
-      "src": "src/cet"
+      "src": "scripts/cet"
     }
   }
 }

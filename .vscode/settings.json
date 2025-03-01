@@ -3,5 +3,8 @@
   "Lua.workspace.preloadFileSize": 15360,
   "Lua.workspace.library": [
     "libs"
+  ],
+  "Lua.diagnostics.globals": [
+    "ChaosMod_IsPresent"
   ]
 }
