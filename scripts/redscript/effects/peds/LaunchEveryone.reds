@@ -9,15 +9,27 @@ public class LaunchEveryoneEffect extends IChaosEffect {
 
   public func OnStart() {
     for entity in GetGameInstance().GetEntityList() {
-      let puppet: ref<gamePuppet> = entity as gamePuppet;
+      let puppet = entity as gamePuppet;
+      let vehicle = entity as VehicleObject;
       if IsDefined(puppet) {
+        let npc = puppet as NPCPuppet;
+        if IsDefined(npc) {
+          npc.SetDisableRagdoll(false);
+        }
+
         let event = new RagdollApplyImpulseEvent();
         event.worldImpulsePos = puppet.GetWorldPosition();
         event.worldImpulseValue = new Vector4(0, 0, 60, 0);
         event.influenceRadius = 5.0;
 
         puppet.QueueEvent(CreateForceRagdollEvent(n"InAir_RecivedHit"));
-        GameInstance.GetDelaySystem(puppet.GetGame()).DelayEvent(puppet, event, 0.1, false);
+        GameInstance.GetDelaySystem(GetGameInstance()).DelayEvent(puppet, event, 0.1, false);
+      } else if IsDefined(vehicle) {
+        let unmountCommand = new AIUnmountCommand();
+        unmountCommand.mountData = new MountEventData();
+        unmountCommand.mountData.isInstant = true;
+
+        vehicle.GetAIComponent().SendCommand(unmountCommand);
       }
     }
   }

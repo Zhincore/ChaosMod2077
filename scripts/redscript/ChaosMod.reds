@@ -5,7 +5,7 @@ import ChaosMod.UI.*
 import ChaosMod.Effects.*
 
 public static func Launch() {
-  let effect = new LaunchEveryoneEffect();
+  let effect = new EveryoneExitsVehicle();
   effect.OnStart();
 }
 
