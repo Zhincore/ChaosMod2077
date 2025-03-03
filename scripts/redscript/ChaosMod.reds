@@ -2,12 +2,6 @@ module ChaosMod
 
 import ChaosMod.Util.*
 import ChaosMod.UI.*
-import ChaosMod.Effects.*
-
-public static func Launch() {
-  let effect = new EveryoneExitsVehicle();
-  effect.OnStart();
-}
 
 public static func IsPresent() {
 }

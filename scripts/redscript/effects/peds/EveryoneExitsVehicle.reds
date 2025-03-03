@@ -1,12 +1,19 @@
 module ChaosMod.Effects
 
-import ChaosMod.IChaosEffect
+public class EveryoneExitsVehicleEffect extends ChaosEffect {
+  public func GetInfo() -> ref<ChaosEffectInfo> {
+    return CreateInfo(
+      n"ChaosMod-Effect-Ped-EveryoneExitsVehicle-Name",
+      n"ChaosMod-Effect-Ped-EveryoneExitsVehicle-Desc"
+    );
+  }
 
-public class EveryoneExitsVehicle extends IChaosEffect {
-  const static let name: String = "Everyone exits vehicle";
-  const static let description: String = "All nearby peds and player exit their vehicle.";
-  const static let duration: Float = 0.0;
+  public func ActivateEffect() -> ref<ActiveChaosEffect> {
+    return new EveryoneExitsActiveEffect();
+  }
+}
 
+public class EveryoneExitsActiveEffect extends ActiveChaosEffect {
   public func OnStart() {
     let facility = GetGameInstance().GetMountingFacility();
 

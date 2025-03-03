@@ -1,12 +1,19 @@
 module ChaosMod.Effects
 
-import ChaosMod.IChaosEffect
+public class LaunchEveryoneEffect extends ChaosEffect {
+  public func GetInfo() -> ref<ChaosEffectInfo> {
+    return CreateInfo(
+      n"ChaosMod-Effect-Ped-LaunchEveryone-Name",
+      n"ChaosMod-Effect-Ped-LaunchEveryone-Desc"
+    );
+  }
 
-public class LaunchEveryoneEffect extends IChaosEffect {
-  const static let name: String = "Launch everyone up";
-  const static let description: String = "All nearby peds are launched upwards.";
-  const static let duration: Float = 0.0;
+  public func ActivateEffect() -> ref<ActiveChaosEffect> {
+    return new LaunchEveryoneActiveEffect();
+  }
+}
 
+class LaunchEveryoneActiveEffect extends ActiveChaosEffect {
   public func OnStart() {
     for entity in GetGameInstance().GetEntityList() {
       let puppet = entity as gamePuppet;
