@@ -2,10 +2,7 @@ module ChaosMod.Effects
 
 public class LaunchEveryoneEffect extends ChaosEffect {
   public func GetInfo() -> ref<ChaosEffectInfo> {
-    return CreateInfo(
-      n"ChaosMod-Effect-Ped-LaunchEveryone-Name",
-      n"ChaosMod-Effect-Ped-LaunchEveryone-Desc"
-    );
+    return CreateInfo(n"ChaosMod-Effect-Peds-LaunchEveryone");
   }
 
   public func ActivateEffect() -> ref<ActiveChaosEffect> {

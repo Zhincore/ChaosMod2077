@@ -1,2 +1,9 @@
 /*.zip
 dist
+.projectFiles
+install_log.xml
+layout.xml
+Wolvenkit/custom_refs.txt
+Wolvenkit/source/resources/bin
+Wolvenkit/source/resources/r6
+Wolvenkit/packed

@@ -1,4 +1,4 @@
-module ChaosMod.Util
+module ChaosMod.Utils
 
 public static func Call(target: wref<IScriptable>, fn: CName, opt data: array<Variant>) {
   if !IsDefined(target) {

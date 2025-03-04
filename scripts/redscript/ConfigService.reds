@@ -1,18 +1,13 @@
 module ChaosMod
 
-import ChaosMod.Effects.ChaosEffect
+import ChaosMod.Utils.Timer
 
-public class ConfigService extends ScriptableService {
+private class ConfigService extends ScriptableService {
   // MARK: Config
   persistent let timerDuration: Float = 30.0;
   //
   // MARK: Function
-  private let effects: array<ref<ChaosEffect>>;
   private let chaosMod: wref<ChaosModSystem>;
-
-  private cb func OnLoad() {
-    this.effects = [];
-  }
 
   public func BindChaosMod(chaosMod: wref<ChaosModSystem>) {
     this.chaosMod = chaosMod;
@@ -25,10 +20,6 @@ public class ConfigService extends ScriptableService {
     if this.chaosMod == chaosMod {
       this.chaosMod = null;
     }
-  }
-
-  public func RegisterEffect(effect: ref<ChaosEffect>) {
-    ArrayPush(this.effects, effect);
   }
 
   // MARK: Setters

@@ -2,7 +2,7 @@
   "name": "ChaosMod2077",
   "version": "0.1.0",
   "license": true,
-  "stage": "dist",
+  "stage": "WolvenKit/source/resources",
   "scripts": {
     "redscript": {
       "src": "scripts/redscript"

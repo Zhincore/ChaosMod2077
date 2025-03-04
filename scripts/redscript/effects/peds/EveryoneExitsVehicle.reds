@@ -2,10 +2,7 @@ module ChaosMod.Effects
 
 public class EveryoneExitsVehicleEffect extends ChaosEffect {
   public func GetInfo() -> ref<ChaosEffectInfo> {
-    return CreateInfo(
-      n"ChaosMod-Effect-Ped-EveryoneExitsVehicle-Name",
-      n"ChaosMod-Effect-Ped-EveryoneExitsVehicle-Desc"
-    );
+    return CreateInfo(n"ChaosMod-Effect-Peds-EveryoneExitsVehicle");
   }
 
   public func ActivateEffect() -> ref<ActiveChaosEffect> {

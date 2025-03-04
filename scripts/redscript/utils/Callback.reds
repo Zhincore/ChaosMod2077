@@ -1,4 +1,4 @@
-module ChaosMod.Util
+module ChaosMod.Utils
 
 import Codeware.*
 

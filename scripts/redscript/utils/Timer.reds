@@ -1,6 +1,4 @@
-module ChaosMod
-
-import ChaosMod.Util.*
+module ChaosMod.Utils
 
 public class Timer extends DelayCallback {
   public let duration: Float;
