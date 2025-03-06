@@ -30,7 +30,7 @@ registerForEvent('onDraw', function()
       return
     end
 
-    local config = system:GetConfig();
+    local config = system:GetConfig()
 
     -- MARK: State
     local enabled, pressed = ImGui.Checkbox("Enable Chaos Mod", system:IsEnabled())
