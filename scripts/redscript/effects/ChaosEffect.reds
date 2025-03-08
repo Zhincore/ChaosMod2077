@@ -15,6 +15,7 @@ public abstract class ChaosEffect {
 
     /// Return ID of the effect, used also for localization. Generated from class name by default.
     /// This gets appended with "-Name" and "-Desc" to obtain localization keys.
+    /// By default, if naming conventions are kept, result is the module name
     public func GetId() -> CName {
         let key = StrReplaceAll(NameToString(this.GetClassName()), ".", "-");
 

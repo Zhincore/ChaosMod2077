@@ -37,7 +37,7 @@ public class ActiveEffectComponent extends inkComponent {
     }
 
     public func SetName(name: CName) {
-        this.text.SetText(NameToString(name));
+        this.text.SetLocalizedText(name);
     }
 
     public func SetTime(progress: Float) {

@@ -55,10 +55,11 @@ public class ChaosModSystem extends ScriptableSystem {
 
     private cb func OnTimerUpdate(progress: Float) {
         this.ui.SetTime(progress);
-        //this.UpdateEffects(progress - this.lastProgress);
+        this.UpdateEffects(progress - this.lastProgress);
 
         if progress >= 1.0 {
             this.lastProgress = 0.0;
+            this.RemoveOldEffects();
             this.ActivateRandomEffect();
         } else {
             this.lastProgress = progress;
@@ -89,7 +90,7 @@ public class ChaosModSystem extends ScriptableSystem {
             .GetLayer(n"inkHUDLayer")
             .GetVirtualWindow();
         let root = window.GetWidgetByPathName(n"Root") as inkCanvas;
-        this.ui.Reparent(root);
+        this.ui.Reparent(root, 0);
         this.ui.Toggle(true);
 
         this.timer.Start();
@@ -116,35 +117,50 @@ public class ChaosModSystem extends ScriptableSystem {
     }
 
     private func UpdateEffects(delta: Float) {
-        let stillActiveEffects: array<ref<ActiveEffectRecord>> = [];
-        ArrayResize(stillActiveEffects, ArraySize(this.activeEffects));
-
         for effect in this.activeEffects {
-            effect.remaining -= delta;
+            this.UpdateEffect(effect, delta);
+        }
+    }
 
-            if effect.remaining <= -1.0 {
-                this.StopEffect(effect);
-            } else {
-                effect.runtime.OnUpdate();
-                ArrayPush(stillActiveEffects, effect);
-
-                effect.component.SetTime(effect.remaining / effect.duration);
-            }
+    private func UpdateEffect(effect: ref<ActiveEffectRecord>, delta: Float) {
+        if effect.forRemoval {
+            return;
         }
 
-        this.activeEffects = stillActiveEffects;
+        effect.remaining -= delta;
+
+        if effect.remaining <= 0.0 {
+            this.StopEffect(effect);
+        } else {
+            effect.runtime.OnUpdate();
+            effect.component.SetTime(effect.remaining / effect.duration);
+        }
+    }
+
+    private func RemoveOldEffects() {
+        let activeEffects: array<ref<ActiveEffectRecord>> = [];
+
+        for effect in this.activeEffects {
+            if effect.forRemoval {
+                this.ui.RemoveEffect(effect.component);
+            }
+            ArrayPush(activeEffects, effect);
+        }
+
+        this.activeEffects = activeEffects;
     }
 
     private func StopEffect(effect: ref<ActiveEffectRecord>) {
         effect.runtime.OnEnd();
-        this.ui.RemoveEffect(effect.component);
+        effect.component.SetTime(0);
+        effect.forRemoval = true;
     }
 
     public func StopAllEffects() {
         for effect in this.activeEffects {
             this.StopEffect(effect);
         }
-        this.activeEffects = [];
+        this.RemoveOldEffects();
     }
 }
 
@@ -155,15 +171,16 @@ private class ActiveEffectRecord {
     public let remaining: Float;
     public let duration: Float;
     public let isInstant: Bool;
+    public let forRemoval: Bool;
 
     public static func SpawnEffect(effect: ref<ChaosEffect>) -> ref<ActiveEffectRecord> {
         let record = new ActiveEffectRecord();
         record.id = effect.GetId();
-        FTLog(s"\(record.id) = \(effect)");
         record.runtime = effect.ActivateEffect();
         record.duration = Cast<Float>(EnumInt(effect.GetDuration()));
         record.remaining = record.duration;
         record.isInstant = record.duration == 0.0;
+        record.forRemoval = false;
         return record;
     }
 }

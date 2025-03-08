@@ -33,7 +33,7 @@ public class EffectRegistryService extends ScriptableService {
     }
 
     public func GetRandomEffect() -> ref<ChaosEffect> {
-        return this.effects[RandRange(0, ArraySize(this.effects) - 1)];
+        return this.effects[RandRange(0, ArraySize(this.effects))];
     }
 }
 

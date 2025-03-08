@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "WolvenKitVersion": "8.16.1-nightly.2025-02-22",
+    "WKitJsonVersion": "0.0.9",
+    "GameVersion": 2200,
+    "DataType": "CR2W"
+  },
+  "Data": {
+    "Version": 195,
+    "BuildVersion": 0,
+    "RootChunk": {
+      "$type": "JsonResource",
+      "cookingPlatform": "PLATFORM_PC",
+      "root": {
+        "HandleId": "0",
+        "Data": {
+          "$type": "localizationPersistenceOnScreenEntries",
+          "entries": [
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "secondaryKey": "ChaosMod-Effects-EveryoneExitsVehicle-Name",
+              "femaleVariant": "Everyone exits vehicle"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "secondaryKey": "ChaosMod-Effects-EveryoneExitsVehicle-Desc",
+              "femaleVariant": "All nearby peds and V exit their vehicle"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "secondaryKey": "ChaosMod-Effects-LaunchEveryone-Name",
+              "femaleVariant": "Launch everyone up"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "secondaryKey": "ChaosMod-Effects-LaunchEveryone-Desc",
+              "femaleVariant": "Launch all nearby peds up"
+            }
+          ]
+        }
+      }
+    },
+    "EmbeddedFiles": []
+  }
+}
