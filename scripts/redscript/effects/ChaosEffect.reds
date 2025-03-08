@@ -8,6 +8,11 @@ public enum ChaosTimedType {
 
 /// Base class for all effects.
 public abstract class ChaosEffect {
+    /// Get ids of incompatible effects. Default is none.
+    public func GetIncompatible() -> array<CName> {
+        return [];
+    }
+
     /// Get the duration of the effect. Default is instant.
     public func GetDuration() -> ChaosTimedType {
         return ChaosTimedType.Instant;
@@ -48,7 +53,7 @@ public abstract class ActiveChaosEffect {
     }
 
     /// Called when the effect ends, use this for clean up. Optional.
-    public func OnEnd() {
+    public func OnStop() {
     }
 }
 

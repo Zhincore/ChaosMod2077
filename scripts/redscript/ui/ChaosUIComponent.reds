@@ -23,7 +23,7 @@ public class ChaosUIComponent extends inkComponent {
         this.timer.Reparent(root);
 
         this.effects = new inkVerticalPanel();
-        this.effects.SetMargin(2, 64, 0, 0);
+        this.effects.SetMargin(4, 128, 0, 0);
         this.effects.Reparent(root);
 
         return root;

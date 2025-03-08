@@ -24,7 +24,7 @@
             {
               "$type": "localizationPersistenceOnScreenEntry",
               "secondaryKey": "ChaosMod-Effects-EveryoneExitsVehicle-Desc",
-              "femaleVariant": "All nearby peds and V exit their vehicle"
+              "femaleVariant": "All nearby peds and V exit their vehicle."
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
@@ -34,7 +34,17 @@
             {
               "$type": "localizationPersistenceOnScreenEntry",
               "secondaryKey": "ChaosMod-Effects-LaunchEveryone-Desc",
-              "femaleVariant": "Launch all nearby peds up"
+              "femaleVariant": "Launches all nearby peds up."
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "secondaryKey": "ChaosMod-Effects-SpammyVehDoors-Name",
+              "femaleVariant": "Spammy vehicle doors"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "secondaryKey": "ChaosMod-Effects-SpammyVehDoors-Desc",
+              "femaleVariant": "Doors of vehicles repeatedly open and close."
             }
           ]
         }

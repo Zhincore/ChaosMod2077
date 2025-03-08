@@ -34,12 +34,22 @@ public class ProgressBar extends inkComponent {
         this.GetRootWidget().SetWidth(width);
     }
 
+    public func SetHeight(height: Float) {
+        this.GetRootWidget().SetHeight(height);
+    }
+
     public func SetColor(color: Color) {
         this.bar.SetTintColor(color);
     }
 
-    public func SetBarAlign(anchor: inkEAnchor) {
-        this.bar.SetAnchor(anchor);
+    public func SetCentered(centered: Bool) {
+        if centered {
+            this.bar.SetAnchor(inkEAnchor.CenterFillVerticaly);
+            this.bar.SetAnchorPoint(0.5, 0.5);
+        } else {
+            this.bar.SetAnchor(inkEAnchor.LeftFillVerticaly);
+            this.bar.SetAnchorPoint(0.0, 0.0);
+        }
     }
 
     public func SetProgress(percentage: Float) {

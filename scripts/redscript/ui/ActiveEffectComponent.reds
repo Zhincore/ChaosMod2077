@@ -11,13 +11,17 @@ public class ActiveEffectComponent extends inkComponent {
         root.SetName(n"ChaosMod Effect Item");
         root.SetAnchor(inkEAnchor.TopLeft);
         root.SetAnchorPoint(0.0, 0.0);
-        root.SetMargin(16, 8, 0, 0);
+        root.SetMargin(0, 16, 0, 0);
 
         this.timer = new ProgressBar();
         this.timer.SetWidth(128);
+        this.timer.SetHeight(12);
+        this.timer.SetCentered(true);
+        this.timer.SetColor(Color.ChaosCreate(200, 200, 200, 200));
         let timerRoot = this.timer.GetRootWidget();
         timerRoot.SetName(n"ChaosMod Item Timer");
-        timerRoot.SetAnchorPoint(0.5, 0.0);
+        timerRoot.SetAnchor(inkEAnchor.CenterLeft);
+        timerRoot.SetAnchorPoint(0.0, 0.5);
         timerRoot.SetVisible(false);
         timerRoot.SetAffectsLayoutWhenHidden(true);
         this.timer.Reparent(root, 0);
@@ -25,7 +29,7 @@ public class ActiveEffectComponent extends inkComponent {
         this.text = new inkText();
         this.text.SetFontFamily("base\\gameplay\\gui\\fonts\\raj\\raj.inkfontfamily");
         this.text.SetFontStyle(n"Regular");
-        this.text.SetFontSize(24);
+        this.text.SetFontSize(22);
         this.text.SetMargin(16, 0, 0, 0);
         this.text.Reparent(root, 1);
 

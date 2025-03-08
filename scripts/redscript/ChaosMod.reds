@@ -19,8 +19,20 @@ public func StartEffect(name: CName) {
     if IsDefined(effect) {
         chaosmod.ActivateEffect(effect);
     } else {
-        FTLogError("Effect not found!");
+        let effect = chaosmod.registry.FindEffect(n"ChaosMod-Effects-" + name);
+        if IsDefined(effect) {
+            chaosmod.ActivateEffect(effect);
+        } else {
+            FTLogError(s"Effect \(name) not found!");
+        }
     }
+}
+
+public func StopAllEffects() {
+    let chaosmod = GameInstance
+        .GetScriptableSystemsContainer(GetGameInstance())
+        .Get(n"ChaosMod.ChaosModSystem") as ChaosModSystem;
+    chaosmod.StopAllEffects();
 }
 
 // MARK: Main functionality
@@ -59,8 +71,8 @@ public class ChaosModSystem extends ScriptableSystem {
 
         if progress >= 1.0 {
             this.lastProgress = 0.0;
-            this.RemoveOldEffects();
             this.ActivateRandomEffect();
+            this.RemoveOldEffects();
         } else {
             this.lastProgress = progress;
         }
@@ -111,6 +123,24 @@ public class ChaosModSystem extends ScriptableSystem {
 
     public func ActivateEffect(effect: ref<ChaosEffect>) {
         let record = ActiveEffectRecord.SpawnEffect(effect);
+
+        for activeEffect in this.activeEffects {
+            // Replace incompatible effects
+            if ArrayContains(record.incompatible, activeEffect.id) {
+                this.StopEffect(activeEffect);
+            }
+            // Find duplicate effects
+            if Equals(record.id, activeEffect.id) {
+                // For timed effects
+                if !activeEffect.isInstant {
+                    // Just reset duration
+                    activeEffect.remaining = activeEffect.duration;
+                    activeEffect.forRemoval = false;
+                    return;
+                }
+            }
+        }
+
         ArrayPush(this.activeEffects, record);
         record.component = this.ui.AddEffect(record.id, record.isInstant);
         record.runtime.OnStart();
@@ -143,15 +173,16 @@ public class ChaosModSystem extends ScriptableSystem {
         for effect in this.activeEffects {
             if effect.forRemoval {
                 this.ui.RemoveEffect(effect.component);
+            } else {
+                ArrayPush(activeEffects, effect);
             }
-            ArrayPush(activeEffects, effect);
         }
 
         this.activeEffects = activeEffects;
     }
 
     private func StopEffect(effect: ref<ActiveEffectRecord>) {
-        effect.runtime.OnEnd();
+        effect.runtime.OnStop();
         effect.component.SetTime(0);
         effect.forRemoval = true;
     }
@@ -168,6 +199,7 @@ private class ActiveEffectRecord {
     public let id: CName;
     public let runtime: ref<ActiveChaosEffect>;
     public let component: ref<ActiveEffectComponent>;
+    public let incompatible: array<CName>;
     public let remaining: Float;
     public let duration: Float;
     public let isInstant: Bool;
@@ -176,6 +208,7 @@ private class ActiveEffectRecord {
     public static func SpawnEffect(effect: ref<ChaosEffect>) -> ref<ActiveEffectRecord> {
         let record = new ActiveEffectRecord();
         record.id = effect.GetId();
+        record.incompatible = effect.GetIncompatible();
         record.runtime = effect.ActivateEffect();
         record.duration = Cast<Float>(EnumInt(effect.GetDuration()));
         record.remaining = record.duration;
