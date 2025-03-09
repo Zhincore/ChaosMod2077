@@ -19,12 +19,7 @@ public func StartEffect(name: CName) {
     if IsDefined(effect) {
         chaosmod.ActivateEffect(effect);
     } else {
-        let effect = chaosmod.registry.FindEffect(n"ChaosMod-Effects-" + name);
-        if IsDefined(effect) {
-            chaosmod.ActivateEffect(effect);
-        } else {
-            FTLogError(s"Effect \(name) not found!");
-        }
+        FTLogError(s"Effect \(name) not found!");
     }
 }
 

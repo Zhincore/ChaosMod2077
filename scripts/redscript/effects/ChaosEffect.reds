@@ -18,21 +18,13 @@ public abstract class ChaosEffect {
         return ChaosTimedType.Instant;
     }
 
-    /// Return ID of the effect, used also for localization. Generated from class name by default.
-    /// This gets appended with "-Name" and "-Desc" to obtain localization keys.
-    /// By default, if naming conventions are kept, result is the module name
+    /// Return ID of the effect, used also for localization. Class name by default.
     public func GetId() -> CName {
-        let key = StrReplaceAll(NameToString(this.GetClassName()), ".", "-");
+        let key = StrAfterLast(NameToString(this.GetClassName()), ".");
 
-        // Remove trailing Effect
+        // Remove trailing "Effect"
         if StrEndsWith(key, "Effect") {
             key = StrBeforeLast(key, "Effect");
-        }
-
-        // Remove duplicate Module + Class name
-        let className = StrAfterLast(key, "-");
-        if StrEndsWith(key, className + "-" + className) {
-            key = StrBeforeLast(key, "-" + className);
         }
 
         return StringToName(key);

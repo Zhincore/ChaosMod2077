@@ -1,14 +1,14 @@
-module ChaosMod.Effects.LaunchEveryone
+module ChaosMod.Effects.LaunchPeds
 
 import ChaosMod.Effects.*
 
-public class LaunchEveryoneEffect extends ChaosEffect {
+public class LaunchPedsEffect extends ChaosEffect {
     public func ActivateEffect() -> ref<ActiveChaosEffect> {
-        return new LaunchEveryoneActiveEffect();
+        return new LaunchPedsActiveEffect();
     }
 }
 
-private class LaunchEveryoneActiveEffect extends ActiveChaosEffect {
+private class LaunchPedsActiveEffect extends ActiveChaosEffect {
     public func OnStart() {
         for entity in GameInstance.GetEntityList(GetGameInstance()) {
             let puppet = entity as gamePuppet;

@@ -3,7 +3,11 @@ dist
 .projectFiles
 install_log.xml
 layout.xml
-Wolvenkit/custom_refs.txt
-Wolvenkit/source/resources/bin
-Wolvenkit/source/resources/r6
-Wolvenkit/packed
+WolvenKit/custom_refs.txt
+WolvenKit/packed
+
+# Ignore all files in the WolvenKit/source directory except for .xl files
+WolvenKit/source/*
+!WolvenKit/source/resources
+WolvenKit/source/resources/*
+!WolvenKit/source/resources/*.xl

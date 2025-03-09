@@ -1,0 +1,14 @@
+{
+  "EveryoneExitsVehicle": {
+    "name": "Everyone exits vehicle",
+    "description": "All nearby peds exit their vehicle."
+  },
+  "LaunchPeds": {
+    "name": "Launch all peds up",
+    "description": "Launches all nearby peds upwards."
+  },
+  "SpammyVehDoors": {
+    "name": "Spammy vehicle doors",
+    "description": "Doors of vehicles repeatedly open and close."
+  }
+}
