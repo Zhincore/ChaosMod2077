@@ -11,3 +11,8 @@ WolvenKit/source/*
 !WolvenKit/source/resources
 WolvenKit/source/resources/*
 !WolvenKit/source/resources/*.xl
+
+
+# Added by cargo
+
+/target

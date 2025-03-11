@@ -10,5 +10,9 @@
     "cet": {
       "src": "scripts/cet"
     }
+  },
+  "plugin": {
+    "debug": "target/debug/",
+    "release": "target/release/"
   }
 }

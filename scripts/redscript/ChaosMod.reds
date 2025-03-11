@@ -15,11 +15,11 @@ public func StartEffect(name: CName) {
     let chaosmod = GameInstance
         .GetScriptableSystemsContainer(GetGameInstance())
         .Get(n"ChaosMod.ChaosModSystem") as ChaosModSystem;
-    let effect = chaosmod.registry.FindEffect(name);
+    let effect = chaosmod.registry.GetEffect(name);
     if IsDefined(effect) {
         chaosmod.ActivateEffect(effect);
     } else {
-        FTLogError(s"Effect \(name) not found!");
+        FTLogError(s"Effect \(NameToString(name)) not found!");
     }
 }
 
