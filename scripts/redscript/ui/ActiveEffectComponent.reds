@@ -14,8 +14,8 @@ public class ActiveEffectComponent extends inkComponent {
         root.SetMargin(0, 16, 0, 0);
 
         this.timer = new ProgressBar();
-        this.timer.SetWidth(128);
-        this.timer.SetHeight(12);
+        this.timer.SetWidth(96);
+        this.timer.SetHeight(16);
         this.timer.SetCentered(true);
         this.timer.SetColor(Color.ChaosCreate(200, 200, 200, 200));
         let timerRoot = this.timer.GetRootWidget();

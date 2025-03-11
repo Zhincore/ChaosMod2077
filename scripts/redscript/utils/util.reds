@@ -17,11 +17,7 @@ public func Call(target: wref<IScriptable>, fn: CName, opt data: array<Variant>)
 }
 
 public func GetEffectName(id: CName) -> CName {
-    return id + n"-Name";
-}
-
-public func GetEffectDescription(id: CName) -> CName {
-    return id + n"-Desc";
+    return n"ChaosMod-Effects-" + id;
 }
 
 public class Callback extends DelayCallback {

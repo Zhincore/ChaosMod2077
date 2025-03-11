@@ -13,16 +13,13 @@ foreach ($file in Get-ChildItem -Path $sourcePath -Filter *.json) {
     $content = Get-Content -Raw $file.FullName | ConvertFrom-Json
     $entries = @()
 
-    foreach ($entry in $content.PSObject.Properties) {
-        $entries += [ordered]@{
-            '$type' = "localizationPersistenceOnScreenEntry"
-            "secondaryKey" = "ChaosMod-Effects-$($entry.Name)-Name"
-            "femaleVariant" = $entry.Value.name
-        }
-        $entries += [ordered]@{
-            '$type' = "localizationPersistenceOnScreenEntry"
-            "secondaryKey" = "ChaosMod-Effects-$($entry.Name)-Desc"
-            "femaleVariant" = $entry.Value.description
+    foreach ($category in $content.PSObject.Properties) {
+        foreach ($entry in $category.Value.PSObject.Properties) {
+            $entries += [ordered]@{
+                '$type' = "localizationPersistenceOnScreenEntry"
+                "secondaryKey" = "ChaosMod-$($category.Name)-$($entry.Name)"
+                "femaleVariant" = $entry.Value
+            }
         }
     }
 
