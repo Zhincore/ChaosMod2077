@@ -67,7 +67,7 @@ public class ChaosModSystem extends ScriptableSystem {
         if progress >= 1.0 {
             this.lastProgress = 0.0;
             this.ActivateRandomEffect();
-            this.RemoveOldEffects();
+            this.RemoveOldEffect();
         } else {
             this.lastProgress = progress;
         }
@@ -154,7 +154,7 @@ public class ChaosModSystem extends ScriptableSystem {
 
         effect.remaining -= delta;
 
-        if effect.remaining <= 0.0 {
+        if effect.remaining <= 0.01 {
             this.StopEffect(effect);
         } else {
             effect.runtime.OnUpdate();
@@ -162,18 +162,14 @@ public class ChaosModSystem extends ScriptableSystem {
         }
     }
 
-    private func RemoveOldEffects() {
-        let activeEffects: array<ref<ActiveEffectRecord>> = [];
-
-        for effect in this.activeEffects {
-            if effect.forRemoval {
-                this.ui.RemoveEffect(effect.component);
-            } else {
-                ArrayPush(activeEffects, effect);
-            }
+    private func RemoveOldEffect() {
+        let effect = this.activeEffects[0];
+        if !IsDefined(effect) || !effect.forRemoval {
+            return;
         }
 
-        this.activeEffects = activeEffects;
+        this.ui.RemoveEffect(effect.component);
+        ArrayErase(this.activeEffects, 0);
     }
 
     private func StopEffect(effect: ref<ActiveEffectRecord>) {
@@ -185,8 +181,8 @@ public class ChaosModSystem extends ScriptableSystem {
     public func StopAllEffects() {
         for effect in this.activeEffects {
             this.StopEffect(effect);
+            this.RemoveOldEffect();
         }
-        this.RemoveOldEffects();
     }
 }
 

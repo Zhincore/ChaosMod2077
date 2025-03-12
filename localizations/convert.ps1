@@ -50,5 +50,4 @@ foreach ($file in Get-ChildItem -Path $sourcePath -Filter *.json) {
 
     # Write the output to a file
     $output | ConvertTo-Json -Depth 100 -Compress | Set-Content (Join-Path $targetPath "$($file.BaseName).json.json")
-
 }

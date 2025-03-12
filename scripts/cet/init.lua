@@ -25,7 +25,7 @@ registerForEvent('onDraw', function()
 
     if ImGui.Begin('Chaos Mod', ImGuiWindowFlags.AlwaysAutoResize) then
         if not redscript or system == nil then
-            ImGui.TextColored(255, 0, 0, 255, "Missing RedScript part of ChaosMod, reinstall the mod!")
+            ImGui.TextColored(255, 0, 0, 255, GetLocalizedTextByKey("ChaosMod-UI-Missing-Redscript"))
             ImGui.End()
             return
         end
@@ -33,7 +33,7 @@ registerForEvent('onDraw', function()
         local config = system:GetConfig()
 
         -- MARK: State
-        local enabled, pressed = ImGui.Checkbox("Enable Chaos Mod", system:IsEnabled())
+        local enabled, pressed = ImGui.Checkbox(GetLocalizedTextByKey("ChaosMod-UI-Enable"), system:IsEnabled())
         if pressed then
             system:Toggle(enabled)
         end
@@ -43,9 +43,10 @@ registerForEvent('onDraw', function()
         -- MARK: Config
         -- timer duration
         local timerDuration, pressed =
-            ImGui.DragFloat("Timer duration (seconds)", config["timerDuration"], 0.01, 5, 3600, "%.2f")
+            ImGui.DragFloat(GetLocalizedTextByKey("ChaosMod-UI-Timer-Duration"), config["timerDuration"], 0.01, 5, 3600,
+                "%.2f")
         if ImGui.IsItemHovered() then
-            ImGui.SetTooltip("How many seconds between effects.")
+            ImGui.SetTooltip(GetLocalizedTextByKey("ChaosMod-UI-Timer-Duration-Desc"))
         end
         if pressed and timerDuration > 0.0 then
             config:SetTimerDuration(timerDuration)

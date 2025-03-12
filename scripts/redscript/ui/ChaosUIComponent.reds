@@ -30,7 +30,7 @@ public class ChaosUIComponent extends inkComponent {
     }
 
     public func Toggle(shown: Bool) {
-        this.GetRootWidget().SetVisible(shown);
+        this.timer.GetRootWidget().SetVisible(shown);
     }
 
     public func SetTime(progress: Float) {

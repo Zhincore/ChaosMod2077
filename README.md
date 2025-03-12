@@ -14,7 +14,7 @@ This effect can be helpful, annoying, or just pure chaos. So good luck!
 2. Start the game and load a save.
 3. Open your CET overlay.
 4. Find the "Chaos Mod" window and check the Enable checkbox.
-5. Survive.
+5. ***Try*** to play the game.
 
 
 ## TODO
@@ -22,6 +22,7 @@ This effect can be helpful, annoying, or just pure chaos. So good luck!
 A forever TODO is adding more effects (porting ones from the GTA mods, but preferably creating some Cyberpunk-specific ones), apart from that there are some other things I want to do:
 
 - [ ] Addon support
+- [ ] Better incompatibility handling? If effect A is incomp with B, then vice versa should be ensured.
 - [ ] More configuration options (UI colors/size, effect duration, ...)
 - [ ] Toggling individual effects, categories?
 - [ ] GTA mod only executes one effect from each category at once, do we want that too?
@@ -30,15 +31,13 @@ If you want to help with any of this, please contribute! Continue reading below.
 
 ## Development
 
-Any improvement contributions are greatly appreciated, I tried to make the development experience as smooth as possible. Here's stuff you should know if you wanna contribute.
+Any improvement contributions are greatly appreciated, I tried to make the development experience as smooth as possible. If you wanna make new effects but don't wanna contribute (or don't want to use RedScript), see <making add-ons> ***TODO***. Here's stuff you should know if you wanna contribute.
 
 ### Requirements
 
 - **Windows, text editor, patience**.
 - **[Rust](https://www.rust-lang.org/tools/install)** for developing natives.
   If you don't plan on changing those, you can skip this and follow these instructions instead: ***TODO***
-
-Addon support coming soon:tm:!
 
 ### Folder structure
 

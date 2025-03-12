@@ -15,7 +15,7 @@ public class ActiveEffectComponent extends inkComponent {
 
         this.timer = new ProgressBar();
         this.timer.SetWidth(96);
-        this.timer.SetHeight(16);
+        this.timer.SetHeight(12);
         this.timer.SetCentered(true);
         this.timer.SetColor(Color.ChaosCreate(200, 200, 200, 200));
         let timerRoot = this.timer.GetRootWidget();
@@ -41,7 +41,7 @@ public class ActiveEffectComponent extends inkComponent {
     }
 
     public func SetName(name: CName) {
-        this.text.SetLocalizedText(name);
+        this.text.SetText(GetLocalizedTextByKey(name));
     }
 
     public func SetTime(progress: Float) {

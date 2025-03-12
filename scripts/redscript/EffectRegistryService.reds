@@ -1,5 +1,6 @@
 module ChaosMod.Registry
 
+import ChaosMod.Utils.Callback
 import ChaosMod.Lib.ChaosCNameMap
 import ChaosMod.Effects.ChaosEffect
 
@@ -22,6 +23,13 @@ public class EffectRegistryService extends ScriptableService {
 
     private cb func OnLoad() {
         this.effects = new ChaosCNameMap();
+        // Dispatch the event with delay to ensure all effects are registered
+        GameInstance
+            .GetDelaySystem(GetGameInstance())
+            .DelayCallback(Callback.Create(this, n"DispatchRegisterEffects"), 0, false);
+    }
+
+    private cb func DispatchRegisterEffects() {
         GameInstance.GetCallbackSystem().DispatchEvent(RegisterEffectsEvent.Create(this));
     }
 
@@ -38,7 +46,6 @@ public class EffectRegistryService extends ScriptableService {
         this.effects.Remove(effect.GetId());
     }
 
-    /// Tries to find a registered effect by class name, null if not found
     public func GetEffect(name: CName) -> ref<ChaosEffect> {
         return this.effects.Get(name) as ChaosEffect;
     }
