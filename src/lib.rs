@@ -1,12 +1,12 @@
 use cname_map::ChaosCNameMap;
+use extensions::chaos_toggle_vehicle_gravity;
 use red4ext_rs::{
     ClassExport, Exportable, GlobalExport, Plugin, SemVer, U16CStr, export_plugin_symbols, exports,
     global, methods, wcstr,
 };
-use vehicle_object::chaos_toggle_vehicle_gravity;
 
 mod cname_map;
-mod vehicle_object;
+mod extensions;
 
 pub struct ChaosModPlugin;
 

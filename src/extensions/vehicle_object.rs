@@ -1,12 +1,6 @@
 #![allow(non_snake_case)]
 
-use red4ext_rs::{ScriptClass, class_kind, log, types::Ref};
-
-/// Helper function to assemble uint64 from bytes (little endian)
-fn assemble_uint64_le(bytes: &[u8], offset: u64) -> u64 {
-    let slice = &bytes[offset as usize..offset as usize + 8];
-    u64::from_le_bytes(slice.try_into().unwrap())
-}
+use red4ext_rs::{ScriptClass, class_kind, types::Ref};
 
 // Thanks Jack Humbert
 #[repr(C)]
@@ -19,7 +13,8 @@ pub struct PhysicsData {
 #[derive(Debug, Clone)]
 #[repr(C)]
 pub struct VehicleObject {
-    unknown: [u8; 0x2D0],          // 00
+    unknown: [u8; 0x2D0], // 00
+    /// https://github.com/jackhumbert/RED4ext.SDK/blob/04049e69c32f25afcd1eaaac37ca773e513ba71c/include/RED4ext/Scripting/Natives/vehicleBaseObject.hpp#L471
     physicsData: *mut PhysicsData, // 2D0
 }
 unsafe impl ScriptClass for VehicleObject {
