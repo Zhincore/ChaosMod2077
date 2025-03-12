@@ -1,0 +1,2 @@
+WolvenKit/source/raw filter=lfs diff=lfs merge=lfs -text
+WolvenKit/source/archive filter=lfs diff=lfs merge=lfs -text

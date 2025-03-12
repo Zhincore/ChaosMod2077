@@ -7,7 +7,6 @@ This effect can be helpful, annoying, or just pure chaos. So good luck!
 > This mod (when active) can cause crashes and save corruptions. Always backup your loved saves and turn it Chaos Mod off before saving.
 
 
-
 ## Installation and usage
 
 1. Install like any other mod.
@@ -21,6 +20,9 @@ This effect can be helpful, annoying, or just pure chaos. So good luck!
 
 A forever TODO is adding more effects (porting ones from the GTA mods, but preferably creating some Cyberpunk-specific ones), apart from that there are some other things I want to do:
 
+- [ ] Build pipeline
+- [ ] CI :3
+- [ ] Libs folder for IDE
 - [ ] Addon support
 - [ ] Better incompatibility handling? If effect A is incomp with B, then vice versa should be ensured.
 - [ ] More configuration options (UI colors/size, effect duration, ...)
@@ -29,6 +31,7 @@ A forever TODO is adding more effects (porting ones from the GTA mods, but prefe
 
 If you want to help with any of this, please contribute! Continue reading below.
 
+
 ## Development
 
 Any improvement contributions are greatly appreciated, I tried to make the development experience as smooth as possible. If you wanna make new effects but don't wanna contribute (or don't want to use RedScript), see <making add-ons> ***TODO***. Here's stuff you should know if you wanna contribute.
@@ -36,6 +39,7 @@ Any improvement contributions are greatly appreciated, I tried to make the devel
 ### Requirements
 
 - **Windows, text editor, patience**.
+- **PowerShell** and ability to run it's scripts.
 - **[Rust](https://www.rust-lang.org/tools/install)** for developing natives.
   If you don't plan on changing those, you can skip this and follow these instructions instead: ***TODO***
 
@@ -45,8 +49,4 @@ Any improvement contributions are greatly appreciated, I tried to make the devel
 - `scripts/cet/` - Scripts for CET providing configuration UI.
 - `scripts/redscript/` - Redscripts providing the **main logic** of the mod and individual effects.
 - `src/` - Red4ext plugin in Rust providing native extensions.
-
-Installing WolvenKit for the build scripts:
-```ps
-dotnet tool install --global --add-source ./nupkg wolvenkit.cli
-```
+- `WolvenKit/` - WolvenKit project with assets, AXL, etc. Used for packaging the resulting mod.

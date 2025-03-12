@@ -1,13 +1,13 @@
-/*.zip
-dist
+*.zip
 .projectFiles
 install_log.xml
 layout.xml
+
 WolvenKit/custom_refs.txt
 WolvenKit/packed
-
+WolvenKit/source/raw/*/localization
+WolvenKit/source/archive/*/localization
 # Ignore all files in the WolvenKit/source directory except for .xl files
-WolvenKit/source/*
 !WolvenKit/source/resources
 WolvenKit/source/resources/*
 !WolvenKit/source/resources/*.xl
