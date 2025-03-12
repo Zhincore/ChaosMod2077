@@ -1,8 +1,8 @@
 <#
     .SYNOPSIS
-        Build script.
+        Converts translations from a simple format to a WolvenKit-ready one.
     .EXAMPLE
-        .\build.ps1
+        .\convert-translations.ps1
 #>
 
 $ErrorActionPreference = "stop"

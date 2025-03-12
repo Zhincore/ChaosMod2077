@@ -1,0 +1,27 @@
+name: Check redscripts
+
+on:
+  push:
+    paths:
+      - "**.reds"
+  pull_request:
+    paths:
+      - "**.reds"
+
+jobs:
+  lint:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache libs
+        id: cache-libs
+        uses: actions/cache@v4
+        with:
+          path: libs
+          key: libs
+      - name: Download libs
+        run: .\download-libs.ps1
+      - uses: jac3km4/redscript-action@v0.1.2
+        with:
+          source: .
+          lint: true

@@ -1,0 +1,78 @@
+name: Build the project
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+env:
+  CARGO_TERM_COLOR: always
+  REDCLI_GAME: .
+
+jobs:
+  red4ext:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust
+        run: rustup toolchain install stable --profile minimal
+      - uses: Swatinem/rust-cache@v2
+      - name: Build
+        run: cargo build --release --verbose
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4.6.1
+        with:
+          name: chaosmod2077.dll
+          path: target/release/chaosmod2077.dll
+
+  build:
+    needs: [red4ext]
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache tools
+        id: cache-tools
+        uses: actions/cache@v4
+        with:
+          path: |
+            $HOME\.dotnet\tools
+          key: tools
+
+      - name: Install WolvenKit.CLI
+        run: dotnet tool install --global --add-source ./nupkg WolvenKit.CLI
+
+      - name: Install red-cli
+        run: |
+          New-Item -ItemType Directory -Force -Path .build | Out-Null
+          Invoke-WebRequest -Uri https://static.zhincore.eu/cp/red-cli.exe -OutFile .build/red-cli.exe
+
+      - name: Download Red4Ext plugin
+        uses: actions/download-artifact@v4
+        with:
+          name: chaosmod2077.dll
+          path: target/release/
+
+      - run: ls -R
+
+      - name: Boundle scripts and plugin
+        run: .build/red-cli bundle
+      - name: Move resources
+        run: |
+          New-Item -ItemType Directory -Force -Path WolvenKit/packed/archive/pc/mod | Out-Null
+          Move-Item -Path "WolvenKit/source/resources/*.xl" -Destination WolvenKit/packed/archive/pc/mod
+          Move-Item -Path "WolvenKit/source/resources/*" -Destination WolvenKit/packed/
+
+      - name: Convert translations
+        run: ./convert-translations.ps1
+      - name: Pack up archive
+        run: cp77tools pack WolvenKit/source/archive -o WolvenKit/packed/archive/pc/mod/
+      - name: Rename archive
+        run: Rename-Item -Path "WolvenKit/packed/archive/pc/mod/archive.archive" -NewName "ChaosMod2077.archive"
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4.6.1
+        with:
+          name: ChaosMod2077
+          path: WolvenKit/packed/*
