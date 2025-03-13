@@ -3,15 +3,39 @@ name: Build the project
 on:
   push:
     branches: ["master"]
+    paths-ignore:
+      - "**.md"
   pull_request:
     branches: ["master"]
+    paths-ignore:
+      - "**.md"
 
 env:
   CARGO_TERM_COLOR: always
   REDCLI_GAME: .
 
 jobs:
+  changes:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      red4ext: ${{ steps.filter.outputs.red4ext }}
+      redscript: ${{ steps.filter.outputs.redscript }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            red4ext:
+              - 'src/**'
+            redscript:
+              - 'scripts/redscript/**'
+
   red4ext:
+    needs: changes
+    if: ${{ needs.changes.outputs.red4ext == 'true' }}
     runs-on: windows-latest
 
     steps:
@@ -27,11 +51,13 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/chaosmod2077.dll
 
-  lint-redscript:
+  redscript:
+    needs: changes
+    if: ${{ needs.changes.outputs.redscript == 'true' }}
     uses: ./.github/workflows/redscript.yml
 
   build:
-    needs: [red4ext, lint-redscript]
+    needs: [red4ext, redscript]
     runs-on: windows-latest
 
     steps:

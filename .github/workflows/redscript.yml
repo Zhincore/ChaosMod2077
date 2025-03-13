@@ -1,16 +1,7 @@
 name: Lint RedScripts
 
 on:
-  push:
-    branches: ["master"]
-    paths:
-      - "**.reds"
-  pull_request:
-    paths:
-      - "**.reds"
   workflow_call:
-    paths:
-      - "**.reds"
 
 jobs:
   lint:
