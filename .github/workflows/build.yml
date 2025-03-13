@@ -27,8 +27,11 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/chaosmod2077.dll
 
+  lint-redscript:
+    uses: ./.github/workflows/redscript.yml
+
   build:
-    needs: [red4ext]
+    needs: [red4ext, lint-redscript]
     runs-on: windows-latest
 
     steps:
@@ -55,8 +58,6 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/
 
-      - run: ls -R
-
       - name: Boundle scripts and plugin
         run: .build/red-cli bundle
       - name: Move resources
@@ -71,6 +72,7 @@ jobs:
         run: cp77tools pack WolvenKit/source/archive -o WolvenKit/packed/archive/pc/mod/
       - name: Rename archive
         run: Rename-Item -Path "WolvenKit/packed/archive/pc/mod/archive.archive" -NewName "ChaosMod2077.archive"
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4.6.1
         with:
