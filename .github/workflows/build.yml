@@ -31,11 +31,11 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/chaosmod2077.dll
 
-  redscript:
-    uses: ./.github/workflows/redscript.yml
+  # redscript:
+  #   uses: ./.github/workflows/redscript.yml
 
   build:
-    needs: [red4ext, redscript]
+    needs: [red4ext]
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
