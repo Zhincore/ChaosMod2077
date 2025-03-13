@@ -13,13 +13,7 @@ public abstract class ChaosEffect extends ScriptableService {
     // Abusing codeware for automatic registration
     // Effect info may not get updated on script reload, but the Active implementation will
     protected cb func OnLoad() {
-        GameInstance
-            .GetCallbackSystem()
-            .RegisterCallback(n"ChaosMod.Registry.RegisterEffectsEvent", this, n"OnRegister");
-    }
-
-    protected cb func OnRegister(event: ref<RegisterEffectsEvent>) {
-        event.GetRegistry().RegisterEffect(this);
+        GetEffectRegistry().RegisterEffect(this);
     }
 
     /// Get ids of incompatible effects. Default is none.

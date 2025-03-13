@@ -58,8 +58,11 @@ jobs:
 
   build:
     needs: [red4ext, redscript]
+    if: |
+      always()
+      && contains(needs.*.result, 'success')
+      && !contains(needs.*.result, 'failure')
     runs-on: windows-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Cache tools

@@ -15,7 +15,6 @@ private class EveryoneExitsActiveEffect extends ActiveChaosEffect {
         let player = GetPlayer(GetGameInstance());
         let vehicle = player.GetMountedVehicle();
 
-        // TODO: Make this animated?
         if IsDefined(vehicle) {
             let mountingInfo = new MountingInfo(
                 player.GetEntityID(),
@@ -23,12 +22,14 @@ private class EveryoneExitsActiveEffect extends ActiveChaosEffect {
                 VehicleComponent.GetDriverSlotID()
             );
             let unmountEvent = new UnmountingRequest();
+            unmountEvent.delay = 1.0;
             unmountEvent.lowLevelMountingInfo = mountingInfo;
             unmountEvent.mountData = new MountEventData();
             unmountEvent.mountData.isInstant = true;
-            unmountEvent.mountData.entrySlotName = n"speed";
-
             facility.Unmount(unmountEvent);
+            GameInstance
+                .GetWorkspotSystem(GetGameInstance())
+                .UnmountFromVehicle(vehicle, player);
         }
 
         for entity in GameInstance.GetEntityList(GetGameInstance()) {

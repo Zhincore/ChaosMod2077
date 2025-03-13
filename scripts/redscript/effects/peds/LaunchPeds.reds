@@ -28,12 +28,6 @@ private class LaunchPedsActiveEffect extends ActiveChaosEffect {
                 GameInstance
                     .GetDelaySystem(GetGameInstance())
                     .DelayEvent(puppet, event, 0.1, false);
-            } else if IsDefined(vehicle) {
-                let unmountCommand = new AIUnmountCommand();
-                unmountCommand.mountData = new MountEventData();
-                unmountCommand.mountData.isInstant = true;
-
-                vehicle.GetAIComponent().SendCommand(unmountCommand);
             }
         }
     }

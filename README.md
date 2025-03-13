@@ -40,6 +40,7 @@ Any improvement contributions are greatly appreciated, I tried to make the devel
 
 - **Windows, text editor, patience**.
 - **PowerShell** and ability to run it's scripts.
+- **[Red-CLI](https://github.com/rayshader/cp2077-red-cli)** - Recommended!
 - **[Rust](https://www.rust-lang.org/tools/install)** for developing natives.
   If you don't plan on changing those, you can skip this and follow these instructions instead: ***TODO***
 

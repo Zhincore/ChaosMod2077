@@ -4,41 +4,20 @@ import ChaosMod.Utils.Callback
 import ChaosMod.Lib.ChaosCNameMap
 import ChaosMod.Effects.ChaosEffect
 
-public class RegisterEffectsEvent extends CallbackSystemEvent {
-    private let registry: ref<EffectRegistryService>;
-
-    public func GetRegistry() -> ref<EffectRegistryService> {
-        return this.registry;
-    }
-
-    public static func Create(registry: ref<EffectRegistryService>) -> ref<RegisterEffectsEvent> {
-        let event = new RegisterEffectsEvent();
-        event.registry = registry;
-        return event;
-    }
+public func GetEffectRegistry() -> ref<EffectRegistryService> {
+    return GameInstance
+        .GetScriptableServiceContainer()
+        .GetService(n"ChaosMod.Registry.EffectRegistryService") as EffectRegistryService;
 }
 
 public class EffectRegistryService extends ScriptableService {
     private let effects: ref<ChaosCNameMap>;
 
-    private cb func OnLoad() {
-        this.effects = new ChaosCNameMap();
-        // Dispatch the event with delay to ensure all effects are registered
-        GameInstance
-            .GetDelaySystem(GetGameInstance())
-            .DelayCallback(Callback.Create(this, n"DispatchRegisterEffects"), 0, false);
-    }
-
-    private cb func DispatchRegisterEffects() {
-        GameInstance.GetCallbackSystem().DispatchEvent(RegisterEffectsEvent.Create(this));
-    }
-
-    private cb func OnReload() {
-        this.OnLoad();
-    }
-
     public func RegisterEffect(effect: ref<ChaosEffect>) {
-        FTLog(s"Registering effect: \(effect.GetId())");
+        //FTLog(s"Registering effect: \(effect.GetId())");
+        if !IsDefined(this.effects) {
+            this.effects = new ChaosCNameMap();
+        }
         this.effects.Insert(effect.GetId(), effect);
     }
 

@@ -9,6 +9,7 @@
     "EveryoneExitsVehicle": "Everyone exits vehicle",
     "LaunchPeds": "Launch all peds up",
     "DisassembleVeh": "Disassemble vehicle",
-    "SpammyVehDoors": "Spammy vehicle doors"
+    "SpammyVehDoors": "Spammy vehicle doors",
+    "VehNoGravity": "Vehicles have no gravity"
   }
 }

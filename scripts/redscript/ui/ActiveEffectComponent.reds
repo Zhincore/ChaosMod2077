@@ -13,9 +13,13 @@ public class ActiveEffectComponent extends inkComponent {
         root.SetAnchorPoint(0.0, 0.0);
         root.SetMargin(0, 16, 0, 0);
 
+        let timerWrapper = new inkVerticalPanel();
+        timerWrapper.Reparent(root, 0);
+        timerWrapper.SetVAlign(inkEVerticalAlign.Center);
+
         this.timer = new ProgressBar();
         this.timer.SetWidth(96);
-        this.timer.SetHeight(12);
+        this.timer.SetHeight(18);
         this.timer.SetCentered(true);
         this.timer.SetColor(Color.ChaosCreate(200, 200, 200, 200));
         let timerRoot = this.timer.GetRootWidget();
@@ -24,7 +28,7 @@ public class ActiveEffectComponent extends inkComponent {
         timerRoot.SetAnchorPoint(0.0, 0.5);
         timerRoot.SetVisible(false);
         timerRoot.SetAffectsLayoutWhenHidden(true);
-        this.timer.Reparent(root, 0);
+        this.timer.Reparent(timerWrapper, 0);
 
         this.text = new inkText();
         this.text.SetFontFamily("base\\gameplay\\gui\\fonts\\raj\\raj.inkfontfamily");
