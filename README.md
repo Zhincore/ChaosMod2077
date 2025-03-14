@@ -20,8 +20,7 @@ This effect can be helpful, annoying, or just pure chaos. So good luck!
 
 A forever TODO is adding more effects (porting ones from the GTA mods, but preferably creating some Cyberpunk-specific ones), apart from that there are some other things I want to do:
 
-- [ ] Build pipeline
-- [ ] CI :3
+- [x] CI :3
 - [ ] Libs folder for IDE
 - [ ] Addon support
 - [ ] Better incompatibility handling? If effect A is incomp with B, then vice versa should be ensured.

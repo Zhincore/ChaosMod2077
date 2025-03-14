@@ -6,10 +6,16 @@
     "Missing-Redscript": "Missing RedScript part of ChaosMod, reinstall the mod!"
   },
   "Effects": {
-    "EveryoneExitsVehicle": "Everyone exits vehicle",
-    "LaunchPeds": "Launch all peds up",
-    "DisassembleVeh": "Disassemble vehicle",
-    "SpammyVehDoors": "Spammy vehicle doors",
-    "VehNoGravity": "Vehicles have no gravity"
+    "EveryoneExitsVehicle": "Everyone Exits Vehicle",
+    "LaunchPeds": "Launch All NPCs Up",
+    "DrunkPlayer": "Drunk V",
+    "InfiniteAmmo": "Infinite Ammo",
+    "TeleportEverythingToPlayer": "Teleport Everything To Player",
+    "TopDownCam": "GTA 2",
+    "DisassembleVeh": "Disassemble Vehicle",
+    "SpammyVehDoors": "Spammy Vehicle Doors",
+    "VehNoGravity": "Vehicles Have No Gravity",
+    "SlowMotion2x": "Half Time Speed",
+    "SlowMotion4x": "Quarter Time Speed"
   }
 }
