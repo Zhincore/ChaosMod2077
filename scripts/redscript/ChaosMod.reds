@@ -4,6 +4,7 @@ import ChaosMod.UI.*
 import ChaosMod.UI.ActiveEffect.*
 import ChaosMod.Utils.Timer.*
 import ChaosMod.Effects.*
+import ChaosMod.Utils.*
 import ChaosMod.Registry.*
 import ChaosMod.Config.*
 
@@ -92,11 +93,7 @@ public class ChaosModSystem extends ScriptableSystem {
 
     // MARK: Base stuff
     private func enable() {
-        let window = GameInstance
-            .GetInkSystem()
-            .GetLayer(n"inkHUDLayer")
-            .GetVirtualWindow();
-        let root = window.GetWidgetByPathName(n"Root") as inkCanvas;
+        let root = GetUILayerRoot(n"inkHUDLayer");
         this.ui.Reparent(root, 0);
         this.ui.Toggle(true);
 

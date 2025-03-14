@@ -20,6 +20,14 @@ public func GetEffectName(id: CName) -> CName {
     return n"ChaosMod-Effects-" + id;
 }
 
+public func GetUILayerRoot(name: CName) -> ref<inkCanvas> {
+    return GameInstance
+        .GetInkSystem()
+        .GetLayer(name)
+        .GetVirtualWindow()
+        .GetWidgetByPathName(n"Root") as inkCanvas;
+}
+
 public class Callback extends DelayCallback {
     private let m_target: wref<IScriptable>;
     private let m_fn: CName;

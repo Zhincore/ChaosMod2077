@@ -8,6 +8,10 @@ public class TopDownCamEffect extends ChaosEffect {
         return ChaosTimedType.Normal;
     }
 
+    // TODO: Disabled registration until this works
+    protected cb func OnLoad() {
+    }
+
     public func ActivateEffect() -> ref<ActiveChaosEffect> {
         return new TopDownCamActiveEffect();
     }
@@ -18,8 +22,9 @@ private class TopDownCamActiveEffect extends ActiveChaosEffect {
         // TODO: Handle vehicles?
         let player = GetPlayer(GetGameInstance());
         let camera = player.GetFPPCameraComponent();
-        camera.SetLocalPosition(new Vector4(0, -10.0, 0, 0));
-        camera.SetLocalOrientation(EulerAngles.ToQuat(new EulerAngles(0, -90, 0)));
+        camera.SetLocalPosition(new Vector4(0, 0, 10.0, 0));
+        // TODO: Handle ImmerivvEFirstPerson
+        camera.SetLocalOrientation(EulerAngles.ToQuat(new EulerAngles(-90.0, 0, 0)));
         this.toggleHead();
         StatusEffectHelper.ApplyStatusEffect(player, t"GameplayRestriction.NoCameraControl");
     }
@@ -43,6 +48,7 @@ private class TopDownCamActiveEffect extends ActiveChaosEffect {
         let player = GetPlayer(GetGameInstance());
         let camera = player.GetFPPCameraComponent();
         camera.SetLocalPosition(new Vector4(0, 0, 0, 0));
+        camera.SetLocalOrientation(new Quaternion(0, 0, 0, 0));
         camera.ResetPitch();
         this.toggleHead();
         StatusEffectHelper.RemoveStatusEffect(player, t"GameplayRestriction.NoCameraControl");
