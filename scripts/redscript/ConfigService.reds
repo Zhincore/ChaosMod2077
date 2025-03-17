@@ -5,7 +5,7 @@ import ChaosMod.Utils.Timer.*
 
 public class ConfigService extends ScriptableService {
     // MARK: Config
-    persistent let timerDuration: Float = 30.0;
+    persistent let timerDuration: Float = 15.0;
     //
     // MARK: Function
     private let chaosMod: wref<ChaosModSystem>;

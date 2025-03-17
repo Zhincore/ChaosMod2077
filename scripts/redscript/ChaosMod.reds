@@ -31,6 +31,21 @@ public func StopAllEffects() {
     chaosmod.StopAllEffects();
 }
 
+public func ListAllEffects() {
+    let registry = GetEffectRegistry();
+    let effects = registry.GetAllEffects();
+    FTLog(s"Listing all effects:");
+    for effectRaw in effects {
+        let effect = effectRaw as ChaosEffect;
+        FTLog(s"  Effect \(effect.GetId())");
+    }
+}
+
+public func ResetRegistry() {
+    let registry = GetEffectRegistry();
+    registry.Reset();
+}
+
 // MARK: Main functionality
 public class ChaosModSystem extends ScriptableSystem {
     private let registry: ref<EffectRegistryService>;

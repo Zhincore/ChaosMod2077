@@ -24,7 +24,8 @@ private class TopDownCamActiveEffect extends ActiveChaosEffect {
         let camera = player.GetFPPCameraComponent();
         camera.SetLocalPosition(new Vector4(0, 0, 10.0, 0));
         // TODO: Handle ImmerivvEFirstPerson
-        camera.SetLocalOrientation(EulerAngles.ToQuat(new EulerAngles(-90.0, 0, 0)));
+        camera
+            .SetLocalOrientation(EulerAngles.ToQuat(EulerAngles.ChaosCreate(-90.0, 0, 0)));
         this.toggleHead();
         StatusEffectHelper.ApplyStatusEffect(player, t"GameplayRestriction.NoCameraControl");
     }

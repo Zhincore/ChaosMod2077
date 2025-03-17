@@ -76,7 +76,7 @@ When developing this mod, this is the workflow that works for me, you can adapt 
   - Run the `.\download-libs.ps1` script.
 
 > [!NOTE]
-> Do NOT commit the generated `libs` folder.  
+> Do NOT commit the generated `libs` folder.
 > **TODO:** Add it to .gitignore once redscript supports that.
 
 #### Playtesting
@@ -104,3 +104,7 @@ There is a few CET console commands that can help you with effect development:
   - Triggers a specific effect by its ID (even if Chaos Mod is disabled).
 - `ChaosMod_StopAllEffects()`
   - Stops all running effects (even if Chaos Mod is disabled).
+- `ChaosMod_ListAllEffects()`
+  - Lists all available effects in Game Log.
+- `ChaosMod_ResetRegistry()`
+  - Empties the registry, unregistering all effects.

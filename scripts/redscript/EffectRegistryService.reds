@@ -13,10 +13,14 @@ public func GetEffectRegistry() -> ref<EffectRegistryService> {
 public class EffectRegistryService extends ScriptableService {
     private let effects: ref<ChaosCNameMap>;
 
+    public func Reset() {
+        this.effects = new ChaosCNameMap();
+    }
+
     public func RegisterEffect(effect: ref<ChaosEffect>) {
         //FTLog(s"Registering effect: \(effect.GetId())");
         if !IsDefined(this.effects) {
-            this.effects = new ChaosCNameMap();
+            this.Reset();
         }
         this.effects.Insert(effect.GetId(), effect);
     }
@@ -27,6 +31,10 @@ public class EffectRegistryService extends ScriptableService {
 
     public func GetEffect(name: CName) -> ref<ChaosEffect> {
         return this.effects.Get(name) as ChaosEffect;
+    }
+
+    public func GetAllEffects() -> array<ref<IScriptable>> {
+        return this.effects.GetAll();
     }
 
     public func GetRandomEffect() -> ref<ChaosEffect> {

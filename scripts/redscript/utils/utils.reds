@@ -6,6 +6,15 @@ public static func ChaosCreate(r: Int32, g: Int32, b: Int32, opt a: Int32) -> Co
     return new Color(Cast<Uint8>(r), Cast<Uint8>(g), Cast<Uint8>(b), Cast<Uint8>(a));
 }
 
+@addMethod(EulerAngles)
+public static func ChaosCreate(pitch: Float, roll: Float, yaw: Float) -> EulerAngles {
+    let angle: EulerAngles;
+    angle.Pitch = pitch;
+    angle.Roll = roll;
+    angle.Yaw = yaw;
+    return angle;
+}
+
 public func Call(target: wref<IScriptable>, fn: CName, opt data: array<Variant>) {
     if !IsDefined(target) {
         return;

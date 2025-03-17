@@ -1,3 +1,5 @@
+EffectModule = require("effect")
+
 local redscript = false
 local system = nil
 local isOverlayVisible = false
@@ -55,3 +57,11 @@ registerForEvent('onDraw', function()
 
     ImGui.End()
 end)
+
+---@class ChaosMod
+ChaosMod = {
+    RegisterEffect = EffectModule.RegisterEffect,
+    ChaosTimedType = EffectModule.ChaosTimedType,
+}
+
+return ChaosMod
