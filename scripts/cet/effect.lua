@@ -8,7 +8,7 @@ ChaosTimedType = {
 ---@class Effect
 ---@field id string The unique identifier of the effect
 ---@field duration? ChaosTimedType The duration type of the effect
----@field incompatibleEffects? table<string, boolean> List of ids of incompatible effects
+---@field incompatibleEffects? string[] List of ids of incompatible effects
 ---@field onStart function Called when the effect begins. Required.
 ---@field onUpdate? function Called every timer update while the effect is active. Optional.
 ---@field onStop? function Called when the effect ends, use this for clean up. Optional.
