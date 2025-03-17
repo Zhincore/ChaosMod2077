@@ -4,14 +4,14 @@ Heavily inspired by the [GTA mods](https://github.com/gta-chaos-mod/ChaosModV), 
 This effect can be helpful, annoying, or just pure chaos. So good luck!
 
 > [!WARNING]
-> This mod (when active) can cause crashes and save corruptions. Always backup your loved saves and turn it Chaos Mod off before saving.
+> This mod can cause crashes and save corruptions. Always backup your loved saves and turn Chaos Mod off before saving.
 
-**Other doc files:**
+**Other documentation files:**
 
 - [Developing Effects](DEVELOPING-EFFECTS.md)
 - [Developing Addons](DEVELOPING-ADDONS.md)
 
-## Installation and usage
+## Installation & Usage
 
 1. Install like any other mod.
 2. Start the game and load a save.
@@ -31,19 +31,17 @@ A forever TODO is adding more effects (porting ones from the GTA mods, but prefe
 - [ ] Toggling individual effects, categories?
 - [ ] GTA mod only executes one effect from each category at once, do we want that too?
 
-If you want to help with any of this, please contribute! Continue reading below.
+Want to help? Contributions are welcome! Read on for development details.
 
 ## Development
 
 Any improvement contributions are greatly appreciated, I tried to make the development experience as smooth as possible. Here's stuff you should know if you wanna contribute.
 
-If you wanna make new effects but don't wanna contribute (or don't want to use RedScript), see [Developing Addons](./DEVELOPING-ADDONS.md).
-
 ### Folder structure
 
 - `localizations/` - Simplified language files for the mod. Every effect must have at least english translation.
-- `scripts/cet/` - Scripts for CET providing configuration UI.
-- `scripts/redscript/` - Redscripts providing the **main logic** of the mod and individual effects.
+- `scripts/cet/` - CET scripts providing configuration UI.
+- `scripts/redscript/` - RedScripts handling core mod logic and effects.
 - `src/` - Red4ext plugin in Rust providing native extensions.
 - `WolvenKit/` - WolvenKit project with assets, AXL, etc. Used for packaging the resulting mod.
 
@@ -53,20 +51,18 @@ If you wanna make new effects but don't wanna contribute (or don't want to use R
 - **PowerShell** and ability to run it's scripts.
 - **[Red-CLI](https://github.com/rayshader/cp2077-red-cli)** - Recommended!
 - **[Red Hot Tools](https://github.com/psiberx/cp2077-red-hot-tools)** (RHT) Recommended!
-- **[Rust](https://www.rust-lang.org/tools/install)** for developing natives.
-  If you don't plan on changing those, see [Developing without Rust](#developing-without-rust).
+- **[Rust](https://www.rust-lang.org/tools/install)** (only needed for developing native extensions).
 
 #### Developing without Rust
 
-If you're not planning on changing natives, you don't have to install Rust.
-Instead download latest `chaosmod2077.dll` build from GitHub Actions:
+If you're not modifying native extensions, you don't need Rust. Instead, download the latest `chaosmod2077.dll` build from GitHub Actions:
 
 1. [Open workflow runs](https://github.com/Zhincore/ChaosMod2077/actions)
 2. Click the name of the newest one with green check.
 3. Scroll down and download `chaosmod2077.dll`.
-4. Create folders `target\build\debug\` in the project and put the DLL there.
+4. Create the folder structure `target\build\debug\` in the project and put the DLL there.
 
-Now you can develop and test the rest of the mod without building the Rust part.
+Now you can develop and test without building the Rust components.
 
 ### Recommended Workflow
 
@@ -85,25 +81,26 @@ When developing this mod, this is the workflow that works for me, you can adapt 
 
 #### Playtesting
 
-1. If you changed natives (Rust part) run `cargo build`.
-2. If you changed translations / added effects:
+1. If you changed natives (Rust) run `cargo build`.
+2. If you changed translations or added effects:
    1. Run the `.\convert-translations.ps1` script. You might get asked about installing WolvenKit CLI.
-   2. Open the WolvenKit project and just press Install[^1].
+   2. Open the WolvenKit project and just press **Install**\*.
 3. Run `red-cli install` to install the scripts.
 4. Start Cyberpunk and test!
 
-[^1]: You can also do the WolvenKit part last and press "Install and Load Save".
+\*: You can also do the WolvenKit part last and press "Install and Load Save".
 
-If you already have a game running, reloading scripts using RHT is usually enough. Effect info will not reload, but effect runtime implementation will.
+> [!TIP]
+> If the game is already running, reloading scripts via RHT usually suffices. Effect metadata won't update, but runtime changes will.
 
 > [!NOTE]
-> Do not run ~~`red-cli bundle`~~ in development environment. It could cause issues when you then press install in WolvenKit and you'll need to delete the scripts from the WolvenKit project.
+> Avoid running ~~`red-cli bundle`~~ in a development environment. It can cause issues when pressing **Install** in WolvenKit, requiring manual script removal.
 
 ## Utility Commands
 
 There is a few CET console commands that can help you with effect development:
 
 - `ChaosMod_StartEffect("EffectId")`
-  - Starts an effect with given effect ID. Regardless if ChaosMod is active.
+  - Triggers a specific effect by its ID (even if Chaos Mod is disabled).
 - `ChaosMod_StopAllEffects()`
-  - Stops all effects. Regardless if ChaosMod is active.
+  - Stops all running effects (even if Chaos Mod is disabled).
