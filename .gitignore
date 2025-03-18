@@ -2,6 +2,7 @@
 .projectFiles
 install_log.xml
 layout.xml
+/libs
 
 WolvenKit/custom_refs.txt
 WolvenKit/packed
