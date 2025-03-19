@@ -1,1 +1,5 @@
 source_roots = [".", "libs"]
+
+[format]
+indent = 4
+max_width = 100

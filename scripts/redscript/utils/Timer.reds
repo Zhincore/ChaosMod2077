@@ -45,9 +45,7 @@ public class Timer extends DelayCallback {
             return;
         }
 
-        GameInstance
-            .GetDelaySystem(GetGameInstance())
-            .DelayCallback(this, this.updatePeriod, false);
+        GameInstance.GetDelaySystem(GetGameInstance()).DelayCallback(this, this.updatePeriod, false);
 
         if this.duration <= 0.0 {
             return;

@@ -31,7 +31,7 @@ jobs:
     uses: ./.github/workflows/redscript.yml
 
   build:
-    needs: [red4ext]
+    needs: [red4ext, redscript]
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4

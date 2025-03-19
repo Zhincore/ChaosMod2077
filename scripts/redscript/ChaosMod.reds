@@ -13,9 +13,7 @@ public func IsPresent() {
 
 // MARK: Utility commands
 public func StartEffect(name: CName) {
-    let chaosmod = GameInstance
-        .GetScriptableSystemsContainer(GetGameInstance())
-        .Get(n"ChaosMod.ChaosModSystem") as ChaosModSystem;
+    let chaosmod = GameInstance.GetScriptableSystemsContainer(GetGameInstance()).Get(n"ChaosMod.ChaosModSystem") as ChaosModSystem;
     let effect = chaosmod.registry.GetEffect(name);
     if IsDefined(effect) {
         chaosmod.ActivateEffect(effect);
@@ -25,9 +23,7 @@ public func StartEffect(name: CName) {
 }
 
 public func StopAllEffects() {
-    let chaosmod = GameInstance
-        .GetScriptableSystemsContainer(GetGameInstance())
-        .Get(n"ChaosMod.ChaosModSystem") as ChaosModSystem;
+    let chaosmod = GameInstance.GetScriptableSystemsContainer(GetGameInstance()).Get(n"ChaosMod.ChaosModSystem") as ChaosModSystem;
     chaosmod.StopAllEffects();
 }
 
@@ -59,14 +55,10 @@ public class ChaosModSystem extends ScriptableSystem {
     private func OnAttach() {
         this.timer = Timer.Create(5, this, n"OnTimerUpdate");
 
-        this.config = GameInstance
-            .GetScriptableServiceContainer()
-            .GetService(n"ChaosMod.Config.ConfigService") as ConfigService;
+        this.config = GameInstance.GetScriptableServiceContainer().GetService(n"ChaosMod.Config.ConfigService") as ConfigService;
         this.config.BindChaosMod(this);
 
-        this.registry = GameInstance
-            .GetScriptableServiceContainer()
-            .GetService(n"ChaosMod.Registry.EffectRegistryService") as EffectRegistryService;
+        this.registry = GameInstance.GetScriptableServiceContainer().GetService(n"ChaosMod.Registry.EffectRegistryService") as EffectRegistryService;
 
         this.ui = new ChaosUIComponent();
     }

@@ -16,20 +16,14 @@ private class EveryoneExitsActiveEffect extends ActiveChaosEffect {
         let vehicle = player.GetMountedVehicle();
 
         if IsDefined(vehicle) {
-            let mountingInfo = new MountingInfo(
-                player.GetEntityID(),
-                vehicle.GetEntityID(),
-                VehicleComponent.GetDriverSlotID()
-            );
+            let mountingInfo = new MountingInfo(player.GetEntityID(), vehicle.GetEntityID(), VehicleComponent.GetDriverSlotID());
             let unmountEvent = new UnmountingRequest();
             unmountEvent.delay = 1.0;
             unmountEvent.lowLevelMountingInfo = mountingInfo;
             unmountEvent.mountData = new MountEventData();
             unmountEvent.mountData.isInstant = true;
             facility.Unmount(unmountEvent);
-            GameInstance
-                .GetWorkspotSystem(GetGameInstance())
-                .UnmountFromVehicle(vehicle, player);
+            GameInstance.GetWorkspotSystem(GetGameInstance()).UnmountFromVehicle(vehicle, player);
         }
 
         for entity in GameInstance.GetEntityList(GetGameInstance()) {
@@ -38,8 +32,7 @@ private class EveryoneExitsActiveEffect extends ActiveChaosEffect {
                 let exitVehicleEvent = new AIEvent();
                 exitVehicleEvent.name = n"ExitVehicle";
 
-                VehicleComponent
-                    .QueueEventToAllPassengers(GetGameInstance(), vehicle, exitVehicleEvent);
+                VehicleComponent.QueueEventToAllPassengers(GetGameInstance(), vehicle, exitVehicleEvent);
             }
         }
     }

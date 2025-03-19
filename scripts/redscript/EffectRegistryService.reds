@@ -5,9 +5,7 @@ import ChaosMod.Lib.ChaosCNameMap
 import ChaosMod.Effects.ChaosEffect
 
 public func GetEffectRegistry() -> ref<EffectRegistryService> {
-    return GameInstance
-        .GetScriptableServiceContainer()
-        .GetService(n"ChaosMod.Registry.EffectRegistryService") as EffectRegistryService;
+    return GameInstance.GetScriptableServiceContainer().GetService(n"ChaosMod.Registry.EffectRegistryService") as EffectRegistryService;
 }
 
 public class EffectRegistryService extends ScriptableService {

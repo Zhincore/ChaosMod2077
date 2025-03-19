@@ -2,9 +2,7 @@ module ChaosMod.Support
 
 /// MARK: Service
 public func GetSupportService() -> ref<EffectSupportService> {
-    return GameInstance
-        .GetScriptableServiceContainer()
-        .GetService(n"ChaosMod.Support.EffectSupportService") as EffectSupportService;
+    return GameInstance.GetScriptableServiceContainer().GetService(n"ChaosMod.Support.EffectSupportService") as EffectSupportService;
 }
 
 /// utility service for providing stuff for effects

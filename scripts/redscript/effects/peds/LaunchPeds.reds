@@ -24,9 +24,7 @@ private class LaunchPedsActiveEffect extends ActiveChaosEffect {
                 event.influenceRadius = 5.0;
 
                 puppet.QueueEvent(CreateForceRagdollEvent(n"InAir_RecivedHit"));
-                GameInstance
-                    .GetDelaySystem(GetGameInstance())
-                    .DelayEvent(puppet, event, 0.1, false);
+                GameInstance.GetDelaySystem(GetGameInstance()).DelayEvent(puppet, event, 0.1, false);
             }
         }
     }

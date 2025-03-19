@@ -13,3 +13,4 @@ public native class ChaosCNameMap {
 
     native func Clear();
 }
+
