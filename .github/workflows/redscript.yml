@@ -22,6 +22,6 @@ jobs:
         run: .\download-libs.ps1
       - uses: jac3km4/redscript-action@v0.1.3
         with:
-          source: .
+          source: scripts/redscript
           lint: true
           check-format: true
