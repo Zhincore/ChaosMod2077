@@ -25,10 +25,6 @@ public func Call(target: wref<IScriptable>, fn: CName, opt data: array<Variant>)
         .Call(target, data);
 }
 
-public func GetEffectName(id: CName) -> CName {
-    return n"ChaosMod-Effects-" + id;
-}
-
 public func GetUILayerRoot(name: CName) -> ref<inkCanvas> {
     return GameInstance
         .GetInkSystem()

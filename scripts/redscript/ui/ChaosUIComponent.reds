@@ -37,10 +37,10 @@ public class ChaosUIComponent extends inkComponent {
         this.timer.SetProgress(progress);
     }
 
-    public func AddEffect(id: CName, isInstant: Bool) -> ref<ActiveEffectComponent> {
+    public func AddEffect(name: CName, isInstant: Bool) -> ref<ActiveEffectComponent> {
         let effect = new ActiveEffectComponent();
         effect.SetTimerVisible(!isInstant);
-        effect.SetName(GetEffectName(id));
+        effect.SetName(name);
         effect.Reparent(this.effects);
 
         return effect;

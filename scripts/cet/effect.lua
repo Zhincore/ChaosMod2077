@@ -7,6 +7,7 @@ ChaosTimedType = {
 
 ---@class Effect
 ---@field id string The unique identifier of the effect.
+---@field name? string The localization key for the effect's name. ChaosMod-Effects-<ID> by default.
 ---@field duration? ChaosTimedType The duration type of the effect. Default is instant.
 ---@field incompatibleEffects? string[] List of ids of incompatible effects.
 ---@field onStart function Called when the effect begins. Required.
@@ -41,6 +42,7 @@ function RegisterEffect(effect)
     CName.add(effect.id)
     return ChaosMod_Effects_External_ExternalEffect.Create(
         effect.id,
+        effect.name or "None",
         effect.duration or ChaosTimedType.Instant,
         effect.incompatibleEffects or {},
         activeEffect

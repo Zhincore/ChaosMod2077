@@ -38,6 +38,11 @@ public abstract class ChaosEffect extends ScriptableService {
         return StringToName(key);
     }
 
+    /// Return the localization key for the effect's name. ChaosMod-Effects-<ID> by default
+    public func GetName() -> CName {
+        return n"ChaosMod-Effects-" + this.GetId();
+    }
+
     /// Return an instance of ActiveChaosEffect.
     public func ActivateEffect() -> ref<ActiveChaosEffect>;
 }

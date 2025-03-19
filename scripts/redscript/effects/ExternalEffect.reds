@@ -7,18 +7,22 @@ import ChaosMod.Utils.Callback
 /// Allows registering effects from external sources (CET).
 public class ExternalEffect extends ChaosEffect {
     private let id: CName;
+    private let name: CName;
     private let duration: ChaosTimedType;
     private let incompatibleEffects: array<CName>;
     private let activeEffect: ref<ExternalActiveEffect>;
 
+    /// Leave name as None to generate from ID.
     public static func Create(
         id: CName,
+        name: CName,
         duration: ChaosTimedType,
         incompatibleEffects: array<CName>,
         activeEffect: ref<ExternalActiveEffect>
     ) -> ref<ExternalEffect> {
         let effect = new ExternalEffect();
         effect.id = id;
+        effect.name = name;
         effect.duration = duration;
         effect.incompatibleEffects = incompatibleEffects;
         effect.activeEffect = activeEffect;
@@ -41,6 +45,13 @@ public class ExternalEffect extends ChaosEffect {
 
     public func GetId() -> CName {
         return this.id;
+    }
+
+    public func GetName() -> CName {
+        if Equals(this.name, n"None") {
+            return n"ChaosMod-Effects-" + this.id;
+        }
+        return this.name;
     }
 
     public func ActivateEffect() -> ref<ActiveChaosEffect> {

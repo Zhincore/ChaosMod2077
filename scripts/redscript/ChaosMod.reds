@@ -30,11 +30,12 @@ public func StopAllEffects() {
 public func ListAllEffects() {
     let registry = GetEffectRegistry();
     let effects = registry.GetAllEffects();
-    FTLog(s"Listing all effects:");
+    FTLog("Listing all effects:");
     for effectRaw in effects {
         let effect = effectRaw as ChaosEffect;
         FTLog(s"  Effect \(effect.GetId())");
     }
+    FTLog("");
 }
 
 public func ResetRegistry() {
@@ -196,6 +197,7 @@ public class ChaosModSystem extends ScriptableSystem {
 
 private class ActiveEffectRecord {
     public let id: CName;
+    public let name: CName;
     public let runtime: ref<ActiveChaosEffect>;
     public let component: ref<ActiveEffectComponent>;
     public let incompatible: array<CName>;
@@ -207,6 +209,7 @@ private class ActiveEffectRecord {
     public static func SpawnEffect(effect: ref<ChaosEffect>) -> ref<ActiveEffectRecord> {
         let record = new ActiveEffectRecord();
         record.id = effect.GetId();
+        record.name = effect.GetName();
         record.incompatible = effect.GetIncompatible();
         record.runtime = effect.ActivateEffect();
         record.duration = Cast<Float>(EnumInt(effect.GetDuration()));
