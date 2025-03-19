@@ -27,11 +27,12 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/chaosmod2077.dll
 
-  redscript:
-    uses: ./.github/workflows/redscript.yml
+  # TODO: uncomment once codeware passes the checks
+  # redscript:
+  #   uses: ./.github/workflows/redscript.yml
 
   build:
-    needs: [red4ext, redscript]
+    needs: [red4ext] # redscript]
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
