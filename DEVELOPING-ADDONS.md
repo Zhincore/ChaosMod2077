@@ -1,7 +1,30 @@
 # Developing Addons
 
-If you want to release a set of your custom effects as your own mod (for example adding effects compatible with other mod), or want to use Lua for example, making an addon is a good way to do that.
+If you want to release a set of custom effects as your own mod (e.g., to add effects compatible with another mod) or use Lua, creating an addon is the best approach.
 
-If you want to develop your addon in RedScript, your effects work the exact same way as non-addon effects so see [Developing Effects](./DEVELOPING-EFFECTS.md) for more info.
+For RedScript-based addons, effects function exactly like non-addon effects. See [Developing Effects](./DEVELOPING-EFFECTS.md) for details.
 
-**TODO**
+Below is an example of how to develop an addon using CET Lua. Most of the logic is the same as a [RedScript effect](./DEVELOPING-EFFECTS.md):
+
+```lua
+-- init.lua
+
+registerForEvent("onInit", function()
+    --- Import the ChaosMod to interact with it
+    --- @type ChaosMod
+    local ChaosMod = GetMod("ChaosMod2077")
+
+    -- Register an effect (you can call this multiple times to register more)
+    ChaosMod.RegisterEffect({
+        -- Unique ID of your effect; add an onscreen translation (in this case the key would be `ChaosMod-Effects-MyLua`)
+        id = "MyLua",
+        duration = ChaosMod.ChaosTimedType.Short,
+        onStart = function()
+            print("MyLua effect started")
+        end,
+        onStop = function()
+            print("MyLua effect ended")
+        end
+    })
+end)
+```

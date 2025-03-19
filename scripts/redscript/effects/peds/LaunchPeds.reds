@@ -12,7 +12,6 @@ private class LaunchPedsActiveEffect extends ActiveChaosEffect {
     public func OnStart() {
         for entity in GameInstance.GetEntityList(GetGameInstance()) {
             let puppet = entity as gamePuppet;
-            let vehicle = entity as VehicleObject;
             if IsDefined(puppet) {
                 let npc = puppet as NPCPuppet;
                 if IsDefined(npc) {

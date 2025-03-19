@@ -1,6 +1,6 @@
 <#
     .SYNOPSIS
-    Downloads libraries required for IDEs.
+        Downloads libraries required for IDEs.
     .EXAMPLE
         .\download-libs.ps1 [-reinstall]
 #>

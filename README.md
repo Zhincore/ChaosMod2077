@@ -55,9 +55,9 @@ Any improvement contributions are greatly appreciated, I tried to make the devel
 
 #### Developing without Rust
 
-If you're not modifying native extensions, you don't need Rust. Instead, download the latest `chaosmod2077.dll` build from GitHub Actions:
+If you're not modifying native extensions, you don't need Rust. Instead, download the latest `chaosmod2077.dll` build from the Build GitHub Action:
 
-1. [Open workflow runs](https://github.com/Zhincore/ChaosMod2077/actions)
+1. [Open workflow runs and pick "Build"](https://github.com/Zhincore/ChaosMod2077/actions/workflows/build.yml)
 2. Click the name of the newest one with green check.
 3. Scroll down and download `chaosmod2077.dll`.
 4. Create the folder structure `target\build\debug\` in the project and put the DLL there.
@@ -77,7 +77,6 @@ When developing this mod, this is the workflow that works for me, you can adapt 
 
 > [!NOTE]
 > Do NOT commit the generated `libs` folder.
-> **TODO:** Add it to .gitignore once redscript supports that.
 
 #### Playtesting
 

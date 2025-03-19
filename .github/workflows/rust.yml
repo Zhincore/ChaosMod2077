@@ -1,0 +1,23 @@
+name: Lint Rust
+
+on:
+  workflow_call:
+  pull_request:
+    branches: ["master"]
+    paths:
+      - "**.rs"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  red4ext:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust
+        run: rustup toolchain install stable --profile minimal
+      - uses: Swatinem/rust-cache@v2
+      - name: Build
+        run: cargo clippy

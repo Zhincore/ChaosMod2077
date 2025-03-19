@@ -1,11 +1,7 @@
-name: Build the project
+name: Build
 
 on:
   push:
-    branches: ["master"]
-    paths-ignore:
-      - "**.md"
-  pull_request:
     branches: ["master"]
     paths-ignore:
       - "**.md"
@@ -31,8 +27,8 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/chaosmod2077.dll
 
-  # redscript:
-  #   uses: ./.github/workflows/redscript.yml
+  redscript:
+    uses: ./.github/workflows/redscript.yml
 
   build:
     needs: [red4ext]
