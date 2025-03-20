@@ -1,11 +1,18 @@
 EffectModule = require("effect")
+SupportModule = require("support")
 
 local redscript = false
 local system = nil
 local isOverlayVisible = false
 
+-- onInit
+registerForEvent('onInit', function()
+    SupportModule.RegisterSupport()
+end)
+
 -- onOverlayOpen
 registerForEvent('onOverlayOpen', function()
+    ---@diagnostic disable-next-line: undefined-global
     redscript = ChaosMod_IsPresent ~= nil
     if redscript then
         system = GameInstance.GetScriptableSystemsContainer():Get('ChaosMod.ChaosModSystem')
@@ -19,6 +26,7 @@ registerForEvent('onOverlayClose', function()
 end)
 
 -- onDraw
+---@diagnostic disable: redefined-local
 registerForEvent('onDraw', function()
     -- bail if redscript part is available but not system
     if not isOverlayVisible or (redscript and system == nil) then
@@ -35,8 +43,8 @@ registerForEvent('onDraw', function()
         local config = system:GetConfig()
 
         -- MARK: State
-        local enabled, pressed = ImGui.Checkbox(GetLocalizedTextByKey("ChaosMod-UI-Enable"), system:IsEnabled())
-        if pressed then
+        local enabled, changed = ImGui.Checkbox(GetLocalizedTextByKey("ChaosMod-UI-Enable"), system:IsEnabled())
+        if changed then
             system:Toggle(enabled)
         end
 
@@ -44,13 +52,13 @@ registerForEvent('onDraw', function()
 
         -- MARK: Config
         -- timer duration
-        local timerDuration, pressed =
+        local timerDuration, changed =
             ImGui.DragFloat(GetLocalizedTextByKey("ChaosMod-UI-Timer-Duration"), config["timerDuration"], 0.01, 5, 3600,
                 "%.2f")
         if ImGui.IsItemHovered() then
             ImGui.SetTooltip(GetLocalizedTextByKey("ChaosMod-UI-Timer-Duration-Desc"))
         end
-        if pressed and timerDuration > 0.0 then
+        if changed and timerDuration > 0.0 then
             config:SetTimerDuration(timerDuration)
         end
     end

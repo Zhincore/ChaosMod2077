@@ -1,3 +1,5 @@
+---@diagnostic disable: undefined-global
+
 ---@enum ChaosTimedType
 ChaosTimedType = {
     Instant = ChaosMod_Effects_ChaosTimedType.Instant,
@@ -17,7 +19,7 @@ ChaosTimedType = {
 --- Register a LUA effect.
 ---@param effect Effect
 function RegisterEffect(effect)
-    listener = NewProxy({
+    local listener = NewProxy({
         onStart = {
             args = {},
             callback = effect.onStart
@@ -32,7 +34,7 @@ function RegisterEffect(effect)
         },
     })
 
-    activeEffect = ChaosMod_Effects_External_ExternalActiveEffect.Create(
+    local activeEffect = ChaosMod_Effects_External_ExternalActiveEffect.Create(
         listener:Target(),
         listener:Function("onStart"),
         listener:Function("onUpdate"),

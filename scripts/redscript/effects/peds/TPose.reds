@@ -9,6 +9,7 @@ public class TPoseEffect extends ChaosEffect {
     }
 }
 
+// TODO: Make this much more obnoxious? LODs, make npcs slide, etc?
 private class TPoseActiveEffect extends ActiveChaosEffect {
     public func OnStart() {
         for entity in GameInstance.GetEntityList(GetGameInstance()) {

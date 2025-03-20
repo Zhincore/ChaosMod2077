@@ -142,7 +142,7 @@ public class ChaosModSystem extends ScriptableSystem {
         }
 
         ArrayPush(this.activeEffects, record);
-        record.component = this.ui.AddEffect(record.id, record.isInstant);
+        record.component = this.ui.AddEffect(record.name, record.isInstant);
         record.runtime.OnStart();
     }
 

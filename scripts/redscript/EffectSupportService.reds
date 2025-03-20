@@ -5,7 +5,7 @@ public func GetSupportService() -> ref<EffectSupportService> {
     return GameInstance.GetScriptableServiceContainer().GetService(n"ChaosMod.Support.EffectSupportService") as EffectSupportService;
 }
 
-/// utility service for providing stuff for effects
+/// Utility service for providing stuff for effects.
 public class EffectSupportService extends ScriptableService {
     public let inGameUI: ref<gameuiInGameMenuGameController>;
     public let pauseMenu: wref<MenuScenario_PauseMenu>;

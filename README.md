@@ -25,6 +25,8 @@ A forever TODO is adding more effects (porting ones from the GTA mods, but prefe
 - [x] CI with builds :3
 - [x] Libs folder for IDE
 - [x] Addon support
+- [ ] Make [TopDownCam effect](scripts/redscript/effects/misc/TopDownCam.reds) good.
+- [ ] Improve [When It's Ready effect](scripts/redscript/effects/peds/TPose.reds).
 - [ ] Better incompatibility handling? If effect A is incomp with B, then vice versa should be ensured.
 - [ ] More configuration options (UI colors/size, effect duration, ...)
 - [ ] Toggling individual effects, categories?
@@ -34,8 +36,10 @@ Want to help? Contributions are welcome! Read [the wiki](../../wiki) for develop
 
 ## Contributions
 
-Any improvements are greatly appreciated! Please submit a pull request or open an issue on the [GitHub repository](https://github.com/Zhincore/cp2077-chaosmod). Read the [wiki](../../wiki) for development details!
+Any improvements, no matter how small, are greatly appreciated! Please submit a pull request or open an issue. Read the [wiki](../../wiki) for development details!
 
 ## License
 
 This project is licensed under the AGPLv3 license - see the [LICENSE](LICENSE) file for details.
+
+However, please, do not (re)upload this mod without permission.
