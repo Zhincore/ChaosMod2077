@@ -58,7 +58,7 @@ jobs:
           name: chaosmod2077.dll
           path: target/release/
 
-      - name: Boundle scripts and plugin
+      - name: Bundle scripts and plugin
         run: .build/red-cli bundle
       - name: Move resources
         run: |

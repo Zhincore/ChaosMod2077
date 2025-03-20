@@ -5,7 +5,7 @@ This effect can be helpful, annoying, or just pure chaos. So good luck!
 
 If you have questions or want to reach out, feel free to ping @Zhincore in an appropriate channel on the [Cyberpunk 2077 Modding Community Discord](https://discord.gg/redmodding)!
 
-If you're looking into development of this mod, check out the [wiki](./wiki)!
+If you're looking into development of this mod, check out the [wiki](../../wiki)!
 
 ## Installation & Usage
 
@@ -23,11 +23,19 @@ If you're looking into development of this mod, check out the [wiki](./wiki)!
 A forever TODO is adding more effects (porting ones from the GTA mods, but preferably creating some Cyberpunk-specific ones), apart from that there are some other things I want to do:
 
 - [x] CI with builds :3
-- [ ] Libs folder for IDE
-- [ ] Addon support
+- [x] Libs folder for IDE
+- [x] Addon support
 - [ ] Better incompatibility handling? If effect A is incomp with B, then vice versa should be ensured.
 - [ ] More configuration options (UI colors/size, effect duration, ...)
 - [ ] Toggling individual effects, categories?
 - [ ] GTA mod only executes one effect from each category at once, do we want that too?
 
-Want to help? Contributions are welcome! Read [the wiki](./wiki) for development details!
+Want to help? Contributions are welcome! Read [the wiki](../../wiki) for development details!
+
+## Contributions
+
+Any improvements are greatly appreciated! Please submit a pull request or open an issue on the [GitHub repository](https://github.com/Zhincore/cp2077-chaosmod). Read the [wiki](../../wiki) for development details!
+
+## License
+
+This project is licensed under the AGPLv3 license - see the [LICENSE](LICENSE) file for details.
