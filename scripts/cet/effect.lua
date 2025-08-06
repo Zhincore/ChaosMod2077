@@ -2,10 +2,17 @@
 
 ---@enum ChaosTimedType
 ChaosTimedType = {
-    Instant = ChaosMod_Effects_ChaosTimedType.Instant,
-    Short = ChaosMod_Effects_ChaosTimedType.Short,
-    Normal = ChaosMod_Effects_ChaosTimedType.Normal
+    Instant = ChaosMod_Effects_ChaosTimedType == nil and 0 or ChaosMod_Effects_ChaosTimedType.Instant,
+    Short = ChaosMod_Effects_ChaosTimedType == nil and 1 or ChaosMod_Effects_ChaosTimedType.Short,
+    Normal = ChaosMod_Effects_ChaosTimedType == nil and 2 or ChaosMod_Effects_ChaosTimedType.Normal
 }
+
+--- Called internally to make sure the enum is initialized.
+function Init()
+    ChaosTimedType.Instant = ChaosMod_Effects_ChaosTimedType.Instant
+    ChaosTimedType.Short = ChaosMod_Effects_ChaosTimedType.Short
+    ChaosTimedType.Normal = ChaosMod_Effects_ChaosTimedType.Normal
+end
 
 ---@class Effect
 ---@field id string The unique identifier of the effect.
@@ -52,6 +59,7 @@ function RegisterEffect(effect)
 end
 
 return {
+    Init = Init,
     ChaosTimedType = ChaosTimedType,
     RegisterEffect = RegisterEffect
 }

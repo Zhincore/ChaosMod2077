@@ -10,7 +10,7 @@ param (
 )
 
 $libs = @{
-    "Codeware" = "https://github.com/psiberx/cp2077-codeware/releases/download/v1.15.0/Codeware-1.15.0.zip"
+    "Codeware" = "https://github.com/psiberx/cp2077-codeware/releases/download/v1.17.0/Codeware-1.17.0.zip"
     "CET" = "https://static.zhincore.eu/cp/cet-lua-b-1.27.0-231008.zip"
     "ImGUI" = "https://github.com/Nats-ji/CET_ImGui_lua_type_defines/archive/refs/heads/main.zip"
 }

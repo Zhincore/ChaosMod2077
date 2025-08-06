@@ -16,6 +16,10 @@ registerForEvent('onOverlayOpen', function()
     redscript = ChaosMod_IsPresent ~= nil
     if redscript then
         system = GameInstance.GetScriptableSystemsContainer():Get('ChaosMod.ChaosModSystem')
+        EffectModule.Init()
+    else
+        print("Missing RedScript part of ChaosMod, reinstall the mod!")
+        print(GetLocalizedTextByKey("ChaosMod-UI-Missing-Redscript"))
     end
     isOverlayVisible = true
 end)
@@ -34,8 +38,14 @@ registerForEvent('onDraw', function()
     end
 
     if ImGui.Begin('Chaos Mod', ImGuiWindowFlags.AlwaysAutoResize) then
+        if GetLocalizedTextByKey("ChaosMod-UI-_LocaleTest") ~= "True" then
+            ImGui.TextColored(255, 0, 0, 255, "Missing .archive or .xl files of ChaosMod, reinstall the mod!")
+            ImGui.End()
+            return
+        end
+
         if not redscript or system == nil then
-            ImGui.TextColored(255, 0, 0, 255, GetLocalizedTextByKey("ChaosMod-UI-Missing-Redscript"))
+            ImGui.TextColored(255, 0, 0, 255, GetLocalizedTextByKey("ChaosMod-UI-MissingRedscript"))
             ImGui.End()
             return
         end
@@ -53,10 +63,10 @@ registerForEvent('onDraw', function()
         -- MARK: Config
         -- timer duration
         local timerDuration, changed =
-            ImGui.DragFloat(GetLocalizedTextByKey("ChaosMod-UI-Timer-Duration"), config["timerDuration"], 0.01, 5, 3600,
+            ImGui.DragFloat(GetLocalizedTextByKey("ChaosMod-UI-TimerDuration"), config["timerDuration"], 0.01, 5, 3600,
                 "%.2f")
         if ImGui.IsItemHovered() then
-            ImGui.SetTooltip(GetLocalizedTextByKey("ChaosMod-UI-Timer-Duration-Desc"))
+            ImGui.SetTooltip(GetLocalizedTextByKey("ChaosMod-UI-TimerDuration-Desc"))
         end
         if changed and timerDuration > 0.0 then
             config:SetTimerDuration(timerDuration)

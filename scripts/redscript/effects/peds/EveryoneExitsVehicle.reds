@@ -37,4 +37,3 @@ private class EveryoneExitsActiveEffect extends ActiveChaosEffect {
         }
     }
 }
-

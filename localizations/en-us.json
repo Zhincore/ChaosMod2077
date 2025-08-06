@@ -1,9 +1,10 @@
 {
   "UI": {
+    "_LocaleTest": "True",
     "Enable": "Enable",
-    "Timer-Duration": "Timer duration",
-    "Timer-Duration-Desc": "How many seconds between activating new effects. Affects duration too.",
-    "Missing-Redscript": "Missing RedScript part of ChaosMod, reinstall the mod!"
+    "TimerDuration": "Timer duration",
+    "TimerDuration-Desc": "How many seconds between activating new effects. Affects duration too.",
+    "MissingRedscript": "Missing RedScript part of ChaosMod, reinstall the mod!"
   },
   "Effects": {
     "Credits": "Roll credits",
